@@ -1,0 +1,30 @@
+.footerdiv {
+  text-decoration: none;
+  color: #f6f5f3;
+  padding: 0rem 1rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.contact {
+  color: #80b919;
+  display:flex;
+  text-decoration: underline;
+  padding: 0rem 1rem;
+  align-items: flex-start;
+  border-radius: 0.5rem;
+  font-size: 1.75rem;
+}
+
+@media (max-width: 1024px) {
+  .footerdiv {
+    font-size:.5rem;
+  }
+  .contact {
+    font-size: 1rem;
+  }
+}

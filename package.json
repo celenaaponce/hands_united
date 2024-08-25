@@ -1,0 +1,39 @@
+{
+  "name": "foodies",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/codemod": "^15.0.0-canary.63",
+    "@nextui-org/react": "^2.4.2",
+    "@notion-render/bookmark-plugin": "^0.0.2",
+    "@notion-render/client": "^0.0.2",
+    "@notion-render/hljs-plugin": "^0.0.2",
+    "@notionhq/client": "^2.2.15",
+    "@react-stately/collections": "^3.10.7",
+    "@tanstack/react-query": "^5.51.1",
+    "axios": "^1.7.2",
+    "framer-motion": "^11.3.28",
+    "next": "^14.0.3",
+    "notion-client": "^6.16.0",
+    "notion-on-next": "^1.0.20",
+    "openai": "^4.55.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-notion-x": "^6.16.0",
+    "tailwindcss": "^3.4.10"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.6.0",
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3",
+    "typescript": "^5.5.3"
+  }
+}

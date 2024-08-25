@@ -1,0 +1,48 @@
+.audioPlayer {
+  display: flex;
+  align-items: center;
+  width: 10%;
+  margin-bottom: -5rem;
+}
+
+.playPauseButton {
+  cursor: pointer;
+  display: inline-block;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #72b200, #b4e956);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.playPauseButton:hover,
+.cplayPauseButton:active {
+  background: linear-gradient(90deg, #72b200, #b4e956);
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .playPauseButton{
+    padding: .25rem;
+    margin-top: 0;
+
+  }
+  .playPauseButton img {
+    width: 20px;
+    height: 20px;
+  }
+  .audioPlayer {
+    margin-bottom: -3rem;
+    margin-left: -2rem !important;
+  }
+}
+
+/* .playPauseButton img {
+  display: block;
+  width: 100%;
+  height: auto;
+} */

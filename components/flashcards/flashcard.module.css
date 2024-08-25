@@ -1,0 +1,190 @@
+/* .card {
+    display: flex;
+    justify-content: space-between;
+    height:100%;
+    background: linear-gradient(90deg, #0072b2, #56b4e9);
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    color: #282c34;
+    height: 325px;
+    width: 325px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer; */
+/* overflow: hidden; */
+/* transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+    transform-style: preserve-3d;
+    flex-direction: column;
+}
+
+.card:hover{
+    --translate-y: -2px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+    transform-style: preserve-3d;
+}
+
+.card.flip {
+    --rotate-y: 180deg;
+    transform-style: preserve-3d;
+}
+
+.card .front,
+.card .back {
+    position: absolute;
+    padding: 1rem;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.card .back {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    position: absolute;
+    padding: 1rem; */
+/* backface-visibility: hidden; */
+/* }
+
+.flipText {
+    text-align: right;
+    font-size: 1.3rem;
+  }
+
+.headerText {
+    padding: -0.5rem;
+  }
+  
+  .headerText h2 {
+    margin: 0;
+    font-size: 1.7rem;
+    white-space:nowrap;
+    font-family: 'Montserrat', sans-serif;
+  } */
+/* 
+  .headerText .smallFont {
+    font-size: 1.2rem;
+  } */
+
+/* .card h2,
+  .card p {
+    margin: 0;
+  }
+
+  .image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 240px, auto;
+    height: 240px;
+    position: relative;
+  }
+  
+  .card img {
+    object-fit: contain;
+    position: relative;
+  }
+
+  .summary {
+    padding: 1rem 1rem 0 1rem;
+    font-size: 1.5rem;
+  }
+
+  .summary p {
+    font-weight: bolder;
+    font-size: 1.5rem;
+  } */
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #72b200, #b4e956);
+    border-radius: 4px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    color: #282c34;
+    height: 325px;
+    width: 325px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+      translateY(var(--translate-y, 0));
+    transform-style: preserve-3d;
+    position: relative;
+    container-name: card;
+    /* overflow: hidden; */
+  }
+  
+  .card:hover {
+    --translate-y: -2px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card.flip {
+    --rotate-y: 180deg;
+  }
+  
+  .card .front,
+  .card .back {
+    position: absolute;
+    padding: 1rem;
+    backface-visibility: hidden;
+    width: 100%
+  }
+  
+  .card .back {
+    transform: rotateY(180deg);
+  }
+  
+  @container card (min-width: 325px) {
+    .headerText p {
+      text-align: right;
+      font-size: 1.3rem;
+      position: absolute;
+      width: auto;
+    }
+  }
+  
+  .headerText {
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+  
+  @container card (min-width: 325px) {
+    .headerText h2 {
+      margin: 0;
+      font-size: 1.7em;
+      white-space: nowrap;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+  
+  .card h2,
+  .card p {
+    margin: 0;
+  }
+  
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 240px;
+    /* overflow: hidden; */
+  }
+  
+  .image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .summary {
+    padding: 1rem 1rem 0 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .summary p {
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  

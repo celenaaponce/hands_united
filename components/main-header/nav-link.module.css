@@ -1,0 +1,14 @@
+.navLink {
+  list-style: none;
+}
+
+.navLink a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navLink.active > a {
+  font-weight: bold;
+}
+
+
