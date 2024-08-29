@@ -16,7 +16,7 @@ export default function Partners() {
         </div>
         <div className={classes.hero}>
           <p className={classes.para}>
-            Marlene M Nero at <a href="https://ripin.org/">Trilingual Therapy Center LLC</a>
+            Marlene M Nero at <a href="https://trilingualtherapy.com/" target="_blank">Trilingual Therapy Center LLC</a>
           </p>
         </div>
         <div className={classes.imageContainer}>
@@ -29,7 +29,7 @@ export default function Partners() {
         </div>
         <div className={classes.hero}>
           <p className={classes.para}>
-            Gladys Medina at <a href="https://ripin.org/">RIPIN</a>
+            Gladys Medina at <a href="https://ripin.org/" target="_blank">RIPIN</a>
           </p>
         </div>
         <div className={classes.imageContainer}>
@@ -43,7 +43,7 @@ export default function Partners() {
         <div className={classes.hero}>
           <p className={classes.para}>
             Keila Armas Velasquez at{" "}
-            <a href="https://www.ncdhhs.gov/divisions/child-and-family-well-being/whole-child-health-section/genetics-and-newborn-screening/early-hearing-detection-and-intervention-services">
+            <a href="https://www.ncdhhs.gov/divisions/child-and-family-well-being/whole-child-health-section/genetics-and-newborn-screening/early-hearing-detection-and-intervention-services" target="_blank">
               EHDI
             </a>
           </p>
@@ -58,7 +58,7 @@ export default function Partners() {
         </div>
         <div className={classes.hero}>
           <p className={classes.para}>
-            Karen Armas at <a href="https://www.facebook.com/IDLA2008">IDLA</a>
+            Karen Armas at <a href="https://www.facebook.com/IDLA2008" target="_blank">IDLA</a>
           </p>
         </div>
       </header>
