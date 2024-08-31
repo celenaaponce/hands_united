@@ -12,7 +12,7 @@ export default function Ayudar() {
           <h1>
             <Link
               href={
-                "https://www.teacherspayteachers.com/store/spanish-asl-resources"
+                "https://www.teacherspayteachers.com/store/manos-unidas"
               }
             >
               Teachers Pay Teachers
@@ -22,7 +22,7 @@ export default function Ayudar() {
             You can buy our resources at
             <Link
               href={
-                "https://www.teacherspayteachers.com/store/spanish-asl-resources"
+                "https://www.teacherspayteachers.com/store/manos-unidas"
               }
             >
               {" "}
