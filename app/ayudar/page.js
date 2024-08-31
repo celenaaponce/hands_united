@@ -53,7 +53,7 @@ export default function Ayudar() {
           <h1>Donate</h1>
           <p>
             Your donation will help provide services to immigrant families with
-            Deaf and hard of hearing children. Information coming soon!
+            Deaf and hard of hearing children. <a href="https://www.zeffy.com/donation-form/3ab5b5ab-dfc3-4373-a391-311962616835" target="_blank">Click here to donate.</a>
           </p>
         </div>
         <div className={classes.hero}>
