@@ -1,7 +1,9 @@
 "use client";
 import { useState, useRef } from "react";
+import classes from "./page.module.css";
 import { useRouter } from "next/navigation";
 import emailjs from '@emailjs/browser';
+import Image from "next/image";
 export default function Page() {
   const [noName, setNoName] = useState(false);
   const [noLast, setNoLast] = useState(false);
@@ -57,8 +59,8 @@ export default function Page() {
   }
 
   return (
-    <form onSubmit={onSubmit}>
-      <h2>Thanks for your interest in LSM!</h2>
+    <><form onSubmit={onSubmit}>
+      <h2>Thanks for your interest in LSM! 🇲🇽</h2>
       <p>We just need some basic information from you</p>
       <div className="control-row">
         <div className="control">
@@ -138,10 +140,18 @@ export default function Page() {
           Register
         </button>
       </p>
+      <p>After registering we will send you a link to pay the $50 workshop fee.</p>
       {/* Success Message */}
       {success && (
         <p className="success-message">🎉🎉Registration successful! Redirecting...🎉🎉</p>
       )}
     </form>
+    <div className={classes.hero}>
+      <p>Participants will be able to recognize and produce basic Mexican Sign Language (LSM) signs including alphabet, colors, numbers and school related vocabulary.</p>
+    <p>TSID is an Approved RID CMP Sponsor for continuing education activities. This Professional Studies program is offered for 0.3 CEUs at the basic Content Knowledge Level.</p>
+    <p>Hands United promotes an environment of mutual respect free of discrimination based on gender, sexual orientation, race, religion, hearing status, or any other protected class.</p>
+    <p>Any participant in need of accomodation must contact celena.a.ponce@gmail.com no later than October 19, 2024</p>
+    <p>Cancellation and refund available prior to October 19, 2024.</p></div>
+    <Image src="/CEUs/ACET.png" width={200} height={100}></Image><p></p><Image src="/CEUs/RID.png" width={100} height={100}></Image></>
   );
 }
