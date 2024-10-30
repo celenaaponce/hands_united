@@ -4,7 +4,7 @@ h2.section {
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
-    background: linear-gradient(90deg, #0072b2, #56b4e9);
+    background: linear-gradient(90deg, #72b200, #b4e956);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -34,7 +34,7 @@ h2.section {
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.15rem;
     text-transform: uppercase;
-    background: linear-gradient(90deg, #0072b2, #56b4e9);
+    background: linear-gradient(90deg, #72b200, #b4e956);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -47,11 +47,11 @@ h2.section {
   }
   
   .hero a:visited {
-    color: #56b4e9
+    color: #b4e956
   }
   
   .hero a {
-    color: #56b4e9
+    color: #b4e956
   }
   
   /* General image container styling */

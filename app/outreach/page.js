@@ -38,7 +38,7 @@ export default function Outreach() {
           <h1>Families Supported</h1>
           <p>
             Since 2022 we have supported over 100 immigrant families with Deaf
-            and hard of hearing children in 12 states.
+            and hard of hearing children in 19 states.
           </p>
         </div>
         <div className={classes.hero}>
