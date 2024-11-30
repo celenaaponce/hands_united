@@ -32,12 +32,21 @@ export default function Home() {
       </header>
       <main className={classes.main}>
         <section className={classes.section}>
+            <h2>Request Workshops</h2>
+            <p>
+              In partnership with Deaf and CODA instructors, we offer
+              workshops on basic foreign signed langauges presented in ASL.
+              To date, we are offering Mexican Sign Language (LSM) and 
+              Guatemalan Sign Language (LENSEGUA).  To request other workshops
+              please fill out <a href="https://forms.gle/uMKttFSJQkkbacnw7">this form</a>.
+            </p>
+        </section>
+        <section className={classes.section}>
           <h2>Who We Are</h2>
           <p>
             Beginning in 2021 through the Center for Deaf and Hard of Hearing
-            Youth (CDHY) in the state of Deaf and Hard of Hearing Youth (CDHY)
-            in Washington State, we offered American Sign Language in spoken
-            Spanish to 6 families. Since that time, we have grown to over 60
+            Youth (CDHY) in Washington State, we offered American Sign Language in spoken
+            Spanish to 6 families. Since that time, we have grown to over 90
             families across the US. In May 2024, we decided to start our
             non-profit business to offer more services to our families.
           </p>
