@@ -5,11 +5,14 @@ import Link from "next/link";
 export default function Otros() {
   return (
     <>
-      <h2 className={classes.section}>current free services</h2>
+      <h2 className={classes.section}>current free parent services</h2>
       <p className={classes.section}>
         All of our services are exclusive to parents who participate in our ASL
         classes or are part of one of our partner organizations. To enroll in
-        our classes <Link href={"https://manosunidasor.org/ASL/Clases/Signup"}>go to our Spanish page.</Link>
+        our classes{" "}
+        <Link href={"https://manosunidasor.org/ASL/Clases/Signup"}>
+          go to our Spanish page.
+        </Link>
       </p>
       <header className={classes.header}>
         {/* Row 1 */}
@@ -23,7 +26,7 @@ export default function Otros() {
         <div className={classes.imageContainer}>
           <Image
             src="/others/talleres.png"
-            alt="talleres"
+            alt="workshops"
             width={200}
             height={200}
           />
@@ -33,7 +36,7 @@ export default function Otros() {
         <div className={classes.imageContainer}>
           <Image
             src="/others/language.png"
-            alt="apoyo de idioma"
+            alt="language support"
             width={200}
             height={200}
             style={{ marginRight: "5rem" }}
@@ -56,14 +59,14 @@ export default function Otros() {
         <div className={classes.imageContainer}>
           <Image
             src="/others/support.png"
-            alt="recursos"
+            alt="resources"
             width={200}
             height={200}
           />
         </div>
       </header>
 
-      <h2 className={classes.section}>Future Services</h2>
+      <h2 className={classes.section}>Future Parent Services</h2>
       <header className={classes.header}>
         {/* Row 3 */}
         <div className={classes.hero}>
@@ -76,7 +79,7 @@ export default function Otros() {
         <div className={classes.imageContainer}>
           <Image
             src="/others/drive.png"
-            alt="manejar"
+            alt="drive"
             width={300}
             height={300}
           />
@@ -86,7 +89,7 @@ export default function Otros() {
         <div className={classes.imageContainer}>
           <Image
             src="/others/puberty2.png"
-            alt="pubertad"
+            alt="puberty"
             width={200}
             height={200}
             style={{ marginRight: "5rem" }}
@@ -125,6 +128,73 @@ export default function Otros() {
           <p>
             Supporting families in their immigration process. Helping families
             find lawyers and understand the process of their case.
+          </p>
+        </div>
+      </header>
+
+      <h2 className={classes.section}>Professional Organization Services</h2>
+      <header className={classes.header}>
+        {/* Row 3 */}
+        <div className={classes.hero}>
+          <h1>Professional Services Workshops</h1>
+          <p>
+            Free workshops for professional development, including language
+            practice (English, Spanish, ASL), and specialty topics of STEM and
+            tech resources.
+          </p>
+        </div>
+        <div className={classes.imageContainer}>
+          <Image
+            src="/others/pd.png"
+            alt="professional development"
+            width={300}
+            height={300}
+          />
+        </div>
+
+        {/* Row 4 */}
+        <div className={classes.imageContainer}>
+          <Image
+            src="/others/talleres.png"
+            alt="workshops"
+            width={200}
+            height={200}
+            style={{ marginRight: "5rem" }}
+          />
+        </div>
+        <div className={classes.hero}>
+          <h1>Professional Development</h1>
+          <p>
+            Custom workshops on variety of topics: how to work with immigrants,
+            tech support and best practices, and language deprivation approaches
+          </p>
+        </div>
+
+        {/* Row 5 */}
+        <div className={classes.hero}>
+          <h1>Culturally Affirmative Practices</h1>
+          <p>
+            Experience in: Latino/Spanish speaking culture, Somali/Muslim
+            culture, and new arrival immigrants
+          </p>
+        </div>
+        <div className={classes.imageContainer}>
+          <Image src="/others/multicu.png" alt="multicultural" width={200} height={200} />
+        </div>
+        <div className={classes.imageContainer}>
+          <Image
+            src="/others/talleres.png"
+            alt="workshops"
+            width={300}
+            height={300}
+            style={{ marginRight: "5rem" }}
+          />
+        </div>
+        <div className={classes.hero}>
+          <h1>Outreach Consultation</h1>
+          <p>
+            Support providing outreach to non-English speaking families, support
+            organizing and running programming for non-english speaking families
           </p>
         </div>
       </header>

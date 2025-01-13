@@ -54,7 +54,7 @@ export default function Home() {
           <p>
             Our board members have over 50 years of experience working with Deaf
             children and immigrant families. We also partner with organizations
-            in 10 states.
+            in 10 states. <Link href="/outreach/us">Click here</Link> for more information about our board.
           </p>
         </section>
 

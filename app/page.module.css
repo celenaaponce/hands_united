@@ -80,6 +80,13 @@
     text-align: center;
   }
 
+  .section a{
+    color: #80b919
+  }
+  .section a:visited {
+    color: #80b919
+  }
+
   @media (max-width: 1024px) {
     .slideshow img{
       width: 100px;
