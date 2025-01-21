@@ -4,7 +4,7 @@ import classes from "./page.module.css";
 export default function Board() {
   return (
     <>
-      <h2 className={classes.section}>Hand's United Board</h2>
+      <h2 className={classes.section}>Hands United Board</h2>
       <header className={classes.header}>
         <div className={classes.imageContainer}>
           <Image
@@ -54,7 +54,7 @@ export default function Board() {
           <Image
             src="/partners/Dorinda.jpg"
             alt="Dorinda Davidson"
-            width={300}
+            width={300   }
             height={313}
           />
         </div>
