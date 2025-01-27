@@ -10,7 +10,7 @@ export default function Otros() {
         All of our services are exclusive to parents who participate in our ASL
         classes or are part of one of our partner organizations. To enroll in
         our classes{" "}
-        <Link href={"https://manosunidasor.org/ASL/Clases/Signup"}>
+        <Link href={"https://manosunidasor.org/ASL/Clases"}>
           go to our Spanish page.
         </Link>
       </p>
