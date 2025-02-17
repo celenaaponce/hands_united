@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "./icon.png";
 import classes from "./page.module.css";
+import AidaFormEmbed from "components/aidaform";
 
 export default function Home() {
   return (
@@ -78,7 +79,9 @@ export default function Home() {
             among diverse populations to support increased independence and self
             determination for diverse Deaf populations.
           </p>
+          <AidaFormEmbed/>
         </section>
+        
       </main>
     </>
   );
