@@ -3,6 +3,8 @@ import Image from "next/image";
 import logo from "./icon.png";
 import classes from "./page.module.css";
 import AidaFormEmbed from "components/aidaform";
+import npi from "public/classflyers/NPIASL.png";
+import burmese from "public/classflyers/ASL classes in Burmese.png";
 
 export default function Home() {
   return (
@@ -33,29 +35,49 @@ export default function Home() {
       </header>
       <main className={classes.main}>
         <section className={classes.section}>
-            <h2>Request Workshops</h2>
-            <p>
-              In partnership with Deaf and CODA instructors, we offer
-              workshops on basic foreign signed langauges presented in ASL.
-              To date, we are offering Mexican Sign Language (LSM) and 
-              Guatemalan Sign Language (LENSEGUA).  To request other workshops
-              please fill out <a href="https://forms.gle/uMKttFSJQkkbacnw7">this form</a>.
-            </p>
+          <h2>New Communities!</h2>
+          <p>
+            We are excited to announce our ASL classes for 2 new communities!
+          </p>
+          <p>
+            We are offering ASL classes for the Northern Pacific Islander
+            community who use ASL as their signed language. Here is the flyer:
+            <Image src={npi} ></Image>
+          </p>
+          <p>
+            We are also offering ASL classes in Burmese. Here is the flyer:
+            <Image src={burmese}></Image>
+          </p>
+          <p>
+            We hope these two classes can further support non-English speaking
+            parents to learn ASL and communicate with their DHH children.
+          </p>
+        </section>
+        <section className={classes.section}>
+          <h2>Request Workshops</h2>
+          <p>
+            In partnership with Deaf and CODA instructors, we offer workshops on
+            basic foreign signed langauges presented in ASL. To date, we are
+            offering Mexican Sign Language (LSM) and Guatemalan Sign Language
+            (LENSEGUA). To request other workshops please fill out{" "}
+            <a href="https://forms.gle/uMKttFSJQkkbacnw7">this form</a>.
+          </p>
         </section>
         <section className={classes.section}>
           <h2>Who We Are</h2>
           <p>
             Beginning in 2021 through the Center for Deaf and Hard of Hearing
-            Youth (CDHY) in Washington State, we offered American Sign Language in spoken
-            Spanish to 6 families. Since that time, we have grown to over 90
-            families across the US. In May 2024, we decided to start our
+            Youth (CDHY) in Washington State, we offered American Sign Language
+            in spoken Spanish to 6 families. Since that time, we have grown to
+            over 180 families across the US. In May 2024, we decided to start our
             non-profit business to offer more services to our families.
           </p>
 
           <p>
             Our board members have over 50 years of experience working with Deaf
             children and immigrant families. We also partner with organizations
-            in 10 states. <Link href="/outreach/us">Click here</Link> for more information about our board.
+            in 10 states. <Link href="/outreach/us">Click here</Link> for more
+            information about our board.
           </p>
         </section>
 
@@ -79,9 +101,8 @@ export default function Home() {
             among diverse populations to support increased independence and self
             determination for diverse Deaf populations.
           </p>
-          <AidaFormEmbed/>
+          <AidaFormEmbed />
         </section>
-        
       </main>
     </>
   );
