@@ -11,9 +11,9 @@ export default function Outreach() {
         <div className={classes.hero}>
           <h1>Partner Organizations</h1>
           <p>
-            We have connection with organizations in 10 different states,
+            We have connection with organizations in 19 different states,
             allowing us to connect families with services in their local area.  
-              <Link href="/outreach/partners">Click here</Link> to connect with our partners.
+              <Link href="/outreach/partners"> Click here</Link> to connect with our partners.
           </p>
         </div>
         <div className={classes.imageContainer}>
