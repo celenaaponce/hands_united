@@ -69,7 +69,7 @@ export default function Home() {
             Beginning in 2021 through the Center for Deaf and Hard of Hearing
             Youth (CDHY) in Washington State, we offered American Sign Language
             in spoken Spanish to 6 families. Since that time, we have grown to
-            over 180 families across the US. In May 2024, we decided to start our
+            over 230 families across the US. In May 2024, we decided to start our
             non-profit business to offer more services to our families.
           </p>
 

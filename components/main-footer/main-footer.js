@@ -13,6 +13,12 @@ class Footer extends Component {
           ✉️ Contact
           </Link>
           <p className={classes.copyright}>Copyright ©️ {current_year}, Hands United is a 501(c)3 organization</p>
+          <Link href="https://www.facebook.com/handsunitedor" className={classes.contact}>
+           Facebook
+          </Link>
+          <Link href="https://www.instagram.com/handsunitedor/" className={classes.contact}>
+           Instagram
+          </Link>
         </div>
       </div>
     )

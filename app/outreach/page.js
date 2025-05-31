@@ -37,15 +37,15 @@ export default function Outreach() {
         <div className={classes.hero}>
           <h1>Families Supported</h1>
           <p>
-            Since 2022 we have supported over 150 immigrant families with Deaf
-            and hard of hearing children in 22 states.
+            Since 2022 we have supported over 230 immigrant families with Deaf
+            and hard of hearing children in 27 states.
           </p>
         </div>
         <div className={classes.hero}>
           <h1>YouTube Channel</h1>
           <p>
             Our <a href="https://www.youtube.com/@manosunidasor" target="_blank">YouTube channel</a> has had over 5,000 views since first launching in 2022.  On our channel
-            we offer over 16 hours of prerecorded classes on a variety of topics.  We also have videos
+            we offer over 27 hours of prerecorded classes on a variety of topics.  We also have videos
             on tech how-tos such as how to cast your phone to your TV, how to put parental controls on
             technology and how to enter Google Classroom.
           </p>
