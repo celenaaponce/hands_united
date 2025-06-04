@@ -3,7 +3,8 @@ import Image from "next/image";
 import logo from "./icon.png";
 import classes from "./page.module.css";
 import AidaFormEmbed from "components/aidaform";
-import npi from "public/classflyers/NPIASL.png";
+import Tig from "public/classflyers/TigEng.png";
+import TigT from "public/classflyers/TigTig.png";
 import burmese from "public/classflyers/ASL classes in Burmese.png";
 
 export default function Home() {
@@ -40,13 +41,16 @@ export default function Home() {
             We are excited to announce our ASL classes for 2 new communities!
           </p>
           <p>
-            We are offering ASL classes for the Northern Pacific Islander
-            community who use ASL as their signed language. Here is the flyer:
-            <Image src={npi} ></Image>
+            We are offering ASL classes in Tigrinya starting June 18.
+            <Image src={Tig} width={500}
+      height={500}></Image>
+            <Image src={TigT} width={500}
+      height={500}></Image>
           </p>
           <p>
             We are also offering ASL classes in Burmese. Here is the flyer:
-            <Image src={burmese}></Image>
+            <Image src={burmese} width={500}
+      height={500}></Image>
           </p>
           <p>
             We hope these two classes can further support non-English speaking
