@@ -3,9 +3,11 @@ import Image from "next/image";
 import logo from "./icon.png";
 import classes from "./page.module.css";
 import AidaFormEmbed from "components/aidaform";
-import Tig from "public/classflyers/TigEng.png";
-import TigT from "public/classflyers/TigTig.png";
-import burmese from "public/classflyers/ASL classes in Burmese.png";
+import TPT from "public/images/tpt.png";
+import Dict from "public/images/dict.png";
+import ICE from "public/images/ICEcomm.png";
+import iphone from "public/images/iphone.png";
+import android from "public/images/android.png";
 
 export default function Home() {
   return (
@@ -32,29 +34,34 @@ export default function Home() {
             <a href="https://manosunidasor.org/">Ver en español</a>
             <Link href="/otros">Our Services</Link>
           </div>
+          
         </div>
       </header>
       <main className={classes.main}>
         <section className={classes.section}>
-          <h2>New Communities!</h2>
+          <h2>Download our app!</h2>
+          <div><Link href={'https://apps.apple.com/us/app/hands-united-oregon/id6747975975'}><Image src={iphone} height={50}
+      ></Image>Download for iPhone</Link><p>   </p><Link href={'https://play.google.com/store/apps/details?id=com.createcommunity.handsunitedoregon&pcampaignid=web_share'}><Image src={android} height={75}
+      ></Image>Download for Android</Link></div>
+          <h2>Resources Galore!</h2>
           <p>
-            We are excited to announce our ASL classes for 2 new communities!
+            We are excited to share our resources with you!
           </p>
           <p>
-            We are offering ASL classes in Tigrinya starting June 18.
-            <Image src={Tig} width={500}
-      height={500}></Image>
-            <Image src={TigT} width={500}
-      height={500}></Image>
+            We have multilingual dictionaries (ASL, English, Spanish, LSM) available on Teachers Pay Teachers. (Click image to go to TPT)
+            <Link href={'https://www.teacherspayteachers.com/store/manos-unidas'}>
+            <Image src={TPT} width={900}
+      height={500}></Image></Link>
           </p>
           <p>
-            We are also offering ASL classes in Burmese. Here is the flyer:
-            <Image src={burmese} width={500}
-      height={500}></Image>
+            We also have our dictionary terms available online in our Spanish website. (Click image to go to dictionary.)
+            <Link href={'https://manosunidasor.org/ASL/Diccionario'}><Image src={Dict} width={850}
+      height={500}></Image></Link>
           </p>
           <p>
-            We hope these two classes can further support non-English speaking
-            parents to learn ASL and communicate with their DHH children.
+            We have also made communication boards for use in ICE/immigration situations.  Please download them and share them as needed.
+            <Link href={'https://drive.google.com/drive/folders/1OTmVwvIq9h2ntIJuCkol6lKGhCsHSPv9?usp=drive_link'}><Image src={ICE} width={800}
+      height={500}></Image></Link>
           </p>
         </section>
         <section className={classes.section}>
