@@ -87,6 +87,14 @@
 .section a:visited {
   color: #80b919;
 }
+.responsiveImageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Limit the max size on large screens */
+  height: auto;
+  aspect-ratio: 16 / 9; /* Or adjust to the image’s original ratio */
+  margin: 0 auto 2rem auto; /* Center and give bottom margin */
+}
 
 @media (max-width: 1024px) {
   .slideshow img {

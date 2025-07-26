@@ -34,34 +34,59 @@ export default function Home() {
             <a href="https://manosunidasor.org/">Ver en español</a>
             <Link href="/otros">Our Services</Link>
           </div>
-          
         </div>
       </header>
       <main className={classes.main}>
         <section className={classes.section}>
           <h2>Download our app!</h2>
-          <div><Link href={'https://apps.apple.com/us/app/hands-united-oregon/id6747975975'}><Image src={iphone} height={50}
-      ></Image>Download for iPhone</Link><p>   </p><Link href={'https://play.google.com/store/apps/details?id=com.createcommunity.handsunitedoregon&pcampaignid=web_share'}><Image src={android} height={75}
-      ></Image>Download for Android</Link></div>
+          <div>
+            <Link
+              href={
+                "https://apps.apple.com/us/app/hands-united-oregon/id6747975975"
+              }
+            >
+              <Image src={iphone} height={50}></Image>Download for iPhone
+            </Link>
+            <p> </p>
+            <Link
+              href={
+                "https://play.google.com/store/apps/details?id=com.createcommunity.handsunitedoregon&pcampaignid=web_share"
+              }
+            >
+              <Image src={android} height={75}></Image>Download for Android
+            </Link>
+          </div>
           <h2>Resources Galore!</h2>
+          <p>We are excited to share our resources with you!</p>
           <p>
-            We are excited to share our resources with you!
+            We have multilingual dictionaries (ASL, English, Spanish, LSM)
+            available on Teachers Pay Teachers. (Click image to go to TPT)
+            <Link
+              href={"https://www.teacherspayteachers.com/store/manos-unidas"}
+            >
+              <div className={classes.responsiveImageWrapper}>
+              <Image src={TPT} width={900} height={500}></Image></div>
+            </Link>
           </p>
           <p>
-            We have multilingual dictionaries (ASL, English, Spanish, LSM) available on Teachers Pay Teachers. (Click image to go to TPT)
-            <Link href={'https://www.teacherspayteachers.com/store/manos-unidas'}>
-            <Image src={TPT} width={900}
-      height={500}></Image></Link>
+            We also have our dictionary terms available online in our Spanish
+            website. (Click image to go to dictionary.)
+            <Link href={"https://manosunidasor.org/ASL/Diccionario"}>
+            <div className={classes.responsiveImageWrapper}>
+              <Image src={Dict} width={850} height={500}></Image></div>
+            </Link>
           </p>
           <p>
-            We also have our dictionary terms available online in our Spanish website. (Click image to go to dictionary.)
-            <Link href={'https://manosunidasor.org/ASL/Diccionario'}><Image src={Dict} width={850}
-      height={500}></Image></Link>
-          </p>
-          <p>
-            We have also made communication boards for use in ICE/immigration situations.  Please download them and share them as needed.
-            <Link href={'https://drive.google.com/drive/folders/1OTmVwvIq9h2ntIJuCkol6lKGhCsHSPv9?usp=drive_link'}><Image src={ICE} width={800}
-      height={500}></Image></Link>
+            We have also made communication boards for use in ICE/immigration
+            situations. Please download them and share them as needed.
+            <Link
+              href={
+                "https://drive.google.com/drive/folders/1OTmVwvIq9h2ntIJuCkol6lKGhCsHSPv9?usp=drive_link"
+              }
+            >
+              <div className={classes.responsiveImageWrapper}>
+              <Image src={ICE} width={800} height={500}></Image></div>
+            </Link>
           </p>
         </section>
         <section className={classes.section}>
@@ -80,8 +105,8 @@ export default function Home() {
             Beginning in 2021 through the Center for Deaf and Hard of Hearing
             Youth (CDHY) in Washington State, we offered American Sign Language
             in spoken Spanish to 6 families. Since that time, we have grown to
-            over 230 families across the US. In May 2024, we decided to start our
-            non-profit business to offer more services to our families.
+            over 230 families across the US. In May 2024, we decided to start
+            our non-profit business to offer more services to our families.
           </p>
 
           <p>
