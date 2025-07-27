@@ -8,6 +8,7 @@ import Dict from "public/images/dict.png";
 import ICE from "public/images/ICEcomm.png";
 import iphone from "public/images/iphone.png";
 import android from "public/images/android.png";
+import KYR from "public/immigration/kyr.jpg"
 
 export default function Home() {
   return (
@@ -56,6 +57,11 @@ export default function Home() {
               <Image src={android} height={75}></Image>Download for Android
             </Link>
           </div>
+          <h2>Know Your Rights card in Sign Languages!</h2>
+          <p>Here is our Know Your Rights card in multiple sign languages.  This page will continue to grow as videos come in.</p>
+          <Link href={"/kyr"}>
+          <div className={classes.responsiveImageWrapper}><Image src={KYR} width={900}></Image></div></Link>
+          <p>Click <a href={"https://drive.google.com/file/d/16daxkMvOyyFnlocwfj4B471exwoMYYn1/view?usp=sharing"} target="_blank">here</a> to download the printable version.</p>
           <h2>Resources Galore!</h2>
           <p>We are excited to share our resources with you!</p>
           <p>
