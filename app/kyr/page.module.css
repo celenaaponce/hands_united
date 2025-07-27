@@ -1,0 +1,139 @@
+.headerImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+h2.section  {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #0072b2, #56b4e9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    flex-wrap: wrap; /* optional: stack on small screens */
+  }
+
+.sub p {
+  color: #ddd6cb;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.header {
+ 
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 75rem;
+    margin: 3rem auto;
+  }
+  
+  .hero,
+  .heroRight,
+  .imageContainer {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  
+  .hero h1,
+  .heroRight h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #0072b2, #56b4e9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero p,
+  .heroRight p {
+    margin-bottom: 5rem;
+    color: #ddd6cb;
+    text-align: left;
+  }
+  
+  .hero a:visited {
+    color: #56b4e9
+  }
+  .hero a{
+    color: #56b4e9
+  }
+  /* General image container styling */
+  .imageContainer {
+ 
+    align-items: center;
+    padding: 1rem;
+    margin-top: -3rem;
+  }
+
+  .imageContainer img{
+    width: 40%;
+    height: auto;
+  }
+  .imageContainer img .Large{
+    width: 60%;
+    display: flex;
+    height: auto;
+  }
+  /* Align images to the left for odd rows (1st, 3rd, etc.) */
+  .header .imageContainer:nth-of-type(odd) {
+    justify-content: flex-end;
+
+  }
+  
+  .header .imageContainer:nth-of-type(even) {
+    justify-content: flex-start;
+  }
+
+  @media (max-width: 1024px) {
+      .hideOnSmall {
+    display: none;
+  }
+    .hero,
+    .heroRight,
+    .imageContainer {
+      width: 50%; /* Full width on small screens */
+      /* Optionally adjust font-size and padding for better fit */
+    }
+    .header {
+      max-width: 80%;
+    }
+    .hero h1,
+    .heroRight h1 {
+      font-size: 1.1rem; /* Adjust font size for better readability */
+    }
+  
+    .hero p,
+    .heroRight p {
+      font-size: 0.875rem; /* Reduce font size */
+      margin-bottom: 2rem; /* Adjust margin to fit better */
+    }
+  
+    h2.section {
+      font-size: 1.5rem; /* Slightly smaller for smaller screens */
+    }
+
+    p.section {
+      font-size: 1rem;
+    }
+  
+    .imageContainer img{
+      width: 100%;
+      height: auto;
+      margin-right: 1rem !important;
+    }
+  }

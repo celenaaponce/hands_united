@@ -1,3 +1,4 @@
+/* Default (desktop-first) */
 .header {
   display: flex;
   justify-content: space-between;
@@ -47,7 +48,7 @@
 
 .customButton {
   display: inline-flex;
-  align-items: center; 
+  align-items: center;
   border: transparent;
   font-family: 'Montserrat', sans-serif;
   background-color: transparent;
@@ -65,90 +66,128 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
   padding-right: 2rem;
-  
 }
 
 .dditem a:visited {
-  color: #72b200
+  color: #72b200;
 }
 
 .dditem {
   list-style: none;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
 }
 
 .chevronIcon {
-  fill: currentColor; 
+  fill: currentColor;
   width: 1rem;
   height: 1rem;
 }
 
-
+/* --- Tablets (768px–1024px) --- */
 @media (max-width: 1024px) {
-
   .header {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 1rem 0.5rem; 
+    padding: 1rem 0.5rem;
   }
 
   .logo {
-    margin-top: -1rem; 
-    display: flex; 
-    align-items: center; 
-    text-align: center; 
+    margin-top: -1rem;
+    text-align: center;
+    font-size: 1.5rem;
   }
 
   .logo img {
-    width: 300px;
+    width: 250px;
     height: auto;
   }
 
-  .nav ul {
-    display: flex; 
-    flex-direction: column; 
-    font-size: 0.875rem; 
-    align-items: center; 
-    justify-content: center;
-    padding: 0; 
-    margin: 0; 
-    
-  }
   .nav {
     margin-top: -1rem;
     margin-bottom: 1rem;
-    
-  }
-  
-
-  .link {
-    padding: 0.5rem;
-    font-size: 0.875rem; 
-    cursor: pointer;
   }
 
-  .customButton {
-    font-size: 0.875rem;
-    cursor: pointer;
+  .nav ul {
+    flex-direction: column;
+    font-size: 1.25rem;
+    align-items: center;
+    justify-content: center;
   }
 
-  .dropdown {
-    font-size: 0.875rem; 
-  }
-
-  .customWidth {
-    width: 250px; 
-  }
-
+  .link,
+  .customButton,
+  .dropdown,
   .dditem {
-    font-size: 0.875rem; 
+    font-size: 1.125rem;
   }
 
   .chevronIcon {
-    width: 0.75rem; 
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+}
+
+/* --- Mobile (480px–767px) --- */
+@media (max-width: 767px) {
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  .nav ul {
+    font-size: 1rem;
+  }
+
+  .link,
+  .customButton,
+  .dropdown,
+  .dditem {
+    font-size: 1rem;
+  }
+
+  .chevronIcon {
+    width: 0.75rem;
     height: 0.75rem;
+  }
+
+  .customWidth {
+    width: 225px;
+  }
+}
+
+/* --- Small Phones (up to 479px) --- */
+@media (max-width: 479px) {
+  .logo {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .nav ul {
+    font-size: 0.875rem;
+  }
+
+  .link,
+  .customButton,
+  .dropdown,
+  .dditem {
+    font-size: 0.875rem;
+    padding: 0.25rem;
+  }
+
+  .chevronIcon {
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+
+  .customWidth {
+    width: 200px;
   }
 }
