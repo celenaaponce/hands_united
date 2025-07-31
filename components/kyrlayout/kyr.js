@@ -6,7 +6,7 @@ const KYR = ({
   title,
   text,
   flag,
-  imageAlt,
+  flagAlt,
   reverse,
   youtubeId,
   youtubeId2,
@@ -19,19 +19,20 @@ const KYR = ({
             <Image
               className={classes.large}
               src={flag}
-              alt={imageAlt}
+              alt={flagAlt}
               width={300}
               height={300}
               style={{ marginLeft: "5rem" }}
             />
           </div>
         )}
+        <span className={classes.visuallyHidden}>{flagAlt}</span>
         {youtubeId2 != "" && (
           <div className={classes.imageContainer}>
             <Image
               className={classes.large}
               src={flag}
-              alt={imageAlt}
+              alt={flagAlt}
               width={300}
               height={300}
               style={{ marginLeft: "5rem" }}
@@ -39,10 +40,12 @@ const KYR = ({
           </div>
         )}
       </div>
-
+      <span className={classes.visuallyHidden}>{flagAlt}</span>
       <div className={`${classes.row}`}>
         {youtubeId != "" && (
-          <div className={`${classes.imageContainer} ${classes.forceTwoColumns}`} >
+          <div
+            className={`${classes.imageContainer} ${classes.forceTwoColumns}`}
+          >
             <iframe
               src={`https://www.youtube.com/embed/${youtubeId}`}
               title="YouTube video player"
@@ -54,7 +57,9 @@ const KYR = ({
           </div>
         )}
         {youtubeId2 != "" && (
-          <div className={`${classes.imageContainer} ${classes.forceTwoColumns}`} >
+          <div
+            className={`${classes.imageContainer} ${classes.forceTwoColumns}`}
+          >
             <iframe
               src={`https://www.youtube.com/embed/${youtubeId2}`}
               title="YouTube video player"

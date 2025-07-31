@@ -58,7 +58,7 @@ export default function Home() {
             </Link>
           </div>
           <h2>Know Your Rights card in Sign Languages!</h2>
-          <p>Here is our Know Your Rights card in multiple sign languages.  This page will continue to grow as videos come in.</p>
+          <p>Here is our Know Your Rights card in multiple sign languages (Click image to go to the page).  This page will continue to grow as videos come in.</p>
           <Link href={"/kyr"}>
           <div className={classes.responsiveImageWrapper}><Image src={KYR} width={900}></Image></div></Link>
           <p>Click <a href={"https://drive.google.com/file/d/16daxkMvOyyFnlocwfj4B471exwoMYYn1/view?usp=sharing"} target="_blank">here</a> to download the printable version.</p>
