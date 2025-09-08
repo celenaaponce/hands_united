@@ -6,6 +6,8 @@ import AidaFormEmbed from "components/aidaform";
 import TPT from "public/images/tpt.png";
 import Dict from "public/images/dict.png";
 import ICE from "public/images/ICEcomm.png";
+import HC from "public/images/hc.png";
+import Esp from "public/images/octclass.png";
 import iphone from "public/images/iphone.png";
 import android from "public/images/android.png";
 import KYR from "public/immigration/kyr.jpg"
@@ -93,6 +95,16 @@ export default function Home() {
               <div className={classes.responsiveImageWrapper}>
               <Image src={ICE} width={800} height={500}></Image></div>
             </Link>
+          </p>
+          <h2>Upcoming classes</h2>
+                    <p>
+            We are excited to be soon offering ASL classes in spoken Spanish as well as in spoken Haitian Creole.
+
+              <div className={classes.responsiveImageWrapper}>
+              <Image src={HC} width={500} height={500}></Image>
+              <h2></h2>
+              <Image src={Esp} width={500} height={500}></Image></div>
+            
           </p>
         </section>
         <section className={classes.section}>
