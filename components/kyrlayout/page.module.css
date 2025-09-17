@@ -41,7 +41,16 @@
 }
 
 /* Ensure iframe and img are styled the same */
-.imageContainer img,
+.imageContainer img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .imageContainer iframe {
   width: 100%;
   max-width: 300px;

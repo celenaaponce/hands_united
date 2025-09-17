@@ -11,6 +11,12 @@
     "youtubeId2": "eQA8X4I7SSM",
     "youtubeId": "UdBjaITrbhU"
   },
+      {
+    "flag": "/immigration/France.png",
+    "flagAlt": "Flag de Francia",
+    "youtubeId2": "5OMc1yet7kE",
+    "youtubeId": "u29sDYftct8"
+  },
     {
     "flag": "/immigration/Guatemala.png",
     "flagAlt": "Flag of Guatemala",
@@ -28,6 +34,18 @@
     "flagAlt": "Flag of Korea",
     "youtubeId": "",
     "youtubeId2": "HUvATTXFZ3U"
+  },
+    {
+    "flag": "/immigration/Namibia.png",
+    "flagAlt": "Flag of Namibia",
+    "youtubeId": "K-gXSooxA7c",
+    "youtubeId2": "_XMi1XwGCfE"
+  },
+        {
+    "flag": "/immigration/Nepal.png",
+    "flagAlt": "Flag of Nepal",
+    "youtubeId": "NcTIEZzfv9o",
+    "youtubeId2": "No4_sRYEU3k"
   },
     {
     "flag": "/immigration/PR.png",
