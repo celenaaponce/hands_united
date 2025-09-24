@@ -11,6 +11,14 @@ import Esp from "public/images/octclass.png";
 import iphone from "public/images/iphone.png";
 import android from "public/images/android.png";
 import KYR from "public/immigration/kyr.jpg"
+import AI from "public/classflyers/AI hacks.png";
+import IEPen from "public/classflyers/eng.png";
+import IEPes from "public/classflyers/spa.png";
+import IEPbest from "public/classflyers/EnglishBestPractices.png";
+import IEPbestA from "public/classflyers/ASLBestPractices.png";
+import IS from "public/classflyers/IS.png";
+import LSC from "public/classflyers/LSC.png";
+import Muslim from "public/classflyers/Muslimworkshop.png"
 
 export default function Home() {
   return (
@@ -104,6 +112,28 @@ export default function Home() {
               <Image src={HC} width={500} height={500}></Image>
               <h2></h2>
               <Image src={Esp} width={500} height={500}></Image></div>
+            
+          </p>
+                    <h2>Upcoming workshops</h2>
+                    <p>
+            We are excited to be soon offering several workshops soon.  These include AI tips for DHH to interact with the hearing community, how to work with the Muslim community, IEP interpreting workshops, IEP best practices workshops, Colombian Sign Language and International Sign Language!
+
+              <div className={classes.responsiveImageWrapper}>
+              <Image src={AI} width={500}></Image>
+              <h2></h2>
+              <Image src={IEPen} width={500}></Image>
+              <h2></h2>
+              <Image src={IEPes} width={500}></Image>
+              <h2></h2>
+              <Image src={Muslim} width={500}></Image>
+              <h2></h2>
+              <Image src={IEPbestA} width={500}></Image>
+              <h2></h2>
+              <Image src={IEPbest} width={500}></Image>
+              <h2></h2>
+              <Image src={IS} width={500}></Image>
+              <h2></h2>
+              <Image src={LSC} width={500}></Image></div>
             
           </p>
         </section>
