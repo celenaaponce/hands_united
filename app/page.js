@@ -108,25 +108,28 @@ export default function Home() {
               <Image src={ICE} width={800} height={500} alt="ICE communication boards" />
             </div>
           </Link>
-
-          <h2>Upcoming Classes</h2>
-          <p>
-            We are excited to be soon offering ASL classes in spoken Spanish as
-            well as in spoken Haitian Creole.
-          </p>
+          <div className={classes.responsiveImageWrapper}>
+            <h2>Upcoming Classes</h2>
+            <p>
+              We are excited to be soon offering ASL classes in spoken Spanish as
+              well as in spoken Haitian Creole.
+            </p>
+          </div>
           <div className={classes.responsiveImageWrapper}>
             <Image src={HC} width={500} height={500} alt="Haitian Creole class flyer" />
             <Image src={Esp} width={500} height={500} alt="Spanish class flyer" />
           </div>
-
+          <div className={classes.responsiveImageWrapper}>
           <h2>Upcoming Workshops</h2>
-          <p>
-            We are excited to be soon offering several workshops soon. These
-            include AI tips for DHH to interact with the hearing community, how
-            to work with the Muslim community, IEP interpreting workshops, IEP
-            best practices workshops, Colombian Sign Language and International
-            Sign Language!
-          </p>
+            <p>
+              We are excited to be soon offering several workshops soon. These
+              include AI tips for DHH to interact with the hearing community, how
+              to work with the Muslim community, IEP interpreting workshops, IEP
+              best practices workshops, Colombian Sign Language and International
+              Sign Language!
+            </p>
+          </div>
+
           <div className={classes.responsiveImageWrapper}>
             <Image src={AI} width={500} height={500} alt="AI tips flyer" />
             <Image src={IEPen} width={500} height={500} alt="IEP English flyer" />
