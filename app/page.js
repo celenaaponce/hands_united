@@ -131,10 +131,6 @@ export default function Home() {
           </div>
 
           <div className={classes.responsiveImageWrapper}>
-            <Image src={AI} width={500} height={500} alt="AI tips flyer" />
-            <Image src={IEPen} width={500} height={500} alt="IEP English flyer" />
-            <Image src={IEPes} width={500} height={500} alt="IEP Spanish flyer" />
-            <Image src={Muslim} width={500} height={500} alt="Muslim workshop flyer" />
             <Image src={IEPbestA} width={500} height={500} alt="ASL Best Practices flyer" />
             <Image src={IEPbest} width={500} height={500} alt="English Best Practices flyer" />
             <Image src={IS} width={500} height={500} alt="International Sign flyer" />
