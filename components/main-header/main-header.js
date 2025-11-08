@@ -40,24 +40,34 @@ export default function MainHeader() {
   };
   const items = [
     {
-      key: "ASL",
-      label: "ASL",
-      href: "/ASL",
+      key: "Tig",
+      label: "Tigrinya & Amharic  🇪🇹 🇪🇷",
+      href: "/ASL/TigrinyaAmharic",
     },
     {
-      key: "Clases",
-      label: "Clases",
-      href: "/ASL/Clases",
+      key: "Burm",
+      label: "Burmese 🇲🇲",
+      href: "/ASL/Burmese",
     },
     {
-      key: "Diccionario",
-      label: "Diccionario",
-      href: "/ASL/Diccionario",
+      key: "Haitian",
+      label: "Haitian Creole 🇭🇹",
+      href: "/ASL/Haitian",
+    },
+        {
+      key: "Spanish",
+      label: "Spanish 🇪🇨🇨🇱🇨🇴🇦🇷🇲🇽🇵🇷🇩🇴🇨🇺🇵🇪🇺🇾🇵🇾🇵🇦🇨🇷🇬🇹🇳🇮🇭🇳🇸🇻🇻🇪",
+      href: "https://manosunidasor.org/",
     },
     {
-      key: "Libros",
-      label: "Libros",
-      href: "/ASL/Cuentos",
+      key: "Russian",
+      label: "Russian 🇷🇺",
+      href: "/ASL/Russian",
+    },
+    {
+      key: "Chuukese",
+      label: "Chuukese 🇫🇲",
+      href: "/ASL/Chuukese",
     },
   ];
 
@@ -70,6 +80,32 @@ export default function MainHeader() {
         </Link>
         <nav className={classes.nav}>
           <NavbarContent justify="center">
+                        <Dropdown className={classes.dropdown}>
+              <NavbarItem>
+                <DropdownTrigger>
+                  <Button
+                    disableRipple
+                    className={classes.customButton}
+                    endContent={icons.chevron}
+                  >
+                    <Link href="/ASL" className={classes.link}>Learn ASL</Link>
+                  </Button>
+                </DropdownTrigger>
+              </NavbarItem>
+              <DropdownMenu aria-label="Dynamic Actions" items={items}>
+
+                {(item) => (
+                  <DropdownItem
+                    key={item.key}
+                    className={classes.dditem}
+                    textValue={item.label}
+                  >
+                    <Link href={item.href}>{item.label}</Link>
+                    
+                  </DropdownItem>
+                )}
+              </DropdownMenu>
+            </Dropdown>
           <NavbarItem isActive>
               <Link href="/outreach" aria-current="page" className={classes.link}>
                 Our Reach So Far
