@@ -41,7 +41,7 @@ export default function MainHeader() {
   const items = [
     {
       key: "Tig",
-      label: "Tigrinya & Amharic  🇪🇹 🇪🇷",
+      label: "Tigrinya & Amharic 🇪🇹 🇪🇷",
       href: "/ASL/TigrinyaAmharic",
     },
     {
@@ -88,7 +88,7 @@ export default function MainHeader() {
                     className={classes.customButton}
                     endContent={icons.chevron}
                   >
-                    <Link href="/ASL" className={classes.link}>Learn ASL</Link>
+                    <Link href="/ASL" className={classes.link} onClick={(e) => e.preventDefault()}>Learn ASL</Link>
                   </Button>
                 </DropdownTrigger>
               </NavbarItem>
