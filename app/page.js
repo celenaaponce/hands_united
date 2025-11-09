@@ -11,11 +11,11 @@ import Esp from "public/images/octclass.png";
 import iphone from "public/images/iphone.png";
 import android from "public/images/android.png";
 import KYR from "public/immigration/kyr.jpg";
-import AI from "public/classflyers/AI hacks.png";
-import IEPen from "public/classflyers/eng.png";
+import AI from "public/classflyers/AI.png";
+import immbest from "public/classflyers/immigrantbest.png";
 import IEPes from "public/classflyers/spa.png";
-import IEPbest from "public/classflyers/EnglishBestPractices.png";
-import IEPbestA from "public/classflyers/ASLBestPractices.png";
+import IEPbest from "public/classflyers/IEP best practices.png";
+import ICEV from "public/classflyers/icevisitation.png";
 import IS from "public/classflyers/IS.png";
 import LSC from "public/classflyers/LSC.png";
 import Muslim from "public/classflyers/Muslimworkshop.png";
@@ -47,12 +47,22 @@ export default function Home() {
           <h2>Download our app!</h2>
           <div>
             <Link href="https://apps.apple.com/us/app/hands-united-oregon/id6747975975">
-              <Image src={iphone} width={150} height={50} alt="Download for iPhone" />
+              <Image
+                src={iphone}
+                width={150}
+                height={50}
+                alt="Download for iPhone"
+              />
               Download for iPhone
             </Link>
             <p></p>
             <Link href="https://play.google.com/store/apps/details?id=com.createcommunity.handsunitedoregon&pcampaignid=web_share">
-              <Image src={android} width={150} height={75} alt="Download for Android" />
+              <Image
+                src={android}
+                width={150}
+                height={75}
+                alt="Download for Android"
+              />
               Download for Android
             </Link>
           </div>
@@ -65,7 +75,12 @@ export default function Home() {
           </p>
           <Link href="/kyr">
             <div className={classes.responsiveImageWrapper}>
-              <Image src={KYR} width={900} height={600} alt="Know Your Rights flyer" />
+              <Image
+                src={KYR}
+                width={900}
+                height={600}
+                alt="Know Your Rights flyer"
+              />
             </div>
           </Link>
           <p>
@@ -85,7 +100,12 @@ export default function Home() {
           </p>
           <Link href="https://www.teacherspayteachers.com/store/manos-unidas">
             <div className={classes.responsiveImageWrapper}>
-              <Image src={TPT} width={900} height={500} alt="Teachers Pay Teachers store" />
+              <Image
+                src={TPT}
+                width={900}
+                height={500}
+                alt="Teachers Pay Teachers store"
+              />
             </div>
           </Link>
 
@@ -95,7 +115,12 @@ export default function Home() {
           </p>
           <Link href="https://manosunidasor.org/ASL/Diccionario">
             <div className={classes.responsiveImageWrapper}>
-              <Image src={Dict} width={850} height={500} alt="Online dictionary" />
+              <Image
+                src={Dict}
+                width={850}
+                height={500}
+                alt="Online dictionary"
+              />
             </div>
           </Link>
 
@@ -105,37 +130,80 @@ export default function Home() {
           </p>
           <Link href="https://drive.google.com/drive/folders/1OTmVwvIq9h2ntIJuCkol6lKGhCsHSPv9?usp=drive_link">
             <div className={classes.responsiveImageWrapper}>
-              <Image src={ICE} width={800} height={500} alt="ICE communication boards" />
+              <Image
+                src={ICE}
+                width={800}
+                height={500}
+                alt="ICE communication boards"
+              />
             </div>
           </Link>
           <div className={classes.responsiveImageWrapper}>
-            <h2>Upcoming Classes</h2>
+            <h2>Languages Supported</h2>
             <p>
-              We are excited to be soon offering ASL classes in spoken Spanish as
-              well as in spoken Haitian Creole.
+              To date, we have provided ASL classes and resources in Tigrinya,
+              Amharic, Burmese, Russian, Spanish, and Chuukese. We look forward
+              to continuing to grow in our outreach.  Vote on our next languages <Link href={"https://celenaponce.aidaform.com/language-s-needed"}>here</Link>
             </p>
           </div>
           <div className={classes.responsiveImageWrapper}>
-            <Image src={HC} width={500} height={500} alt="Haitian Creole class flyer" />
-            <Image src={Esp} width={500} height={500} alt="Spanish class flyer" />
-          </div>
-          <div className={classes.responsiveImageWrapper}>
-          <h2>Upcoming Workshops</h2>
+            <h2>Upcoming Workshops</h2>
             <p>
               We are excited to be soon offering several workshops soon. These
-              include AI tips for DHH to interact with the hearing community, how
-              to work with the Muslim community, IEP interpreting workshops, IEP
-              best practices workshops, Colombian Sign Language and International
-              Sign Language!
+              include AI tips for DHH to interact with the hearing community,
+              IEP best practices workshops, Colombian Sign Language and more!
             </p>
           </div>
-
+          <h3>November 25</h3>
+          <p>
+            Join us for 3 great workshops! Register for all 3 for a discount,
+            $120 for 0.6 CEUs, $40 without CEUs.
+          </p>
           <div className={classes.responsiveImageWrapper}>
-            <Image src={IEPbestA} width={500} height={500} alt="ASL Best Practices flyer" />
-            <Image src={IEPbest} width={500} height={500} alt="English Best Practices flyer" />
-            <Image src={IS} width={500} height={500} alt="International Sign flyer" />
-            <Image src={LSC} width={500} height={500} alt="Colombian Sign Language flyer" />
+            <Image src={AI} width={500} height={500} alt="AI Hacksr" />
+            <Image
+              src={immbest}
+              width={500}
+              height={500}
+              alt="Immigrant best practices"
+            />
+            <Image
+              src={IEPbest}
+              width={500}
+              height={500}
+              alt="IEP best practices"
+            />
           </div>
+          <p>
+            Register here:{" "}
+            <Link
+              href={
+                "https://www.zeffy.com/en-US/ticketing/ai-hacks-for-communication"
+              }
+            >
+              AI
+            </Link>{" "}
+            <Link
+              href={
+                "https://www.zeffy.com/en-US/ticketing/immigrant-best-practices-asl"
+              }
+            >
+              Best Pracices
+            </Link>
+                        <Link
+              href={
+                "https://www.zeffy.com/en-US/ticketing/iep-best-practice-asl"
+              }
+            >
+              IEP Best Pracices
+            </Link>
+          </p>
+          <h3>December 9</h3>
+          <p>Come learn about ICE visitations</p>
+          <div className={classes.responsiveImageWrapper}>
+            <Image src={ICEV} width={500} height={500} alt="ICE visitation" />
+          </div>
+          <p>Register <Link href={"https://www.zeffy.com/en-US/ticketing/ice-visitation"}> here</Link></p>
         </section>
 
         <section className={classes.section}>
