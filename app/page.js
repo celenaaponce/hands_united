@@ -11,12 +11,9 @@ import Esp from "public/images/octclass.png";
 import iphone from "public/images/iphone.png";
 import android from "public/images/android.png";
 import KYR from "public/immigration/kyr.jpg";
-import AI from "public/classflyers/AI.png";
-import immbest from "public/classflyers/immigrantbest.png";
-import IEPes from "public/classflyers/spa.png";
-import IEPbest from "public/classflyers/IEP best practices.png";
+import math from "public/classflyers/math.png";
+import IEP from "public/classflyers/IEP practice.png";
 import ICEV from "public/classflyers/icevisitation.png";
-import IS from "public/classflyers/IS.png";
 import LSC from "public/classflyers/LSC.png";
 import Muslim from "public/classflyers/Muslimworkshop.png";
 
@@ -49,7 +46,7 @@ export default function Home() {
             <Link href="https://apps.apple.com/us/app/hands-united-oregon/id6747975975">
               <Image
                 src={iphone}
-                width={150}
+                width={50}
                 height={50}
                 alt="Download for iPhone"
               />
@@ -59,7 +56,7 @@ export default function Home() {
             <Link href="https://play.google.com/store/apps/details?id=com.createcommunity.handsunitedoregon&pcampaignid=web_share">
               <Image
                 src={android}
-                width={150}
+                width={75}
                 height={75}
                 alt="Download for Android"
               />
@@ -154,56 +151,51 @@ export default function Home() {
               IEP best practices workshops, Colombian Sign Language and more!
             </p>
           </div>
-          <h3>November 25</h3>
-          <p>
-            Join us for 3 great workshops! Register for all 3 for a discount,
-            $120 for 0.6 CEUs, $40 without CEUs.
-          </p>
-          <div className={classes.responsiveImageWrapper}>
-            <Image src={AI} width={500} height={500} alt="AI Hacksr" />
-            <Image
-              src={immbest}
-              width={500}
-              height={500}
-              alt="Immigrant best practices"
-            />
-            <Image
-              src={IEPbest}
-              width={500}
-              height={500}
-              alt="IEP best practices"
-            />
-          </div>
-          <p>
-            Register here:{" "}
-            <Link
-              href={
-                "https://www.zeffy.com/en-US/ticketing/ai-hacks-for-communication"
-              }
-            >
-              AI
-            </Link>{" "}
-            <Link
-              href={
-                "https://www.zeffy.com/en-US/ticketing/immigrant-best-practices-asl"
-              }
-            >
-              Best Pracices
-            </Link>
-                        <Link
-              href={
-                "https://www.zeffy.com/en-US/ticketing/iep-best-practice-asl"
-              }
-            >
-              IEP Best Pracices
-            </Link>
-          </p>
+          
           <h3>December 9</h3>
           <p>Come learn about ICE visitations</p>
           <div className={classes.responsiveImageWrapper}>
             <Image src={ICEV} width={500} height={500} alt="ICE visitation" />
           </div>
           <p>Register <Link href={"https://www.zeffy.com/en-US/ticketing/ice-visitation"}> here</Link></p>
+
+          <h3>December 16</h3>
+          <p>
+            Join us for a workshop for Spanish/English interpreters on IEPs for the DHH community!
+          </p>
+          <div className={classes.responsiveImageWrapper}>
+            <Image src={IEP} width={500} height={500} alt="IEP practice lab" />
+          </div>
+          <p>
+            Register {" "}
+            <Link
+              href={
+                "https://www.zeffy.com/en-US/ticketing/interpreting-ieps-spanishenglish"
+              }
+            >
+              here
+            </Link>{" "}
+        
+          </p>
+
+                    <h3>December 17-19</h3>
+          <p>
+            Join us for 3 workshops about math concepts!  December 17 - elementary math, December 18 - middle school math, December 19 - high school math
+          </p>
+          <div className={classes.responsiveImageWrapper}>
+            <Image src={math} width={500} height={500} alt="math workshops" />
+          </div>
+          <p>
+            Register {" "}
+            <Link
+              href={
+                "https://www.zeffy.com/en-US/ticketing/elementary-math"
+              }
+            >
+              here
+            </Link>{" "}
+        
+          </p>
         </section>
 
         <section className={classes.section}>
