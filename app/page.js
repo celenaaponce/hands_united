@@ -216,7 +216,7 @@ export default function Home() {
             Youth (CDHY) in Washington State, we offered American Sign Language
             in spoken Spanish to 6 families. Since that time, we have grown to
             over 230 families across the US. In May 2024, we decided to start
-            our non-profit business to offer more services to our families.
+            our non-profit organization to offer more services to our families.
           </p>
           <p>
             Our board members have over 50 years of experience working with Deaf
