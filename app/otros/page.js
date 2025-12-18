@@ -64,19 +64,7 @@ export default function Otros() {
             height={200}
           />
         </div>
-      </header>
-
-      <h2 className={classes.section}>Future Parent Services</h2>
-      <header className={classes.header}>
-        {/* Row 3 */}
-        <div className={classes.hero}>
-          <h1>Drivers Education</h1>
-          <p>
-            Virtual classes for Deaf children with low language skill. Learn the
-            rules for driving and how to drive safely.
-          </p>
-        </div>
-        <div className={classes.imageContainer}>
+                <div className={classes.imageContainer}>
           <Image
             src="/others/drive.png"
             alt="drive"
@@ -84,6 +72,26 @@ export default function Otros() {
             height={300}
           />
         </div>
+                <div className={classes.hero}>
+          <h1>Drivers Education</h1>
+          <p>
+            Virtual classes for Deaf children with low language skill. Learn the
+            rules for driving and how to drive safely.
+          </p>
+        </div>
+
+      </header>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <Image 
+                    src="/others/Families.png"
+            alt="familyresources"
+            width={500}
+            height= {600}
+            style={{ width: "500px", height: "auto" }}/></div>
+
+      <h2 className={classes.section}>Future Parent Services</h2>
+      <header className={classes.header}>
+
 
         {/* Row 4 */}
         <div className={classes.imageContainer}>
@@ -198,6 +206,13 @@ export default function Otros() {
           </p>
         </div>
       </header>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+              <Image 
+                    src="/others/Professional.png"
+            alt="professionalresources"
+            width={500}
+            height= {600}
+            style={{ width: "500px", height: "auto" }}/></div>
     </>
   );
 }

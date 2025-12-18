@@ -12,7 +12,10 @@ import iphone from "public/images/iphone.png";
 import android from "public/images/android.png";
 import KYR from "public/immigration/kyr.jpg";
 import math from "public/classflyers/math.png";
-import IEP from "public/classflyers/IEP practice.png";
+import Sp2 from "public/classflyers/12292.png";
+import Sp1 from "public/classflyers/12291.png";
+import ing from "public/classflyers/1229i.png";
+import zoom from "public/classflyers/zoomworkshop.png";
 import ICEV from "public/classflyers/icevisitation.png";
 import LSC from "public/classflyers/LSC.png";
 import Muslim from "public/classflyers/Muslimworkshop.png";
@@ -140,61 +143,96 @@ export default function Home() {
             <p>
               To date, we have provided ASL classes and resources in Tigrinya,
               Amharic, Burmese, Russian, Spanish, and Chuukese. We look forward
-              to continuing to grow in our outreach.  Vote on our next languages <Link href={"https://celenaponce.aidaform.com/language-s-needed"}>here</Link>
+              to continuing to grow in our outreach. Vote on our next languages{" "}
+              <Link href={"https://celenaponce.aidaform.com/language-s-needed"}>
+                here
+              </Link>
             </p>
           </div>
           <div className={classes.responsiveImageWrapper}>
             <h2>Upcoming Workshops</h2>
             <p>
               We are excited to be soon offering several workshops soon. These
-              include AI tips for DHH to interact with the hearing community,
-              IEP best practices workshops, Colombian Sign Language and more!
+              include tech workshops, Spanish workshops, Colombian Sign Language
+              and more!
             </p>
           </div>
-          
-          <h3>December 9</h3>
-          <p>Come learn about ICE visitations</p>
-          <div className={classes.responsiveImageWrapper}>
-            <Image src={ICEV} width={500} height={500} alt="ICE visitation" />
-          </div>
-          <p>Register <Link href={"https://www.zeffy.com/en-US/ticketing/ice-visitation"}> here</Link></p>
 
-          <h3>December 16</h3>
+          <h3>December 17-19</h3>
           <p>
-            Join us for a workshop for Spanish/English interpreters on IEPs for the DHH community!
-          </p>
-          <div className={classes.responsiveImageWrapper}>
-            <Image src={IEP} width={500} height={500} alt="IEP practice lab" />
-          </div>
-          <p>
-            Register {" "}
-            <Link
-              href={
-                "https://www.zeffy.com/en-US/ticketing/interpreting-ieps-spanishenglish"
-              }
-            >
-              here
-            </Link>{" "}
-        
-          </p>
-
-                    <h3>December 17-19</h3>
-          <p>
-            Join us for 3 workshops about math concepts!  December 17 - elementary math, December 18 - middle school math, December 19 - high school math
+            Join us for 3 workshops about math concepts! December 17 -
+            elementary math, December 18 - middle school math, December 19 -
+            high school math
           </p>
           <div className={classes.responsiveImageWrapper}>
             <Image src={math} width={500} height={500} alt="math workshops" />
           </div>
           <p>
-            Register {" "}
+            Register{" "}
+            <Link
+              href={"https://www.zeffy.com/en-US/ticketing/elementary-math"}
+            >
+              here
+            </Link>{" "}
+          </p>
+          <h3>Week long classes December 29 - January 2</h3>
+          <p>
+            Join us for 3 workshops for language learning: Spanish 2 - 10am to
+            12pm, English - 12:30pm to 2:30pm, Spanish 1 - 3pm to 5pm
+          </p>
+          <div className={classes.responsiveImageWrapper}>
+            <Image src={Sp2} width={500} height={500} alt="Spanish 2" />
+          </div>
+          <p>
+            Register{" "}
             <Link
               href={
-                "https://www.zeffy.com/en-US/ticketing/elementary-math"
+                "https://www.zeffy.com/en-US/ticketing/1-week-intensive-spanish-level--2"
               }
             >
               here
             </Link>{" "}
-        
+          </p>
+          <div className={classes.responsiveImageWrapper}>
+            <Image src={ing} width={500} height={500} alt="English" />
+          </div>
+          <p>
+            Register{" "}
+            <Link
+              href={
+                "https://www.zeffy.com/en-US/ticketing/clase-de-1-semana-de-ingles"
+              }
+            >
+              here
+            </Link>{" "}
+          </p>
+          <div className={classes.responsiveImageWrapper}>
+            <Image src={Sp1} width={500} height={500} alt="Spanish 1" />
+          </div>
+          <p>
+            Register{" "}
+            <Link
+              href={
+                "https://www.zeffy.com/en-US/ticketing/1-week-intensive-spanish-level--1"
+              }
+            >
+              here
+            </Link>{" "}
+          </p>
+          <h3>January 7</h3>
+          <p>Join us for a Zoom workshop! Learn all the different features!</p>
+          <div className={classes.responsiveImageWrapper}>
+            <Image src={zoom} width={500} height={500} alt="zoom workshops" />
+          </div>
+          <p>
+            Register{" "}
+            <Link
+              href={
+                "https://www.zeffy.com/en-US/ticketing/zoom-tips-and-tricks-asl"
+              }
+            >
+              here
+            </Link>{" "}
           </p>
         </section>
 
@@ -204,7 +242,8 @@ export default function Home() {
             In partnership with Deaf and CODA instructors, we offer workshops on
             basic foreign signed languages presented in ASL. To date, we are
             offering Mexican Sign Language (LSM) and Guatemalan Sign Language
-            (LENSEGUA). To request other workshops please fill out{" "}
+            (LENSEGUA), Colombian Sign Language and International Sign Language.
+            To request other workshops please fill out{" "}
             <a href="https://forms.gle/uMKttFSJQkkbacnw7">this form</a>.
           </p>
         </section>
@@ -215,7 +254,7 @@ export default function Home() {
             Beginning in 2021 through the Center for Deaf and Hard of Hearing
             Youth (CDHY) in Washington State, we offered American Sign Language
             in spoken Spanish to 6 families. Since that time, we have grown to
-            over 230 families across the US. In May 2024, we decided to start
+            over 330 families across the US. In May 2024, we decided to start
             our non-profit organization to offer more services to our families.
           </p>
           <p>
