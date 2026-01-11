@@ -6,19 +6,14 @@ import AidaFormEmbed from "components/aidaform";
 import TPT from "public/images/tpt.png";
 import Dict from "public/images/dict.png";
 import ICE from "public/images/ICEcomm.png";
-import HC from "public/images/hc.png";
-import Esp from "public/images/octclass.png";
 import iphone from "public/images/iphone.png";
 import android from "public/images/android.png";
 import KYR from "public/immigration/kyr.jpg";
-import math from "public/classflyers/math.png";
-import Sp2 from "public/classflyers/12292.png";
-import Sp1 from "public/classflyers/12291.png";
-import ing from "public/classflyers/1229i.png";
-import zoom from "public/classflyers/zoomworkshop.png";
-import ICEV from "public/classflyers/icevisitation.png";
-import LSC from "public/classflyers/LSC.png";
-import Muslim from "public/classflyers/Muslimworkshop.png";
+import hmong from "public/classflyers/0116.png";
+import tech from "public/classflyers/0121.png";
+import math from "public/classflyers/3.png";
+import StoreFlyer from "public/classflyers/store.png";
+
 
 export default function Home() {
   return (
@@ -41,7 +36,18 @@ export default function Home() {
           </div>
         </div>
       </header>
-
+      <section className={classes.section}>
+        <h2>Open Letter: Access to Video Relay Services</h2>
+        <p>
+          In November 2024, Hands United raised concerns with federal regulators about
+          barriers preventing immigrant families with Deaf children from accessing
+          federally funded Video Relay Services. As of January 2026, none of these
+          families have received services.
+        </p>
+        <Link href="/advocacy/open-letter-vrs-access">
+          Read the full letter (accessible text)
+        </Link>
+      </section>
       <main className={classes.main}>
         <section className={classes.section}>
           <h2>Download our app!</h2>
@@ -94,23 +100,10 @@ export default function Home() {
           <h2>Resources Galore!</h2>
           <p>We are excited to share our resources with you!</p>
 
-          <p>
-            We have multilingual dictionaries (ASL, English, Spanish, LSM)
-            available on Teachers Pay Teachers. (Click image to go to TPT)
-          </p>
-          <Link href="https://www.teacherspayteachers.com/store/manos-unidas">
-            <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={TPT}
-                width={900}
-                height={500}
-                alt="Teachers Pay Teachers store"
-              />
-            </div>
-          </Link>
+
 
           <p>
-            We also have our dictionary terms available online in our Spanish
+            We have our dictionary terms available online in our Spanish
             website. (Click image to go to dictionary.)
           </p>
           <Link href="https://manosunidasor.org/ASL/Diccionario">
@@ -138,6 +131,48 @@ export default function Home() {
               />
             </div>
           </Link>
+          <section className={classes.section}>
+  <h2>Hands United Store</h2>
+
+  <p>
+    To support the creation of free, accessible resources for immigrant families
+    with Deaf and hard-of-hearing children, Hands United has launched the{" "}
+    <strong>Hands United Store</strong>.
+  </p>
+
+  <p>
+    Proceeds from the store directly fund multilingual ASL resources, family
+    workshops, communication tools, and accessibility initiatives.
+  </p>
+
+  <p>
+    <Link href="/store">
+      Visit the Hands United Store
+    </Link>
+  </p>
+
+  <div className={classes.responsiveImageWrapper}>
+    <Image
+      src={StoreFlyer}
+      width={800}
+      height={500}
+      alt="Hands United Store flyer promoting multilingual ASL resources and community-created materials"
+    />
+  </div>
+
+  <div style={{ marginTop: "1.5rem" }}>
+    <iframe
+      width="100%"
+      height="315"
+      
+      src="https://www.youtube.com/embed/TVJjH7cuEuc"
+      title="Hands United Store introduction video"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    />
+  </div>
+</section>
           <div className={classes.responsiveImageWrapper}>
             <h2>Languages Supported</h2>
             <p>
@@ -158,93 +193,51 @@ export default function Home() {
             </p>
           </div>
 
-          <h3>December 17-19</h3>
+          <h3>January 16</h3>
           <p>
-            Join us for 3 workshops about math concepts! December 17 -
-            elementary math, December 18 - middle school math, December 19 -
-            high school math
+            Join us for a community-centered presentation focused on understanding autism and deafness within the Hmong community.
           </p>
           <div className={classes.responsiveImageWrapper}>
-            <Image src={math} width={500} height={500} alt="math workshops" />
+            <Image src={hmong} width={500} height={500} alt="hmong" />
           </div>
           <p>
             Register{" "}
             <Link
-              href={"https://www.zeffy.com/en-US/ticketing/elementary-math"}
+              href={"https://www.zeffy.com/en-US/ticketing/supporting-hmong-children-with-autism-and-deafness"}
             >
               here
             </Link>{" "}
           </p>
-          <h3>Week long classes December 29 - January 2</h3>
+          <h3>January 21</h3>
           <p>
-            Join us for 3 workshops for language learning: Spanish 2 - 10am to
-            12pm, English - 12:30pm to 2:30pm, Spanish 1 - 3pm to 5pm
+            Join us for a workshop on how to use tech tools to improve your online teaching and tutoring.  Presented in ASL.
           </p>
           <div className={classes.responsiveImageWrapper}>
-            <Image src={Sp2} width={500} height={500} alt="Spanish 2" />
-          </div>
-          <p>
-            Register{" "}
-            <Link
-              href={
-                "https://www.zeffy.com/en-US/ticketing/1-week-intensive-spanish-level--2"
-              }
-            >
-              here
-            </Link>{" "}
-          </p>
-          <div className={classes.responsiveImageWrapper}>
-            <Image src={ing} width={500} height={500} alt="English" />
+            <Image src={tech} width={500} height={500} alt="techtools" />
           </div>
           <p>
             Register{" "}
             <Link
               href={
-                "https://www.zeffy.com/en-US/ticketing/clase-de-1-semana-de-ingles"
+                "https://www.zeffy.com/en-US/ticketing/interactive-tools-for-virtual-instruction"
               }
             >
               here
-            </Link>{" "}
-          </p>
+            </Link>{" "}</p>
+          <h3>January 26, 28, and 30</h3>
+          <p>Join us for a three part workshop to learn Spanish through Destinos, a soap opera based curriculum.  These classes will be taught in spoken Spanish with ASL support. </p>
           <div className={classes.responsiveImageWrapper}>
-            <Image src={Sp1} width={500} height={500} alt="Spanish 1" />
+            <Image src={math} width={500} height={500} alt="Destinos" />
           </div>
           <p>
             Register{" "}
             <Link
               href={
-                "https://www.zeffy.com/en-US/ticketing/1-week-intensive-spanish-level--1"
+                "https://www.zeffy.com/en-US/ticketing/hands-united-spanish-destinos-classes"
               }
             >
               here
             </Link>{" "}
-          </p>
-          <h3>January 7</h3>
-          <p>Join us for a Zoom workshop! Learn all the different features!</p>
-          <div className={classes.responsiveImageWrapper}>
-            <Image src={zoom} width={500} height={500} alt="zoom workshops" />
-          </div>
-          <p>
-            Register{" "}
-            <Link
-              href={
-                "https://www.zeffy.com/en-US/ticketing/zoom-tips-and-tricks-asl"
-              }
-            >
-              here
-            </Link>{" "}
-          </p>
-        </section>
-
-        <section className={classes.section}>
-          <h2>Request Workshops</h2>
-          <p>
-            In partnership with Deaf and CODA instructors, we offer workshops on
-            basic foreign signed languages presented in ASL. To date, we are
-            offering Mexican Sign Language (LSM) and Guatemalan Sign Language
-            (LENSEGUA), Colombian Sign Language and International Sign Language.
-            To request other workshops please fill out{" "}
-            <a href="https://forms.gle/uMKttFSJQkkbacnw7">this form</a>.
           </p>
         </section>
 
@@ -268,23 +261,35 @@ export default function Home() {
         <section className={classes.section}>
           <h2>Our Mission</h2>
           <p>
-            Hands United’s mission is to help decrease the prevalence of
-            language deprivation among Deaf and hard-of-hearing children in
-            immigrant families. We recognize that language and cultural barriers
-            represent a large portion of the reason that immigrant families are
-            unable to communicate with their Deaf and hard-of-hearing children.
+            Hands United’s mission is to reduce language deprivation among Deaf and hard-of-hearing children in immigrant families by addressing the language and cultural barriers that often prevent effective communication and access to essential services.
+
           </p>
           <p>
-            To that end, we wish to empower immigrant families with Deaf and
-            hard-of-hearing children by providing comprehensive support through
-            American Sign Language classes in their native language, offering
-            enrichment classes such as how to transition from high school to
-            college and how to use technology, and facilitating access to
-            resources. We strive to foster lifelong inclusivity within the Deaf
-            community by promoting the expansion of sign language proficiency
-            among diverse populations to support increased independence and self
-            determination for diverse Deaf populations.
+We empower families by providing comprehensive support that includes multilingual American Sign Language classes, English/ASL instruction for newly arrived Deaf individuals, enrichment workshops, school and IEP advocacy, immigration and legal resource connections, community support programs, and employment readiness services.
+
           </p>
+          <p>
+            In addition, we strengthen the professional ecosystem that serves Deaf communities by offering interpreter and translation services, professional development workshops, and media/resource development. As part of our commitment to equitable access, we also support and provide pathways for the certification of foreign sign language interpreters—particularly for those coming from countries where no formal certification system exists—ensuring they can continue to serve their communities with recognized qualifications.
+
+          </p>
+          <p>
+            Through these combined efforts, we strive to foster lifelong inclusivity, expand sign language proficiency across diverse populations, and promote greater independence, access, and self-determination for Deaf and hard-of-hearing individuals and their families.
+          </p>
+          <h2>Teachers Pay Teachers</h2>
+                    <p>
+            Some of our earlier multilingual resources remain available on Teachers Pay Teachers.
+Our newest and most up-to-date materials are now available through the Hands United Store.
+          </p>
+          <Link href="https://www.teacherspayteachers.com/store/manos-unidas">
+            <div className={classes.responsiveImageWrapper}>
+              <Image
+                src={TPT}
+                width={900}
+                height={500}
+                alt="Teachers Pay Teachers store"
+              />
+            </div>
+          </Link>
           <AidaFormEmbed />
         </section>
       </main>
