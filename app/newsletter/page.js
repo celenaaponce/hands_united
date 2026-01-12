@@ -203,7 +203,7 @@ export default function NewsletterPage() {
 
           <p><strong>🧠 Language Can’t Wait – February 21</strong></p>
           <p>
-            Presentation by Dr. Alejandro Oviedo.
+            Presentation by Professor Alejandro Oviedo.
             <br />
             Spoken Spanish with English & ASL interpretation.
             <br />
