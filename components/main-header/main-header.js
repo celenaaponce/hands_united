@@ -140,7 +140,7 @@ export default function MainHeader() {
                   radius="full"
                   size="sm"
                 >
-                  Store
+                  Store & Events
                 </Button>
               </NavbarItem>
               <NavbarItem>
