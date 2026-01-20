@@ -175,7 +175,7 @@ export default function StorePage() {
 
         {/* Tech Workshop */}
 <section className={classes.section}>
-  <h3>Interactive Tools for Virtual Instruction</h3>
+  <h3 id="tech-workshop">Interactive Tools for Virtual Instruction</h3>
 
   <p>
     A hands-on workshop for educators, interpreters, and service providers
@@ -271,6 +271,113 @@ export default function StorePage() {
         <h2>Classes & Multi-Week Programs</h2>
 
  <section className={classes.section}>
+            {/* Spanish Destinos */}
+      <section className={classes.section}>
+        <h2 id="spanish-destinos">Spanish Workshops — Destinos</h2>
+
+        {/* Flyer */}
+
+        {/* Description */}
+        <p>
+          <strong>Hands United Spanish Workshops</strong> use the <em>Destinos</em>{" "}
+          curriculum to support interpreters and professionals working between
+          ASL and spoken Spanish.
+        </p>
+
+        <p>
+          Sessions are taught in <strong>ASL and spoken Spanish</strong> and are
+          open to interpreters, interpreting students, hearing participants, and
+          DHH professionals.
+        </p>
+
+        <p>
+          <strong>January Session:</strong> Destinos 6–8<br />
+          <strong>Dates:</strong> January 26, 28, 30<br />
+          <strong>Total Instruction:</strong> 6 hours<br />
+          <strong>CEUs:</strong> 0.6<br />
+          <strong>Cost:</strong> $60
+        </p>
+
+        <p>
+          <strong>Time Zones:</strong><br />
+          4:00 p.m. PST · 5:00 p.m. MST · 6:00 p.m. CST · 7:00 p.m. EST · 8:00 p.m.
+          Puerto Rico
+        </p>
+
+        <p>
+          Discounted packages are available for participants enrolling in
+          multiple months.
+        </p>
+
+        {/* Zeffy Embed */}
+        <div className={classes.imageContainer}>
+          <div className={classes.embedWrapper}>
+            <iframe
+              title="Spanish Destinos Registration"
+              src="https://www.zeffy.com/embed/ticketing/hands-united-spanish-destinos-classes"
+              allowPaymentRequest
+              allowTransparency="true"
+            />
+          </div>
+        </div>
+               <section className={classes.section}>
+        <h2>Math Workshops</h2>
+
+        {/* Flyer */}
+
+
+        <p>
+          <strong>Hands United Math Workshops</strong> are designed specifically
+          for educational interpreters and focus on building the math content
+          knowledge needed for accurate interpretation.
+        </p>
+
+        <p>
+          Sessions are taught in <strong>spoken English</strong> and geared toward
+          interpreters working in K–12 educational settings.
+        </p>
+
+        <p>
+          <strong>February Workshop:</strong> Number Sense & Operations<br />
+          <strong>Dates:</strong> February 2, 4, 6<br />
+          <strong>Session Length:</strong> 2 hours each<br />
+          <strong>CEUs:</strong> 0.2 per session<br />
+          <strong>Cost:</strong> $110
+        </p>
+
+        <p>
+          <strong>Grade-Level Focus:</strong><br />
+          Monday – Elementary<br />
+          Wednesday – Middle School<br />
+          Friday – High School
+        </p>
+
+        <p>
+          <strong>Time Zones:</strong><br />
+          4:00 p.m. PST · 5:00 p.m. MST · 6:00 p.m. CST · 7:00 p.m. EST · 8:00 p.m.
+          Puerto Rico
+        </p>
+
+        {/* ✅ CORRECT Zeffy Embed — Math */}
+        <div className={classes.imageContainer}>
+          <div style={{ position: "relative", width: "100%", paddingTop: "450px" }}>
+            <iframe
+              title="Hands United Math Workshops Registration"
+              src="https://www.zeffy.com/embed/ticketing/hands-united-math-classes"
+              style={{
+                position: "absolute",
+                inset: 0,
+                width: "100%",
+                height: "100%",
+                border: 0,
+              }}
+              allowPaymentRequest
+              allowTransparency="true"
+            />
+          </div>
+        </div>
+      </section>
+      </section>
         <h2>International Sign Language</h2>
 
         {/* Flyer */}
@@ -349,113 +456,8 @@ export default function StorePage() {
         </div>
       </section>
 
-        {/* Spanish Destinos */}
-      <section className={classes.section}>
-        <h2>Spanish Workshops — Destinos</h2>
-
-        {/* Flyer */}
-
-        {/* Description */}
-        <p>
-          <strong>Hands United Spanish Workshops</strong> use the <em>Destinos</em>{" "}
-          curriculum to support interpreters and professionals working between
-          ASL and spoken Spanish.
-        </p>
-
-        <p>
-          Sessions are taught in <strong>ASL and spoken Spanish</strong> and are
-          open to interpreters, interpreting students, hearing participants, and
-          DHH professionals.
-        </p>
-
-        <p>
-          <strong>January Session:</strong> Destinos 6–8<br />
-          <strong>Dates:</strong> January 26, 28, 30<br />
-          <strong>Total Instruction:</strong> 6 hours<br />
-          <strong>CEUs:</strong> 0.6<br />
-          <strong>Cost:</strong> $60
-        </p>
-
-        <p>
-          <strong>Time Zones:</strong><br />
-          4:00 p.m. PST · 5:00 p.m. MST · 6:00 p.m. CST · 7:00 p.m. EST · 8:00 p.m.
-          Puerto Rico
-        </p>
-
-        <p>
-          Discounted packages are available for participants enrolling in
-          multiple months.
-        </p>
-
-        {/* Zeffy Embed */}
-        <div className={classes.imageContainer}>
-          <div className={classes.embedWrapper}>
-            <iframe
-              title="Spanish Destinos Registration"
-              src="https://www.zeffy.com/embed/ticketing/hands-united-spanish-destinos-classes"
-              allowPaymentRequest
-              allowTransparency="true"
-            />
-          </div>
-        </div>
-      </section>
-       <section className={classes.section}>
-        <h2>Math Workshops</h2>
-
-        {/* Flyer */}
 
 
-        <p>
-          <strong>Hands United Math Workshops</strong> are designed specifically
-          for educational interpreters and focus on building the math content
-          knowledge needed for accurate interpretation.
-        </p>
-
-        <p>
-          Sessions are taught in <strong>spoken English</strong> and geared toward
-          interpreters working in K–12 educational settings.
-        </p>
-
-        <p>
-          <strong>February Workshop:</strong> Number Sense & Operations<br />
-          <strong>Dates:</strong> February 2, 4, 6<br />
-          <strong>Session Length:</strong> 2 hours each<br />
-          <strong>CEUs:</strong> 0.2 per session<br />
-          <strong>Cost:</strong> $110
-        </p>
-
-        <p>
-          <strong>Grade-Level Focus:</strong><br />
-          Monday – Elementary<br />
-          Wednesday – Middle School<br />
-          Friday – High School
-        </p>
-
-        <p>
-          <strong>Time Zones:</strong><br />
-          4:00 p.m. PST · 5:00 p.m. MST · 6:00 p.m. CST · 7:00 p.m. EST · 8:00 p.m.
-          Puerto Rico
-        </p>
-
-        {/* ✅ CORRECT Zeffy Embed — Math */}
-        <div className={classes.imageContainer}>
-          <div style={{ position: "relative", width: "100%", paddingTop: "450px" }}>
-            <iframe
-              title="Hands United Math Workshops Registration"
-              src="https://www.zeffy.com/embed/ticketing/hands-united-math-classes"
-              style={{
-                position: "absolute",
-                inset: 0,
-                width: "100%",
-                height: "100%",
-                border: 0,
-              }}
-              allowPaymentRequest
-              allowTransparency="true"
-            />
-          </div>
-        </div>
-      </section>
       <section className={classes.section}>
   <h2>Book Club — <em>A Mother’s Voice</em></h2>
 

@@ -186,6 +186,22 @@ export default function Home() {
           </div>
           <div className={classes.responsiveImageWrapper}>
             <h2>Upcoming Workshops</h2>
+            <div style={{ marginTop: "1.5rem" }}>
+  <Link
+    href="/store"
+    style={{
+      display: "inline-block",
+      padding: "0.5rem 1.25rem",
+      borderRadius: "0.5rem",
+      background: "linear-gradient(90deg, #72b200, #b4e956)",
+      color: "#ffffff",
+      fontWeight: "bold",
+      textDecoration: "none",
+    }}
+  >
+    See all upcoming events & registrations
+  </Link>
+</div>
             <p>
               We are excited to be soon offering several workshops soon. These
               include tech workshops, Spanish workshops, Colombian Sign Language
@@ -193,21 +209,6 @@ export default function Home() {
             </p>
           </div>
 
-          <h3>January 16</h3>
-          <p>
-            Join us for a community-centered presentation focused on understanding autism and deafness within the Hmong community.
-          </p>
-          <div className={classes.responsiveImageWrapper}>
-            <Image src={hmong} width={500} height={500} alt="hmong" />
-          </div>
-          <p>
-            Register{" "}
-            <Link
-              href={"https://www.zeffy.com/en-US/ticketing/supporting-hmong-children-with-autism-and-deafness"}
-            >
-              here
-            </Link>{" "}
-          </p>
           <h3>January 21</h3>
           <p>
             Join us for a workshop on how to use tech tools to improve your online teaching and tutoring.  Presented in ASL.
@@ -218,9 +219,7 @@ export default function Home() {
           <p>
             Register{" "}
             <Link
-              href={
-                "https://www.zeffy.com/en-US/ticketing/interactive-tools-for-virtual-instruction"
-              }
+              href="/store#tech-workshop"
             >
               here
             </Link>{" "}</p>
@@ -232,9 +231,7 @@ export default function Home() {
           <p>
             Register{" "}
             <Link
-              href={
-                "https://www.zeffy.com/en-US/ticketing/hands-united-spanish-destinos-classes"
-              }
+              href="/store#spanish-destinos"
             >
               here
             </Link>{" "}
