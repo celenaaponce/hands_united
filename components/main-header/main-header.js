@@ -54,7 +54,7 @@ export default function MainHeader() {
       label: "Haitian Creole 🇭🇹",
       href: "/ASL/Haitian",
     },
-        {
+    {
       key: "Spanish",
       label: "Spanish 🇪🇨🇨🇱🇨🇴🇦🇷🇲🇽🇵🇷🇩🇴🇨🇺🇵🇪🇺🇾🇵🇾🇵🇦🇨🇷🇬🇹🇳🇮🇭🇳🇸🇻🇻🇪",
       href: "https://manosunidasor.org/",
@@ -72,62 +72,91 @@ export default function MainHeader() {
   ];
 
   return (
-    <Navbar>
+    <div className={classes.headerWrapper}>
       <MainHeaderBackground />
-      <header className={classes.header}>
-        <Link className={classes.logo} href="/">
-          <Image src={logo} width={500} height={"auto"} alt="manos unidos"/>
-        </Link>
-        <nav className={classes.nav}>
-          <NavbarContent justify="center">
-                        <Dropdown className={classes.dropdown}>
-              <NavbarItem>
-                <DropdownTrigger>
-                  <Button
-                    disableRipple
-                    className={classes.customButton}
-                    endContent={icons.chevron}
-                  >
-                    <Link href="/ASL" className={classes.link} onClick={(e) => e.preventDefault()}>Learn ASL</Link>
-                  </Button>
-                </DropdownTrigger>
+      <Navbar className={classes.navbar}>
+        <header className={classes.header}>
+          <Link className={classes.logo} href="/">
+            <Image src={logo} width={500} height={"auto"} alt="manos unidos" />
+          </Link>
+          <nav className={classes.nav}>
+            <NavbarContent justify="center">
+              <Dropdown className={classes.dropdown}>
+                <NavbarItem>
+                  <DropdownTrigger>
+                    <Button
+                      disableRipple
+                      className={classes.customButton}
+                      endContent={icons.chevron}
+                    >
+                      <Link
+                        href="/ASL"
+                        className={classes.link}
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Learn ASL
+                      </Link>
+                    </Button>
+                  </DropdownTrigger>
+                </NavbarItem>
+                <DropdownMenu aria-label="Dynamic Actions" items={items}>
+                  {(item) => (
+                    <DropdownItem
+                      key={item.key}
+                      className={classes.dditem}
+                      textValue={item.label}
+                    >
+                      <Link href={item.href}>{item.label}</Link>
+                    </DropdownItem>
+                  )}
+                </DropdownMenu>
+              </Dropdown>
+              <NavbarItem isActive>
+                <Link
+                  href="/outreach"
+                  aria-current="page"
+                  className={classes.link}
+                >
+                  Our Reach So Far
+                </Link>
               </NavbarItem>
-              <DropdownMenu aria-label="Dynamic Actions" items={items}>
-
-                {(item) => (
-                  <DropdownItem
-                    key={item.key}
-                    className={classes.dditem}
-                    textValue={item.label}
-                  >
-                    <Link href={item.href}>{item.label}</Link>
-                    
-                  </DropdownItem>
-                )}
-              </DropdownMenu>
-            </Dropdown>
-          <NavbarItem isActive>
-              <Link href="/outreach" aria-current="page" className={classes.link}>
-                Our Reach So Far
-              </Link>
-            </NavbarItem>
-            {/* <li className={classes.item}> */}
-            <NavbarItem isActive>
-              <Link href="/otros" aria-current="page" className={classes.link}>
-                Our Services
-              </Link>
-            </NavbarItem>
-            {/* </li> */}
-            {/* <li className={classes.item}> */}
-            <NavbarItem>
-              <Link href="/ayudar" aria-current="page" className={classes.link}>
-                How to Help
-              </Link>
-            </NavbarItem>
-            {/* </li> */}
-          </NavbarContent>
-        </nav>
-      </header>
-    </Navbar>
+              {/* <li className={classes.item}> */}
+              <NavbarItem isActive>
+                <Link
+                  href="/otros"
+                  aria-current="page"
+                  className={classes.link}
+                >
+                  Our Services
+                </Link>
+              </NavbarItem>
+              {/* </li> */}
+              {/* <li className={classes.item}> */}
+              <NavbarItem>
+                <Button
+                  as={Link}
+                  href="/store"
+                  className={classes.link}
+                  radius="full"
+                  size="sm"
+                >
+                  Store
+                </Button>
+              </NavbarItem>
+              <NavbarItem>
+                <Link
+                  href="/ayudar"
+                  aria-current="page"
+                  className={classes.link}
+                >
+                  How to Help
+                </Link>
+              </NavbarItem>
+              {/* </li> */}
+            </NavbarContent>
+          </nav>
+        </header>
+      </Navbar>
+    </div>
   );
 }
