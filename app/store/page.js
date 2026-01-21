@@ -175,7 +175,7 @@ export default function StorePage() {
 
         {/* Tech Workshop */}
 <section className={classes.section}>
-  <h3 id="tech-workshop">Interactive Tools for Virtual Instruction</h3>
+  <h3 id="tech-workshop">Interactive Tools for Virtual Instruction (Postponed due to low enrollment)</h3>
 
   <p>
     A hands-on workshop for educators, interpreters, and service providers
@@ -183,7 +183,7 @@ export default function StorePage() {
   </p>
 
   <ul className={classes.eventDetails}>
-    📅 January 21
+    📅 TBD
     ⏰ 4:00–6:00 PM PST
     🎓 0.2 CEUs available
     🧏 Presented in ASL

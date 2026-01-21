@@ -209,7 +209,7 @@ export default function Home() {
             </p>
           </div>
 
-          <h3>January 21</h3>
+          <h3>January 21 (Postponed due to low enrollment)</h3>
           <p>
             Join us for a workshop on how to use tech tools to improve your online teaching and tutoring.  Presented in ASL.
           </p>
