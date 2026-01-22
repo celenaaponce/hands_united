@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import classes from "./page.module.css";
+import ZeffyEmbed from "components/zeffyembed/zeffy-embed"
 
 /* =========================
    FLYER IMAGE PLACEHOLDERS
@@ -203,7 +204,7 @@ export default function StorePage() {
 
   {/* Zeffy embed goes AFTER context */}
   <div className={classes.embedWrapper}>
-    <iframe
+    <ZeffyEmbed
       title="Tech Workshop Registration"
       src="https://www.zeffy.com/embed/ticketing/interactive-tools-for-virtual-instruction"
       allowPaymentRequest
@@ -251,7 +252,7 @@ export default function StorePage() {
   <h4>Register</h4>
 
   <div className={classes.embedWrapper}>
-    <iframe
+    <ZeffyEmbed
       title="Language Can’t Wait Registration"
       src="https://www.zeffy.com/embed/ticketing/language-cant-wait"
       allowPaymentRequest
@@ -312,7 +313,7 @@ export default function StorePage() {
         {/* Zeffy Embed */}
         <div className={classes.imageContainer}>
           <div className={classes.embedWrapper}>
-            <iframe
+            <ZeffyEmbed
               title="Spanish Destinos Registration"
               src="https://www.zeffy.com/embed/ticketing/hands-united-spanish-destinos-classes"
               allowPaymentRequest
@@ -361,7 +362,7 @@ export default function StorePage() {
         {/* ✅ CORRECT Zeffy Embed — Math */}
         <div className={classes.imageContainer}>
           <div style={{ position: "relative", width: "100%", paddingTop: "450px" }}>
-            <iframe
+            <ZeffyEmbed
               title="Hands United Math Workshops Registration"
               src="https://www.zeffy.com/embed/ticketing/hands-united-math-classes"
               style={{
@@ -406,7 +407,7 @@ export default function StorePage() {
         {/* Zeffy Embed */}
         <div className={classes.imageContainer}>
           <div className={classes.embedWrapper}>
-            <iframe
+            <ZeffyEmbed
               title="International Sign Language Registration"
               src="https://www.zeffy.com/embed/ticketing/5-week-international-sign-language-with-razaq"
               allowPaymentRequest
@@ -446,7 +447,7 @@ export default function StorePage() {
         {/* Zeffy Embed */}
         <div className={classes.imageContainer}>
           <div className={classes.embedWrapper}>
-            <iframe
+            <ZeffyEmbed
               title="Mexican Sign Language Registration"
               src="https://www.zeffy.com/embed/ticketing/10-week-lsm-classes-with-karen"
               allowPaymentRequest
@@ -496,7 +497,7 @@ export default function StorePage() {
     community members interested in storytelling and advocacy.
   </p>
     <div style={{ marginTop: "1.5rem", marginBottom: "2rem" }}>
-    <iframe
+    <ZeffyEmbed
       width="100%"
       height="315"
       src="https://www.youtube.com/embed/mcsyBIawp88"
@@ -510,7 +511,7 @@ export default function StorePage() {
   {/* Zeffy Embed — Book Club */}
   <div className={classes.imageContainer}>
     <div style={{ position: "relative", width: "100%", paddingTop: "450px" }}>
-      <iframe
+      <ZeffyEmbed
         title="A Mother’s Voice Book Club Registration"
         src="https://www.zeffy.com/embed/ticketing/a-mothers-voice"
         style={{
@@ -537,7 +538,7 @@ export default function StorePage() {
 
         <div className={classes.imageContainer}>
           <div className={classes.embedWrapper}>
-            <iframe
+            <ZeffyEmbed
               title="Async Workshop Store"
               src="https://www.zeffy.com/embed/ticketing/hands-uniteds-async-workshop-store"
               allowPaymentRequest
@@ -559,7 +560,7 @@ export default function StorePage() {
 
         <div className={classes.imageContainer}>
           <div className={classes.embedWrapper}>
-            <iframe
+            <ZeffyEmbed
               title="Hands United Product Store"
               src="https://www.zeffy.com/embed/ticketing/hands-uniteds-shop"
               allowPaymentRequest
