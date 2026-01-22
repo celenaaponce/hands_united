@@ -6,29 +6,19 @@ export default function ZeffyEmbed({ title, src }) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const checkScreen = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
+    const checkScreen = () => setIsMobile(window.innerWidth <= 768);
     checkScreen();
     window.addEventListener("resize", checkScreen);
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
-  // DESKTOP: load iframe immediately
+  // DESKTOP: always show iframe
   if (!isMobile) {
     return (
-      <div style={{ position: "relative", paddingTop: "450px" }}>
+      <div className="embedWrapper">
         <iframe
           title={title}
           src={src}
-          style={{
-            position: "absolute",
-            inset: 0,
-            width: "100%",
-            height: "100%",
-            border: 0,
-          }}
           allowPaymentRequest
           allowTransparency="true"
         />
@@ -36,7 +26,7 @@ export default function ZeffyEmbed({ title, src }) {
     );
   }
 
-  // MOBILE: load iframe only after tap
+  // MOBILE: button → iframe expands below
   return (
     <div style={{ width: "100%", marginTop: "1rem" }}>
       {!open && (
@@ -44,11 +34,12 @@ export default function ZeffyEmbed({ title, src }) {
           onClick={() => setOpen(true)}
           style={{
             width: "100%",
-            padding: "0.75rem",
-            borderRadius: "0.5rem",
+            padding: "1rem",
+            borderRadius: "0.75rem",
             background: "linear-gradient(90deg, #72b200, #b4e956)",
-            color: "#ffffff",
+            color: "#1a1a1a",
             fontWeight: "bold",
+            fontSize: "1rem",
             border: "none",
             cursor: "pointer",
           }}
@@ -58,17 +49,10 @@ export default function ZeffyEmbed({ title, src }) {
       )}
 
       {open && (
-        <div style={{ position: "relative", paddingTop: "450px" }}>
+        <div className="embedWrapper">
           <iframe
             title={title}
             src={src}
-            style={{
-              position: "absolute",
-              inset: 0,
-              width: "100%",
-              height: "100%",
-              border: 0,
-            }}
             loading="lazy"
             allowPaymentRequest
             allowTransparency="true"

@@ -79,7 +79,7 @@ export default function StorePage() {
           </div>
           */}
 
-          <Link href="REPLACE_AIDAFORM_LINK">
+          <Link href="https://manosunidas.aidaform.com/clases-de-asl-enero-2026">
             Register for Spanish ASL Classes
           </Link>
         </div>
@@ -360,23 +360,12 @@ export default function StorePage() {
         </p>
 
         {/* ✅ CORRECT Zeffy Embed — Math */}
-        <div className={classes.imageContainer}>
-          <div style={{ position: "relative", width: "100%", paddingTop: "450px" }}>
-            <ZeffyEmbed
-              title="Hands United Math Workshops Registration"
-              src="https://www.zeffy.com/embed/ticketing/hands-united-math-classes"
-              style={{
-                position: "absolute",
-                inset: 0,
-                width: "100%",
-                height: "100%",
-                border: 0,
-              }}
-              allowPaymentRequest
-              allowTransparency="true"
-            />
-          </div>
-        </div>
+<div className={classes.embedWrapper}>
+  <ZeffyEmbed
+    title="Hands United Math Workshops Registration"
+    src="https://www.zeffy.com/embed/ticketing/hands-united-math-classes"
+  />
+</div>
       </section>
       </section>
         <h2>International Sign Language</h2>
@@ -496,7 +485,7 @@ export default function StorePage() {
     seeking deeper understanding of Deaf experiences, as well as families and
     community members interested in storytelling and advocacy.
   </p>
-    <div style={{ marginTop: "1.5rem", marginBottom: "2rem" }}>
+    <div className={classes.embedWrapper}>
     <ZeffyEmbed
       width="100%"
       height="315"
@@ -510,21 +499,12 @@ export default function StorePage() {
 
   {/* Zeffy Embed — Book Club */}
   <div className={classes.imageContainer}>
-    <div style={{ position: "relative", width: "100%", paddingTop: "450px" }}>
-      <ZeffyEmbed
-        title="A Mother’s Voice Book Club Registration"
-        src="https://www.zeffy.com/embed/ticketing/a-mothers-voice"
-        style={{
-          position: "absolute",
-          inset: 0,
-          width: "100%",
-          height: "100%",
-          border: 0,
-        }}
-        allowPaymentRequest
-        allowTransparency="true"
-      />
-    </div>
+<div className={classes.embedWrapper}>
+  <ZeffyEmbed
+    title="A Mother’s Voice Book Club Registration"
+    src="https://www.zeffy.com/embed/ticketing/a-mothers-voice"
+  />
+</div>
   </div>
 </section>
       </section>
