@@ -84,31 +84,6 @@ export default function StorePage() {
           </Link>
         </div>
 
-        {/* Immigration Consultation */}
-        <div className={classes.eventBlock}>
-          <h3>Free Immigration Consultation for DHHDB Immigrants</h3>
-          <p>
-            Tuesday, January 20. Free immigration consultation for Deaf, Hard of
-            Hearing, DeafBlind, and DeafDisabled immigrants, supported by Deaf
-            and hearing interpreters.
-          </p>
-
-          <div className={classes.responsiveImageWrapper}>
-            <Image
-              src={immigrationFlyer}
-              width={500}
-              height={700}
-              alt="Flyer for free immigration consultation for Deaf immigrants"
-            />
-          </div>
-
-          <p>
-            <Link href="REPLACE_ASL_VIDEO_LINK">
-              Watch ASL advertisement
-            </Link>
-          </p>
-        </div>
-
         {/* Monthly Family Meeting */}
         <div className={classes.eventBlock}>
           <h3>Monthly ASL Family Meeting (Amharic & Tigrinya)</h3>
@@ -126,7 +101,7 @@ export default function StorePage() {
             />
           </div>
 
-          <Link href="REPLACE_ZOOM_LINK">
+          <Link href="https://us06web.zoom.us/j/9429059707?pwd=brcSLCZ0xH0raVFPhIahPzCgP6MAMc.1">
             Join via Zoom
           </Link>
         </div>
@@ -157,7 +132,7 @@ export default function StorePage() {
             meet once a week for one hour.
           </p>
 
-          <Link href="REPLACE_PERMIT_REGISTRATION_LINK">
+          <Link href="https://celenaponce.aidaform.com/permit-class-registration-march-2026">
             Enroll in Permit Classes
           </Link>
         </div>
@@ -173,44 +148,6 @@ export default function StorePage() {
           Workshops and trainings for educators, interpreters, lawyers, and
           community organizations. Some events include CEUs.
         </p>
-
-        {/* Tech Workshop */}
-<section className={classes.section}>
-  <h3 id="tech-workshop">Interactive Tools for Virtual Instruction (Postponed due to low enrollment)</h3>
-
-  <p>
-    A hands-on workshop for educators, interpreters, and service providers
-    focused on creating accessible, engaging video-based instruction.
-  </p>
-
-  <ul className={classes.eventDetails}>
-    📅 TBD
-    ⏰ 4:00–6:00 PM PST
-    🎓 0.2 CEUs available
-    🧏 Presented in ASL
-  </ul>
-
-  <p>
-    Topics include:
-    <br />• Adding images to video
-    <br />• Hard-coded captions
-    <br />• Embedding slides
-    <br />• Accessible video strategies
-  </p>
-
-  <p>
-    <a href="https://youtu.be/kl9VmuM1-J0">Watch short overview video</a>
-  </p>
-
-  {/* Zeffy embed goes AFTER context */}
-  <div className={classes.embedWrapper}>
-    <ZeffyEmbed
-      title="Tech Workshop Registration"
-      src="https://www.zeffy.com/embed/ticketing/interactive-tools-for-virtual-instruction"
-      allowPaymentRequest
-    />
-  </div>
-</section>
 
 
         {/* Guest Speaker */}
@@ -322,7 +259,7 @@ export default function StorePage() {
           </div>
         </div>
                <section className={classes.section}>
-        <h2>Math Workshops</h2>
+        <h2 id="math">Math Workshops</h2>
 
         {/* Flyer */}
 
