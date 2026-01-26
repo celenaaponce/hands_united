@@ -61,7 +61,7 @@ export default function StorePage() {
 
         {/* Spanish ASL Classes */}
         <div className={classes.eventBlock}>
-          <h3>Spanish ASL Classes (Ongoing)</h3>
+          <h3 id="spanish-asl">Spanish ASL Classes (Ongoing)</h3>
           <p>
             We are currently in Week 4 of our Spanish ASL classes. Space is still
             available, especially on Wednesdays and Thursdays.
@@ -86,7 +86,7 @@ export default function StorePage() {
 
         {/* Driver’s Permit Classes */}
         <div className={classes.eventBlock}>
-          <h3>Driver’s Permit Classes (Enrollment Opening)</h3>
+          <h3 id="permit-classes">Driver’s Permit Classes (Enrollment Opening)</h3>
           <p>
             Ten-week course taught fully in ASL by a Deaf instructor. Classes
             meet once a week for one hour.
@@ -112,7 +112,7 @@ export default function StorePage() {
 
         {/* Guest Speaker */}
 <section className={classes.section}>
-  <h3>Language Can’t Wait!</h3>
+  <h3 id="language-cant-wait">Language Can’t Wait!</h3>
 
   <p className={classes.subtitle}>
     Sign languages and full development in Deaf children

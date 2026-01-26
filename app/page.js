@@ -13,6 +13,10 @@ import hmong from "public/classflyers/0116.png";
 import tech from "public/classflyers/0121.png";
 import math from "public/classflyers/3.png";
 import StoreFlyer from "public/classflyers/store.png";
+import LanguageCantWait from "public/classflyers/eng.png";
+import SpanishASL from "public/classflyers/Eneroclasses.png";
+import PermitASL from "public/classflyers/permit-asl.png";
+import KYRWeekly from "public/classflyers/kyr-weekly.png";
 
 
 export default function Home() {
@@ -202,41 +206,92 @@ export default function Home() {
     See all upcoming events & registrations
   </Link>
 </div>
-            <p>
-              We are excited to be soon offering several workshops soon. These
-              include tech workshops, Spanish workshops, Colombian Sign Language
-              and more!
-            </p>
-          </div>
 
-          <h3>January 21 (Postponed due to low enrollment)</h3>
-          <p>
-            Join us for a workshop on how to use tech tools to improve your online teaching and tutoring.  Presented in ASL.
-          </p>
-          <div className={classes.responsiveImageWrapper}>
-            <Image src={tech} width={500} height={500} alt="techtools" />
           </div>
-          <p>
-            Register{" "}
-            <Link
-              href="/store#tech-workshop"
-            >
-              here
-            </Link>{" "}</p>
-          <h3>January 26, 28, and 30</h3>
-          <p>Join us for a three part workshop to learn Spanish through Destinos, a soap opera based curriculum.  These classes will be taught in spoken Spanish with ASL support. </p>
-          <div className={classes.responsiveImageWrapper}>
-            <Image src={math} width={500} height={500} alt="Destinos" />
-          </div>
-          <p>
-            Register{" "}
-            <Link
-              href="/store#spanish-destinos"
-            >
-              here
-            </Link>{" "}
-          </p>
-        </section>
+<section className={classes.section}>
+  <h2>Featured Events & Classes</h2>
+
+  <h3>Language Can’t Wait — Feb 21</h3>
+    <div className={classes.responsiveImageWrapper}>
+    <Image
+      src={LanguageCantWait}
+      width={800}
+      height={500}
+      alt="Language Can't Wait workshop flyer with Dr. Alejandro Oviedo"
+    />
+  </div>
+  <p>
+    A workshop on language deprivation as a human rights issue, led by
+    world-renowned sign language linguist <strong>Dr. Alejandro Oviedo</strong>.
+    Available in ASL, English, and Spanish.
+  </p>
+  <p>$50 with CEUs · $30 without CEUs</p>
+  <Link href="/store#language-cant-wait">
+    Register for Language Can’t Wait
+  </Link>
+
+  <hr />
+
+  <h3>Know Your Rights in ASL — Every Thursday</h3>
+    <div className={classes.responsiveImageWrapper}>
+    <Image
+      src={KYRWeekly}
+      width={800}
+      height={500}
+      alt="Weekly Know Your Rights in ASL flyer"
+    />
+  </div>
+  <p>
+    Weekly Know Your Rights sessions in ASL focused on interacting with ICE,
+    understanding your rights, and staying safe. Designed for Deaf and
+    hard-of-hearing immigrants and their families.
+  </p>
+  <Link href="/kyr">
+    View KYR resources & weekly sessions
+  </Link>
+
+  <hr />
+
+  <h3>Spanish–ASL Classes for Families</h3>
+    <div className={classes.responsiveImageWrapper}>
+    <Image
+      src={SpanishASL}
+      width={800}
+      height={500}
+      alt="Spanish ASL classes flyer for families"
+    />
+  </div>
+  <p>
+    <strong>One week left to register.</strong> Classes support Spanish-speaking
+    families in learning ASL to communicate with their Deaf and hard-of-hearing
+    children.
+  </p>
+  <Link href="/store#spanish-asl">
+    Register for Spanish–ASL Classes
+  </Link>
+
+  <hr />
+
+  <h3>ASL Permit Classes — Starting March 11</h3>
+    <div className={classes.responsiveImageWrapper}>
+    <Image
+      src={PermitASL}
+      width={800}
+      height={500}
+      alt="ASL permit classes flyer taught by Deaf instructor"
+    />
+  </div>
+  <p>
+    Online ASL permit classes taught by a Deaf instructor. Classes meet on
+    Wednesdays and Fridays and support Deaf and hard-of-hearing students
+    preparing for their learner’s permit.
+  </p>
+  <Link href="/store#permit-classes">
+    Learn more about ASL Permit Classes
+  </Link>
+</section>
+
+         </section>
 
         <section className={classes.section}>
           <h2>Who We Are</h2>
