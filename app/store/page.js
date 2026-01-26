@@ -63,7 +63,7 @@ export default function StorePage() {
         <div className={classes.eventBlock}>
           <h3>Spanish ASL Classes (Ongoing)</h3>
           <p>
-            We are currently in Week 3 of our Spanish ASL classes. Space is still
+            We are currently in Week 4 of our Spanish ASL classes. Space is still
             available, especially on Wednesdays and Thursdays.
           </p>
 
@@ -82,46 +82,6 @@ export default function StorePage() {
           <Link href="https://manosunidas.aidaform.com/clases-de-asl-enero-2026">
             Register for Spanish ASL Classes
           </Link>
-        </div>
-
-        {/* Monthly Family Meeting */}
-        <div className={classes.eventBlock}>
-          <h3>Monthly ASL Family Meeting (Amharic & Tigrinya)</h3>
-          <p>
-            Saturday, January 24. Monthly ASL family meeting with Amharic and
-            Tigrinya-speaking families.
-          </p>
-
-          <div className={classes.responsiveImageWrapper}>
-            <Image
-              src={familyMeetingFlyer}
-              width={500}
-              height={500}
-              alt="Flyer for monthly ASL family meeting in Amharic and Tigrinya"
-            />
-          </div>
-
-          <Link href="https://us06web.zoom.us/j/9429059707?pwd=brcSLCZ0xH0raVFPhIahPzCgP6MAMc.1">
-            Join via Zoom
-          </Link>
-        </div>
-
-        {/* Sign Name Celebration */}
-        <div className={classes.eventBlock}>
-          <h3>Sign Name Celebration</h3>
-          <p>
-            Friday, January 23. Invite-only event where families meet with Deaf
-            leaders to invent name signs. Trilingual volunteers are still needed.
-          </p>
-
-          <div className={classes.responsiveImageWrapper}>
-            <Image
-              src={signNameFlyer}
-              width={500}
-              height={500}
-              alt="Flyer for Sign Name Celebration with Deaf leaders"
-            />
-          </div>
         </div>
 
         {/* Driver’s Permit Classes */}
