@@ -189,8 +189,8 @@ export default function StorePage() {
         </p>
 
         <p>
-          <strong>January Session:</strong> Destinos 6–8<br />
-          <strong>Dates:</strong> January 26, 28, 30<br />
+          <strong>Februrary Session:</strong> Destinos 3-6<br />
+          <strong>Dates:</strong> Februrary 16, 18, 20<br />
           <strong>Total Instruction:</strong> 6 hours<br />
           <strong>CEUs:</strong> 0.6<br />
           <strong>Cost:</strong> $60
