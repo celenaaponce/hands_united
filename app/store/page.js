@@ -36,7 +36,7 @@ export default function StorePage() {
 <p>
   Hands United offers community-centered{" "}
   <a href="#professional-programs">events and professional trainings</a>, and{" "}
-  <a href="#store">educational resources</a> to support immigrant families with
+  <a href="#products">educational resources</a> to support immigrant families with
   Deaf and hard-of-hearing children.
 </p>
 
@@ -265,7 +265,7 @@ export default function StorePage() {
 </div>
       </section>
       </section>
-        <h2>International Sign Language</h2>
+        <h2 id="is">International Sign Language</h2>
 
         {/* Flyer */}
 
@@ -305,7 +305,7 @@ export default function StorePage() {
 
         {/* LSM */}
            <section className={classes.section}>
-        <h2>Mexican Sign Language (LSM)</h2>
+        <h2 id="lsm">Mexican Sign Language (LSM)</h2>
 
         {/* Flyer */}
 
@@ -346,7 +346,7 @@ export default function StorePage() {
 
 
       <section className={classes.section}>
-  <h2>Book Club — <em>A Mother’s Voice</em></h2>
+  <h2 id="amothersvoice">Book Club — <em>A Mother’s Voice</em></h2>
 
   {/* Flyer */}
 
@@ -410,7 +410,7 @@ export default function StorePage() {
       {/* ASYNC WORKSHOPS */}
       {/* ===================== */}
       <section className={classes.section}>
-        <h2 id="store">Async Workshops</h2>
+        <h2 id="async">Async Workshops</h2>
         <p>Self-paced recordings available anytime. These do not include CEUs.</p>
 
         <div className={classes.imageContainer}>
@@ -429,7 +429,7 @@ export default function StorePage() {
       {/* PRODUCTS */}
       {/* ===================== */}
       <section className={classes.section}>
-        <h2>Products</h2>
+        <h2 id="products">Products</h2>
         <p>
           Educational materials and visual resources created in collaboration
           with the Deaf community.
