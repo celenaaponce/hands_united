@@ -1,7 +1,6 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
-// Meta webhook verification
-export async function GET(req: NextRequest) {
+export async function GET(req) {
   const { searchParams } = new URL(req.url);
 
   const mode = searchParams.get("hub.mode");
@@ -18,11 +17,8 @@ export async function GET(req: NextRequest) {
   return new NextResponse("Forbidden", { status: 403 });
 }
 
-// Incoming webhook events
-export async function POST(req: NextRequest) {
+export async function POST(req) {
   const body = await req.json();
-
   console.log("WhatsApp webhook event:", body);
-
   return NextResponse.json({ ok: true });
 }
