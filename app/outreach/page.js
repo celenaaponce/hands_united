@@ -41,6 +41,7 @@ export default function Outreach() {
             and hard of hearing children in 30 states.
           </p>
         </div>
+        
         <div className={classes.hero}>
           <h1>YouTube Channel</h1>
           <p>
