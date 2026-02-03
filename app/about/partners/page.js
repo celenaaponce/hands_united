@@ -6,7 +6,7 @@ export default function Partners() {
     <>
       <h2 className={classes.section}>Hand's United Partners</h2>
       <header className={classes.header}>
-        <div className={classes.imageContainer}>
+        {/* <div className={classes.imageContainer}>
           <Image
             src="/partners/trilingual.jpeg"
             alt="Trilingual Therapy logo"
@@ -21,7 +21,7 @@ export default function Partners() {
               Trilingual Therapy Center LLC
             </a>
           </p>
-        </div>
+        </div> */}
         <div className={classes.imageContainer}>
           <Image
             src="/partners/ripin.svg"

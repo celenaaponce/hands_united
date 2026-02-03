@@ -24,7 +24,7 @@ const aboutPages = [
     title: "Partners",
     description:
       "Explore the organizations and community partners we collaborate with across the U.S. and internationally.",
-    href: "/outreach/partners",
+    href: "/about/partners",
   },
 ];
 
