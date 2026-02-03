@@ -1,0 +1,232 @@
+.header {
+  display: flex;
+  gap: 3rem;
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 75rem;
+}
+
+h2.section {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #72b200, #b4e956);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.slideshow {
+  width: 40rem;
+  height: 25rem;
+}
+
+.hero {
+  color: #ddd6cb;
+  font-size: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #72b200, #b4e956);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.cta {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.cta a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #72b200, #b4e956);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cta a:hover,
+.cta a:active {
+  background: linear-gradient(90deg, #72b200, #b4e956);
+}
+
+.cta a:first-child {
+  background: transparent;
+  font-weight: normal;
+  color: #80b919;
+  padding-left: 0;
+}
+
+.cta a:nth-of-type(2) {
+  height: 100%;
+  text-align: center;
+}
+
+.cta a:first-child:hover,
+.cta a:first-child:active {
+  background: transparent;
+  color: #b4e956;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  color: #ddd6cb;
+  font-size: 1.5rem;
+  max-width: 50rem;
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.section a {
+  color: #80b919;
+}
+.section a:visited {
+  color: #80b919;
+}
+.responsiveImageWrapper {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.responsiveImageWrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  margin-bottom:20px;
+}
+
+@media (max-width: 1024px) {
+  .slideshow img {
+    width: 100px;
+    height: auto;
+  }
+
+  .slideshow {
+    height: auto;
+  }
+
+  .hero {
+    margin-left: 3rem;
+  }
+  .header {
+    max-width: 80%;
+    gap: 0;
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+  .hero h1 {
+    font-size: 1.5rem; /* Adjust font size for better readability */
+  }
+
+  .hero p {
+    font-size: 0.875rem; /* Reduce font size */
+    margin-bottom: 0; /* Adjust margin to fit better */
+  }
+  .section h2 {
+    font-size: 1.25rem;
+  }
+  .section p {
+    font-size: 0.875rem;
+  }
+  h2.section {
+    font-size: 1.25rem; /* Slightly smaller for smaller screens */
+  }
+
+  p.section {
+    font-size: 1rem;
+  }
+
+  .section {
+    margin-top: 2rem;
+    width: 80%;
+  }
+
+  .cta {
+    font-size: 1rem;
+  }
+  @media (max-width: 767px) {
+    .header {
+      max-width: 95%;
+      margin-top: 1rem;
+      gap: 1rem;
+    }
+
+    .slideshow {
+      width: 20rem;
+      height: 12rem;
+    }
+
+    .hero h1 {
+      font-size: 1.25rem;
+    }
+
+    .hero p {
+      font-size: 0.875rem;
+    }
+
+    .section h2 {
+      font-size: 1.25rem;
+    }
+
+    .section p {
+      font-size: 0.875rem;
+    }
+
+    .cta {
+      font-size: 1rem;
+    }
+
+    .responsiveImageWrapper {
+      max-width: 100%;
+    }
+  }
+
+  /* Small Phones: up to 479px */
+  @media (max-width: 479px) {
+    .slideshow {
+      width: 100%;
+      height: auto;
+    }
+
+    .hero h1 {
+      font-size: 1rem;
+    }
+
+    .hero p {
+      font-size: 0.75rem;
+    }
+
+    .section h2 {
+      font-size: 1rem;
+    }
+
+    .section p {
+      font-size: 0.75rem;
+    }
+
+    .cta {
+      font-size: 0.875rem;
+    }
+
+    .cta a {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875rem;
+    }
+  }
+}

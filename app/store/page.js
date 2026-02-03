@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import classes from "./page.module.css";
-import ZeffyEmbed from "components/zeffyembed/zeffy-embed"
+import ZeffyEmbed from "components/zeffyembed/zeffy-embed";
+import immigration101Flyer from "public/classflyers/immigration101.jpeg";
 
 /* =========================
    FLYER IMAGE PLACEHOLDERS
@@ -33,12 +34,12 @@ export default function StorePage() {
       <section className={classes.section}>
         <h2>Events & Store</h2>
 
-<p>
-  Hands United offers community-centered{" "}
-  <a href="#professional-programs">events and professional trainings</a>, and{" "}
-  <a href="#products">educational resources</a> to support immigrant families with
-  Deaf and hard-of-hearing children.
-</p>
+        <p>
+          Hands United offers community-centered{" "}
+          <a href="#professional-programs">events and professional trainings</a>
+          , and <a href="#products">educational resources</a> to support
+          immigrant families with Deaf and hard-of-hearing children.
+        </p>
 
         <p>
           Proceeds from paid events and store purchases directly fund free
@@ -63,30 +64,20 @@ export default function StorePage() {
         <div className={classes.eventBlock}>
           <h3 id="spanish-asl">Spanish ASL Classes (Ongoing)</h3>
           <p>
-            We are currently in Week 4 of our Spanish ASL classes. Space is still
-            available, especially on Wednesdays and Thursdays.
+            Our current round of classes are full. We will be starting our next
+            round in April. In the mean time, parents can fill out our{" "}
+            <Link href="https://manosunidas.aidaform.com/miembro-de-la-comunidad-de-manos-unidas">
+              Community Member form{" "}
+            </Link>{" "}
+            to get more information about our services.
           </p>
-
-          {/* OPTIONAL flyer slot */}
-          {/*
-          <div className={classes.responsiveImageWrapper}>
-            <Image
-              src={aslClassFlyer}
-              width={500}
-              height={700}
-              alt="Flyer for Spanish ASL classes"
-            />
-          </div>
-          */}
-
-          <Link href="https://manosunidas.aidaform.com/clases-de-asl-enero-2026">
-            Register for Spanish ASL Classes
-          </Link>
         </div>
 
         {/* Driver’s Permit Classes */}
         <div className={classes.eventBlock}>
-          <h3 id="permit-classes">Driver’s Permit Classes (Enrollment Opening)</h3>
+          <h3 id="permit-classes">
+            Driver’s Permit Classes (Enrollment Opening)
+          </h3>
           <p>
             Ten-week course taught fully in ASL by a Deaf instructor. Classes
             meet once a week for one hour.
@@ -98,69 +89,20 @@ export default function StorePage() {
         </div>
       </section>
 
-{/* ======================================= */}
+      {/* ======================================= */}
       {/* PROFESSIONAL & COMMUNITY PARTNERS */}
       {/* ======================================= */}
-      <section className={classes.section}>
-        <h2 id="professional-programs">Programs for Professionals & Community Partners</h2>
+      {/* <section className={classes.section}>
+        <h2 id="professional-programs">
+          Programs for Professionals & Community Partners
+        </h2>
 
         <p>
           Workshops and trainings for educators, interpreters, lawyers, and
           community organizations. Some events include CEUs.
         </p>
 
-
-        {/* Guest Speaker */}
-<section className={classes.section}>
-  <h3 id="language-cant-wait">Language Can’t Wait!</h3>
-
-  <p className={classes.subtitle}>
-    Sign languages and full development in Deaf children
-  </p>
-
-  <p>
-    A two-hour virtual presentation for families of Deaf children and
-    professionals working with Deaf communities. This session addresses
-    language deprivation as a neurological emergency and emphasizes the
-    importance of ensuring a full first language through sign languages.
-  </p>
-
-  <p>
-    Topics include debunking myths about speech-only approaches, discussion of
-    cochlear implants, and practical strategies families and professionals can
-    take immediately to support healthy language development.
-  </p>
-
-  <ul className={classes.eventDetails}>
-    📅 <strong>Date:</strong> February 21, 2026 <br></br>
-    ⏰ <strong>Time:</strong> 10am PT · 12pm CT · 2pm PR <br></br>
-    🎤 <strong>Presenter:</strong> Professor Alejandro Oviedo <br></br>
-    🗣️ <strong>Language:</strong> Spanish <br></br>
-    🧏 <strong>Interpretation:</strong> English and ASL <br></br>
-    🎓 <strong>CEUs:</strong> 0.2 available for professionals <br></br>
-  </ul>
-
-  <p>
-    <strong>Cost:</strong><br />
-    Families: Free<br />
-    Professionals: $50 with CEUs · $30 without CEUs
-  </p>
-<section className={classes.section}>
-  <h4>Register</h4>
-
-  <div className={classes.embedWrapper}>
-    <ZeffyEmbed
-      title="Language Can’t Wait Registration"
-      src="https://www.zeffy.com/embed/ticketing/language-cant-wait"
-      allowPaymentRequest
-      allowTransparency="true"
-    />
-  </div>
-</section>
-
-</section>
-
-      </section>
+      </section> */}
 
       {/* ===================== */}
       {/* CLASSES & COHORTS */}
@@ -168,242 +110,162 @@ export default function StorePage() {
       <section className={classes.section}>
         <h2>Classes & Multi-Week Programs</h2>
 
- <section className={classes.section}>
-            {/* Spanish Destinos */}
-      <section className={classes.section}>
-        <h2 id="spanish-destinos">Spanish Workshops — Destinos</h2>
+        <section className={classes.section}>
+          <h2 id="math">Math Workshops</h2>
 
-        {/* Flyer */}
+          {/* Flyer */}
 
-        {/* Description */}
-        <p>
-          <strong>Hands United Spanish Workshops</strong> use the <em>Destinos</em>{" "}
-          curriculum to support interpreters and professionals working between
-          ASL and spoken Spanish.
-        </p>
+          <p>
+            <strong>Hands United Math Workshops</strong> are designed
+            specifically for educational interpreters and focus on building the
+            math content knowledge needed for accurate interpretation.
+          </p>
 
-        <p>
-          Sessions are taught in <strong>ASL and spoken Spanish</strong> and are
-          open to interpreters, interpreting students, hearing participants, and
-          DHH professionals.
-        </p>
+          <p>
+            Sessions are taught in <strong>spoken English</strong> and geared
+            toward interpreters working in K–12 educational settings.
+          </p>
 
-        <p>
-          <strong>Februrary Session:</strong> Destinos 3-6<br />
-          <strong>Dates:</strong> Februrary 16, 18, 20<br />
-          <strong>Total Instruction:</strong> 6 hours<br />
-          <strong>CEUs:</strong> 0.6<br />
-          <strong>Cost:</strong> $60
-        </p>
+          <p>
+            <strong>February Workshop:</strong> Number Sense & Operations
+            <br />
+            <strong>Dates:</strong> February 2, 4, 6<br />
+            <strong>Session Length:</strong> 2 hours each
+            <br />
+            <strong>CEUs:</strong> 0.2 per session
+            <br />
+            <strong>Cost:</strong> $110
+          </p>
 
-        <p>
-          <strong>Time Zones:</strong><br />
-          4:00 p.m. PST · 5:00 p.m. MST · 6:00 p.m. CST · 7:00 p.m. EST · 8:00 p.m.
-          Puerto Rico
-        </p>
+          <p>
+            <strong>Grade-Level Focus:</strong>
+            <br />
+            Monday – Elementary
+            <br />
+            Wednesday – Middle School
+            <br />
+            Friday – High School
+          </p>
 
-        <p>
-          Discounted packages are available for participants enrolling in
-          multiple months.
-        </p>
+          <p>
+            <strong>Time Zones:</strong>
+            <br />
+            4:00 p.m. PST · 5:00 p.m. MST · 6:00 p.m. CST · 7:00 p.m. EST · 8:00
+            p.m. Puerto Rico
+          </p>
 
-        {/* Zeffy Embed */}
-        <div className={classes.imageContainer}>
+          {/* ✅ CORRECT Zeffy Embed — Math */}
           <div className={classes.embedWrapper}>
             <ZeffyEmbed
-              title="Spanish Destinos Registration"
-              src="https://www.zeffy.com/embed/ticketing/hands-united-spanish-destinos-classes"
-              allowPaymentRequest
-              allowTransparency="true"
+              title="Hands United Math Workshops Registration"
+              src="https://www.zeffy.com/embed/ticketing/hands-united-math-classes"
             />
           </div>
-        </div>
-               <section className={classes.section}>
-        <h2 id="math">Math Workshops</h2>
-
-        {/* Flyer */}
-
-
-        <p>
-          <strong>Hands United Math Workshops</strong> are designed specifically
-          for educational interpreters and focus on building the math content
-          knowledge needed for accurate interpretation.
-        </p>
-
-        <p>
-          Sessions are taught in <strong>spoken English</strong> and geared toward
-          interpreters working in K–12 educational settings.
-        </p>
-
-        <p>
-          <strong>February Workshop:</strong> Number Sense & Operations<br />
-          <strong>Dates:</strong> February 2, 4, 6<br />
-          <strong>Session Length:</strong> 2 hours each<br />
-          <strong>CEUs:</strong> 0.2 per session<br />
-          <strong>Cost:</strong> $110
-        </p>
-
-        <p>
-          <strong>Grade-Level Focus:</strong><br />
-          Monday – Elementary<br />
-          Wednesday – Middle School<br />
-          Friday – High School
-        </p>
-
-        <p>
-          <strong>Time Zones:</strong><br />
-          4:00 p.m. PST · 5:00 p.m. MST · 6:00 p.m. CST · 7:00 p.m. EST · 8:00 p.m.
-          Puerto Rico
-        </p>
-
-        {/* ✅ CORRECT Zeffy Embed — Math */}
-<div className={classes.embedWrapper}>
-  <ZeffyEmbed
-    title="Hands United Math Workshops Registration"
-    src="https://www.zeffy.com/embed/ticketing/hands-united-math-classes"
-  />
-</div>
-      </section>
-      </section>
-        <h2 id="is">International Sign Language</h2>
-
-        {/* Flyer */}
-
-
-        {/* Description */}
-        <p>
-          <strong>5-week International Sign Language class</strong> designed for
-          Deaf professionals, interpreters, and others with strong ASL fluency
-          working in multilingual and international contexts.
-        </p>
-
-        <p>
-          This course builds cross-linguistic signing strategies and supports
-          communication beyond ASL in global and professional settings.
-        </p>
-
-        <p>
-          <strong>Dates:</strong> Starting February 3<br />
-          <strong>Schedule:</strong> Tuesdays & Thursdays<br />
-          <strong>Time:</strong> 9:00–11:00 a.m. PST<br />
-          <strong>Instructor:</strong> Razaq Fakir<br />
-          <strong>Cost:</strong> $150 (includes 2.0 CEUs)
-        </p>
-
-        {/* Zeffy Embed */}
-        <div className={classes.imageContainer}>
-          <div className={classes.embedWrapper}>
-            <ZeffyEmbed
-              title="International Sign Language Registration"
-              src="https://www.zeffy.com/embed/ticketing/5-week-international-sign-language-with-razaq"
-              allowPaymentRequest
-              allowTransparency="true"
-            />
-          </div>
-        </div>
-      </section>
+        </section>
 
         {/* LSM */}
-           <section className={classes.section}>
-        <h2 id="lsm">Mexican Sign Language (LSM)</h2>
+        <section className={classes.section}>
+          <h2 id="lsm">Mexican Sign Language (LSM)</h2>
 
-        {/* Flyer */}
+          {/* Flyer */}
 
+          {/* Description */}
+          <p>
+            <strong>10-week Mexican Sign Language (LSM) course</strong> for ASL
+            interpreters, Deaf and Hard of Hearing individuals, and ITP
+            students.
+          </p>
 
-        {/* Description */}
-        <p>
-          <strong>10-week Mexican Sign Language (LSM) course</strong> for ASL
-          interpreters, Deaf and Hard of Hearing individuals, and ITP students.
-        </p>
+          <p>
+            Learn LSM vocabulary and concepts not found in ASL, including
+            cultural topics such as Mexican foods, cities, traditions, and
+            holidays.
+          </p>
 
-        <p>
-          Learn LSM vocabulary and concepts not found in ASL, including cultural
-          topics such as Mexican foods, cities, traditions, and holidays.
-        </p>
+          <p>
+            <strong>Dates:</strong> February 3 – April 9<br />
+            <strong>Schedule Options:</strong>
+            <br />
+            • Level 1: Tuesdays or Wednesdays at 7:00 p.m. CST
+            <br />
+            • Level 2: Thursdays at 7:00 p.m. CST
+            <br />
+            <strong>Instructor:</strong> Karen Macias
+            <br />
+            <strong>Cost:</strong> $150 (includes 2.0 CEUs)
+          </p>
 
-        <p>
-          <strong>Dates:</strong> February 3 – April 9<br />
-          <strong>Schedule Options:</strong><br />
-          • Level 1: Tuesdays or Wednesdays at 7:00 p.m. CST<br />
-          • Level 2: Thursdays at 7:00 p.m. CST<br />
-          <strong>Instructor:</strong> Karen Macias<br />
-          <strong>Cost:</strong> $150 (includes 2.0 CEUs)
-        </p>
+          {/* Zeffy Embed */}
+          <div className={classes.imageContainer}>
+            <div className={classes.embedWrapper}>
+              <ZeffyEmbed
+                title="Mexican Sign Language Registration"
+                src="https://www.zeffy.com/embed/ticketing/10-week-lsm-classes-with-karen"
+                allowPaymentRequest
+                allowTransparency="true"
+              />
+            </div>
+          </div>
+        </section>
+        {/* Immigration 101 Workshop */}
+        <div className={classes.eventBlock}>
+          <h3 id="immigration-101">
+            Immigration 101 — Deaf & Hard of Hearing Only
+          </h3>
 
-        {/* Zeffy Embed */}
-        <div className={classes.imageContainer}>
-          <div className={classes.embedWrapper}>
-            <ZeffyEmbed
-              title="Mexican Sign Language Registration"
-              src="https://www.zeffy.com/embed/ticketing/10-week-lsm-classes-with-karen"
-              allowPaymentRequest
-              allowTransparency="true"
+          {/* Flyer */}
+          <div className={classes.imageContainer}>
+            <Image
+              src={immigration101Flyer}
+              alt="Hands United Immigration 101 workshop flyer"
+              width={500}
+              height={700}
+              priority
             />
           </div>
+
+          {/* Description */}
+          <p>
+            <strong>Immigration 101</strong> is a three-part workshop series
+            designed specifically for Deaf and Hard of Hearing community
+            members.
+          </p>
+
+          <p>
+            This series explains <strong>real immigration pathways</strong>,{" "}
+            <strong>real costs</strong>, <strong>real wait times</strong>, and
+            why there is no single “line” to immigrate to the United States.
+          </p>
+
+          <p>
+            <strong>Dates:</strong> February 13, 20, 27
+            <br />
+            <strong>Time:</strong> 4:00–6:00 p.m. PST
+            <br />
+            <strong>Platform:</strong> Zoom
+          </p>
+
+          <p>
+            <strong>Pricing:</strong>
+            <br />
+            • General admission — $5 (no CEUs)
+            <br />
+            • Student — $25 (0.6 CEUs)
+            <br />• Professional — $60 (0.6 CEUs)
+          </p>
+
+          {/* Zeffy Embed */}
+          <div className={classes.imageContainer}>
+            <div className={classes.embedWrapper}>
+              <ZeffyEmbed
+                title="Immigration 101 Registration"
+                src="https://www.zeffy.com/embed/ticketing/there-is-no-line-a-deaf-accessible-immigration--101"
+                allowPaymentRequest
+                allowTransparency="true"
+              />
+            </div>
+          </div>
         </div>
-      </section>
-
-
-
-      <section className={classes.section}>
-  <h2 id="amothersvoice">Book Club — <em>A Mother’s Voice</em></h2>
-
-  {/* Flyer */}
-
-
-  {/* Description */}
-  <p>
-    Join our virtual book club centered on <strong><em>A Mother’s Voice</em></strong>,
-    written by Deaf author <strong>Tali Etedgi</strong>. This series explores
-    Deaf experiences, language access, family advocacy, and meaningful change.
-  </p>
-
-  <p>
-    The book club includes multiple live discussions and a{" "}
-    <strong>final session with the author</strong>.
-  </p>
-
-  <p>
-    <strong>Meeting Platform:</strong> Zoom<br />
-    <strong>Time:</strong> 5:00 p.m. PST<br />
-    <strong>Dates:</strong> February 11, February 25, March 11, March 25<br />
-    <strong>Final Session:</strong> April 11 at <strong>9:00 a.m. PST</strong>{" "}
-    (with the author)
-  </p>
-
-  <p>
-    <strong>CEU Options:</strong><br />
-    • $125 — 1.4 CEUs (includes 0.4 CEUs for reading time)<br />
-    • $100 — No CEUs
-  </p>
-
-  <p>
-    This book club is ideal for interpreters, educators, and professionals
-    seeking deeper understanding of Deaf experiences, as well as families and
-    community members interested in storytelling and advocacy.
-  </p>
-    <div className={classes.embedWrapper}>
-    <ZeffyEmbed
-      width="100%"
-      height="315"
-      src="https://www.youtube.com/embed/mcsyBIawp88"
-      title="Author Tali Etedgi introduces A Mother’s Voice"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    />
-  </div>
-
-  {/* Zeffy Embed — Book Club */}
-  <div className={classes.imageContainer}>
-<div className={classes.embedWrapper}>
-  <ZeffyEmbed
-    title="A Mother’s Voice Book Club Registration"
-    src="https://www.zeffy.com/embed/ticketing/a-mothers-voice"
-  />
-</div>
-  </div>
-</section>
       </section>
 
       {/* ===================== */}
@@ -411,7 +273,9 @@ export default function StorePage() {
       {/* ===================== */}
       <section className={classes.section}>
         <h2 id="async">Async Workshops</h2>
-        <p>Self-paced recordings available anytime. These do not include CEUs.</p>
+        <p>
+          Self-paced recordings available anytime. These do not include CEUs.
+        </p>
 
         <div className={classes.imageContainer}>
           <div className={classes.embedWrapper}>

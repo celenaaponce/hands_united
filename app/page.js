@@ -17,7 +17,8 @@ import LanguageCantWait from "public/classflyers/eng.png";
 import SpanishASL from "public/classflyers/Eneroclasses.png";
 import PermitASL from "public/classflyers/permit-asl.png";
 import KYRWeekly from "public/classflyers/kyr-weekly.png";
-
+import KYRMultilingual from "public/images/kyr-multilingual.png";
+import immigration101Flyer from "public/classflyers/immigration101.jpeg";
 
 export default function Home() {
   return (
@@ -36,19 +37,19 @@ export default function Home() {
           </div>
           <div className={classes.cta}>
             <a href="https://manosunidasor.org/">Ver en español</a>
-            <Link href="/otros">Our Services</Link>
+            <Link href="/programs">Our Programs</Link>
           </div>
         </div>
       </header>
       <section className={classes.section}>
         <h2>Open Letter: Access to Video Relay Services</h2>
         <p>
-          In November 2024, Hands United raised concerns with federal regulators about
-          barriers preventing immigrant families with Deaf children from accessing
-          federally funded Video Relay Services. As of January 2026, none of these
-          families have received services.
+          In November 2024, Hands United raised concerns with federal regulators
+          about barriers preventing immigrant families with Deaf children from
+          accessing federally funded Video Relay Services. As of January 2026,
+          none of these families have received services.
         </p>
-        <Link href="/advocacy/open-letter-vrs-access">
+        <Link href="/programs/family-community/advocacy/open-letter-vrs-access">
           Read the full letter (accessible text)
         </Link>
       </section>
@@ -83,7 +84,7 @@ export default function Home() {
             image to go to the page). This page will continue to grow as videos
             come in.
           </p>
-          <Link href="/kyr">
+          <Link href="/programs/immigration-support/kyr">
             <div className={classes.responsiveImageWrapper}>
               <Image
                 src={KYR}
@@ -100,11 +101,81 @@ export default function Home() {
             </a>{" "}
             to download the printable version.
           </p>
+          <section className={classes.section}>
+            <h2>Upcoming Immigration Workshops</h2>
+            <hr />
+            {/* ===================== */}
+            {/* KYR MULTILINGUAL */}
+            {/* ===================== */}
+            <h3>Know Your Rights — Live Multilingual Presentation</h3>
+            <div className={classes.responsiveImageWrapper}>
+              <Image
+                src={KYRMultilingual}
+                width={800}
+                height={500}
+                alt="Know Your Rights multilingual presentation flyer in ASL, LSV, LSM, and LSC"
+              />
+            </div>
+            <p>
+              Hands United is hosting a live{" "}
+              <strong>Know Your Rights (KYR)</strong> presentation designed
+              specifically for Deaf and hard-of-hearing immigrants and their
+              families.
+            </p>
+            <p>
+              This session will be presented in:
+              <br />
+              <strong>
+                ASL · LSV (Venezuelan Sign Language) · LSM (Mexican Sign
+                Language) · LSC (Colombian Sign Language)
+              </strong>
+            </p>
+            <p>
+              <strong>Date:</strong> February 7
+              <br />
+              <strong>Format:</strong> Live on Zoom
+              <br />
+              <strong>Focus:</strong> Rights during ICE interactions, what to do
+              if stopped or detained, and how to communicate safely.
+            </p>
+            <Link href="programs/immigration-support/kyr">View KYR resources</Link>
+            <hr />
+            {/* ===================== */}
+            {/* IMMIGRATION 101 */}
+            {/* ===================== */}
+            <h3>Immigration 101 — Deaf & Hard-of-Hearing Only</h3>
+            <div className={classes.responsiveImageWrapper}>
+              <Image
+                src={immigration101Flyer}
+                width={800}
+                height={500}
+                alt="Immigration 101 flyer for Deaf and Hard-of-Hearing community members"
+              />
+            </div>
+            <p>
+              <strong>Immigration 101</strong> is a three-part workshop series
+              created for Deaf and hard-of-hearing community members who want
+              clear, realistic information about U.S. immigration.
+            </p>
+            This series covers:
+            <ul>
+              <ul>Common immigration pathways</ul>
+              <ul>Real costs and fees</ul>
+              <ul>Realistic timelines and wait periods</ul>
+              <ul>Why there is no single “line” to immigrate</ul>
+            </ul>
+            <p>
+              Content is presented accessibly, without legal jargon, and
+              designed for participants with varied language backgrounds and
+              educational experiences.
+            </p>
+            <Link href="/store#immigration-101">
+              Learn more & register for Immigration 101
+            </Link>
+          </section>
 
           <h2>Resources Galore!</h2>
           <p>We are excited to share our resources with you!</p>
-
-
 
           <p>
             We have our dictionary terms available online in our Spanish
@@ -136,47 +207,45 @@ export default function Home() {
             </div>
           </Link>
           <section className={classes.section}>
-  <h2>Hands United Store</h2>
+            <h2>Hands United Store</h2>
 
-  <p>
-    To support the creation of free, accessible resources for immigrant families
-    with Deaf and hard-of-hearing children, Hands United has launched the{" "}
-    <strong>Hands United Store</strong>.
-  </p>
+            <p>
+              To support the creation of free, accessible resources for
+              immigrant families with Deaf and hard-of-hearing children, Hands
+              United has launched the <strong>Hands United Store</strong>.
+            </p>
 
-  <p>
-    Proceeds from the store directly fund multilingual ASL resources, family
-    workshops, communication tools, and accessibility initiatives.
-  </p>
+            <p>
+              Proceeds from the store directly fund multilingual ASL resources,
+              family workshops, communication tools, and accessibility
+              initiatives.
+            </p>
 
-  <p>
-    <Link href="/store">
-      Visit the Hands United Store
-    </Link>
-  </p>
+            <p>
+              <Link href="/store">Visit the Hands United Store</Link>
+            </p>
 
-  <div className={classes.responsiveImageWrapper}>
-    <Image
-      src={StoreFlyer}
-      width={800}
-      height={500}
-      alt="Hands United Store flyer promoting multilingual ASL resources and community-created materials"
-    />
-  </div>
+            <div className={classes.responsiveImageWrapper}>
+              <Image
+                src={StoreFlyer}
+                width={800}
+                height={500}
+                alt="Hands United Store flyer promoting multilingual ASL resources and community-created materials"
+              />
+            </div>
 
-  <div style={{ marginTop: "1.5rem" }}>
-    <iframe
-      width="100%"
-      height="315"
-      
-      src="https://www.youtube.com/embed/TVJjH7cuEuc"
-      title="Hands United Store introduction video"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    />
-  </div>
-</section>
+            <div style={{ marginTop: "1.5rem" }}>
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/TVJjH7cuEuc"
+                title="Hands United Store introduction video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </section>
           <div className={classes.responsiveImageWrapper}>
             <h2>Languages Supported</h2>
             <p>
@@ -191,107 +260,64 @@ export default function Home() {
           <div className={classes.responsiveImageWrapper}>
             <h2>Upcoming Workshops</h2>
             <div style={{ marginTop: "1.5rem" }}>
-  <Link
-    href="/store"
-    style={{
-      display: "inline-block",
-      padding: "0.5rem 1.25rem",
-      borderRadius: "0.5rem",
-      background: "linear-gradient(90deg, #72b200, #b4e956)",
-      color: "#ffffff",
-      fontWeight: "bold",
-      textDecoration: "none",
-    }}
-  >
-    See all upcoming events & registrations
-  </Link>
-</div>
-
+              <Link
+                href="/store"
+                style={{
+                  display: "inline-block",
+                  padding: "0.5rem 1.25rem",
+                  borderRadius: "0.5rem",
+                  background: "linear-gradient(90deg, #72b200, #b4e956)",
+                  color: "#ffffff",
+                  fontWeight: "bold",
+                  textDecoration: "none",
+                }}
+              >
+                See all upcoming events & registrations
+              </Link>
+            </div>
           </div>
-<section className={classes.section}>
-  <h2>Featured Events & Classes</h2>
+          <section className={classes.section}>
+            <h2>Featured Events & Classes</h2>
 
-  <h3>Language Can’t Wait — Feb 21</h3>
-    <div className={classes.responsiveImageWrapper}>
-    <Image
-      src={LanguageCantWait}
-      width={800}
-      height={500}
-      alt="Language Can't Wait workshop flyer with Dr. Alejandro Oviedo"
-    />
-  </div>
-  <p>
-    A workshop on language deprivation as a human rights issue, led by
-    world-renowned sign language linguist <strong>Dr. Alejandro Oviedo</strong>.
-    Available in ASL, English, and Spanish.
-  </p>
-  <p>$50 with CEUs · $30 without CEUs</p>
-  <Link href="/store#language-cant-wait">
-    Register for Language Can’t Wait
-  </Link>
+            <hr />
 
-  <hr />
+            <h3>Know Your Rights in ASL — Every Thursday</h3>
+            <div className={classes.responsiveImageWrapper}>
+              <Image
+                src={KYRWeekly}
+                width={800}
+                height={500}
+                alt="Weekly Know Your Rights in ASL flyer"
+              />
+            </div>
+            <p>
+              Weekly Know Your Rights sessions in ASL focused on interacting
+              with ICE, understanding your rights, and staying safe. Designed
+              for Deaf and hard-of-hearing immigrants and their families.
+            </p>
+            <Link href="/programs/immigration-support/kyr">View KYR resources</Link>
 
-  <h3>Know Your Rights in ASL — Every Thursday</h3>
-    <div className={classes.responsiveImageWrapper}>
-    <Image
-      src={KYRWeekly}
-      width={800}
-      height={500}
-      alt="Weekly Know Your Rights in ASL flyer"
-    />
-  </div>
-  <p>
-    Weekly Know Your Rights sessions in ASL focused on interacting with ICE,
-    understanding your rights, and staying safe. Designed for Deaf and
-    hard-of-hearing immigrants and their families.
-  </p>
-  <Link href="/kyr">
-    View KYR resources & weekly sessions
-  </Link>
+            <hr />
 
-  <hr />
-
-  <h3>Spanish–ASL Classes for Families</h3>
-    <div className={classes.responsiveImageWrapper}>
-    <Image
-      src={SpanishASL}
-      width={800}
-      height={500}
-      alt="Spanish ASL classes flyer for families"
-    />
-  </div>
-  <p>
-    <strong>One week left to register.</strong> Classes support Spanish-speaking
-    families in learning ASL to communicate with their Deaf and hard-of-hearing
-    children.
-  </p>
-  <Link href="/store#spanish-asl">
-    Register for Spanish–ASL Classes
-  </Link>
-
-  <hr />
-
-  <h3>ASL Permit Classes — Starting March 11</h3>
-    <div className={classes.responsiveImageWrapper}>
-    <Image
-      src={PermitASL}
-      width={800}
-      height={500}
-      alt="ASL permit classes flyer taught by Deaf instructor"
-    />
-  </div>
-  <p>
-    Online ASL permit classes taught by a Deaf instructor. Classes meet on
-    Wednesdays and Fridays and support Deaf and hard-of-hearing students
-    preparing for their learner’s permit.
-  </p>
-  <Link href="/store#permit-classes">
-    Learn more about ASL Permit Classes
-  </Link>
-</section>
-
-         </section>
+            <h3>ASL Permit Classes — Starting March 11</h3>
+            <div className={classes.responsiveImageWrapper}>
+              <Image
+                src={PermitASL}
+                width={800}
+                height={500}
+                alt="ASL permit classes flyer taught by Deaf instructor"
+              />
+            </div>
+            <p>
+              Online ASL permit classes taught by a Deaf instructor. Classes
+              meet on Wednesdays and Fridays and support Deaf and
+              hard-of-hearing students preparing for their learner’s permit.
+            </p>
+            <Link href="/store#permit-classes">
+              Learn more about ASL Permit Classes
+            </Link>
+          </section>
+        </section>
 
         <section className={classes.section}>
           <h2>Who We Are</h2>
@@ -305,7 +331,7 @@ export default function Home() {
           <p>
             Our board members have over 50 years of experience working with Deaf
             children and immigrant families. We also partner with organizations
-            in 10 states. <Link href="/outreach/us">Click here</Link> for more
+            in 10 states. <Link href="/about/our-team">Click here</Link> for more
             information about our board.
           </p>
         </section>
@@ -313,24 +339,40 @@ export default function Home() {
         <section className={classes.section}>
           <h2>Our Mission</h2>
           <p>
-            Hands United’s mission is to reduce language deprivation among Deaf and hard-of-hearing children in immigrant families by addressing the language and cultural barriers that often prevent effective communication and access to essential services.
-
+            Hands United’s mission is to reduce language deprivation among Deaf
+            and hard-of-hearing children in immigrant families by addressing the
+            language and cultural barriers that often prevent effective
+            communication and access to essential services.
           </p>
           <p>
-We empower families by providing comprehensive support that includes multilingual American Sign Language classes, English/ASL instruction for newly arrived Deaf individuals, enrichment workshops, school and IEP advocacy, immigration and legal resource connections, community support programs, and employment readiness services.
-
+            We empower families by providing comprehensive support that includes
+            multilingual American Sign Language classes, English/ASL instruction
+            for newly arrived Deaf individuals, enrichment workshops, school and
+            IEP advocacy, immigration and legal resource connections, community
+            support programs, and employment readiness services.
           </p>
           <p>
-            In addition, we strengthen the professional ecosystem that serves Deaf communities by offering interpreter and translation services, professional development workshops, and media/resource development. As part of our commitment to equitable access, we also support and provide pathways for the certification of foreign sign language interpreters—particularly for those coming from countries where no formal certification system exists—ensuring they can continue to serve their communities with recognized qualifications.
-
+            In addition, we strengthen the professional ecosystem that serves
+            Deaf communities by offering interpreter and translation services,
+            professional development workshops, and media/resource development.
+            As part of our commitment to equitable access, we also support and
+            provide pathways for the certification of foreign sign language
+            interpreters—particularly for those coming from countries where no
+            formal certification system exists—ensuring they can continue to
+            serve their communities with recognized qualifications.
           </p>
           <p>
-            Through these combined efforts, we strive to foster lifelong inclusivity, expand sign language proficiency across diverse populations, and promote greater independence, access, and self-determination for Deaf and hard-of-hearing individuals and their families.
+            Through these combined efforts, we strive to foster lifelong
+            inclusivity, expand sign language proficiency across diverse
+            populations, and promote greater independence, access, and
+            self-determination for Deaf and hard-of-hearing individuals and
+            their families.
           </p>
           <h2>Teachers Pay Teachers</h2>
-                    <p>
-            Some of our earlier multilingual resources remain available on Teachers Pay Teachers.
-Our newest and most up-to-date materials are now available through the Hands United Store.
+          <p>
+            Some of our earlier multilingual resources remain available on
+            Teachers Pay Teachers. Our newest and most up-to-date materials are
+            now available through the Hands United Store.
           </p>
           <Link href="https://www.teacherspayteachers.com/store/manos-unidas">
             <div className={classes.responsiveImageWrapper}>

@@ -1,0 +1,115 @@
+h2.section {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #72b200, #b4e956);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust alignment for spacing */
+    width: 90%; /* Default width, adjust as needed */
+    max-width: 75rem; /* Max width for larger screens */
+    margin: 3rem auto;
+  }
+  
+  .hero,
+  .heroRight,
+  .imageContainer {
+    width: 50%;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+  }
+  
+  .hero h1,
+  .heroRight h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #72b200, #b4e956);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero p,
+  .heroRight p {
+    margin-bottom: 5rem;
+    color: #ddd6cb;
+  }
+  
+  .hero a:visited {
+    color: #b4e956
+  }
+  
+  .hero a {
+    color: #b4e956
+  }
+  
+  /* General image container styling */
+  .imageContainer {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-top: -2rem;
+  }
+  
+  /* Align images to the left for odd rows (1st, 3rd, etc.) */
+  .header .imageContainer:nth-of-type(odd) {
+    justify-content: flex-end;
+  }
+  
+  /* Align images to the right for even rows (2nd, 4th, etc.) */
+  .header .imageContainer:nth-of-type(even) {
+    justify-content: flex-start;
+  }
+
+  .hero:nth-of-type(even) {
+    justify-content: end;
+  }
+
+  .hero:nth-of-type(odd) {
+    justify-content: end;
+  }
+  
+  /* Media query for screens with max width 600px */
+  @media (max-width: 1024px) {
+    .hero,
+    .heroRight,
+    .imageContainer {
+      width: 50%; /* Full width on small screens */
+      /* Optionally adjust font-size and padding for better fit */
+    }
+    .header {
+      max-width: 80%;
+    }
+    .hero h1,
+    .heroRight h1 {
+      font-size: 1.25rem; /* Adjust font size for better readability */
+    }
+  
+    .hero p,
+    .heroRight p {
+      font-size: 0.875rem; /* Reduce font size */
+      margin-bottom: 2rem; /* Adjust margin to fit better */
+    }
+  
+    h2.section {
+      font-size: 1.75rem; /* Slightly smaller for smaller screens */
+    }
+  
+    .imageContainer img{
+      width: 100%;
+      height: auto;
+      margin-right: 1rem !important;
+    }
+  }
+  

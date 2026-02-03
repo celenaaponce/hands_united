@@ -1,0 +1,73 @@
+.main {
+  padding: 3rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  display: block;
+  padding: 1.75rem;
+  border-radius: 0.75rem;
+  border: 2px solid #e0e0e0;
+  background: #ffffff;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cardTitle {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.description {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.cta {
+  font-weight: 600;
+  color: #72b200;
+}
+.title {
+        text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #72b200, #b4e956);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.subtitle {
+    color: #ddd6cb;
+    line-height: 1.6;
+    font-size: 1.75rem;
+     max-width: 100%;
+}

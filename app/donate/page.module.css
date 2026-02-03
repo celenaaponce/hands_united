@@ -1,0 +1,110 @@
+/* ===== Centered section layout (matches homepage) ===== */
+.section {
+  display: flex;
+  flex-direction: column;
+  color: #ddd6cb;
+  font-size: 1.5rem;
+  max-width: 50rem;
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #72b200, #b4e956);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section a {
+  color: #80b919;
+}
+
+.section a:visited {
+  color: #80b919;
+}
+
+/* Desktop Zeffy iframe */
+.zeffyDesktopWrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  position: relative;
+}
+
+.zeffyDesktopWrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ===== Embed container (responsive + centered) ===== */
+.imageContainer {
+  width: 90%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+/* Responsive iframe wrapper */
+.embedWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* works well for Zeffy */
+}
+
+.embedWrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .section {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.25rem;
+  }
+
+  .imageContainer {
+    width: 80%;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .imageContainer {
+    width: 95%;
+  }
+}
+
+/* ===== SMALL PHONES ===== */
+@media (max-width: 479px) {
+  .section {
+    width: 95%;
+    font-size: 0.75rem;
+  }
+
+  .imageContainer {
+    width: 100%;
+  }
+}
