@@ -26,7 +26,7 @@ module.exports = (phase, { defaultConfig }) => {
         },
         {
           source: '/kyr',
-          destination: '/programs/immigration/know-your-rights',
+          destination: '/programs/immigration-support/kyr',
           permanent: true,
         },
         {
