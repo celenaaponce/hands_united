@@ -44,12 +44,14 @@ const languages = [
 export default function LearnASLPage() {
   return (
     <main className={classes.main}>
-      <h1 className={classes.title}>Learn ASL</h1>
+      <section className={classes.headerBlock}>
+        <h1 className={classes.title}>Learn ASL</h1>
 
-      <p className={classes.subtitle}>
-        Select your primary language to access American Sign Language classes,
-        resources, and family-centered materials.
-      </p>
+        <p className={classes.subtitle}>
+          Select your primary language to access American Sign Language classes,
+          resources, and family-centered materials.
+        </p>
+      </section>
 
       <section className={classes.cardGrid}>
         {languages.map((lang) => {

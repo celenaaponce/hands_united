@@ -11,8 +11,6 @@ export default function Donate() {
           <ZeffyEmbed
             title="Hands United General Donation"
             src="https://www.zeffy.com/embed/donation-form/3ab5b5ab-dfc3-4373-a391-311962616835"
-            allowPaymentRequest
-            allowTransparency="true"
           />
         </div>
       </section>

@@ -19,8 +19,6 @@ export default function ZeffyEmbed({ title, src }) {
         <iframe
           title={title}
           src={src}
-          allowPaymentRequest
-          allowTransparency="true"
         />
       </div>
     );
@@ -54,8 +52,6 @@ export default function ZeffyEmbed({ title, src }) {
             title={title}
             src={src}
             loading="lazy"
-            allowPaymentRequest
-            allowTransparency="true"
           />
         </div>
       )}

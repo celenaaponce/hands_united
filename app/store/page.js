@@ -4,21 +4,6 @@ import classes from "./page.module.css";
 import ZeffyEmbed from "components/zeffyembed/zeffy-embed";
 import immigration101Flyer from "public/classflyers/immigration101.jpeg";
 
-/* =========================
-   FLYER IMAGE PLACEHOLDERS
-   Replace these imports with
-   your actual flyer paths
-   ========================= */
-
-// FAMILY PROGRAM FLYERS
-import immigrationFlyer from "public/classflyers/consult.png";
-import familyMeetingFlyer from "public/classflyers/0124eng.png";
-import signNameFlyer from "public/classflyers/celebration.jpeg";
-
-// OPTIONAL: add more as needed
-// import aslClassFlyer from "public/classflyers/REPLACE_asl_classes.png";
-// import driversEdFlyer from "public/classflyers/REPLACE_drivers_ed.png";
-
 export const metadata = {
   title: "Hands United Events & Store",
   description:
@@ -67,10 +52,47 @@ export default function StorePage() {
             Our current round of classes are full. We will be starting our next
             round in April. In the mean time, parents can fill out our{" "}
             <Link href="https://manosunidas.aidaform.com/miembro-de-la-comunidad-de-manos-unidas">
-              Community Member form{" "}
+              Community Member form
             </Link>{" "}
             to get more information about our services.
           </p>
+        </div>
+
+        {/* LSC Family Workshop */}
+        <div className={classes.eventBlock}>
+          <h3 id="lsc-family-workshop">
+            Basic Colombian Sign Language (LSC) Workshop – Families
+          </h3>
+
+          <p>
+            A beginner workshop for families to learn basic Colombian Sign
+            Language (LSC) vocabulary and to learn about the Colombian Deaf
+            community.
+          </p>
+
+          <p>
+            Families will learn:
+            <br />• food vocabulary in LSC
+            <br />• location and everyday place vocabulary in LSC
+            <br />• cultural information about the Colombian Deaf community
+          </p>
+
+          <p>
+            <strong>Date:</strong> February 15
+            <br />
+            <strong>Audience:</strong> Families with Deaf and hard-of-hearing
+            children
+            <br />
+            <strong>Cost:</strong> Free for families
+          </p>
+
+          <Link
+            href="https://manosunidas.aidaform.com/taller-familiar-de-lsc-family-lsc-workshop"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Register for the family LSC workshop
+          </Link>
         </div>
 
         {/* Driver’s Permit Classes */}
@@ -78,6 +100,7 @@ export default function StorePage() {
           <h3 id="permit-classes">
             Driver’s Permit Classes (Enrollment Opening)
           </h3>
+
           <p>
             Ten-week course taught fully in ASL by a Deaf instructor. Classes
             meet once a week for one hour.
@@ -89,131 +112,60 @@ export default function StorePage() {
         </div>
       </section>
 
-      {/* ======================================= */}
-      {/* PROFESSIONAL & COMMUNITY PARTNERS */}
-      {/* ======================================= */}
-      {/* <section className={classes.section}>
-        <h2 id="professional-programs">
-          Programs for Professionals & Community Partners
-        </h2>
-
-        <p>
-          Workshops and trainings for educators, interpreters, lawyers, and
-          community organizations. Some events include CEUs.
-        </p>
-
-      </section> */}
-
       {/* ===================== */}
       {/* CLASSES & COHORTS */}
       {/* ===================== */}
       <section className={classes.section}>
         <h2>Classes & Multi-Week Programs</h2>
 
-        <section className={classes.section}>
-          <h2 id="math">Math Workshops</h2>
-
-          {/* Flyer */}
-
-          <p>
-            <strong>Hands United Math Workshops</strong> are designed
-            specifically for educational interpreters and focus on building the
-            math content knowledge needed for accurate interpretation.
-          </p>
-
-          <p>
-            Sessions are taught in <strong>spoken English</strong> and geared
-            toward interpreters working in K–12 educational settings.
-          </p>
-
-          <p>
-            <strong>February Workshop:</strong> Number Sense & Operations
-            <br />
-            <strong>Dates:</strong> February 2, 4, 6<br />
-            <strong>Session Length:</strong> 2 hours each
-            <br />
-            <strong>CEUs:</strong> 0.2 per session
-            <br />
-            <strong>Cost:</strong> $110
-          </p>
-
-          <p>
-            <strong>Grade-Level Focus:</strong>
-            <br />
-            Monday – Elementary
-            <br />
-            Wednesday – Middle School
-            <br />
-            Friday – High School
-          </p>
-
-          <p>
-            <strong>Time Zones:</strong>
-            <br />
-            4:00 p.m. PST · 5:00 p.m. MST · 6:00 p.m. CST · 7:00 p.m. EST · 8:00
-            p.m. Puerto Rico
-          </p>
-
-          {/* ✅ CORRECT Zeffy Embed — Math */}
-          <div className={classes.embedWrapper}>
-            <ZeffyEmbed
-              title="Hands United Math Workshops Registration"
-              src="https://www.zeffy.com/embed/ticketing/hands-united-math-classes"
-            />
-          </div>
-        </section>
-
         {/* LSM */}
         <section className={classes.section}>
           <h2 id="lsm">Mexican Sign Language (LSM)</h2>
 
-          {/* Flyer */}
-
-          {/* Description */}
           <p>
-            <strong>10-week Mexican Sign Language (LSM) course</strong> for ASL
-            interpreters, Deaf and Hard of Hearing individuals, and ITP
-            students.
+            <strong>10-week Mexican Sign Language (LSM) course</strong> designed
+            for interpreters, Deaf and hard-of-hearing professionals, and
+            students who work with or support Mexican Deaf individuals and
+            families.
           </p>
 
           <p>
-            Learn LSM vocabulary and concepts not found in ASL, including
-            cultural topics such as Mexican foods, cities, traditions, and
-            holidays.
+            This course focuses on functional communication in LSM and on
+            linguistic and cultural differences between ASL and LSM.
+            Participants learn everyday and community-based vocabulary
+            (including foods, places, and daily life topics), as well as
+            cultural norms and perspectives within the Mexican Deaf community to
+            better support Deaf clients, students, and families.
           </p>
 
           <p>
-            <strong>Dates:</strong> February 3 – April 9<br />
+            <strong>Dates:</strong> February 3 – April 9
+            <br />
             <strong>Schedule Options:</strong>
-            <br />
-            • Level 1: Tuesdays or Wednesdays at 7:00 p.m. CST
-            <br />
-            • Level 2: Thursdays at 7:00 p.m. CST
+            <br />• Level 1: Tuesdays or Wednesdays at 7:00 p.m. CST
+            <br />• Level 2: Thursdays at 7:00 p.m. CST
             <br />
             <strong>Instructor:</strong> Karen Macias
             <br />
             <strong>Cost:</strong> $150 (includes 2.0 CEUs)
           </p>
 
-          {/* Zeffy Embed */}
           <div className={classes.imageContainer}>
             <div className={classes.embedWrapper}>
               <ZeffyEmbed
                 title="Mexican Sign Language Registration"
                 src="https://www.zeffy.com/embed/ticketing/10-week-lsm-classes-with-karen"
-                allowPaymentRequest
-                allowTransparency="true"
               />
             </div>
           </div>
         </section>
-        {/* Immigration 101 Workshop */}
+
+        {/* Immigration 101 – Deaf / DHH */}
         <div className={classes.eventBlock}>
           <h3 id="immigration-101">
             Immigration 101 — Deaf & Hard of Hearing Only
           </h3>
 
-          {/* Flyer */}
           <div className={classes.imageContainer}>
             <Image
               src={immigration101Flyer}
@@ -224,7 +176,6 @@ export default function StorePage() {
             />
           </div>
 
-          {/* Description */}
           <p>
             <strong>Immigration 101</strong> is a three-part workshop series
             designed specifically for Deaf and Hard of Hearing community
@@ -247,21 +198,90 @@ export default function StorePage() {
 
           <p>
             <strong>Pricing:</strong>
-            <br />
-            • General admission — $5 (no CEUs)
-            <br />
-            • Student — $25 (0.6 CEUs)
+            <br />• General admission — $5 (no CEUs)
+            <br />• Student — $25 (0.6 CEUs)
             <br />• Professional — $60 (0.6 CEUs)
           </p>
 
-          {/* Zeffy Embed */}
           <div className={classes.imageContainer}>
             <div className={classes.embedWrapper}>
               <ZeffyEmbed
                 title="Immigration 101 Registration"
                 src="https://www.zeffy.com/embed/ticketing/there-is-no-line-a-deaf-accessible-immigration--101"
-                allowPaymentRequest
-                allowTransparency="true"
+              />
+            </div>
+          </div>
+        </div>
+        {/* LSC Professional Workshop */}
+        <div className={classes.eventBlock}>
+          <h3 id="lsc-professional-workshop">
+            Basic Colombian Sign Language (LSC) Workshop – Professionals
+          </h3>
+
+          <p>
+            A beginner workshop for interpreters, educators, and professionals
+            who work with Colombian Deaf individuals and families.
+          </p>
+
+          <p>
+            Participants will learn:
+            <br />• food vocabulary in Colombian Sign Language (LSC)
+            <br />• location and everyday place vocabulary in LSC
+            <br />• cultural information about the Colombian Deaf community
+          </p>
+
+          <p>
+            <strong>Date:</strong> February 15
+            <br />
+            <strong>Audience:</strong> Professionals and community partners
+            <br />
+            <strong>Cost:</strong> $15
+          </p>
+
+          <div className={classes.imageContainer}>
+            <div className={classes.embedWrapper}>
+              <ZeffyEmbed
+                title="LSC Professional Workshop Registration"
+                src="https://www.zeffy.com/embed/ticketing/lsc-family-workshop"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Immigration 101 – Hearing Community */}
+        <div className={classes.eventBlock}>
+          <h3 id="immigration-101-hearing">
+            Immigration 101 — Hearing Community (Spoken English)
+          </h3>
+
+          <p>
+            <strong>Immigration 101</strong> for the hearing community is a
+            three-part workshop designed for professionals, volunteers, and
+            community members who support Deaf immigrants and their families.
+          </p>
+
+          <p>
+            This series covers:
+            <br />• immigration pathways and costs (with realistic wait times),
+            <br />• how the immigration system and court process actually work,
+            and
+            <br />• how the system impacts Deaf immigrants and how hearing
+            professionals can provide better, more accessible support.
+          </p>
+
+          <p>
+            <strong>Dates:</strong> February 21, February 28, and March 7
+            <br />
+            <strong>Platform:</strong> Zoom
+            <br />
+            <strong>Language:</strong> Spoken English
+          </p>
+
+          <div className={classes.imageContainer}>
+            <div className={classes.embedWrapper}>
+              <ZeffyEmbed
+                title="Immigration 101 – Hearing Community Registration"
+                src="https://www.zeffy.com/embed/ticketing/there-is-no-line-immigration--101"
               />
             </div>
           </div>
@@ -273,6 +293,7 @@ export default function StorePage() {
       {/* ===================== */}
       <section className={classes.section}>
         <h2 id="async">Async Workshops</h2>
+
         <p>
           Self-paced recordings available anytime. These do not include CEUs.
         </p>
@@ -282,8 +303,6 @@ export default function StorePage() {
             <ZeffyEmbed
               title="Async Workshop Store"
               src="https://www.zeffy.com/embed/ticketing/hands-uniteds-async-workshop-store"
-              allowPaymentRequest
-              allowTransparency="true"
             />
           </div>
         </div>
@@ -294,6 +313,7 @@ export default function StorePage() {
       {/* ===================== */}
       <section className={classes.section}>
         <h2 id="products">Products</h2>
+
         <p>
           Educational materials and visual resources created in collaboration
           with the Deaf community.
@@ -304,8 +324,6 @@ export default function StorePage() {
             <ZeffyEmbed
               title="Hands United Product Store"
               src="https://www.zeffy.com/embed/ticketing/hands-uniteds-shop"
-              allowPaymentRequest
-              allowTransparency="true"
             />
           </div>
         </div>
