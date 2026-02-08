@@ -102,48 +102,12 @@ export default function Home() {
             to download the printable version.
           </p>
           <section className={classes.section}>
-            <h2>Upcoming Immigration Workshops</h2>
+            <h2>Upcoming Events</h2>
             <hr />
-            {/* ===================== */}
-            {/* KYR MULTILINGUAL */}
-            {/* ===================== */}
-            <h3>Know Your Rights — Live Multilingual Presentation</h3>
-            <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={KYRMultilingual}
-                width={800}
-                height={500}
-                alt="Know Your Rights multilingual presentation flyer in ASL, LSV, LSM, and LSC"
-              />
-            </div>
-            <p>
-              Hands United is hosting a live{" "}
-              <strong>Know Your Rights (KYR)</strong> presentation designed
-              specifically for Deaf and hard-of-hearing immigrants and their
-              families.
-            </p>
-            <p>
-              This session will be presented in:
-              <br />
-              <strong>
-                ASL · LSV (Venezuelan Sign Language) · LSM (Mexican Sign
-                Language) · LSC (Colombian Sign Language)
-              </strong>
-            </p>
-            <p>
-              <strong>Date:</strong> February 7
-              <br />
-              <strong>Format:</strong> Live on Zoom
-              <br />
-              <strong>Focus:</strong> Rights during ICE interactions, what to do
-              if stopped or detained, and how to communicate safely.
-            </p>
-            <Link href="programs/immigration-support/kyr">View KYR resources</Link>
-            <hr />
-            {/* ===================== */}
-            {/* IMMIGRATION 101 */}
-            {/* ===================== */}
+
+            {/* Immigration 101 – Deaf / DHH (Feb 13, 20, 27) */}
             <h3>Immigration 101 — Deaf & Hard-of-Hearing Only</h3>
+
             <div className={classes.responsiveImageWrapper}>
               <Image
                 src={immigration101Flyer}
@@ -152,25 +116,103 @@ export default function Home() {
                 alt="Immigration 101 flyer for Deaf and Hard-of-Hearing community members"
               />
             </div>
+
             <p>
-              <strong>Immigration 101</strong> is a three-part workshop series
-              created for Deaf and hard-of-hearing community members who want
-              clear, realistic information about U.S. immigration.
+              A three-part workshop series created specifically for Deaf and
+              hard-of-hearing community members.
             </p>
-            This series covers:
+
             <ul>
-              <ul>Common immigration pathways</ul>
-              <ul>Real costs and fees</ul>
-              <ul>Realistic timelines and wait periods</ul>
-              <ul>Why there is no single “line” to immigrate</ul>
+              <ul>Immigration paths and realistic costs</ul>
+              <ul>How the immigration system and court actually work</ul>
+              <ul>Deaf-specific access barriers and interpreter issues</ul>
             </ul>
+
             <p>
-              Content is presented accessibly, without legal jargon, and
-              designed for participants with varied language backgrounds and
-              educational experiences.
+              <strong>Dates:</strong> February 13, 20, and 27
+              <br />
+              <strong>Time:</strong> 4:00–6:00 pm PST
+              <br />
+              <strong>Platform:</strong> Zoom
             </p>
+
             <Link href="/store#immigration-101">
-              Learn more & register for Immigration 101
+              Learn more & register (Deaf / DHH)
+            </Link>
+
+            <hr />
+
+            {/* LSC family workshop (Feb 15) */}
+            <h3>Basic Colombian Sign Language (LSC) Workshop — Families</h3>
+
+            <p>
+              Learn basic food and location vocabulary in Colombian Sign
+              Language (LSC) and learn about the Colombian Deaf community.
+            </p>
+
+            <p>
+              <strong>Date:</strong> February 15
+              <br />
+              <strong>Cost:</strong> Free for families, $15 for professionals
+            </p>
+
+            <Link href="https://manosunidas.aidaform.com/taller-familiar-de-lsc-family-lsc-workshop">
+              Families: register for the family LSC workshop
+            </Link>
+                        <Link href="/store#lsc-professional-workshop">
+              Professionals: register for the family LSC workshop
+            </Link>
+
+            <hr />
+
+            {/* Immigration 101 – Hearing (Feb 21, 28) */}
+            <h3>Immigration 101 — Hearing Community (Spoken English)</h3>
+
+            <p>
+              A three-session series for professionals, volunteers, and community
+              members who support Deaf immigrants and their families.
+            </p>
+
+            <p>
+              <strong>Dates:</strong> February 21, February 28, and March 7
+              <br />
+              <strong>Language:</strong> Spoken English
+              <br />
+              <strong>Platform:</strong> Zoom
+            </p>
+
+            <Link href="/store#immigration-101-hearing">
+              Learn more & register (hearing community)
+            </Link>
+
+            <hr />
+
+            {/* Weekly KYR */}
+            <h3>Know Your Rights in ASL — Every Thursday</h3>
+
+            <div className={classes.responsiveImageWrapper}>
+              <Image
+                src={KYRWeekly}
+                width={800}
+                height={500}
+                alt="Weekly Know Your Rights in ASL flyer"
+              />
+            </div>
+
+            <p>
+              Weekly Know Your Rights sessions in ASL focused on ICE
+              interactions, communication during enforcement encounters, and
+              access barriers faced by Deaf immigrants.
+            </p>
+
+            <p>
+              <strong>Time:</strong> Thursdays at 4:00 pm PST
+              <br />
+              <strong>Platform:</strong> Zoom
+            </p>
+
+            <Link href="/programs/immigration-support/kyr">
+              View Know Your Rights resources
             </Link>
           </section>
 
@@ -295,7 +337,9 @@ export default function Home() {
               with ICE, understanding your rights, and staying safe. Designed
               for Deaf and hard-of-hearing immigrants and their families.
             </p>
-            <Link href="/programs/immigration-support/kyr">View KYR resources</Link>
+            <Link href="/programs/immigration-support/kyr">
+              View KYR resources
+            </Link>
 
             <hr />
 
@@ -331,8 +375,8 @@ export default function Home() {
           <p>
             Our board members have over 50 years of experience working with Deaf
             children and immigrant families. We also partner with organizations
-            in 10 states. <Link href="/about/our-team">Click here</Link> for more
-            information about our board.
+            in 10 states. <Link href="/about/our-team">Click here</Link> for
+            more information about our board.
           </p>
         </section>
 
