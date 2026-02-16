@@ -58,43 +58,6 @@ export default function StorePage() {
           </p>
         </div>
 
-        {/* LSC Family Workshop */}
-        <div className={classes.eventBlock}>
-          <h3 id="lsc-family-workshop">
-            Basic Colombian Sign Language (LSC) Workshop – Families
-          </h3>
-
-          <p>
-            A beginner workshop for families to learn basic Colombian Sign
-            Language (LSC) vocabulary and to learn about the Colombian Deaf
-            community.
-          </p>
-
-          <p>
-            Families will learn:
-            <br />• food vocabulary in LSC
-            <br />• location and everyday place vocabulary in LSC
-            <br />• cultural information about the Colombian Deaf community
-          </p>
-
-          <p>
-            <strong>Date:</strong> February 15
-            <br />
-            <strong>Audience:</strong> Families with Deaf and hard-of-hearing
-            children
-            <br />
-            <strong>Cost:</strong> Free for families
-          </p>
-
-          <Link
-            href="https://manosunidas.aidaform.com/taller-familiar-de-lsc-family-lsc-workshop"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Register for the family LSC workshop
-          </Link>
-        </div>
-
         {/* Driver’s Permit Classes */}
         <div className={classes.eventBlock}>
           <h3 id="permit-classes">
@@ -102,8 +65,11 @@ export default function StorePage() {
           </h3>
 
           <p>
-            Ten-week course taught fully in ASL by a Deaf instructor. Classes
-            meet once a week for one hour.
+            Our next 10-week driver’s permit course begins March 11. Classes are
+            taught fully in ASL by a Deaf instructor and meet once per week for
+            one hour. This course prepares Deaf and hard-of-hearing students for
+            the written permit exam by teaching essential vocabulary, traffic
+            laws, and test concepts in an accessible, visual format.
           </p>
 
           <Link href="https://celenaponce.aidaform.com/permit-class-registration-march-2026">
