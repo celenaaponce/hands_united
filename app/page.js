@@ -21,6 +21,7 @@ import KYRWeekly from "public/classflyers/kyr-weekly.png";
 import KYRYouth from "public/classflyers/kyryouth.png";
 import KYRMultilingual from "public/images/kyr-multilingual.png";
 import immigration101Flyer from "public/classflyers/immigration101.jpeg";
+import immigration101FlyerHearing from "public/classflyers/imm101hearing.jpg";
 
 export default function Home() {
   return (
@@ -144,6 +145,14 @@ export default function Home() {
 
             {/* Immigration 101 – Hearing (Feb 21, 28) */}
             <h3>Immigration 101 — Hearing Community (Spoken English)</h3>
+            <div className={classes.responsiveImageWrapper}>
+              <Image
+                src={immigration101FlyerHearing}
+                width={800}
+                height={500}
+                alt="Immigration 101 flyer for Hearing community members"
+              />
+            </div>
 
             <p>
               A three-session series for professionals, volunteers, and

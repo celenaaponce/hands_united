@@ -3,7 +3,7 @@ import Link from "next/link";
 import classes from "./page.module.css";
 import ZeffyEmbed from "components/zeffyembed/zeffy-embed";
 import immigration101Flyer from "public/classflyers/immigration101.jpeg";
-
+import immigration101FlyerHearing from "public/classflyers/imm101hearing.jpg";
 export const metadata = {
   title: "Hands United Events & Store",
   description:
@@ -178,48 +178,22 @@ export default function StorePage() {
             </div>
           </div>
         </div>
-        {/* LSC Professional Workshop */}
-        <div className={classes.eventBlock}>
-          <h3 id="lsc-professional-workshop">
-            Basic Colombian Sign Language (LSC) Workshop – Professionals
-          </h3>
-
-          <p>
-            A beginner workshop for interpreters, educators, and professionals
-            who work with Colombian Deaf individuals and families.
-          </p>
-
-          <p>
-            Participants will learn:
-            <br />• food vocabulary in Colombian Sign Language (LSC)
-            <br />• location and everyday place vocabulary in LSC
-            <br />• cultural information about the Colombian Deaf community
-          </p>
-
-          <p>
-            <strong>Date:</strong> February 15
-            <br />
-            <strong>Audience:</strong> Professionals and community partners
-            <br />
-            <strong>Cost:</strong> $15
-          </p>
-
-          <div className={classes.imageContainer}>
-            <div className={classes.embedWrapper}>
-              <ZeffyEmbed
-                title="LSC Professional Workshop Registration"
-                src="https://www.zeffy.com/embed/ticketing/lsc-family-workshop"
-              />
-            </div>
-          </div>
-        </div>
 
         {/* Immigration 101 – Hearing Community */}
-        <div className={classes.eventBlock}>
+
           <h3 id="immigration-101-hearing">
             Immigration 101 — Hearing Community (Spoken English)
           </h3>
-
+        <div className={classes.eventBlock}>
+                    <div className={classes.imageContainer}>
+            <Image
+              src={immigration101FlyerHearing}
+              alt="Hands United Immigration 101 workshop flyer"
+              width={500}
+              height={700}
+              priority
+            />
+          </div>
           <p>
             <strong>Immigration 101</strong> for the hearing community is a
             three-part workshop designed for professionals, volunteers, and
@@ -237,6 +211,8 @@ export default function StorePage() {
 
           <p>
             <strong>Dates:</strong> February 21, February 28, and March 7
+            <br />
+            <strong>Time:</strong> 2:00-4:00 p.m. PST
             <br />
             <strong>Platform:</strong> Zoom
             <br />
