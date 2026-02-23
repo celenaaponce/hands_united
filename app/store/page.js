@@ -84,47 +84,49 @@ export default function StorePage() {
       <section className={classes.section}>
         <h2>Classes & Multi-Week Programs</h2>
 
-        {/* LSM */}
-        <section className={classes.section}>
-          <h2 id="lsm">Mexican Sign Language (LSM)</h2>
+        {/* Math */}
+<section className={classes.section}>
+  <h2 id="algebra-workshop">Expressions, Equations & Algebraic Reasoning</h2>
 
-          <p>
-            <strong>10-week Mexican Sign Language (LSM) course</strong> designed
-            for interpreters, Deaf and hard-of-hearing professionals, and
-            students who work with or support Mexican Deaf individuals and
-            families.
-          </p>
+  <p>
+    <strong>Three-part K–12 workshop series</strong> designed for interpreters
+    working in elementary, middle, and high school classrooms who want to
+    strengthen their understanding of algebraic concepts and mathematical
+    language.
+  </p>
 
-          <p>
-            This course focuses on functional communication in LSM and on
-            linguistic and cultural differences between ASL and LSM.
-            Participants learn everyday and community-based vocabulary
-            (including foods, places, and daily life topics), as well as
-            cultural norms and perspectives within the Mexican Deaf community to
-            better support Deaf clients, students, and families.
-          </p>
+  <p>
+    This series explores how algebra develops across grade levels—from early
+    pattern recognition and understanding the meaning of the equal sign in
+    elementary school, to solving multi-step equations and analyzing abstract
+    relationships in high school. Participants examine common areas of
+    misunderstanding, key vocabulary, and strategies for maintaining clarity
+    and accuracy when interpreting increasingly symbolic and abstract math
+    instruction.
+  </p>
 
-          <p>
-            <strong>Dates:</strong> February 3 – April 9
-            <br />
-            <strong>Schedule Options:</strong>
-            <br />• Level 1: Tuesdays or Wednesdays at 7:00 p.m. CST
-            <br />• Level 2: Thursdays at 7:00 p.m. CST
-            <br />
-            <strong>Instructor:</strong> Karen Macias
-            <br />
-            <strong>Cost:</strong> $150 (includes 2.0 CEUs)
-          </p>
+  <p>
+    <strong>Format:</strong> Live and recorded options available
+    <br />
+    <strong>Sessions:</strong>
+    <br />• Elementary – Foundations of Algebraic Thinking
+    <br />• Middle School – Expressions & Equations
+    <br />• High School – Algebraic Structure & Reasoning
+    <br />
+    <strong>CEUs:</strong> Available for live sessions
+    <br />
+    <strong>Cost:</strong> Varies by session
+  </p>
 
-          <div className={classes.imageContainer}>
-            <div className={classes.embedWrapper}>
-              <ZeffyEmbed
-                title="Mexican Sign Language Registration"
-                src="https://www.zeffy.com/embed/ticketing/10-week-lsm-classes-with-karen"
-              />
-            </div>
-          </div>
-        </section>
+  <div className={classes.imageContainer}>
+    <div className={classes.embedWrapper}>
+      <ZeffyEmbed
+        title="Algebra Workshop Registration"
+        src="https://www.zeffy.com/embed/ticketing/hands-united-math-classes"
+      />
+    </div>
+  </div>
+</section>
 
         {/* Immigration 101 – Deaf / DHH */}
         <div className={classes.eventBlock}>

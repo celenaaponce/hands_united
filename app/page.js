@@ -44,18 +44,6 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <section className={classes.section}>
-        <h2>Open Letter: Access to Video Relay Services</h2>
-        <p>
-          In November 2024, Hands United raised concerns with federal regulators
-          about barriers preventing immigrant families with Deaf children from
-          accessing federally funded Video Relay Services. As of January 2026,
-          none of these families have received services.
-        </p>
-        <Link href="/programs/family-community/advocacy/open-letter-vrs-access">
-          Read the full letter (accessible text)
-        </Link>
-      </section>
       <main className={classes.main}>
         <section className={classes.section}>
           <h2>Download our app!</h2>
@@ -197,31 +185,6 @@ export default function Home() {
               <strong>Platform:</strong> Zoom
             </p>
             {/* Weekly KYR */}
-            <h3>Know Your Rights in ASL for Deaf youth</h3>
-
-            <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={KYRYouth}
-                width={800}
-                height={500}
-                alt="Weekly Know Your Rights in ASL flyer"
-              />
-            </div>
-
-            <p>
-              Know Your Rights sessions in ASL designed specifically for Deaf
-              and hard-of-hearing youth. These workshops focus on understanding
-              your rights during interactions with immigration officers, how to
-              communicate safely and effectively during enforcement encounters,
-              and how to navigate common access barriers faced by Deaf
-              immigrants.
-            </p>
-
-            <p>
-              <strong>Time:</strong> Saturday, February 21 at 5pm PST
-              <br />
-              <strong>Platform:</strong> Zoom
-            </p>
 
             <Link href="/programs/immigration-support/kyr">
               View Know Your Rights resources
@@ -232,28 +195,8 @@ export default function Home() {
           <p>We are excited to share our resources with you!</p>
 
           <p>
-            We have our dictionary terms available online in our Spanish
-            website. (Click image to go to dictionary.)
-          </p>
-          <Link href="https://manosunidasor.org/ASL/Diccionario">
-            <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={Dict}
-                width={850}
-                height={500}
-                alt="Online dictionary"
-              />
-            </div>
-          </Link>
-          <h3>COMING SOON:</h3>
-                    <p>
-             Our first Haitian Creole - ASL dictionary! 
-                          <Image
-                src={HCDict}
-                width={500}
-                height={750}
-                alt="Online dictionary"
-              /> 
+            We have a <Link href="www.manosunidasor.org/aprender-asl/diccionario">searchable Spanish/ASL dictionary</Link> available online in our Spanish
+            website.
           </p>
 
           <p>
