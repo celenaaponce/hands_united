@@ -239,7 +239,7 @@ export default function StorePage() {
         <h2 id="async">Async Workshops</h2>
 
         <p>
-          Self-paced recordings available anytime. These do not include CEUs.
+          Self-paced recordings available anytime. There are workshops that include CEUs.
         </p>
 
         <div className={classes.imageContainer}>
