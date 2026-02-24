@@ -53,6 +53,21 @@ export default function LearnASLPage() {
         </p>
       </section>
 
+      {/* NEW FEATURED DICTIONARY CARD */}
+      <section className={classes.featured}>
+        <Link
+          href="/learn-asl/dictionary"
+          className={`${classes.card} ${classes.featuredCard}`}
+        >
+          <h2 className={classes.cardTitle}>Search All Dictionaries 🌎</h2>
+          <p className={classes.native}>
+            Search across all available languages
+          </p>
+          <p className={classes.cta}>Open dictionary search →</p>
+        </Link>
+      </section>
+
+      {/* LANGUAGE CARDS */}
       <section className={classes.cardGrid}>
         {languages.map((lang) => {
           const CardContent = (

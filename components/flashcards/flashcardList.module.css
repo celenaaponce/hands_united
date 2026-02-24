@@ -1,11 +1,31 @@
 .meals {
-    width: 90%;
-    max-width: 90rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    grid-gap: 5rem;
-    margin: 2rem auto;
-    list-style: none;
-    padding: 0;
-    
+  width: 100%;
+  max-width: 90rem;
+  display: grid;
+
+  /* Desktop */
+  grid-template-columns: repeat(auto-fit, minmax(325px, 325px));
+
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 0;
+  list-style: none;
+
+  justify-content: center;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .meals {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 325px));
   }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .meals {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0 1rem;
+  }
+}

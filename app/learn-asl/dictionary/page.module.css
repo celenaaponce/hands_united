@@ -1,0 +1,8 @@
+.theme-default h1 {
+  text-align: center;
+  color: var(--title-text);
+}
+
+.theme-default label {
+  color: var(--body-text);
+}

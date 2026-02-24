@@ -1,0 +1,502 @@
+[
+  {
+    "id": "aunt",
+    "english": "aunt",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "tettenin in",
+        "youtubeId": "Oplo2H8IY1I",
+        "thumbnail": "https://i.ytimg.com/vi/Oplo2H8IY1I/maxresdefault.jpg"
+      },
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "matant",
+        "youtubeId": "Ro3F91q9k5k",
+        "thumbnail": "https://i.ytimg.com/vi/Ro3F91q9k5k/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "tía",
+        "youtubeId": "_cHmvp6bIA8",
+        "thumbnail": "https://i.ytimg.com/vi/_cHmvp6bIA8/sddefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "boy",
+    "english": "boy",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "att",
+        "youtubeId": "gKXjBGXCjmI",
+        "thumbnail": "https://i.ytimg.com/vi/gKXjBGXCjmI/maxresdefault.jpg"
+      },
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "ti gason",
+        "youtubeId": "NsTq0OiVHsc",
+        "thumbnail": "https://i.ytimg.com/vi/NsTq0OiVHsc/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "niño",
+        "youtubeId": "NlS-I8gdV4g",
+        "thumbnail": "https://i.ytimg.com/vi/NlS-I8gdV4g/sddefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "brother",
+    "english": "brother",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "pwi",
+        "youtubeId": "WwsqYChU_ow",
+        "thumbnail": "https://i.ytimg.com/vi/WwsqYChU_ow/maxresdefault.jpg"
+      },
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "mwongei",
+        "youtubeId": "dzjru7Ec1OA",
+        "thumbnail": "https://i.ytimg.com/vi/dzjru7Ec1OA/maxresdefault.jpg"
+      },
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "frè",
+        "youtubeId": "bF0cNjbU1Cw",
+        "thumbnail": "https://i.ytimg.com/vi/bF0cNjbU1Cw/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "hermano",
+        "youtubeId": "vje8_RsXUy4",
+        "thumbnail": "https://i.ytimg.com/vi/vje8_RsXUy4/sddefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "child",
+    "english": "child",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "semirit",
+        "youtubeId": "NKMVsoTRRX8",
+        "thumbnail": "https://i.ytimg.com/vi/NKMVsoTRRX8/maxresdefault.jpg"
+      },
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "timoun",
+        "youtubeId": "5ImK_Dijirc",
+        "thumbnail": "https://i.ytimg.com/vi/5ImK_Dijirc/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "niño",
+        "youtubeId": "yiswPvP32Yk",
+        "thumbnail": "https://i.ytimg.com/vi/yiswPvP32Yk/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "children",
+    "english": "children",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "semirit",
+        "youtubeId": "xXU_RKoZaUE",
+        "thumbnail": "https://i.ytimg.com/vi/xXU_RKoZaUE/maxresdefault.jpg"
+      },
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "timoun yo",
+        "youtubeId": "DKwFzWV2Gu0",
+        "thumbnail": "https://i.ytimg.com/vi/DKwFzWV2Gu0/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "niños",
+        "youtubeId": "rT580sODFFk",
+        "thumbnail": "https://i.ytimg.com/vi/rT580sODFFk/sddefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "dad",
+    "english": "dad",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "sam",
+        "youtubeId": "I4Yj9tjhZD0",
+        "thumbnail": "https://i.ytimg.com/vi/I4Yj9tjhZD0/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "padre",
+        "youtubeId": "M5lqCFsu3ao",
+        "thumbnail": "https://i.ytimg.com/vi/M5lqCFsu3ao/sddefault.jpg"
+      },
+            {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "papa",
+        "youtubeId": "NZ7eVWhyuYE",
+        "thumbnail": "https://i.ytimg.com/vi/NZ7eVWhyuYE/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "daughter",
+    "english": "daughter",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "fopwun",
+        "youtubeId": "I7VODqQeyrQ",
+        "thumbnail": "https://i.ytimg.com/vi/I7VODqQeyrQ/maxresdefault.jpg"
+      },
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "pitit fi",
+        "youtubeId": "l9UUESi7eAM",
+        "thumbnail": "https://i.ytimg.com/vi/l9UUESi7eAM/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "hija",
+        "youtubeId": "Z5Z7cNu6XJQ",
+        "thumbnail": "https://i.ytimg.com/vi/Z5Z7cNu6XJQ/sddefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "family",
+    "english": "family",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "famini",
+        "youtubeId": "wwZ0_kSV6aE",
+        "thumbnail": "https://i.ytimg.com/vi/wwZ0_kSV6aE/maxresdefault.jpg"
+      },
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "fanmi",
+        "youtubeId": "JMCoTT_xwwI",
+        "thumbnail": "https://i.ytimg.com/vi/JMCoTT_xwwI/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "familia",
+        "youtubeId": "mb9zX60gLfo",
+        "thumbnail": "https://i.ytimg.com/vi/mb9zX60gLfo/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "father",
+    "english": "father",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "papa",
+        "youtubeId": "NZ7eVWhyuYE",
+        "thumbnail": "https://i.ytimg.com/vi/NZ7eVWhyuYE/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "female-cousin",
+    "english": "female cousin",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "tettenin pwi",
+        "youtubeId": "wQcIwCYXinc",
+        "thumbnail": "https://i.ytimg.com/vi/wQcIwCYXinc/maxresdefault.jpg"
+      },
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "tettenin fefinei",
+        "youtubeId": "lWSxiBcUJVE",
+        "thumbnail": "https://i.ytimg.com/vi/lWSxiBcUJVE/maxresdefault.jpg"
+      },
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "kouzin",
+        "youtubeId": "e2KZH-wv32c",
+        "thumbnail": "https://i.ytimg.com/vi/e2KZH-wv32c/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "prima",
+        "youtubeId": "fScWkvk4BoE",
+        "thumbnail": "https://i.ytimg.com/vi/fScWkvk4BoE/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "girl",
+    "english": "girl",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "nengin",
+        "youtubeId": "8-ogerGPens",
+        "thumbnail": "https://i.ytimg.com/vi/8-ogerGPens/maxresdefault.jpg"
+      },
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "ti fi",
+        "youtubeId": "CBWIakq5_ow",
+        "thumbnail": "https://i.ytimg.com/vi/CBWIakq5_ow/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "niña",
+        "youtubeId": "FWhjWEIY4Fo",
+        "thumbnail": "https://i.ytimg.com/vi/FWhjWEIY4Fo/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "grandma",
+    "english": "grandma",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "inei chinnap",
+        "youtubeId": "aL4H3Ibp1NY",
+        "thumbnail": "https://i.ytimg.com/vi/aL4H3Ibp1NY/maxresdefault.jpg"
+      },
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "grann",
+        "youtubeId": "jqhaSec4l4Y",
+        "thumbnail": "https://i.ytimg.com/vi/jqhaSec4l4Y/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "abuela",
+        "youtubeId": "kdXTsHb2Vz4",
+        "thumbnail": "https://i.ytimg.com/vi/kdXTsHb2Vz4/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "grandpa",
+    "english": "grandpa",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "semei chinnap",
+        "youtubeId": "v4mboFRHVAU",
+        "thumbnail": "https://i.ytimg.com/vi/v4mboFRHVAU/maxresdefault.jpg"
+      },
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "granpapa",
+        "youtubeId": "YFBDQm8WN_M",
+        "thumbnail": "https://i.ytimg.com/vi/YFBDQm8WN_M/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "abuelo",
+        "youtubeId": "kDQNTcRTbng",
+        "thumbnail": "https://i.ytimg.com/vi/kDQNTcRTbng/sddefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "male-cousin",
+    "english": "male cousin",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "tettenin pwi",
+        "youtubeId": "VQfSUURj8sw",
+        "thumbnail": "https://i.ytimg.com/vi/VQfSUURj8sw/maxresdefault.jpg"
+      },
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "tettenin mwongei",
+        "youtubeId": "_IFwz_7vbLM",
+        "thumbnail": "https://i.ytimg.com/vi/_IFwz_7vbLM/maxresdefault.jpg"
+      },
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "kouzen",
+        "youtubeId": "wg-Tqh5wlZM",
+        "thumbnail": "https://i.ytimg.com/vi/wg-Tqh5wlZM/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "primo",
+        "youtubeId": "RWkfOpWXbHQ",
+        "thumbnail": "https://i.ytimg.com/vi/RWkfOpWXbHQ/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "mom",
+    "english": "mom",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "in",
+        "youtubeId": "mA-q_EkmWfc",
+        "thumbnail": "https://i.ytimg.com/vi/mA-q_EkmWfc/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "madre",
+        "youtubeId": "2DGPiFj-_M0",
+        "thumbnail": "https://i.ytimg.com/vi/2DGPiFj-_M0/maxresdefault.jpg"
+      },
+            {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "manman",
+        "youtubeId": "5WCK_i6g_f0",
+        "thumbnail": "https://i.ytimg.com/vi/5WCK_i6g_f0/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "sister",
+    "english": "sister",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "fefinei",
+        "youtubeId": "WCyucRMK-1k",
+        "thumbnail": "https://i.ytimg.com/vi/WCyucRMK-1k/maxresdefault.jpg"
+      },
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "pwi",
+        "youtubeId": "JY4UXT2M0zQ",
+        "thumbnail": "https://i.ytimg.com/vi/JY4UXT2M0zQ/maxresdefault.jpg"
+      },
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "sè",
+        "youtubeId": "FnZnbOW_924",
+        "thumbnail": "https://i.ytimg.com/vi/FnZnbOW_924/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "hermana",
+        "youtubeId": "faL6BtVGFKw",
+        "thumbnail": "https://i.ytimg.com/vi/faL6BtVGFKw/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "son",
+    "english": "son",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "anuwon",
+        "youtubeId": "MclEGWZzAH8",
+        "thumbnail": "https://i.ytimg.com/vi/MclEGWZzAH8/maxresdefault.jpg"
+      },
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "pitit gason",
+        "youtubeId": "NQEPXuP5PNc",
+        "thumbnail": "https://i.ytimg.com/vi/NQEPXuP5PNc/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "hijo",
+        "youtubeId": "VIBUKOP5Z4I",
+        "thumbnail": "https://i.ytimg.com/vi/VIBUKOP5Z4I/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "uncle",
+    "english": "uncle",
+    "entries": [
+      {
+        "language": "Chuukese",
+        "languageCode": "chk",
+        "word": "tettenin sam",
+        "youtubeId": "Kt4mD4iexjk",
+        "thumbnail": "https://i.ytimg.com/vi/Kt4mD4iexjk/maxresdefault.jpg"
+      },
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "monnonk",
+        "youtubeId": "C4-1q8qPxl0",
+        "thumbnail": "https://i.ytimg.com/vi/C4-1q8qPxl0/maxresdefault.jpg"
+      },
+      {
+        "language": "Spanish",
+        "languageCode": "es",
+        "word": "tío",
+        "youtubeId": "mOFKzmlhQhQ",
+        "thumbnail": "https://i.ytimg.com/vi/mOFKzmlhQhQ/maxresdefault.jpg"
+      }
+    ]
+  }
+]
