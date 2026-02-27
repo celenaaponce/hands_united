@@ -46,52 +46,114 @@ export default function Home() {
       </header>
       <main className={classes.main}>
         <section className={classes.section}>
-          <h2>Download our app!</h2>
-          <div>
-            <Link href="https://apps.apple.com/us/app/hands-united-oregon/id6747975975">
-              <Image
-                src={iphone}
-                width={50}
-                height={50}
-                alt="Download for iPhone"
-              />
-              Download for iPhone
-            </Link>
-            <p></p>
-            <Link href="https://play.google.com/store/apps/details?id=com.createcommunity.handsunitedoregon&pcampaignid=web_share">
-              <Image
-                src={android}
-                width={75}
-                height={75}
-                alt="Download for Android"
-              />
-              Download for Android
-            </Link>
-          </div>
+          {/* =======================
+    DOWNLOAD OUR APP
+======================= */}
+          <section className={classes.section}>
+            <h2>Download Our App</h2>
 
-          <h2>Know Your Rights card in Sign Languages!</h2>
-          <p>
-            Here is our Know Your Rights card in multiple sign languages (Click
-            image to go to the page). This page will continue to grow as videos
-            come in.
-          </p>
-          <Link href="/programs/immigration-support/kyr">
-            <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={KYR}
-                width={900}
-                height={600}
-                alt="Know Your Rights flyer"
-              />
+            <div className={classes.featureGrid}>
+              {/* iPhone */}
+              <a
+                href="https://apps.apple.com/us/app/hands-united-oregon/id6747975975"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.featureCard}
+              >
+                <div className={classes.imageWrapper}>
+                  <Image
+                    src={iphone}
+                    alt="Download Hands United app for iPhone"
+                    width={120}
+                    height={120}
+                  />
+                </div>
+                <h3>Download for iPhone</h3>
+                <p>Available on the Apple App Store.</p>
+              </a>
+
+              {/* Android */}
+              <a
+                href="https://play.google.com/store/apps/details?id=com.createcommunity.handsunitedoregon&pcampaignid=web_share"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.featureCard}
+              >
+                <div className={classes.imageWrapper}>
+                  <Image
+                    src={android}
+                    alt="Download Hands United app for Android"
+                    width={120}
+                    height={120}
+                  />
+                </div>
+                <h3>Download for Android</h3>
+                <p>Available on Google Play.</p>
+              </a>
             </div>
-          </Link>
-          <p>
-            Click{" "}
-            <a href="https://drive.google.com/file/d/16daxkMvOyyFnlocwfj4B471exwoMYYn1/view?usp=sharing">
-              here
-            </a>{" "}
-            to download the printable version.
-          </p>
+          </section>
+          {/* =======================
+    NEW FEATURED RESOURCES
+======================= */}
+          {/* =======================
+    NEW FEATURED RESOURCES
+======================= */}
+          <section className={classes.section}>
+            <h2>New & Featured Resources</h2>
+
+            <div className={classes.featureGrid}>
+              {/* Searchable Dictionary */}
+              <Link
+                href="/learn-asl/dictionary"
+                className={classes.featureCard}
+              >
+                <div className={classes.featureEmoji}>🔎</div>
+                <h3>Search All Dictionaries</h3>
+                <p>
+                  Explore our new multilingual ASL dictionary. Search across all
+                  languages in one place.
+                </p>
+              </Link>
+
+              {/* Store Dictionaries */}
+              <Link href="/store#resources" className={classes.featureCard}>
+                <div className={classes.featureEmoji}>📚</div>
+                <h3>Buy Our Printed Dictionaries</h3>
+                <p>
+                  Support our work and access full-color multilingual ASL
+                  dictionaries for families and classrooms.
+                </p>
+              </Link>
+
+              {/* Digital KYR Card */}
+              <Link
+                href="/programs/immigration-support/digital-card"
+                className={classes.featureCard}
+              >
+                <div className={classes.featureEmoji}>📱</div>
+                <h3>Digital Know Your Rights Card</h3>
+                <p>
+                  Interactive digital rights card. Choose your sign language and
+                  watch the video in your language.
+                </p>
+              </Link>
+
+              {/* Printable KYR Card */}
+              <Link
+                href="/programs/immigration-support/know-your-rights"
+                className={classes.featureCard}
+              >
+                <div className={classes.featureEmoji}>🪪</div>
+                <h3>Download Know Your Rights Card</h3>
+                <p>
+                  Printable and downloadable Know Your Rights cards for ICE
+                  situations and legal protection.
+                </p>
+              </Link>
+            </div>
+          </section>
+
+          
           <section className={classes.section}>
             <h2>Upcoming Events</h2>
             <hr />
@@ -195,8 +257,11 @@ export default function Home() {
           <p>We are excited to share our resources with you!</p>
 
           <p>
-            We have a <Link href="www.manosunidasor.org/aprender-asl/diccionario">searchable Spanish/ASL dictionary</Link> available online in our Spanish
-            website.
+            We have a{" "}
+            <Link href="www.manosunidasor.org/aprender-asl/diccionario">
+              searchable Spanish/ASL dictionary
+            </Link>{" "}
+            available online in our Spanish website.
           </p>
 
           <p>

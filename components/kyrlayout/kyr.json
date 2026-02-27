@@ -1,71 +1,83 @@
 [
   {
+    "countryCode": "us",
     "flag": "/immigration/USA.png",
     "flagAlt": "Flag of United States",
-    "youtubeId2": "O3f_5IB50EI",
-    "youtubeId": ""
+    "youtubeId": "",
+    "youtubeId2": "O3f_5IB50EI"
   },
-    {
+  {
+    "countryCode": "cl",
     "flag": "/immigration/Chile.png",
     "flagAlt": "Flag of Chile",
-    "youtubeId2": "eQA8X4I7SSM",
-    "youtubeId": "UdBjaITrbhU"
+    "youtubeId": "UdBjaITrbhU",
+    "youtubeId2": "eQA8X4I7SSM"
   },
-      {
+  {
+    "countryCode": "fr",
     "flag": "/immigration/France.png",
-    "flagAlt": "Flag de Francia",
-    "youtubeId2": "5OMc1yet7kE",
-    "youtubeId": "u29sDYftct8"
+    "flagAlt": "Flag of France",
+    "youtubeId": "u29sDYftct8",
+    "youtubeId2": "5OMc1yet7kE"
   },
-    {
+  {
+    "countryCode": "gt",
     "flag": "/immigration/Guatemala.png",
     "flagAlt": "Flag of Guatemala",
     "youtubeId": "AlI525TrCpw",
     "youtubeId2": "NNckWmVrgVU"
   },
   {
+    "countryCode": "in",
     "flag": "/immigration/India.png",
     "flagAlt": "Flag of India",
     "youtubeId": "hao_RDhpPfY",
     "youtubeId2": "F8gBUBdROIQ"
   },
-      {
+  {
+    "countryCode": "kr",
     "flag": "/immigration/Korea.png",
     "flagAlt": "Flag of Korea",
     "youtubeId": "",
     "youtubeId2": "HUvATTXFZ3U"
   },
-    {
+  {
+    "countryCode": "na",
     "flag": "/immigration/Namibia.png",
     "flagAlt": "Flag of Namibia",
     "youtubeId": "K-gXSooxA7c",
     "youtubeId2": "_XMi1XwGCfE"
   },
-        {
+  {
+    "countryCode": "np",
     "flag": "/immigration/Nepal.png",
     "flagAlt": "Flag of Nepal",
     "youtubeId": "NcTIEZzfv9o",
     "youtubeId2": "No4_sRYEU3k"
   },
-    {
+  {
+    "countryCode": "pr",
     "flag": "/immigration/PR.png",
     "flagAlt": "Flag of Puerto Rico",
     "youtubeId": "",
     "youtubeId2": "5_HCW_3ZqkU"
   },
-    {
+  {
+    "countryCode": "pe",
     "flag": "/immigration/Peru.png",
     "flagAlt": "Flag of Peru",
     "youtubeId": "VPSYimHj_Og",
     "youtubeId2": "_AtpJEAFz-c"
   },
-    {
+  {
+    "countryCode": "ug",
     "flag": "/immigration/Uganda.png",
     "flagAlt": "Flag of Uganda",
     "youtubeId": "qRfAf2qe0fM",
     "youtubeId2": "e-tgNuBsKi8"
   },
   {
+    "countryCode": "uy",
     "flag": "/immigration/Uruguay.png",
     "flagAlt": "Flag of Uruguay",
     "youtubeId": "0Rwonu9xbrY",

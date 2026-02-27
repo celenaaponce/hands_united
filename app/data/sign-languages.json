@@ -1,0 +1,61 @@
+[
+
+  { "code": "asl", "countryCode": "us", "flag": "🇺🇸", "acronym": "ASL", "name": "American Sign Language" },
+
+
+  { "code": "lsm", "countryCode": "mx", "flag": "🇲🇽", "acronym": "LSM", "name": "Mexican Sign Language" },
+  { "code": "lsc", "countryCode": "co", "flag": "🇨🇴", "acronym": "LSC", "name": "Colombian Sign Language" },
+  { "code": "lsp", "countryCode": "pe", "flag": "🇵🇪", "acronym": "LSP", "name": "Peruvian Sign Language" },
+  { "code": "lsv", "countryCode": "ve", "flag": "🇻🇪", "acronym": "LSV", "name": "Venezuelan Sign Language" },
+  { "code": "lsg", "countryCode": "gt", "flag": "🇬🇹", "acronym": "LSG", "name": "Guatemalan Sign Language" },
+  { "code": "lshn", "countryCode": "hn", "flag": "🇭🇳", "acronym": "LESHO", "name": "Honduran Sign Language" },
+  { "code": "lssv", "countryCode": "sv", "flag": "🇸🇻", "acronym": "LESSA", "name": "Salvadoran Sign Language" },
+  { "code": "lscr", "countryCode": "cr", "flag": "🇨🇷", "acronym": "LESCO", "name": "Costa Rican Sign Language" },
+  { "code": "lsni", "countryCode": "ni", "flag": "🇳🇮", "acronym": "ISN", "name": "Nicaraguan Sign Language" },
+  { "code": "lsar", "countryCode": "ar", "flag": "🇦🇷", "acronym": "LSA", "name": "Argentine Sign Language" },
+  { "code": "lsch", "countryCode": "cl", "flag": "🇨🇱", "acronym": "LSCH", "name": "Chilean Sign Language" },
+  { "code": "lsuy", "countryCode": "uy", "flag": "🇺🇾", "acronym": "LSU", "name": "Uruguayan Sign Language" },
+  { "code": "lspy", "countryCode": "py", "flag": "🇵🇾", "acronym": "LSPY", "name": "Paraguayan Sign Language" },
+  { "code": "lsbo", "countryCode": "bo", "flag": "🇧🇴", "acronym": "LSB", "name": "Bolivian Sign Language" },
+  { "code": "lsrd", "countryCode": "do", "flag": "🇩🇴", "acronym": "LSDO", "name": "Dominican Sign Language" },
+  { "code": "lscu", "countryCode": "cu", "flag": "🇨🇺", "acronym": "LSC", "name": "Cuban Sign Language" },
+  { "code": "lsec", "countryCode": "ec", "flag": "🇪🇨", "acronym": "LSEC", "name": "Ecuadorian Sign Language" },
+  { "code": "lspa", "countryCode": "pa", "flag": "🇵🇦", "acronym": "LSP", "name": "Panamanian Sign Language" },
+  { "code": "lspr", "countryCode": "pr", "flag": "🇵🇷", "acronym": "PRSL", "name": "Puerto Rican Sign Language" },
+
+
+  { "code": "rsl", "countryCode": "ru", "flag": "🇷🇺", "acronym": "РЖЯ", "name": "Russian Sign Language" },
+  { "code": "uksl", "countryCode": "ua", "flag": "🇺🇦", "acronym": "УЖМ", "name": "Ukrainian Sign Language" },
+  { "code": "plsl", "countryCode": "pl", "flag": "🇵🇱", "acronym": "PJM", "name": "Polish Sign Language" },
+  { "code": "lslbel", "countryCode": "by", "flag": "🇧🇾", "acronym": "БЖМ", "name": "Belarusian Sign Language" },
+  { "code": "lsser", "countryCode": "rs", "flag": "🇷🇸", "acronym": "СЗЈ", "name": "Serbian Sign Language" },
+
+  { "code": "lsfr", "countryCode": "fr", "flag": "🇫🇷", "acronym": "LSF", "name": "French Sign Language" },
+  { "code": "lsger", "countryCode": "de", "flag": "🇩🇪", "acronym": "DGS", "name": "German Sign Language" },
+  { "code": "lseng", "countryCode": "gb", "flag": "🇬🇧", "acronym": "BSL", "name": "British Sign Language" },
+  { "code": "lsit", "countryCode": "it", "flag": "🇮🇹", "acronym": "LIS", "name": "Italian Sign Language" },
+  { "code": "lspt", "countryCode": "pt", "flag": "🇵🇹", "acronym": "LGP", "name": "Portuguese Sign Language" },
+
+
+  { "code": "lset", "countryCode": "et", "flag": "🇪🇹", "acronym": "ኢኤስኤል", "name": "Ethiopian Sign Language" },
+  { "code": "lser", "countryCode": "er", "flag": "🇪🇷", "acronym": "ኤርስኤል", "name": "Eritrean Sign Language" },
+  { "code": "lsso", "countryCode": "so", "flag": "🇸🇴", "acronym": "SSL", "name": "Somali Sign Language" },
+  { "code": "lsug", "countryCode": "ug", "flag": "🇺🇬", "acronym": "USL", "name": "Ugandan Sign Language" },
+  { "code": "lsna", "countryCode": "na", "flag": "🇳🇦", "acronym": "NSL", "name": "Namibian Sign Language" },
+
+
+  { "code": "lsin", "countryCode": "in", "flag": "🇮🇳", "acronym": "ISL", "name": "Indian Sign Language" },
+  { "code": "lsnp", "countryCode": "np", "flag": "🇳🇵", "acronym": "NSL", "name": "Nepal Sign Language" },
+  { "code": "lskr", "countryCode": "kr", "flag": "🇰🇷", "acronym": "한국수어", "name": "Korean Sign Language" },
+  { "code": "lscn", "countryCode": "cn", "flag": "🇨🇳", "acronym": "中国手语", "name": "Chinese Sign Language" },
+  { "code": "lsjp", "countryCode": "jp", "flag": "🇯🇵", "acronym": "日本手話", "name": "Japanese Sign Language" },
+  { "code": "lsvn", "countryCode": "vn", "flag": "🇻🇳", "acronym": "NNV", "name": "Vietnamese Sign Language" },
+  { "code": "lsmm", "countryCode": "mm", "flag": "🇲🇲", "acronym": "မြန်မာလက်ဟန်ဘာသာစကား", "name": "Myanmar Sign Language" },
+  { "code": "lskh", "countryCode": "kh", "flag": "🇰🇭", "acronym": "ភាសាសញ្ញាខ្មែរ", "name": "Cambodian Sign Language" },
+  { "code": "lsph", "countryCode": "ph", "flag": "🇵🇭", "acronym": "FSL", "name": "Filipino Sign Language" },
+
+
+  { "code": "lsca", "countryCode": "ca", "flag": "🇨🇦", "acronym": "LSQ", "name": "Quebec Sign Language" },
+  { "code": "lsaau", "countryCode": "au", "flag": "🇦🇺", "acronym": "AUSLAN", "name": "Australian Sign Language" },
+  { "code": "lsnz", "countryCode": "nz", "flag": "🇳🇿", "acronym": "NZSL", "name": "New Zealand Sign Language" }
+]

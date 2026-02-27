@@ -1,0 +1,171 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Back link */
+.backLink {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #4da3ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+  color: rgba(255,255,255,0.75);
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Card */
+.card {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #222;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  border-color: #4da3ff;
+  transform: translateY(-2px);
+}
+
+/* Thumbnail */
+.thumbnailContainer {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Card content */
+.cardContent {
+  padding: 1.25rem;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.4rem;
+}
+
+.cardDescription {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+/* Language buttons */
+.langButtons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.primaryButton {
+  background: #4da3ff;
+  color: white;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.primaryButton:hover {
+  background: #3391f0;
+}
+
+.secondaryButton {
+  background: transparent;
+  border: 1px solid #4da3ff;
+  color: #4da3ff;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.secondaryButton:hover {
+  background: rgba(77,163,255,0.1);
+}
+
+/* Viewer section */
+.viewerBlock {
+  margin-top: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+/* Action buttons above viewer */
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+/* PDF viewer */
+.viewer {
+  width: 100%;
+}
+
+.iframe {
+  width: 100%;
+  height: 80vh;
+  border: none;
+  border-radius: 12px;
+  background: white;
+}
+
+/* Mobile improvements */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.25rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .iframe {
+    height: 70vh;
+  }
+}
