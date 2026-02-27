@@ -127,7 +127,7 @@ export default function Home() {
 
               {/* Digital KYR Card */}
               <Link
-                href="/programs/immigration-support/digital-card"
+                href="/programs/immigration-support/digital-kyr"
                 className={classes.featureCard}
               >
                 <div className={classes.featureEmoji}>📱</div>
