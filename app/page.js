@@ -116,7 +116,7 @@ export default function Home() {
               </Link>
 
               {/* Store Dictionaries */}
-              <Link href="/store#resources" className={classes.featureCard}>
+              <Link href="/store#products" className={classes.featureCard}>
                 <div className={classes.featureEmoji}>📚</div>
                 <h3>Buy Our Printed Dictionaries</h3>
                 <p>

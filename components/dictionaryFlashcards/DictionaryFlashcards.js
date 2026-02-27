@@ -9,13 +9,20 @@ export default function DictionaryFlashcards({
   uiLanguage = null,
 }) {
   const [query, setQuery] = useState("");
+  const [videoUrl, setVideoUrl] = useState(null);
 
-  // multi-language checkbox selection
   const [selectedLanguages, setSelectedLanguages] = useState(
-    languageFilter ? [languageFilter] : [],
+    languageFilter ? [languageFilter] : []
   );
 
-  // language metadata
+  // WATCH TRANSLATIONS
+  const watchTranslations = {
+    ht: "Gade",
+    es: "Ver",
+    chk: "Nengeni",
+  };
+
+  // LANGUAGE METADATA
   const languages = {
     ht: { name: "Haitian Creole", flag: "🇭🇹" },
     es: {
@@ -42,36 +49,42 @@ export default function DictionaryFlashcards({
       ],
     },
     chk: { name: "Chuukese", flag: "🇫🇲" },
-    // ru: { name: "Russian", flag: "🇷🇺" },
-    // my: { name: "Burmese", flag: "🇲🇲" },
-    // ti: { name: "Tigrinya", flag: "🇪🇷" },
-    // am: { name: "Amharic", flag: "🇪🇹" },
   };
 
   function toggleLanguage(code) {
     setSelectedLanguages((prev) =>
-      prev.includes(code) ? prev.filter((l) => l !== code) : [...prev, code],
+      prev.includes(code)
+        ? prev.filter((l) => l !== code)
+        : [...prev, code]
     );
   }
+
   function getFlag(code, seed) {
     const lang = languages[code];
-
     if (!lang) return "";
 
     if (lang.flags) {
-      // deterministic hash from seed
       let hash = 0;
-
       for (let i = 0; i < seed.length; i++) {
         hash = seed.charCodeAt(i) + ((hash << 5) - hash);
       }
-
       const index = Math.abs(hash) % lang.flags.length;
-
       return lang.flags[index];
     }
 
     return lang.flag;
+  }
+
+  function handleWatch(link) {
+    if (!link) return;
+
+    const embedUrl =
+      link
+        .replace("shorts/", "embed/")
+        .replace("watch?v=", "embed/")
+        .split("&")[0] + "?rel=0&modestbranding=1";
+
+    setVideoUrl(embedUrl);
   }
 
   const flashcards = useMemo(() => {
@@ -79,74 +92,66 @@ export default function DictionaryFlashcards({
 
     const filtered = dictionary.filter((entry) => {
       if (entry.english.toLowerCase().includes(q)) return true;
-
-      return entry.entries.some((e) => e.word.toLowerCase().includes(q));
+      return entry.entries.some((e) =>
+        e.word.toLowerCase().includes(q)
+      );
     });
 
     const cards = filtered.flatMap((entry) => {
       let entries = entry.entries;
 
-      // filter by checkbox selection
       if (selectedLanguages.length > 0) {
         entries = entries.filter((e) =>
-          selectedLanguages.includes(e.languageCode),
+          selectedLanguages.includes(e.languageCode)
         );
       }
 
-      // filter by fixed page language
       if (languageFilter) {
-        entries = entries.filter((e) => e.languageCode === languageFilter);
+        entries = entries.filter(
+          (e) => e.languageCode === languageFilter
+        );
       }
 
       return entries.map((e) => {
         const lang = languages[e.languageCode];
 
-        const wordFront = uiLanguage ? e.word : `${entry.english} — ${e.word}`;
+        const wordFront = uiLanguage
+          ? e.word
+          : `${entry.english} — ${e.word}`;
 
         return {
           id: `${entry.id}-${e.languageCode}-${e.word}`,
-
           word: wordFront,
-
           sortWord: e.word,
-
           image: `${e.thumbnail}?v=${entry.id}`,
-
-          link: `https://www.youtube.com/embed/${e.youtubeId}`,
-
+          link: `https://www.youtube.com/watch?v=${e.youtubeId}`,
           synonyms: [],
-
-          // FLAG + LANGUAGE BADGE
           languageBadge:
             languageFilter === null
-              ? `${getFlag(e.languageCode, entry.english)} ${lang.name}`
+              ? `${getFlag(
+                  e.languageCode,
+                  entry.english
+                )} ${lang.name}`
               : null,
-
           languageCode: e.languageCode,
-
-          flipText:
-            uiLanguage === "ht"
-              ? "Gade lòt bò →"
-              : uiLanguage === "es"
-                ? "Ver el otro lado →"
-                : uiLanguage === "chk"
-                  ? "Nengeni ekis →"
-                  : uiLanguage === "ru"
-                    ? "Смотреть другую сторону →"
-                    : uiLanguage === "my"
-                      ? "တစ်ဖက်ကို ကြည့်ပါ →"
-                      : uiLanguage === "ti"
-                        ? "ካልእ ገጽ ርአ →"
-                        : "See other side →",
+          watchText:
+            watchTranslations[uiLanguage] || "Watch",
         };
       });
     });
 
-    // sort correctly
-    cards.sort((a, b) => a.sortWord.localeCompare(b.sortWord));
+    cards.sort((a, b) =>
+      a.sortWord.localeCompare(b.sortWord)
+    );
 
     return cards;
-  }, [dictionary, query, selectedLanguages, languageFilter, uiLanguage]);
+  }, [
+    dictionary,
+    query,
+    selectedLanguages,
+    languageFilter,
+    uiLanguage,
+  ]);
 
   return (
     <div style={{ textAlign: "center" }}>
@@ -177,28 +182,93 @@ export default function DictionaryFlashcards({
             gap: "12px",
           }}
         >
-          {Object.entries(languages).map(([code, lang]) => (
-            <label
-              key={code}
-              style={{
-                cursor: "pointer",
-                display: "flex",
-                alignItems: "center",
-                gap: "6px",
-              }}
-            >
-              <input
-                type="checkbox"
-                checked={selectedLanguages.includes(code)}
-                onChange={() => toggleLanguage(code)}
-              />
-              {lang.flag} {lang.name}
-            </label>
-          ))}
+          {Object.entries(languages).map(
+            ([code, lang]) => (
+              <label
+                key={code}
+                style={{
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                }}
+              >
+                <input
+                  type="checkbox"
+                  checked={selectedLanguages.includes(
+                    code
+                  )}
+                  onChange={() =>
+                    toggleLanguage(code)
+                  }
+                />
+                {lang.flag} {lang.name}
+              </label>
+            )
+          )}
         </div>
       )}
 
-      <FlashcardList flashcards={flashcards} />
+      {/* FLASHCARDS */}
+      <FlashcardList
+        flashcards={flashcards}
+        onWatch={handleWatch}
+      />
+
+      {/* VIDEO MODAL */}
+      {videoUrl && (
+        <div
+          onClick={() => setVideoUrl(null)}
+          style={{
+            position: "fixed",
+            inset: 0,
+            background: "rgba(0,0,0,0.7)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: 1000,
+          }}
+        >
+          <div
+            onClick={(e) =>
+              e.stopPropagation()
+            }
+            style={{
+              background: "white",
+              padding: "20px",
+              borderRadius: "12px",
+              width: "95%",
+              maxWidth: "800px",
+              position: "relative",
+            }}
+          >
+            <button
+              onClick={() =>
+                setVideoUrl(null)
+              }
+              style={{
+                position: "absolute",
+                top: "10px",
+                right: "15px",
+                background: "transparent",
+                border: "none",
+                fontSize: "20px",
+                cursor: "pointer",
+              }}
+            >
+              ✕
+            </button>
+
+            <iframe
+              width="100%"
+              height="450"
+              src={videoUrl}
+              title="Dictionary Video"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

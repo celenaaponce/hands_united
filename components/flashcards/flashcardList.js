@@ -1,16 +1,18 @@
-import React from "react";
-import { lazy, Suspense } from "react";
-// import Flashcard from "./flashcard";
 import classes from './flashcardList.module.css'
+import React from "react"; 
+import { lazy, Suspense } from "react";
 
-const Flashcard = lazy(()=>import('./flashcard'))
-export default function FlashcardList( {flashcards} ) {
+const Flashcard = lazy(()=>import('./flashcard'));
 
+
+export default function FlashcardList({ flashcards, onWatch }) {
   return (
     <div className={classes.meals}>
-      {flashcards.map((flashcard) => {
-        return <Suspense fallback={<p>Cargando...</p>} key={flashcard.id}><Flashcard flashcard={flashcard} key={flashcard.id}/></Suspense>;
-      })}
+      {flashcards.map((flashcard) => (
+        <Suspense fallback={<p>Loading...</p>} key={flashcard.id}>
+          <Flashcard flashcard={flashcard} onWatch={onWatch} />
+        </Suspense>
+      ))}
     </div>
   );
 }

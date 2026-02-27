@@ -205,3 +205,18 @@
   font-weight: bolder;
   font-size: 1.5rem;
 }
+
+.image {
+  position: relative;
+}
+
+.watchOverlay {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
