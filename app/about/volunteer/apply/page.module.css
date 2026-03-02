@@ -1,0 +1,20 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem 1.5rem;
+  text-align: center;
+  color: #ddd6cb;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ddd6cb;
+}
+
+.description {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #ddd6cb;
+}
