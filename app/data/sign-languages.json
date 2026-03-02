@@ -1,7 +1,5 @@
 [
-
   { "code": "asl", "countryCode": "us", "flag": "🇺🇸", "acronym": "ASL", "name": "American Sign Language" },
-
 
   { "code": "lsm", "countryCode": "mx", "flag": "🇲🇽", "acronym": "LSM", "name": "Mexican Sign Language" },
   { "code": "lsc", "countryCode": "co", "flag": "🇨🇴", "acronym": "LSC", "name": "Colombian Sign Language" },
@@ -23,7 +21,6 @@
   { "code": "lspa", "countryCode": "pa", "flag": "🇵🇦", "acronym": "LSP", "name": "Panamanian Sign Language" },
   { "code": "lspr", "countryCode": "pr", "flag": "🇵🇷", "acronym": "PRSL", "name": "Puerto Rican Sign Language" },
 
-
   { "code": "rsl", "countryCode": "ru", "flag": "🇷🇺", "acronym": "РЖЯ", "name": "Russian Sign Language" },
   { "code": "uksl", "countryCode": "ua", "flag": "🇺🇦", "acronym": "УЖМ", "name": "Ukrainian Sign Language" },
   { "code": "plsl", "countryCode": "pl", "flag": "🇵🇱", "acronym": "PJM", "name": "Polish Sign Language" },
@@ -36,13 +33,12 @@
   { "code": "lsit", "countryCode": "it", "flag": "🇮🇹", "acronym": "LIS", "name": "Italian Sign Language" },
   { "code": "lspt", "countryCode": "pt", "flag": "🇵🇹", "acronym": "LGP", "name": "Portuguese Sign Language" },
 
-
   { "code": "lset", "countryCode": "et", "flag": "🇪🇹", "acronym": "ኢኤስኤል", "name": "Ethiopian Sign Language" },
   { "code": "lser", "countryCode": "er", "flag": "🇪🇷", "acronym": "ኤርስኤል", "name": "Eritrean Sign Language" },
   { "code": "lsso", "countryCode": "so", "flag": "🇸🇴", "acronym": "SSL", "name": "Somali Sign Language" },
   { "code": "lsug", "countryCode": "ug", "flag": "🇺🇬", "acronym": "USL", "name": "Ugandan Sign Language" },
   { "code": "lsna", "countryCode": "na", "flag": "🇳🇦", "acronym": "NSL", "name": "Namibian Sign Language" },
-
+  { "code": "lsng", "countryCode": "ng", "flag": "🇳🇬", "acronym": "NSL", "name": "Nigerian Sign Language" },
 
   { "code": "lsin", "countryCode": "in", "flag": "🇮🇳", "acronym": "ISL", "name": "Indian Sign Language" },
   { "code": "lsnp", "countryCode": "np", "flag": "🇳🇵", "acronym": "NSL", "name": "Nepal Sign Language" },
@@ -53,7 +49,6 @@
   { "code": "lsmm", "countryCode": "mm", "flag": "🇲🇲", "acronym": "မြန်မာလက်ဟန်ဘာသာစကား", "name": "Myanmar Sign Language" },
   { "code": "lskh", "countryCode": "kh", "flag": "🇰🇭", "acronym": "ភាសាសញ្ញាខ្មែរ", "name": "Cambodian Sign Language" },
   { "code": "lsph", "countryCode": "ph", "flag": "🇵🇭", "acronym": "FSL", "name": "Filipino Sign Language" },
-
 
   { "code": "lsca", "countryCode": "ca", "flag": "🇨🇦", "acronym": "LSQ", "name": "Quebec Sign Language" },
   { "code": "lsaau", "countryCode": "au", "flag": "🇦🇺", "acronym": "AUSLAN", "name": "Australian Sign Language" },

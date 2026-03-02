@@ -4,24 +4,21 @@ import logo from "./icon.png";
 import classes from "./page.module.css";
 import AidaFormEmbed from "components/aidaform";
 import TPT from "public/images/tpt.png";
-import Dict from "public/images/dict.png";
 import ICE from "public/images/ICEcomm.png";
 import iphone from "public/images/iphone.png";
 import android from "public/images/android.png";
-import KYR from "public/immigration/kyr.jpg";
-import hmong from "public/classflyers/0116.png";
-import tech from "public/classflyers/0121.png";
-import math from "public/classflyers/3.png";
-import StoreFlyer from "public/classflyers/store.png";
-import HCDict from "public/classflyers/HCDict.png";
-import LanguageCantWait from "public/classflyers/eng.png";
-import SpanishASL from "public/classflyers/Eneroclasses.png";
+import math from "public/classflyers/marchmath.png";
+import StoreFlyer from "public/classflyers/multilingdict.jpg";
+import NHLAD from "public/classflyers/NHLAD.jpg";
+
 import PermitASL from "public/classflyers/permit-asl.png";
 import KYRWeekly from "public/classflyers/kyr-weekly.png";
-import KYRYouth from "public/classflyers/kyryouth.png";
-import KYRMultilingual from "public/images/kyr-multilingual.png";
-import immigration101Flyer from "public/classflyers/immigration101.jpeg";
-import immigration101FlyerHearing from "public/classflyers/imm101hearing.jpg";
+import SpanishASL from "public/classflyers/ASLSpanishclass.jpeg";
+import EngKYRMultilingual from "public/classflyers/aslarabic.png";
+import ArabicKYRMultilingual from "public/classflyers/arabicarabic.png";
+
+import Spanish from "public/classflyers/Spanish.png"
+
 
 export default function Home() {
   return (
@@ -153,104 +150,233 @@ export default function Home() {
             </div>
           </section>
 
-          
           <section className={classes.section}>
             <h2>Upcoming Events</h2>
             <hr />
 
-            {/* Immigration 101 – Deaf / DHH (Feb 13, 20, 27) */}
-            <h3>Immigration 101 — Deaf & Hard-of-Hearing Only</h3>
+            {/* Spanish ASL Classes */}
+            <h3>Spanish Family ASL Classes — Starting in April</h3>
 
             <div className={classes.responsiveImageWrapper}>
               <Image
-                src={immigration101Flyer}
-                width={800}
+                src={SpanishASL}
+                width={500}
                 height={500}
-                alt="Immigration 101 flyer for Deaf and Hard-of-Hearing community members"
+                alt="Spanish Family ASL Classes starting in April"
               />
             </div>
 
             <p>
-              A three-part workshop series created specifically for Deaf and
-              hard-of-hearing community members.
+              Our 8-week Spanish Family ASL classes are designed for immigrant
+              families with Deaf or hard-of-hearing children. Classes focus on
+              reducing language deprivation, strengthening home communication,
+              and building practical everyday vocabulary.
             </p>
 
-            <ul>
-              <ul>Immigration paths and realistic costs</ul>
-              <ul>How the immigration system and court actually work</ul>
-              <ul>Deaf-specific access barriers and interpreter issues</ul>
-            </ul>
-
             <p>
-              <strong>Dates:</strong> February 13, 20, and 27
+              <strong>Language:</strong> ASL with spoken Spanish support
               <br />
-              <strong>Time:</strong> 4:00–6:00 pm PST
+              <strong>Start:</strong> April
               <br />
               <strong>Platform:</strong> Zoom
             </p>
 
-            <Link href="/store#immigration-101">
-              Learn more & register (Deaf / DHH)
-            </Link>
-
-            {/* Immigration 101 – Hearing (Feb 21, 28) */}
-            <h3>Immigration 101 — Hearing Community (Spoken English)</h3>
-            <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={immigration101FlyerHearing}
-                width={800}
-                height={500}
-                alt="Immigration 101 flyer for Hearing community members"
-              />
-            </div>
-
-            <p>
-              A three-session series for professionals, volunteers, and
-              community members who support Deaf immigrants and their families.
-            </p>
-
-            <p>
-              <strong>Dates:</strong> February 21, February 28, and March 7
-              <br />
-              <strong>Language:</strong> Spoken English
-              <br />
-              <strong>Platform:</strong> Zoom
-            </p>
-
-            <Link href="/store#immigration-101-hearing">
-              Learn more & register (hearing community)
+            <Link href="https://manosunidasor.org/aprender-asl/clases-gratuitas/registrarse">
+              Register for Spanish ASL Classes
             </Link>
 
             <hr />
 
-            {/* Weekly KYR */}
-            <h3>Know Your Rights in ASL — Every Thursday</h3>
+            {/* ASL Permit Classes */}
+            <h3>ASL Permit Classes — Starting March 25</h3>
 
             <div className={classes.responsiveImageWrapper}>
               <Image
-                src={KYRWeekly}
-                width={800}
+                src={PermitASL}
+                width={500}
                 height={500}
-                alt="Weekly Know Your Rights in ASL flyer"
+                alt="ASL permit classes taught in American Sign Language"
               />
             </div>
 
             <p>
-              Weekly Know Your Rights sessions in ASL focused on ICE
-              interactions, communication during enforcement encounters, and
-              access barriers faced by Deaf immigrants.
+              Online permit classes taught fully in ASL to ensure Deaf and
+              hard-of-hearing students understand traffic laws, safety
+              principles, and testing expectations. Created to increase
+              equitable access to driver education.
             </p>
 
             <p>
-              <strong>Time:</strong> Thursdays at 4:00 pm PST
+              <strong>Start Date:</strong> March 25
               <br />
               <strong>Platform:</strong> Zoom
             </p>
-            {/* Weekly KYR */}
 
-            <Link href="/programs/immigration-support/kyr">
-              View Know Your Rights resources
+            <Link href="/store#permit-classes">
+              Learn more about ASL Permit Classes
             </Link>
+
+            <hr />
+
+            {/* KYR Arabic + ASL */}
+            <h3>Know Your Rights — ASL & Arabic Sign | March 7</h3>
+
+            <div className={classes.responsiveImageWrapper}>
+              <Image
+                src={EngKYRMultilingual}
+                width={500}
+                height={500}
+                alt="Know Your Rights workshop in ASL and Arabic Sign"
+              />
+            </div>
+                        <div className={classes.responsiveImageWrapper}>
+              <Image
+                src={ArabicKYRMultilingual}
+                width={500}
+                height={500}
+                alt="Know Your Rights workshop in ASL and Arabic Sign"
+              />
+            </div>
+
+            <p>
+              A Know Your Rights workshop focused on ICE interactions,
+              constitutional protections, and communication rights for Deaf
+              individuals. Presented in ASL and Arabic Sign to increase access
+              for newly arrived communities.
+            </p>
+
+            <Link href="/programs/immigration-support/">
+              View Know Your Rights Resources
+            </Link>
+
+            <hr />
+
+            {/* Math Workshop */}
+            <h3>3-Part Math Workshop — Algebraic Thinking (CEUs Available)</h3>
+
+            <div className={classes.responsiveImageWrapper}>
+              <Image
+                src={math}
+                width={800}
+                height={500}
+                alt="Algebraic thinking math workshop for interpreters"
+              />
+            </div>
+
+            <p>
+              A three-part professional development series supporting
+              interpreters and educators working in math classrooms. Covers
+              algebraic thinking across elementary, middle, and high school
+              levels with practical language strategies.
+            </p>
+
+            <p>
+              <strong>Dates:</strong> March 9, 11, 13
+              <br />
+              <strong>CEUs:</strong> Available
+              <br />
+              <strong>Language:</strong> Spoken English
+            </p>
+
+            <Link href="/store#algebra-workshop">Register for Math Workshop</Link>
+
+            <hr />
+
+            {/* Spanish for Interpreters */}
+            <h3>
+              Beginning Spanish for Interpreters — 3-Part Series (CEUs
+              Available)
+            </h3>
+
+            <div className={classes.responsiveImageWrapper}>
+              <Image
+                src={Spanish}
+                width={800}
+                height={500}
+                alt="Beginning Spanish workshop for interpreters"
+              />
+            </div>
+
+            <p>
+              A beginning Spanish series taught in SimCom using the Destinos
+              curriculum. Designed for interpreters and ASL-fluent community
+              members seeking foundational Spanish skills for working with
+              immigrant families.
+            </p>
+
+            <p>
+              <strong>Dates:</strong> March 23, 25, 27
+              <br />
+              <strong>CEUs:</strong> Available
+            </p>
+
+            <Link href="/store#spanish-workshop">
+              Register for Spanish Workshop
+            </Link>
+          </section>
+          {/* =======================
+   NATIONAL PARTNERSHIPS
+======================= */}
+
+          <section className={classes.section}>
+            <h2>National Partnerships & Featured Collaborations</h2>
+            <hr />
+
+            {/* NHLAD Event */}
+            <h3>National Deaf Youth Day – Virtual Panel (Hosted by NHLAD)</h3>
+
+            <div className={classes.responsiveImageWrapper}>
+              <Image
+                src={NHLAD} // Replace with NHLAD image if you import it
+                width={800}
+                height={500}
+                alt="National Deaf Youth Day virtual panel hosted by NHLAD"
+              />
+            </div>
+
+            <p>
+              Hands United is proud to provide{" "}
+              <strong>Spanish and ASL interpretation</strong>{" "}
+              for NHLAD’s National Deaf Youth Day Virtual Panel.
+            </p>
+
+            <p>
+              This event celebrates Deaf Hispanic/Latino high school and college
+              students and highlights their leadership journeys, challenges, and
+              achievements.
+            </p>
+
+            <p>
+              <strong>Date:</strong> March 6, 2026
+              <br />
+              <strong>Time:</strong> 7:30–9:00 PM EST
+            </p>
+
+            <hr />
+
+            {/* NILC Event */}
+            <h3>
+              Empower Communities: Enforcement & Detention (Hosted by NILC)
+            </h3>
+
+            <p>
+              Hands United will provide <strong>ASL interpretation</strong> for
+              the National Immigration Law Center’s workshop focused on
+              enforcement, detention, and immigrant community protections.
+            </p>
+
+            <p>
+              This collaboration ensures Deaf immigrants have equitable access
+              to national-level immigration advocacy conversations.
+            </p>
+
+            <p>
+              <strong>Date:</strong> March 25
+            </p>
+                        <Link href="https://nilc-org.zoom.us/webinar/register/8017683459097/WN_rec-edT8TOiTWkn3GOxOGQ">
+              Register for NILC Workshop
+            </Link>
+
           </section>
 
           <h2>Resources Galore!</h2>
@@ -278,46 +404,7 @@ export default function Home() {
               />
             </div>
           </Link>
-          <section className={classes.section}>
-            <h2>Hands United Store</h2>
 
-            <p>
-              To support the creation of free, accessible resources for
-              immigrant families with Deaf and hard-of-hearing children, Hands
-              United has launched the <strong>Hands United Store</strong>.
-            </p>
-
-            <p>
-              Proceeds from the store directly fund multilingual ASL resources,
-              family workshops, communication tools, and accessibility
-              initiatives.
-            </p>
-
-            <p>
-              <Link href="/store">Visit the Hands United Store</Link>
-            </p>
-
-            <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={StoreFlyer}
-                width={800}
-                height={500}
-                alt="Hands United Store flyer promoting multilingual ASL resources and community-created materials"
-              />
-            </div>
-
-            <div style={{ marginTop: "1.5rem" }}>
-              <iframe
-                width="100%"
-                height="315"
-                src="https://www.youtube.com/embed/TVJjH7cuEuc"
-                title="Hands United Store introduction video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-          </section>
           <div className={classes.responsiveImageWrapper}>
             <h2>Languages Supported</h2>
             <p>
@@ -348,49 +435,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <section className={classes.section}>
-            <h2>Featured Events & Classes</h2>
 
-            <hr />
-
-            <h3>Know Your Rights in ASL — Every Thursday</h3>
-            <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={KYRWeekly}
-                width={800}
-                height={500}
-                alt="Weekly Know Your Rights in ASL flyer"
-              />
-            </div>
-            <p>
-              Weekly Know Your Rights sessions in ASL focused on interacting
-              with ICE, understanding your rights, and staying safe. Designed
-              for Deaf and hard-of-hearing immigrants and their families.
-            </p>
-            <Link href="/programs/immigration-support/kyr">
-              View KYR resources
-            </Link>
-
-            <hr />
-
-            <h3>ASL Permit Classes — Starting March 11</h3>
-            <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={PermitASL}
-                width={800}
-                height={500}
-                alt="ASL permit classes flyer taught by Deaf instructor"
-              />
-            </div>
-            <p>
-              Online ASL permit classes taught by a Deaf instructor. Classes
-              meet on Wednesdays and Fridays and support Deaf and
-              hard-of-hearing students preparing for their learner’s permit.
-            </p>
-            <Link href="/store#permit-classes">
-              Learn more about ASL Permit Classes
-            </Link>
-          </section>
         </section>
 
         <section className={classes.section}>

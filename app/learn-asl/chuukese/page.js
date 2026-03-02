@@ -17,14 +17,14 @@ export default function Ayudar() {
         <div className={classes.hero}>
 
           <h1>
-            Ais mi wor ASL Chuukese
+            Ewe puken awewen fosun Chuuk ASL
             <br />
             <span className={classes.subheading}>Chuukese ASL Dictionary</span>
           </h1>
 
           {/* Search dictionary */}
           <p>
-            En mi tongeni kukkun non ach ais mi wor ASL Chuukese{" "}
+            Ka tongeni kutta ach ei puken awewen fosun Chuuk ASL{" "}
             <Link href="/learn-asl/chuukese/dictionary">ikei</Link>.
             <br />
             <span className={classes.subheading}>
@@ -35,7 +35,7 @@ export default function Ayudar() {
 
           {/* Purchase dictionary */}
           <p>
-            En mi tongeni amwono ach ais mi wor ASL Chuukese{" "}
+            Ka pwan tongeni purchase nouch kewe puken awewen fosun Chuuk me{" "}
             <Link href="/store#products">ikei</Link>.
             <br />
             <span className={classes.subheading}>
