@@ -26,6 +26,12 @@ const aboutPages = [
       "Explore the organizations and community partners we collaborate with across the U.S. and internationally.",
     href: "/about/partners",
   },
+    {
+    title: "Volunteer",
+    description:
+      "Explore the volunteer opportunities available at Hands United and discover how you can help reduce language barriers and support Deaf immigrant families.",
+    href: "/about/volunteer",
+  },
 ];
 
 export default function AboutPage() {

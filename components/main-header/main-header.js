@@ -309,6 +309,9 @@ export default function MainHeader() {
                 <DropdownItem className={classes.dditem}>
                   <Link href="/about/partners">Partners</Link>
                 </DropdownItem>
+                                <DropdownItem className={classes.dditem}>
+                  <Link href="/about/volunteer">Volunteer</Link>
+                </DropdownItem>
               </DropdownMenu>
             </Dropdown>
 
