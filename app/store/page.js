@@ -98,7 +98,7 @@ export default function StorePage() {
       <strong>Length:</strong> 10 weeks
     </p>
 
-    <Link href="https://celenaponce.aidaform.com/permit-class-registration-march-2026">
+    <Link href="/programs/driver-education/register">
       Enroll in Permit Classes
     </Link>
   </div>

@@ -20,8 +20,7 @@ const sections = [
   },
   {
     title: "Know Your Rights",
-    description:
-      "Printable Know Your Rights cards and accessible materials.",
+    description: "Printable Know Your Rights cards and accessible materials.",
     href: "/programs/immigration-support/know-your-rights",
     icon: "🪪",
   },
@@ -33,6 +32,13 @@ const sections = [
     icon: "📱",
   },
   {
+    title: "Communication Board",
+    description:
+      "Visual communication board designed to help Deaf individuals communicate with officers, request interpreters, assert their rights, and identify their language.",
+    href: "/programs/immigration-support/communication-board",
+    icon: "/icons/commboard.svg",
+  },
+  {
     title: "Workshops",
     description:
       "Recorded immigration workshops in ASL and international sign languages.",
@@ -41,21 +47,24 @@ const sections = [
   },
 ];
 
-
 export default function ImmigrationPage() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Immigration Resources</h1>
       <p className={styles.subtitle}>
-        Accessible immigration resources designed for Deaf and hard of hearing individuals and families.
+        Accessible immigration resources designed for Deaf and hard of hearing
+        individuals and families.
       </p>
 
       <div className={styles.grid}>
         {sections.map((section, index) => (
           <Link key={index} href={section.href} className={styles.card}>
-            
             <div className={styles.emojiBlock}>
-              <span className={styles.emoji}>{section.icon}</span>
+              {section.icon.endsWith(".svg") ? (
+                <img src={section.icon} className={styles.svgIcon} />
+              ) : (
+                <span className={styles.emoji}>{section.icon}</span>
+              )}
             </div>
 
             <div className={styles.cardContent}>
@@ -64,7 +73,6 @@ export default function ImmigrationPage() {
                 {section.description}
               </div>
             </div>
-
           </Link>
         ))}
       </div>

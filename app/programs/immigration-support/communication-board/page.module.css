@@ -1,0 +1,105 @@
+
+
+.notDetainedWrapper {
+  text-align: center;           /* centers the block */
+}
+.emoji {
+  font-size: 22px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.line {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 1.2rem;
+}
+
+.line:last-child {
+  margin-bottom: 0;
+}
+
+/* Make emojis and SVG larger */
+.line span:first-child {
+  font-size: 1.8rem;
+}
+
+/* Make SVG match emoji size */
+.line img {
+  width: 26px;
+  height: 26px;
+}
+.topDecisionRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;   /* 🔥 this vertically centers */
+  gap: 1.5rem;
+  margin: 2rem auto;
+  flex-wrap: nowrap;
+}
+@media (max-width: 768px) {
+  .topDecisionRow {
+    flex-direction: column;   /* 🔥 stack vertically */
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .notDetainedBlock,
+  .detainedCard {
+    width: 100%;
+    max-width: 500px;   /* keeps them readable */
+  }
+}
+
+/* LEFT BLOCK (keep your current styling if already defined) */
+.notDetainedBlock {
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+  background: #fff4f4;
+  border: 3px solid #b00020;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* RIGHT CLICKABLE CARD */
+.detainedCard {
+  padding: 2rem;
+  border-radius: 20px;
+  border: 3px solid #b00020;
+  background: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.detainedCard:hover {
+  transform: translateY(-4px);
+  background: #fff4f4;
+}
+
+/* ICON SIZING */
+.iconSmall {
+  width: 28px;
+  height: 28px;
+}
+
+.iconLarge {
+  width: 48px;
+  height: 48px;
+  vertical-align: bottom;
+}
+
+/* Make text larger */
+.line span:last-child {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
