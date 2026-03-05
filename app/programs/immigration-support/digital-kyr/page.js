@@ -1,18 +1,31 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./page.module.css";
 import signLanguages from "../../../data/sign-languages.json";
 import videoData from "../../../../components/kyrlayout/kyr.json";
 
 export default function DigitalKYRPage() {
+
   const [selectedCode, setSelectedCode] = useState(signLanguages[0].code);
   const [flipped, setFlipped] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
 
+  // LOAD saved language on first render
+  useEffect(() => {
+    const savedLang = localStorage.getItem("preferredSignLanguage");
+    if (savedLang) {
+      setSelectedCode(savedLang);
+    }
+  }, []);
+
+  const handleLanguageChange = (value) => {
+    setSelectedCode(value);
+    localStorage.setItem("preferredSignLanguage", value);
+  };
+
   const selected = signLanguages.find((lang) => lang.code === selectedCode);
 
-  // Match video by countryCode
   const matchingVideo = videoData.find(
     (video) => video.countryCode === selected?.countryCode
   );
@@ -30,7 +43,7 @@ export default function DigitalKYRPage() {
 
         <select
           value={selectedCode}
-          onChange={(e) => setSelectedCode(e.target.value)}
+          onChange={(e) => handleLanguageChange(e.target.value)}
         >
           {signLanguages.map((lang) => (
             <option key={lang.code} value={lang.code}>

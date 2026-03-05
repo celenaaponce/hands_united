@@ -48,6 +48,7 @@ export const detainedBoardData = [
             image: "/commboard/nolips.png",
           },
           { textKey: "amDeaf", image: "/commboard/deaf.png" },
+          { textKey: "amDeafBlind", image: "/commboard/deafblind.png" },
           { textKey: "useSignLanguage", image: "/commboard/signlanguage.png" },
           { textKey: "needVideophone", image: "/commboard/vp.png" },
           { textKey: "rightToVideophone", image: "/commboard/vp.png" },

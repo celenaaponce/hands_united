@@ -117,7 +117,10 @@ export const driverBoardData = [
       {
         title: "Instructions",
         items: [
+          { textKey: "amDeaf", image: "/commboard/deaf.png" },
+          { textKey: "amDeafBlind", image: "/commboard/deafblind.png" },
           {
+            
             textKey: "turnOffCar",
             image: "/commboard/off.png",
           },

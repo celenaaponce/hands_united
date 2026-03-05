@@ -545,6 +545,17 @@ export const translations = {
     chk: "Mi nomw lon detain?",
   },
 
+    notCuffBack: {
+    en: "Do not cuff me behind my back.",
+    es: "No me esposes por detrás.",
+    ru: "Не связывайте мне руки за спиной.",
+    my: "ကျောနောက်မှာ လက်ထိန်းမထားပါနဲ့။",
+    ht: "Pa mete menòt nan do m.",
+    ti: "ብድሕሪ ሕቖይ ብመቑሕ ኣይትኣስረኒ።",
+    am: "ከጀርባዬ ጀርባ አትታፈገኝ።",
+    chk: "Kosap kuf ngeniei mwirin pechei.",
+  },
+
   chooseRemainSilent: {
     en: "I choose to remain silent.",
     es: "Elijo permanecer en silencio.",
@@ -594,6 +605,17 @@ export const translations = {
     ti: "ኣነ ጽሙም እየ።",
     am: "እኔ ደንቆሮ ነኝ።",
     chk: "Ngang mi chon soum.",
+  },
+
+    amDeafBlind: {
+    en: "I am DeafBlind.",
+    es: "Soy sordciego/a.",
+    ru: "Я глухой/ая и слепой/ая.",
+    my: "ကျွန်ုပ်သည် နားမကြား၊ မျက်မမြင် ဖြစ်ပါသည်။",
+    ht: "Mwen soud e avèg.",
+    ti: "ኣነ ጸማማት ዕዉር እየ።",
+    am: "እኔ ደንቆሮ ዓይነ ስውር ነኝ።",
+    chk: "Ngang emon mi selingepung.",
   },
 
   useSignLanguage: {

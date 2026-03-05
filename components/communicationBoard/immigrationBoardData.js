@@ -7,7 +7,10 @@ export const immigrationBoardData = [
       {
         title: "",
         items: [
+            { textKey: "amDeaf", image: "/commboard/deaf.png" },
+          { textKey: "amDeafBlind", image: "/commboard/deafblind.png" },
           { textKey: "amIBeingDetained", image: "/commboard/detained.png" },
+          { textKey: "notCuffBack", image: "/commboard/behindback.png" },
           { textKey: "chooseRemainSilent", image: "/commboard/silent.png" },
           { textKey: "noQuestionWithoutLawyer", image: "/commboard/waitlawyer.png" },
           { textKey: "requireInterpreter", image: "/commboard/terp.png" },
