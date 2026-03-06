@@ -1,6 +1,6 @@
 import MainHeader from "../components/main-header/main-header";
 import Footer from "../components/main-footer/main-footer";
-import ReportTranslationButton from "../components/reportTranslation/ReportTranslationButton";
+// import ReportTranslationButton from "../components/reportTranslation/ReportTranslationButton";
 import "./globals.css";
 
 export const metadata = {
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         <div className="content-wrapper">{children}</div>
 
         {/* Floating Translation Button */}
-        <ReportTranslationButton />
+        {/* <ReportTranslationButton /> */}
 
         <Footer />
       </body>
