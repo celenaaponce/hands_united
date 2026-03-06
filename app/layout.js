@@ -1,5 +1,6 @@
 import MainHeader from "../components/main-header/main-header";
 import Footer from "../components/main-footer/main-footer";
+import ReportTranslationButton from "../components/reportTranslation/ReportTranslationButton";
 import "./globals.css";
 
 export const metadata = {
@@ -33,10 +34,14 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      {/* THEME WILL BE APPLIED HERE */}
       <body>
         <MainHeader />
+
         <div className="content-wrapper">{children}</div>
+
+        {/* Floating Translation Button */}
+        <ReportTranslationButton />
+
         <Footer />
       </body>
     </html>

@@ -17,8 +17,7 @@ import SpanishASL from "public/classflyers/ASLSpanishclass.jpeg";
 import EngKYRMultilingual from "public/classflyers/aslarabic.png";
 import ArabicKYRMultilingual from "public/classflyers/arabicarabic.png";
 
-import Spanish from "public/classflyers/Spanish.png"
-
+import Spanish from "public/classflyers/Spanish.png";
 
 export default function Home() {
   return (
@@ -42,6 +41,75 @@ export default function Home() {
         </div>
       </header>
       <main className={classes.main}>
+        {/* =======================
+URGENT COMMUNITY SUPPORT
+======================= */}
+
+        <section className={classes.urgentSection}>
+          <h2>🚨 Urgent Community Support</h2>
+
+          <p className={classes.urgentIntro}>
+            Two Deaf immigrants connected to our community urgently need
+            support. Hands United is currently raising funds to help provide
+            legal access, advocacy, and humanitarian support.
+          </p>
+
+          <div className={classes.urgentGrid}>
+            {/* Case 1 */}
+            <div className={classes.urgentCard}>
+              <h3>👨‍👩‍👧 Deaf Child & Family Deported</h3>
+
+              <p>
+                A family with a Deaf child connected to our community was
+                recently deported. The family now needs support for legal
+                consultation, transition assistance, and continued advocacy to
+                explore possible legal options for the future.
+              </p>
+
+              <p>
+                Deaf children face extreme barriers after deportation, including
+                lack of access to education, language, and Deaf community
+                support.
+              </p>
+
+              <a
+                href="https://www.zeffy.com/en-US/donation-form/support-a-deaf-child-and-family-facing-deportation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.donateButton}
+              >
+                Support This Family
+              </a>
+            </div>
+
+            {/* Case 2 */}
+            <div className={classes.urgentCard}>
+              <h3>⚖️ Deaf Man Unlawfully Deported</h3>
+
+              <p>
+                A Deaf man was deported without an interpreter present and
+                without documentation explaining the deportation. He is
+                currently stranded in a country that is not his country of
+                origin and does not know why he was removed.
+              </p>
+
+              <p>
+                We are raising funds to support legal investigation, advocacy,
+                and assistance as we work to understand what happened and
+                explore possible legal remedies.
+              </p>
+
+              <a
+                href="https://www.zeffy.com/en-US/donation-form/support-a-deaf-immigrant-in-emergency-crisis-after-deportation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.donateButton}
+              >
+                Support His Case
+              </a>
+            </div>
+          </div>
+        </section>
         <section className={classes.section}>
           {/* =======================
     DOWNLOAD OUR APP
@@ -151,168 +219,114 @@ export default function Home() {
           </section>
 
           <section className={classes.section}>
-            <h2>Upcoming Events</h2>
-            <hr />
+            <h2>Upcoming Programs</h2>
+            <p>
+              Hands United offers classes, workshops, and community programs
+              supporting Deaf immigrants, families, and professionals working in
+              multilingual environments.
+            </p>
 
-            {/* Spanish ASL Classes */}
-            <h3>Spanish Family ASL Classes — Starting in April</h3>
+            <div className={classes.featureGrid}>
+              {/* Immigration 101 */}
+              <Link
+                href="/store#immigration101"
+                className={classes.featureCard}
+              >
+                <div className={classes.imageWrapper}>
+                  <Image
+                    src={KYRWeekly}
+                    alt="Immigration 101 workshop for Deaf immigrants"
+                    width={300}
+                    height={200}
+                  />
+                </div>
+                <h3>Immigration 101 Workshop</h3>
+                <p>
+                  Learn the basics of the U.S. immigration system and your
+                  rights.
+                </p>
+                <p>
+                  <strong>Dates:</strong> March 17, 24, 31 & April 4
+                </p>
+              </Link>
 
-            <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={SpanishASL}
-                width={500}
-                height={500}
-                alt="Spanish Family ASL Classes starting in April"
-              />
+              {/* Permit Classes */}
+              <Link
+                href="/store#permit-classes"
+                className={classes.featureCard}
+              >
+                <div className={classes.imageWrapper}>
+                  <Image
+                    src={PermitASL}
+                    alt="ASL permit classes for Deaf students"
+                    width={300}
+                    height={200}
+                  />
+                </div>
+                <h3>ASL Permit Classes</h3>
+                <p>
+                  Online driver permit classes taught fully in American Sign
+                  Language.
+                </p>
+                <p>
+                  <strong>Start:</strong> March 25
+                </p>
+              </Link>
+
+              {/* Spanish Family ASL */}
+              <Link
+                href="https://manosunidasor.org/aprender-asl/clases-gratuitas/registrarse"
+                className={classes.featureCard}
+              >
+                <div className={classes.imageWrapper}>
+                  <Image
+                    src={SpanishASL}
+                    alt="Spanish ASL classes for immigrant families"
+                    width={300}
+                    height={200}
+                  />
+                </div>
+                <h3>Spanish Family ASL Classes</h3>
+                <p>
+                  8-week ASL classes for Spanish-speaking families with Deaf
+                  children.
+                </p>
+                <p>
+                  <strong>Start:</strong> April
+                </p>
+              </Link>
             </div>
 
-            <p>
-              Our 8-week Spanish Family ASL classes are designed for immigrant
-              families with Deaf or hard-of-hearing children. Classes focus on
-              reducing language deprivation, strengthening home communication,
-              and building practical everyday vocabulary.
-            </p>
+            <div className={classes.programButtons}>
+              <Link
+                href="/store#family-community"
+                className={classes.programButton}
+              >
+                <span aria-hidden="true" className={classes.programEmoji}>👨‍👩‍👧</span>
+                <span>See Family &amp; Community Workshops</span>
+              </Link>
 
-            <p>
-              <strong>Language:</strong> ASL with spoken Spanish support
-              <br />
-              <strong>Start:</strong> April
-              <br />
-              <strong>Platform:</strong> Zoom
-            </p>
+              <Link href="/store#immigration" className={classes.programButton}>
+                <span aria-hidden="true" className={classes.programEmoji}>⚖️</span>
+                <span>See Immigration Workshops</span>
+              </Link>
 
-            <Link href="https://manosunidasor.org/aprender-asl/clases-gratuitas/registrarse">
-              Register for Spanish ASL Classes
-            </Link>
+              <Link
+                href="/store#professionals"
+                className={classes.programButton}
+              >
+                <span aria-hidden="true" className={classes.programEmoji}>🎓</span>
+                <span>See Professional Development</span>
+              </Link>
 
-            <hr />
-
-            {/* ASL Permit Classes */}
-            <h3>ASL Permit Classes — Starting March 25</h3>
-
-            <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={PermitASL}
-                width={500}
-                height={500}
-                alt="ASL permit classes taught in American Sign Language"
-              />
+              <Link
+                href="/store#driver-education"
+                className={classes.programButton}
+              >
+                <span aria-hidden="true" className={classes.programEmoji}>🚗</span>
+                <span>See Driver Education Classes</span>
+              </Link>
             </div>
-
-            <p>
-              Online permit classes taught fully in ASL to ensure Deaf and
-              hard-of-hearing students understand traffic laws, safety
-              principles, and testing expectations. Created to increase
-              equitable access to driver education.
-            </p>
-
-            <p>
-              <strong>Start Date:</strong> March 25
-              <br />
-              <strong>Platform:</strong> Zoom
-            </p>
-
-            <Link href="/store#permit-classes">
-              Learn more about ASL Permit Classes
-            </Link>
-
-            <hr />
-
-            {/* KYR Arabic + ASL */}
-            <h3>Know Your Rights — ASL & Arabic Sign | March 7</h3>
-
-            <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={EngKYRMultilingual}
-                width={500}
-                height={500}
-                alt="Know Your Rights workshop in ASL and Arabic Sign"
-              />
-            </div>
-                        <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={ArabicKYRMultilingual}
-                width={500}
-                height={500}
-                alt="Know Your Rights workshop in ASL and Arabic Sign"
-              />
-            </div>
-
-            <p>
-              A Know Your Rights workshop focused on ICE interactions,
-              constitutional protections, and communication rights for Deaf
-              individuals. Presented in ASL and Arabic Sign to increase access
-              for newly arrived communities.
-            </p>
-
-            <Link href="/programs/immigration-support/">
-              View Know Your Rights Resources
-            </Link>
-
-            <hr />
-
-            {/* Math Workshop */}
-            <h3>3-Part Math Workshop — Algebraic Thinking (CEUs Available)</h3>
-
-            <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={math}
-                width={800}
-                height={500}
-                alt="Algebraic thinking math workshop for interpreters"
-              />
-            </div>
-
-            <p>
-              A three-part professional development series supporting
-              interpreters and educators working in math classrooms. Covers
-              algebraic thinking across elementary, middle, and high school
-              levels with practical language strategies.
-            </p>
-
-            <p>
-              <strong>Dates:</strong> March 9, 11, 13
-              <br />
-              <strong>CEUs:</strong> Available
-              <br />
-              <strong>Language:</strong> Spoken English
-            </p>
-
-            <Link href="/store#algebra-workshop">Register for Math Workshop</Link>
-
-            <hr />
-
-            {/* Spanish for Interpreters */}
-            <h3>
-              Beginning Spanish for Interpreters — 3-Part Series (CEUs
-              Available)
-            </h3>
-
-            <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={Spanish}
-                width={800}
-                height={500}
-                alt="Beginning Spanish workshop for interpreters"
-              />
-            </div>
-
-            <p>
-              A beginning Spanish series taught in SimCom using the Destinos
-              curriculum. Designed for interpreters and ASL-fluent community
-              members seeking foundational Spanish skills for working with
-              immigrant families.
-            </p>
-
-            <p>
-              <strong>Dates:</strong> March 23, 25, 27
-              <br />
-              <strong>CEUs:</strong> Available
-            </p>
-
-            <Link href="/store#spanish-workshop">
-              Register for Spanish Workshop
-            </Link>
           </section>
           {/* =======================
    NATIONAL PARTNERSHIPS
@@ -336,8 +350,8 @@ export default function Home() {
 
             <p>
               Hands United is proud to provide{" "}
-              <strong>Spanish and ASL interpretation</strong>{" "}
-              for NHLAD’s National Deaf Youth Day Virtual Panel.
+              <strong>Spanish and ASL interpretation</strong> for NHLAD’s
+              National Deaf Youth Day Virtual Panel.
             </p>
 
             <p>
@@ -373,10 +387,9 @@ export default function Home() {
             <p>
               <strong>Date:</strong> March 25
             </p>
-                        <Link href="https://nilc-org.zoom.us/webinar/register/8017683459097/WN_rec-edT8TOiTWkn3GOxOGQ">
+            <Link href="https://nilc-org.zoom.us/webinar/register/8017683459097/WN_rec-edT8TOiTWkn3GOxOGQ">
               Register for NILC Workshop
             </Link>
-
           </section>
 
           <h2>Resources Galore!</h2>
@@ -435,7 +448,6 @@ export default function Home() {
               </Link>
             </div>
           </div>
-
         </section>
 
         <section className={classes.section}>
