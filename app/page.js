@@ -108,6 +108,27 @@ URGENT COMMUNITY SUPPORT
                 Support His Case
               </a>
             </div>
+            <div className={classes.urgentCard}>
+              <h3>🩺 Neuropsychological Evaluation for a Deaf Detainee</h3>
+
+              <p>
+                We are raising funds to support a neuropsychological evaluation
+                conducted by a Deaf clinician for a Deaf individual currently in
+                immigration detention. This evaluation will help ensure they
+                receive an accurate diagnosis before being deported to a country
+                where they do not know the written language or local sign
+                language.
+              </p>
+
+              <a
+                href="https://www.zeffy.com/en-US/donation-form/help-fund-a-deaf-clinician-evaluation-before-deportation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.donateButton}
+              >
+                Support His Case
+              </a>
+            </div>
           </div>
         </section>
         <section className={classes.section}>
@@ -302,12 +323,16 @@ URGENT COMMUNITY SUPPORT
                 href="/store#family-community"
                 className={classes.programButton}
               >
-                <span aria-hidden="true" className={classes.programEmoji}>👨‍👩‍👧</span>
+                <span aria-hidden="true" className={classes.programEmoji}>
+                  👨‍👩‍👧
+                </span>
                 <span>See Family &amp; Community Workshops</span>
               </Link>
 
               <Link href="/store#immigration" className={classes.programButton}>
-                <span aria-hidden="true" className={classes.programEmoji}>⚖️</span>
+                <span aria-hidden="true" className={classes.programEmoji}>
+                  ⚖️
+                </span>
                 <span>See Immigration Workshops</span>
               </Link>
 
@@ -315,7 +340,9 @@ URGENT COMMUNITY SUPPORT
                 href="/store#professionals"
                 className={classes.programButton}
               >
-                <span aria-hidden="true" className={classes.programEmoji}>🎓</span>
+                <span aria-hidden="true" className={classes.programEmoji}>
+                  🎓
+                </span>
                 <span>See Professional Development</span>
               </Link>
 
@@ -323,7 +350,9 @@ URGENT COMMUNITY SUPPORT
                 href="/store#driver-education"
                 className={classes.programButton}
               >
-                <span aria-hidden="true" className={classes.programEmoji}>🚗</span>
+                <span aria-hidden="true" className={classes.programEmoji}>
+                  🚗
+                </span>
                 <span>See Driver Education Classes</span>
               </Link>
             </div>
