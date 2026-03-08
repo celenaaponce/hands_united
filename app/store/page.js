@@ -403,8 +403,51 @@ export default function StorePage() {
           <div className={classes.imageContainer}>
             <div className={classes.embedWrapper}>
               <ZeffyEmbed
-                title="Spanish Workshop Registration"
+                title="El Salvadorian Sign Language Workshop Registration"
                 src="https://www.zeffy.com/ticketing/10-week-colombian-sign-language-2-with-andres"
+              />
+            </div>
+          </div>
+        </div>
+        <div className={classes.eventBlock}>
+          <h4 id="lessa-sign-language">El Salvadorian Sign Language Level 1</h4>
+
+          <p>
+            A Level 1 introductory course for interpreters and Deaf
+            professionals who are fluent in ASL and want to begin learning LESSA
+            (Lengua de Señas Salvadoreña). This class introduces foundational
+            LESSA vocabulary, basic grammar structures, and cultural context to
+            support cross-linguistic communication and awareness between ASL and
+            LESSA.
+          </p>
+
+          <p>
+            <strong>Instructor:</strong> Rebeca Lourdes Garcia Soundy
+            <br />
+            <strong>Length:</strong> 10 weeks
+            <br />
+            <strong>Schedule:</strong> Wednesdays
+            <br />
+            <strong>Time:</strong> 6–8 PM MST
+            <br />
+            <strong>CEUs:</strong> 2.0
+            <br />
+            <strong>Cost:</strong> $150
+          </p>
+
+          {/* <div className={classes.flyerGrid}>
+            <div className={classes.flyerItem}>
+              <Image
+                src={LSCLevel2}
+                alt="Colombian Sign Language Level 2 course flyer"
+              />
+            </div>
+          </div> */}
+          <div className={classes.imageContainer}>
+            <div className={classes.embedWrapper}>
+              <ZeffyEmbed
+                title="El Salvadorian Sign Language Workshop Registration"
+                src="https://www.zeffy.com/en-US/ticketing/10-week-lessa-1-class-with-becky"
               />
             </div>
           </div>
