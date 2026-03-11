@@ -129,6 +129,30 @@ URGENT COMMUNITY SUPPORT
                 Support His Case
               </a>
             </div>
+            <div className={classes.urgentCard}>
+              <h3>👧 Child Lost Hearing After Medical Neglect in Detention</h3>
+
+              <p>
+                A family seeking asylum was detained at the ICE family detention
+                center in Dilley, Texas. During their detention, their daughter
+                did not receive timely treatment for an ear infection.
+              </p>
+
+              <p>
+                Because of the delay in medical care, she now has permanent
+                hearing loss. We are amplifying this fundraiser to support the
+                family as they recover from what happened in detention.
+              </p>
+
+              <a
+                href="https://gofund.me/0baa57b6e"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.donateButton}
+              >
+                Support This Family
+              </a>
+            </div>
           </div>
         </section>
         <section className={classes.section}>
