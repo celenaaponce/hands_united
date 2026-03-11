@@ -58,6 +58,11 @@ const videos = [
     thumbnail: "https://i.ytimg.com/vi/vGnrZ090uUY/maxresdefault.jpg",
     duration: "2:58",
   },
+  {title: "How to Open and Use a USCIS Account",
+    url: "https://youtu.be/lWd0_ykY8PI?si=z-cGYDxaOx6CjpmS",
+    thumbnail: "https://i.ytimg.com/vi/lWd0_ykY8PI/maxresdefault.jpg",
+    duration: "17:00"
+  }
 ];
 
 export default function SignLanguageWorkshopsPage() {
