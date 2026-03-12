@@ -12,6 +12,7 @@ export default function Ayudar() {
       {/* NEW SECTION */}
       <section className={classes.section}>
         <h1>Haitian Creole ASL Dictionary</h1>
+        <h1>Diksyonè Kreyòl Ayisyen ASL</h1>
 
         <DictionaryFlashcards
           dictionary={dictionary}

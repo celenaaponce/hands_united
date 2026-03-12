@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./page.module.css";
-import Link from "next/link";
+import VideoGrid from "../../../../components/VideoGrid/VideoGrid.js";
 
 const videos = [
   {
@@ -58,11 +58,12 @@ const videos = [
     thumbnail: "https://i.ytimg.com/vi/vGnrZ090uUY/maxresdefault.jpg",
     duration: "2:58",
   },
-  {title: "How to Open and Use a USCIS Account",
+  {
+    title: "How to Open and Use a USCIS Account",
     url: "https://youtu.be/lWd0_ykY8PI?si=z-cGYDxaOx6CjpmS",
     thumbnail: "https://i.ytimg.com/vi/lWd0_ykY8PI/maxresdefault.jpg",
-    duration: "17:00"
-  }
+    duration: "17:00",
+  },
 ];
 
 export default function SignLanguageWorkshopsPage() {
@@ -77,32 +78,7 @@ export default function SignLanguageWorkshopsPage() {
         Workshops presented in American Sign Language and other international sign languages.
       </p>
 
-      <div className={styles.grid}>
-        {videos.map((video, index) => (
-          <a
-            key={index}
-            href={video.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <div className={styles.thumbnailContainer}>
-              <img
-                src={video.thumbnail}
-                alt={video.title}
-                className={styles.thumbnail}
-              />
-              <span className={styles.duration}>
-                {video.duration}
-              </span>
-            </div>
-
-            <div className={styles.cardTitle}>
-              {video.title}
-            </div>
-          </a>
-        ))}
-      </div>
+      <VideoGrid videos={videos} />
 
     </div>
   );

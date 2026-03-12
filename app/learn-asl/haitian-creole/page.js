@@ -28,13 +28,13 @@ export default function Ayudar() {
 
           <p>
             Ou ka gade klas nou yo an Kreyòl Ayisyen{" "}
-            <Link href="https://www.youtube.com/playlist?list=PLAsRcYXV-4XAYLuNJu8J5GKx5iGxVErQt">
+            <Link href="/learn-asl/haitian-creole/videos">
               isit la
             </Link>.
             <br />
             <span className={classes.subheading}>
               You can watch our classes in Haitian Creole{" "}
-              <Link href="https://www.youtube.com/playlist?list=PLAsRcYXV-4XAYLuNJu8J5GKx5iGxVErQt">
+              <Link href="/learn-asl/haitian-creole/videos">
                 here
               </Link>.
             </span>
