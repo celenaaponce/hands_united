@@ -139,9 +139,9 @@ URGENT COMMUNITY SUPPORT
               </p>
 
               <p>
-                Because of the delay in medical care, she now has permanent
-                hearing loss. We are amplifying this fundraiser to support the
-                family as they recover from what happened in detention.
+                Because of the delay in medical care, she now has hearing loss.
+                We are amplifying this fundraiser to support the family as they
+                recover from what happened in detention.
               </p>
 
               <a
