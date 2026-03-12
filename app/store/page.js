@@ -262,7 +262,7 @@ export default function StorePage() {
             <br />
             <strong>Location:</strong> Zoom
             <br />
-            <strong>CEUs:</strong> Pending
+            <strong>CEUs:</strong> 0.8 PPO CEUs
           </p>
 
           <div className={classes.imageContainer}>
