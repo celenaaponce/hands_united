@@ -190,6 +190,39 @@ export default function StorePage() {
             </div>
           </div>
         </div>
+
+        <div className={classes.eventBlock}>
+          <h4>
+            Representing Deaf Immigrant Clients: Language Access and Legal Best
+            Practices - April 28
+          </h4>
+
+          <p>
+            A 90-minute virtual workshop for attorneys on effectively
+            representing Deaf immigrant clients, covering language access,
+            interpreter use, and practical strategies to support clear
+            communication and due process.
+          </p>
+
+          <p>
+            <strong>Language:</strong> spoken English
+            <br />
+            <strong>Location:</strong> Zoom
+            <br />
+            <strong>Date:</strong> April 28
+            <br />
+            <strong>Time:</strong> 4-5:30pm PST
+          </p>
+
+          <div className={classes.imageContainer}>
+            <div className={classes.embedWrapper}>
+              <ZeffyEmbed
+                title="Representing Deaf Immigrant Clients Registration"
+                src="https://www.zeffy.com/en-US/ticketing/representing-deaf-immigrant-clients-language-access-and-legal-best-practices"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className={classes.section} id="professionals">
@@ -285,7 +318,9 @@ export default function StorePage() {
           </div>
         </div>
         <div className={classes.eventBlock}>
-          <h4 id="international-sign-language">International Sign Language Level 1</h4>
+          <h4 id="international-sign-language">
+            International Sign Language Level 1
+          </h4>
 
           <p>
             An introductory course to International Sign Language (IS) Level 1,
@@ -390,10 +425,7 @@ export default function StorePage() {
             ↑ Back to top
           </a>
         </div>
-        <p>
-          CURRENTLY UPDATING!  SEE NEW THINGS SOON!
-        </p>
-
+        <p>CURRENTLY UPDATING! SEE NEW THINGS SOON!</p>
       </section>
 
       {/* ===================== */}
@@ -407,11 +439,7 @@ export default function StorePage() {
             ↑ Back to top
           </a>
         </div>
-        <p>
-          CURRENTLY UPDATING!  SEE NEW THINGS SOON!
-        </p>
-
-
+        <p>CURRENTLY UPDATING! SEE NEW THINGS SOON!</p>
       </section>
     </main>
   );
