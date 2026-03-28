@@ -192,7 +192,7 @@ export default function StorePage() {
         </div>
 
         <div className={classes.eventBlock}>
-          <h4>
+          <h4 id="representing-deaf-workshop">
             Representing Deaf Immigrant Clients: Language Access and Legal Best
             Practices - April 28
           </h4>
