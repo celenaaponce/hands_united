@@ -385,65 +385,6 @@ URGENT COMMUNITY SUPPORT
    NATIONAL PARTNERSHIPS
 ======================= */}
 
-          <section className={classes.section}>
-            <h2>National Partnerships & Featured Collaborations</h2>
-            <hr />
-
-            {/* NHLAD Event */}
-            <h3>National Deaf Youth Day – Virtual Panel (Hosted by NHLAD)</h3>
-
-            <div className={classes.responsiveImageWrapper}>
-              <Image
-                src={NHLAD} // Replace with NHLAD image if you import it
-                width={800}
-                height={500}
-                alt="National Deaf Youth Day virtual panel hosted by NHLAD"
-              />
-            </div>
-
-            <p>
-              Hands United is proud to provide{" "}
-              <strong>Spanish and ASL interpretation</strong> for NHLAD’s
-              National Deaf Youth Day Virtual Panel.
-            </p>
-
-            <p>
-              This event celebrates Deaf Hispanic/Latino high school and college
-              students and highlights their leadership journeys, challenges, and
-              achievements.
-            </p>
-
-            <p>
-              <strong>Date:</strong> March 6, 2026
-              <br />
-              <strong>Time:</strong> 7:30–9:00 PM EST
-            </p>
-
-            <hr />
-
-            {/* NILC Event */}
-            <h3>
-              Empower Communities: Enforcement & Detention (Hosted by NILC)
-            </h3>
-
-            <p>
-              Hands United will provide <strong>ASL interpretation</strong> for
-              the National Immigration Law Center’s workshop focused on
-              enforcement, detention, and immigrant community protections.
-            </p>
-
-            <p>
-              This collaboration ensures Deaf immigrants have equitable access
-              to national-level immigration advocacy conversations.
-            </p>
-
-            <p>
-              <strong>Date:</strong> March 25
-            </p>
-            <Link href="https://nilc-org.zoom.us/webinar/register/8017683459097/WN_rec-edT8TOiTWkn3GOxOGQ">
-              Register for NILC Workshop
-            </Link>
-          </section>
 
           <h2>Resources Galore!</h2>
           <p>We are excited to share our resources with you!</p>

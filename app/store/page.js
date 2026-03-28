@@ -105,90 +105,6 @@ export default function StorePage() {
           </Link>
         </div>
         <div className={classes.eventBlock}>
-          <h4 id="amharic-tigrinya-meetup">
-            Amharic & Tigrinya Monthly ASL Meetup
-          </h4>
-
-          <p>
-            A monthly community meetup for Amharic and Tigrinya speaking
-            families with Deaf or hard-of-hearing children. Participants can
-            practice American Sign Language together, build community
-            connections, and share resources with other families.
-          </p>
-
-          <p>
-            <strong>Date:</strong> March 14
-            <br />
-            <strong>Platform:</strong> Zoom
-            <br />
-            <strong>Zoom ID:</strong> 9429059707
-            <br />
-            <strong>Password:</strong> ASL
-          </p>
-
-          <div className={classes.flyerGrid}>
-            <div className={classes.flyerItem}>
-              <Image
-                src={AmharicMeetupEN}
-                alt="Amharic and Tigrinya ASL meetup flyer in English"
-                width={500}
-                height={500}
-              />
-            </div>
-
-            <div className={classes.flyerItem}>
-              <Image
-                src={AmharicMeetupAM}
-                alt="Amharic flyer"
-                width={500}
-                height={500}
-              />
-            </div>
-
-            <div className={classes.flyerItem}>
-              <Image
-                src={AmharicMeetupTI}
-                alt="Tigrinya flyer"
-                width={500}
-                height={500}
-              />
-            </div>
-          </div>
-        </div>
-        <div className={classes.eventBlock}>
-          <h4 id="haitian-creole-meetup">Haitian Creole Monthly ASL Meetup</h4>
-
-          <p>
-            A monthly community meetup for Haitian Creole speaking families with
-            Deaf or hard-of-hearing children. Families can practice ASL, meet
-            other parents, and build community support.
-          </p>
-
-          <p>
-            <strong>Date:</strong> March 16
-            <br />
-            <strong>Zoom ID:</strong> 9429059707
-            <br />
-            <strong>Password:</strong> ASL
-          </p>
-
-          <div className={classes.flyerGrid}>
-            <div className={classes.flyerItem}>
-              <Image
-                src={HaitianMeetupEN}
-                alt="Haitian Creole ASL meetup flyer in English"
-              />
-            </div>
-
-            <div className={classes.flyerItem}>
-              <Image
-                src={HaitianMeetupHT}
-                alt="Haitian Creole ASL meetup flyer in Haitian Creole"
-              />
-            </div>
-          </div>
-        </div>
-        <div className={classes.eventBlock}>
           <h4 id="citizenship-classes">
             Deaf Citizenship Classes — Starting in April
           </h4>
@@ -292,47 +208,6 @@ export default function StorePage() {
         </p>
 
         {/* ===================== */}
-        {/* MATH WORKSHOP */}
-        {/* ===================== */}
-
-        <div className={classes.eventCard}>
-          <h3 id="algebra-workshop">
-            Expressions, Equations & Algebraic Reasoning
-          </h3>
-
-          <p>
-            A three-part K–12 workshop series designed for interpreters working
-            in elementary, middle, and high school classrooms who want to
-            strengthen their understanding of algebraic concepts and
-            mathematical language.
-          </p>
-
-          <p>
-            This series explores how algebra develops across grade levels—from
-            early pattern recognition and understanding the meaning of the equal
-            sign in elementary school to solving multi-step equations and
-            analyzing abstract relationships in high school.
-          </p>
-
-          <p>
-            <strong>Dates:</strong> March 9, 11, 13
-            <br />
-            <strong>Format:</strong> Live and recorded options
-            <br />
-            <strong>CEUs:</strong> Available
-          </p>
-
-          <div className={classes.imageContainer}>
-            <div className={classes.embedWrapper}>
-              <ZeffyEmbed
-                title="Algebra Workshop Registration"
-                src="https://www.zeffy.com/ticketing/hands-united-math-classes"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* ===================== */}
         {/* SPANISH WORKSHOP */}
         {/* ===================== */}
 
@@ -355,9 +230,9 @@ export default function StorePage() {
           </p>
 
           <p>
-            <strong>Dates:</strong> March 23, 25, 27
+            <strong>Dates:</strong> April 6, 8, 9
             <br />
-            <strong>CEUs:</strong> Available
+            <strong>CEUs:</strong> 0.6 available
           </p>
 
           <div className={classes.imageContainer}>
@@ -403,13 +278,53 @@ export default function StorePage() {
           <div className={classes.imageContainer}>
             <div className={classes.embedWrapper}>
               <ZeffyEmbed
-                title="Salvadorian Sign Language Workshop Registration"
+                title="Colombian Sign Language Workshop Registration"
                 src="https://www.zeffy.com/ticketing/10-week-colombian-sign-language-2-with-andres"
               />
             </div>
           </div>
         </div>
+        <div className={classes.eventBlock}>
+          <h4 id="international-sign-language">International Sign Language Level 1</h4>
 
+          <p>
+            An introductory course to International Sign Language (IS) Level 1,
+            designed for interpreters and Deaf professionals who are fluent in
+            ASL and want to develop foundational skills for cross-linguistic and
+            international communication.
+          </p>
+
+          <p>
+            <strong>Instructor:</strong> Razaq Fakir
+            <br />
+            <strong>Length:</strong> 5 weeks
+            <br />
+            <strong>Schedule:</strong> Saturdays
+            <br />
+            <strong>Time:</strong> 9-11am PST
+            <br />
+            <strong>CEUs:</strong> 1.0
+            <br />
+            <strong>Cost:</strong> $75
+          </p>
+
+          {/* <div className={classes.flyerGrid}>
+            <div className={classes.flyerItem}>
+              <Image
+                src={LSCLevel2}
+                alt="Colombian Sign Language Level 2 course flyer"
+              />
+            </div>
+          </div> */}
+          <div className={classes.imageContainer}>
+            <div className={classes.embedWrapper}>
+              <ZeffyEmbed
+                title="International Sign Language Workshop Registration"
+                src="https://www.zeffy.com/en-US/ticketing/5-week-is-with-razaq-april"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className={classes.section} id="driver-education">
@@ -476,18 +391,9 @@ export default function StorePage() {
           </a>
         </div>
         <p>
-          Self-paced recordings available anytime. There are workshops that
-          include CEUs.
+          CURRENTLY UPDATING!  SEE NEW THINGS SOON!
         </p>
 
-        <div className={classes.imageContainer}>
-          <div className={classes.embedWrapper}>
-            <ZeffyEmbed
-              title="Async Workshop Store"
-              src="https://www.zeffy.com/embed/ticketing/hands-uniteds-async-workshop-store"
-            />
-          </div>
-        </div>
       </section>
 
       {/* ===================== */}
@@ -502,18 +408,10 @@ export default function StorePage() {
           </a>
         </div>
         <p>
-          Educational materials and visual resources created in collaboration
-          with the Deaf community.
+          CURRENTLY UPDATING!  SEE NEW THINGS SOON!
         </p>
 
-        <div className={classes.imageContainer}>
-          <div className={classes.embedWrapper}>
-            <ZeffyEmbed
-              title="Hands United Product Store"
-              src="https://www.zeffy.com/embed/ticketing/hands-uniteds-shop"
-            />
-          </div>
-        </div>
+
       </section>
     </main>
   );
