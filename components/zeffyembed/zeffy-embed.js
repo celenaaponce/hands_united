@@ -12,21 +12,37 @@ export default function ZeffyEmbed({ title, src }) {
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
+  const iframe = (
+    <iframe
+      title={title}
+      src={src}
+      loading="lazy"
+      style={{
+        width: "100%",
+        height: "100%",
+        border: "none",
+      }}
+    />
+  );
+
   // DESKTOP: always show iframe
   if (!isMobile) {
     return (
-      <div className="embedWrapper">
-        <iframe
-          title={title}
-          src={src}
-        />
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+        }}
+      >
+        {iframe}
       </div>
     );
   }
 
-  // MOBILE: button → iframe expands below
+  // MOBILE
   return (
-    <div style={{ width: "100%", marginTop: "1rem" }}>
+    <div style={{ width: "100%", height: "100%" }}>
       {!open && (
         <button
           onClick={() => setOpen(true)}
@@ -47,12 +63,14 @@ export default function ZeffyEmbed({ title, src }) {
       )}
 
       {open && (
-        <div className="embedWrapper">
-          <iframe
-            title={title}
-            src={src}
-            loading="lazy"
-          />
+        <div
+          style={{
+            width: "100%",
+            height: "100%", // 👈 KEY
+            display: "flex",
+          }}
+        >
+          {iframe}
         </div>
       )}
     </div>

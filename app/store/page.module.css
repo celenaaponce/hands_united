@@ -220,3 +220,42 @@
   transform: translateY(-1px);
   box-shadow: 0 3px 8px rgba(0,0,0,0.15);
 }
+
+.asyncGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.asyncCard {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.asyncCard:hover {
+  transform: translateY(-4px);
+}
+
+.asyncCard h3 {
+  margin-bottom: 10px;
+}
+
+.asyncCard p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.asyncButton {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #2e7d32; /* your green */
+}

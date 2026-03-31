@@ -386,29 +386,50 @@ export default function StorePage() {
             <strong>Length:</strong> 10 weeks
           </p>
 
-          {/* Primary action */}
-          <div className={classes.driverActions}>
+          {/* CARD ACTIONS */}
+          <div className={classes.asyncGrid}>
             <Link
               href="/programs/driver-education/register"
-              className={classes.driverActionButton}
+              className={classes.asyncCard}
             >
-              🚗 Enroll in Permit Classes
+              <div>
+                <h3>🚗 Enroll in Permit Classes</h3>
+                <p>
+                  Register for our 10-week ASL driver education program and
+                  begin your path toward getting your permit.
+                </p>
+              </div>
+              <span className={classes.asyncButton}>Register →</span>
             </Link>
 
             <a
               href="https://www.facebook.com/groups/YOURGROUP"
               target="_blank"
               rel="noopener noreferrer"
-              className={classes.driverActionButton}
+              className={classes.asyncCard}
             >
-              👥 Join our Deaf Drivers Ed Facebook Community
+              <div>
+                <h3>👥 Join Community</h3>
+                <p>
+                  Connect with other Deaf learners, families, and instructors in
+                  our Driver Education community.
+                </p>
+              </div>
+              <span className={classes.asyncButton}>Join →</span>
             </a>
 
             <Link
               href="/programs/driver-education/support"
-              className={classes.driverActionButton}
+              className={classes.asyncCard}
             >
-              ✊ Support ASL Driver Education Curriculum
+              <div>
+                <h3>✊ Support the Program</h3>
+                <p>
+                  Help expand ASL-accessible driver education and support Deaf
+                  students nationwide.
+                </p>
+              </div>
+              <span className={classes.asyncButton}>Support →</span>
             </Link>
           </div>
         </div>
@@ -425,7 +446,26 @@ export default function StorePage() {
             ↑ Back to top
           </a>
         </div>
-        <p>CURRENTLY UPDATING! SEE NEW THINGS SOON!</p>
+        <div className={classes.asyncGrid}>
+          <Link href="/store/async/ceu" className={classes.asyncCard}>
+            <div>
+              <h3>🎓 CEU Workshops</h3>
+              <p>
+                Earn CEUs through self-paced professional trainings in ASL,
+                English, Spanish, and/or Hmong.
+              </p>
+            </div>
+            <span className={classes.asyncButton}>View CEU Workshops →</span>
+          </Link>
+
+          <Link href="/store/async/no-ceu" className={classes.asyncCard}>
+            <div>
+              <h3>📺 Non-CEU Workshops</h3>
+              <p>Access recorded workshops and resources without CEU credit.</p>
+            </div>
+            <span className={classes.asyncButton}>View Workshops →</span>
+          </Link>
+        </div>
       </section>
 
       {/* ===================== */}

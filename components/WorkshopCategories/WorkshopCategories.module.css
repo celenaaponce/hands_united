@@ -1,0 +1,27 @@
+.container {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 1.2rem;
+}
+
+.item {
+  background: none;
+  border: none;
+  color: #7ed321; /* your green */
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.item:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: white;
+  font-weight: 700;
+}
+
+.divider {
+  color: #aaa;
+}

@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.card {
+  max-width: 420px;
+  width: 100%;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  background: white;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #0070f3;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.downloadButton {
+  display: block;
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #28a745;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.viewButton {
+  display: block;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #6c757d;
+  color: white;
+  text-decoration: none;
+}
+
+.notice {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
