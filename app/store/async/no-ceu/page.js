@@ -1,6 +1,8 @@
 "use client";
 
 import styles from "./page.module.css";
+import Link from "next/link";
+
 import WorkshopCard from "../../../../components/WorkshopCard/WorkshopCard";
 
 import { useState } from "react";
@@ -117,6 +119,9 @@ export default function AsyncNoCEUPage() {
 
   return (
     <div className={styles.container}>
+                      <Link href="/store#async" className={styles.backLink}>
+        ← Back to Store Page
+      </Link>
       <h1 className={styles.title}>Async Workshops (no CEUs)</h1>
 
       <WorkshopCategories selected={selected} setSelected={setSelected} />

@@ -479,7 +479,27 @@ export default function StorePage() {
             ↑ Back to top
           </a>
         </div>
-        <p>CURRENTLY UPDATING! SEE NEW THINGS SOON!</p>
+
+        <div className={classes.cardGrid}>
+          <Link href="/store/products" className={classes.asyncCard}>
+            <div>
+              <h3>📚 Learning Materials</h3>
+
+              <p>
+                Multilingual ASL resources designed for families, including
+                dictionaries, slides, and visual learning tools.
+              </p>
+
+              <p className={classes.cardSubtext}>
+                🌍 Spanish • Haitian Creole • Chuukese
+                <br />
+                👪 Family-focused content
+              </p>
+            </div>
+
+            <span className={classes.asyncButton}>Browse Products →</span>
+          </Link>
+        </div>
       </section>
     </main>
   );

@@ -8,7 +8,10 @@ import dictionary from "../../../data/hands-united-dictionary.json";
 export default function Ayudar() {
   return (
     <div className="theme-ht">
-
+      <div className={classes.container}>
+      <Link href="/learn-asl/haitian-creole" className={classes.backLink}>
+        ← Back to ASL Classes
+      </Link>
       {/* NEW SECTION */}
       <section className={classes.section}>
         <h1>Haitian Creole ASL Dictionary</h1>
@@ -20,6 +23,7 @@ export default function Ayudar() {
           uiLanguage="ht"
         />
       </section>
+      </div>
     </div>
   );
 }

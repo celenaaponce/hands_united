@@ -10,22 +10,23 @@ export default function Ayudar() {
         {/* Row 1 */}
         <div className={classes.hero}>
           <h1>
-              Recorded Classes
+            Записанные занятия
+            <br />
+            <span className={classes.subheading}>Recorded Classes</span>
           </h1>
+
           <p>
-            You can watch our classes in Russian {" "}
-            <Link
-              href={
-                "https://www.youtube.com/playlist?list=PLAsRcYXV-4XDgB-ufLUkCYHxb8Epu_Hjh"
-              }
-            >
-              
-              here.
-            </Link>{" "}
-      
+            <Link href="/learn-asl/haitian-creole/videos">Здесь</Link>
+             {" "}вы можете посмотреть наши уроки на русском языке.
+          
+            <br />
+            <span className={classes.subheading}>
+              You can watch our classes in Russian{" "}
+              <Link href="/learn-asl/russian/videos">here</Link>.
+            </span>
           </p>
         </div>
-                <div className={classes.imageContainer}>
+        <div className={classes.imageContainer}>
           <Image
             src="/images/classes2.png"
             alt="classes"

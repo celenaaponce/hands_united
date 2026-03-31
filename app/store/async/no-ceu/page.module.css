@@ -21,3 +21,18 @@
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
+.backLink {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #72b200;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.backButton {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}

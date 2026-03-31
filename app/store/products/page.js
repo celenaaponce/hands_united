@@ -69,6 +69,9 @@ export default function ProductsPage() {
 
   return (
     <div className={styles.container}>
+      <Link href="/store#products" className={styles.backLink}>
+        ← Back to Store Page
+      </Link>
       {/* ===================== */}
       {/* FILTERS */}
       {/* ===================== */}

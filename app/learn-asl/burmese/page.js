@@ -9,21 +9,27 @@ export default function Ayudar() {
       <header className={classes.header}>
         {/* Row 1 */}
         <div className={classes.hero}>
+
           <h1>
-              Recorded Classes
+            မှတ်တမ်းတင်ထားသော သင်တန်းများ
+            <br />
+            <span className={classes.subheading}>Recorded Classes</span>
           </h1>
+
           <p>
-            You can watch our classes in Burmese {" "}
-            <Link
-              href={
-                "https://www.youtube.com/playlist?list=PLAsRcYXV-4XD64fIW2FB_kbm6FjDdmbX7"
-              }
-            >
-              
-              here.
-            </Link>{" "}
-      
+                        <Link href="/learn-asl/haitian-creole/videos">
+              ဒီမှာ
+            </Link>
+            {" "}ဗမာဘာသာဖြင့် ကျွန်ုပ်တို့၏ သင်တန်းများကို ကြည့်ရှုနိုင်ပါသည်။.
+            <br />
+            <span className={classes.subheading}>
+              You can watch our classes in Burmese{" "}
+              <Link href="/learn-asl/haitian-creole/videos">
+                here
+              </Link>.
+            </span>
           </p>
+
         </div>
                 <div className={classes.imageContainer}>
           <Image

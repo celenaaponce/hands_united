@@ -2,6 +2,7 @@
 
 import styles from "./page.module.css";
 import WorkshopCard from "../../../../components/WorkshopCard/WorkshopCard";
+import Link from "next/link";
 
 import { useState } from "react";
 import WorkshopCategories from "../../../../components/WorkshopCategories/WorkshopCategories";
@@ -115,6 +116,9 @@ export default function AsyncCEUPage() {
 
   return (
     <div className={styles.container}>
+              <Link href="/store#async" className={styles.backLink}>
+        ← Back to Store Page
+      </Link>
       <h1 className={styles.title}>Async Workshops (CEUs)</h1>
 
       <WorkshopCategories selected={selected} setSelected={setSelected} />
