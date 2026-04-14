@@ -50,20 +50,20 @@ export default function DownloadPage() {
           <p>Click below to view or download your dictionary:</p>
 
           <a
-            href="/pdfs/spanish-dictionary.pdf"
+            href="https://github.com/celenaaponce/hands_united/releases/download/v1.0/spanish-dictionary.pdf"
             target="_blank"
             className={styles.downloadButton}
           >
             📥 Download PDF
           </a>
 
-          <a
-            href="/pdfs/spanish-dictionary.pdf"
+          {/* <a
+            href="https://github.com/celenaaponce/hands_united/releases/download/v1.0/spanish-dictionary.pdf"
             target="_blank"
             className={styles.viewButton}
           >
             👀 View Online
-          </a>
+          </a> */}
 
           {/* 👇 DO NOT SHARE MESSAGE */}
           <div className={styles.notice}>
