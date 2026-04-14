@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import classes from "./page.module.css";
+import RandomFlag from "../../components/RandomFlag.js";
 
 const languages = [
   {
@@ -31,7 +34,7 @@ const languages = [
     native: "Español",
     href: "https://manosunidasor.org/",
     external: true,
-    flag: "🌎",
+    langCode: "es", // used for RandomFlag
   },
   {
     name: "Tigrinya & Amharic",
@@ -53,7 +56,7 @@ export default function LearnASLPage() {
         </p>
       </section>
 
-      {/* NEW FEATURED DICTIONARY CARD */}
+      {/* FEATURED DICTIONARY CARD */}
       <section className={classes.featured}>
         <Link
           href="/learn-asl/dictionary"
@@ -73,8 +76,14 @@ export default function LearnASLPage() {
           const CardContent = (
             <>
               <h2 className={classes.cardTitle}>
-                {lang.name} {lang.flag}
+                {lang.name}{" "}
+                {lang.langCode === "es" ? (
+                  <RandomFlag lang="es" />
+                ) : (
+                  lang.flag
+                )}
               </h2>
+
               <p className={classes.native}>{lang.native}</p>
               <p className={classes.cta}>View resources →</p>
             </>

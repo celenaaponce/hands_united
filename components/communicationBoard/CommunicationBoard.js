@@ -5,32 +5,76 @@ import styles from "./communicationBoard.module.css";
 import { supportedLanguages } from "./languages";
 import TabNav from "./TabNav";
 import TabContent from "./TabContent";
-import { getLanguageFlag } from "../../utils/getLanguageFlag";
+
+// Spanish flags
+const spanishFlags = [
+  "🇲🇽",
+  "🇪🇸",
+  "🇨🇴",
+  "🇦🇷",
+  "🇵🇪",
+  "🇨🇱",
+  "🇻🇪",
+  "🇪🇨",
+  "🇬🇹",
+  "🇭🇳",
+  "🇸🇻",
+  "🇳🇮",
+  "🇨🇷",
+  "🇵🇦",
+  "🇩🇴",
+  "🇵🇷",
+  "🇧🇴",
+  "🇵🇾",
+  "🇺🇾",
+  "🇨🇺",
+];
+
+// simple random picker
+function getRandomSpanishFlag() {
+  return spanishFlags[Math.floor(Math.random() * spanishFlags.length)];
+}
+
+function getStaticFlag(code) {
+  switch (code) {
+    case "en":
+      return "🇺🇸";
+    case "ru":
+      return "🇷🇺";
+    case "my":
+      return "🇲🇲";
+    case "ht":
+      return "🇭🇹";
+    case "ti":
+      return "🇪🇷";
+    case "am":
+      return "🇪🇹";
+    case "chk":
+      return "🇫🇲";
+    default:
+      return "🌐";
+  }
+}
 
 export default function CommunicationBoard({ data = [], alertMessage = null }) {
   const [activeTab, setActiveTab] = useState(data?.[0]?.id || null);
   const [secondaryLang, setSecondaryLang] = useState(null);
-  const [deviceSeed, setDeviceSeed] = useState("default");
   const [mounted, setMounted] = useState(false);
 
-  // ✅ Run ONLY on client after mount
+  // 🔥 store random Spanish flag for THIS page load
+  const [spanishFlag, setSpanishFlag] = useState("🇪🇸");
+
   useEffect(() => {
     setMounted(true);
 
-    // Restore secondary language
+    // restore selected language
     const storedLang = localStorage.getItem("secondaryLang");
     if (storedLang) {
       setSecondaryLang(storedLang);
     }
 
-    // Restore or generate device seed
-    let storedSeed = localStorage.getItem("deviceSeed");
-    if (!storedSeed) {
-      storedSeed = Math.random().toString(36).substring(2);
-      localStorage.setItem("deviceSeed", storedSeed);
-    }
-
-    setDeviceSeed(storedSeed);
+    // 🔥 generate new random flag on each load
+    setSpanishFlag(getRandomSpanishFlag());
   }, []);
 
   const handleLangChange = (value) => {
@@ -42,7 +86,6 @@ export default function CommunicationBoard({ data = [], alertMessage = null }) {
       localStorage.removeItem("secondaryLang");
     }
 
-    // 🔥 Notify the rest of the app
     window.dispatchEvent(new Event("languageChanged"));
   };
 
@@ -50,10 +93,8 @@ export default function CommunicationBoard({ data = [], alertMessage = null }) {
 
   return (
     <div className={styles.container}>
-      {/* ✅ Dynamic Alert Banner */}
       {alertMessage && <div className={styles.alertBanner}>{alertMessage}</div>}
 
-      {/* ✅ Language Selector */}
       <div className={styles.languageBar}>
         <span className={styles.primaryLanguage}>🇺🇸 English +</span>
 
@@ -63,17 +104,26 @@ export default function CommunicationBoard({ data = [], alertMessage = null }) {
         >
           <option value="">None</option>
 
-          {supportedLanguages.map((lang) => (
-            <option key={lang.code} value={lang.code}>
-              {mounted
-                ? `${getLanguageFlag(lang.code, deviceSeed)} ${lang.label}`
-                : lang.label}
-            </option>
-          ))}
+          {supportedLanguages.map((lang) => {
+            let flag = "";
+
+            if (mounted) {
+              if (lang.code === "es") {
+                flag = spanishFlag; // 🔥 random per load
+              } else {
+                flag = getStaticFlag(lang.code);
+              }
+            }
+
+            return (
+              <option key={lang.code} value={lang.code}>
+                {mounted ? `${flag} ${lang.label}` : lang.label}
+              </option>
+            );
+          })}
         </select>
       </div>
 
-      {/* ✅ Pass language only after mount to prevent hydration mismatch */}
       {currentTab && (
         <TabContent
           tab={currentTab}

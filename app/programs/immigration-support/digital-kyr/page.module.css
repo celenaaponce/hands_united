@@ -115,15 +115,15 @@
 .flipHint {
   margin-top: 15px;
   font-size: 12px;
-  opacity: 0.6;
-  color: #ddd6cb;
+
+  color: #72b200;
 }
 
 .flipHintFront {
   margin-top: 15px;
   font-size: 12px;
-  opacity: 0.6;
-  color: black;
+
+  color:  #72b200;
 }
 
 /* ===============================
