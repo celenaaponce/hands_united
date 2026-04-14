@@ -17,14 +17,14 @@ export default function Ayudar() {
           </h1>
 
           <p>
-                        <Link href="/learn-asl/haitian-creole/videos">
+                        <Link href="/learn-asl/burmese/videos">
               ဒီမှာ
             </Link>
             {" "}ဗမာဘာသာဖြင့် ကျွန်ုပ်တို့၏ သင်တန်းများကို ကြည့်ရှုနိုင်ပါသည်။.
             <br />
             <span className={classes.subheading}>
               You can watch our classes in Burmese{" "}
-              <Link href="/learn-asl/haitian-creole/videos">
+              <Link href="/learn-asl/burmese/videos">
                 here
               </Link>.
             </span>
