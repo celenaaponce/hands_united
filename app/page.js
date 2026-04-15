@@ -130,22 +130,30 @@ URGENT COMMUNITY SUPPORT
               </a>
             </div>
             <div className={classes.urgentCard}>
-              <h3>👧 Child Lost Hearing After Medical Neglect in Detention</h3>
+              <h3>👨‍👩‍👧 Russian Family Rebuilding After Detention</h3>
 
               <p>
-                A family seeking asylum was detained at the ICE family detention
-                center in Dilley, Texas. During their detention, their daughter
-                did not receive timely treatment for an ear infection.
+                A Russian immigrant family was recently released after 4 months
+                of detention at the ICE family detention center in Dilley,
+                Texas. They have applied for asylum and are now working to
+                rebuild their lives.
               </p>
 
               <p>
-                Because of the delay in medical care, she now has hearing loss.
-                We are amplifying this fundraiser to support the family as they
-                recover from what happened in detention.
+                At this time, they are still waiting for work authorization and
+                are not legally able to work. Without a Social Security Number,
+                they also have limited access to financial assistance programs.
+              </p>
+
+              <p>
+                The family is currently facing urgent needs including rent,
+                food, and basic necessities. We are asking our community to come
+                together and support them during this critical transition
+                period.
               </p>
 
               <a
-                href="https://gofund.me/0baa57b6e"
+                href="https://gofund.me/22a53a24a"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={classes.donateButton}
@@ -200,6 +208,49 @@ URGENT COMMUNITY SUPPORT
                 <h3>Download for Android</h3>
                 <p>Available on Google Play.</p>
               </a>
+            </div>
+          </section>
+          {/* =======================
+   NEW: LEARN & SAVE MORE
+======================= */}
+          <section className={classes.section}>
+            <h2>Learn Anytime & Stay Connected</h2>
+
+            <div className={classes.featureGrid}>
+              {/* Async CEU Courses */}
+              <Link
+                href="https://www.handsunitedor.org/store#async"
+                className={classes.featureCard}
+              >
+                <div className={classes.featureEmoji}>⏱️</div>
+                <h3>Async CEU Courses</h3>
+                <p>
+                  Earn CEUs on your own schedule. Access recorded workshops
+                  anytime and learn at your own pace.
+                </p>
+                <p>
+                  <strong>
+                    ✔ Flexible • ✔ Self-Paced • ✔ Professional Development
+                  </strong>
+                </p>
+              </Link>
+
+              {/* Membership */}
+              <Link
+                href="https://www.handsunitedor.org/membership"
+                className={classes.featureCard}
+              >
+                <div className={classes.featureEmoji}>🤝</div>
+                <h3>Join Our Membership</h3>
+                <p>
+                  Support our mission and get exclusive benefits including
+                  discounts on workshops, early access, and member-only
+                  resources.
+                </p>
+                <p>
+                  <strong>Get 10% off workshops</strong>
+                </p>
+              </Link>
             </div>
           </section>
           {/* =======================
@@ -271,77 +322,6 @@ URGENT COMMUNITY SUPPORT
               multilingual environments.
             </p>
 
-            <div className={classes.featureGrid}>
-              {/* Immigration 101 */}
-              <Link
-                href="/store#immigration101"
-                className={classes.featureCard}
-              >
-                <div className={classes.imageWrapper}>
-                  <Image
-                    src={KYRWeekly}
-                    alt="Immigration 101 workshop for Deaf immigrants"
-                    width={300}
-                    height={200}
-                  />
-                </div>
-                <h3>Immigration 101 Workshop</h3>
-                <p>
-                  Learn the basics of the U.S. immigration system and your
-                  rights.
-                </p>
-                <p>
-                  <strong>Dates:</strong> March 17, 24, 31 & April 4
-                </p>
-              </Link>
-
-              {/* Permit Classes */}
-              <Link
-                href="/store#permit-classes"
-                className={classes.featureCard}
-              >
-                <div className={classes.imageWrapper}>
-                  <Image
-                    src={PermitASL}
-                    alt="ASL permit classes for Deaf students"
-                    width={300}
-                    height={200}
-                  />
-                </div>
-                <h3>ASL Permit Classes</h3>
-                <p>
-                  Online driver permit classes taught fully in American Sign
-                  Language.
-                </p>
-                <p>
-                  <strong>Start:</strong> March 25
-                </p>
-              </Link>
-
-              {/* Spanish Family ASL */}
-              <Link
-                href="https://manosunidasor.org/aprender-asl/clases-gratuitas/registrarse"
-                className={classes.featureCard}
-              >
-                <div className={classes.imageWrapper}>
-                  <Image
-                    src={SpanishASL}
-                    alt="Spanish ASL classes for immigrant families"
-                    width={300}
-                    height={200}
-                  />
-                </div>
-                <h3>Spanish Family ASL Classes</h3>
-                <p>
-                  8-week ASL classes for Spanish-speaking families with Deaf
-                  children.
-                </p>
-                <p>
-                  <strong>Start:</strong> April
-                </p>
-              </Link>
-            </div>
-
             <div className={classes.programButtons}>
               <Link
                 href="/store#family-community"
@@ -384,7 +364,6 @@ URGENT COMMUNITY SUPPORT
           {/* =======================
    NATIONAL PARTNERSHIPS
 ======================= */}
-
 
           <h2>Resources Galore!</h2>
           <p>We are excited to share our resources with you!</p>

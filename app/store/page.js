@@ -164,32 +164,6 @@ export default function StorePage() {
           </a>
         </div>
 
-        <div className={classes.eventBlock}>
-          <h4>Immigration 101 — March 17, 24, 31 & April 4</h4>
-
-          <p>
-            A four-part workshop designed to help professionals and community
-            allies better understand the U.S. immigration system and the
-            additional barriers Deaf immigrants often face.
-          </p>
-
-          <p>
-            <strong>Language:</strong> ASL
-            <br />
-            <strong>Location:</strong> Zoom
-            <br />
-            <strong>CEUs:</strong> 0.8 PPO CEUs
-          </p>
-
-          <div className={classes.imageContainer}>
-            <div className={classes.embedWrapper}>
-              <ZeffyEmbed
-                title="Immigration 101 Registration"
-                src="https://www.zeffy.com/ticketing/immigration-101-professionals-asl"
-              />
-            </div>
-          </div>
-        </div>
 
         <div className={classes.eventBlock}>
           <h4 id="representing-deaf-workshop">
@@ -244,79 +218,8 @@ export default function StorePage() {
         {/* SPANISH WORKSHOP */}
         {/* ===================== */}
 
-        <div className={classes.eventCard}>
-          <h3 id="spanish-workshop">
-            Beginning Spanish for ASL & English Users
-          </h3>
 
-          <p>
-            A three-part beginning Spanish workshop designed for participants
-            fluent in ASL and English who want to develop practical Spanish
-            skills for working with immigrant families and multilingual
-            environments.
-          </p>
 
-          <p>
-            The course uses the <strong>Destinos</strong> curriculum and is
-            taught in SimCom to support accessible language learning for ASL
-            users.
-          </p>
-
-          <p>
-            <strong>Dates:</strong> April 6, 8, 9
-            <br />
-            <strong>CEUs:</strong> 0.6 available
-          </p>
-
-          <div className={classes.imageContainer}>
-            <div className={classes.embedWrapper}>
-              <ZeffyEmbed
-                title="Spanish Workshop Registration"
-                src="https://www.zeffy.com/ticketing/hands-united-spanish-destinos-classes"
-              />
-            </div>
-          </div>
-        </div>
-        <div className={classes.eventBlock}>
-          <h4 id="colombian-sign-language">Colombian Sign Language Level 2</h4>
-
-          <p>
-            A continuation course for interpreters and Deaf professionals who
-            are fluent in ASL and have completed Colombian Sign Language Level
-            1.
-          </p>
-
-          <p>
-            <strong>Instructor:</strong> Andrés Ricardo Sánchez Morales
-            <br />
-            <strong>Length:</strong> 10 weeks
-            <br />
-            <strong>Schedule:</strong> Tuesday & Thursday
-            <br />
-            <strong>Time:</strong> 6–7 PM CST
-            <br />
-            <strong>CEUs:</strong> 2.0
-            <br />
-            <strong>Cost:</strong> $150
-          </p>
-
-          {/* <div className={classes.flyerGrid}>
-            <div className={classes.flyerItem}>
-              <Image
-                src={LSCLevel2}
-                alt="Colombian Sign Language Level 2 course flyer"
-              />
-            </div>
-          </div> */}
-          <div className={classes.imageContainer}>
-            <div className={classes.embedWrapper}>
-              <ZeffyEmbed
-                title="Colombian Sign Language Workshop Registration"
-                src="https://www.zeffy.com/ticketing/10-week-colombian-sign-language-2-with-andres"
-              />
-            </div>
-          </div>
-        </div>
         <div className={classes.eventBlock}>
           <h4 id="international-sign-language">
             International Sign Language Level 1
