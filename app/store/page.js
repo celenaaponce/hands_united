@@ -164,7 +164,6 @@ export default function StorePage() {
           </a>
         </div>
 
-
         <div className={classes.eventBlock}>
           <h4 id="representing-deaf-workshop">
             Representing Deaf Immigrant Clients: Language Access and Legal Best
@@ -218,8 +217,6 @@ export default function StorePage() {
         {/* SPANISH WORKSHOP */}
         {/* ===================== */}
 
-
-
         <div className={classes.eventBlock}>
           <h4 id="international-sign-language">
             International Sign Language Level 1
@@ -259,6 +256,40 @@ export default function StorePage() {
               <ZeffyEmbed
                 title="International Sign Language Workshop Registration"
                 src="https://www.zeffy.com/en-US/ticketing/5-week-is-with-razaq-april"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className={classes.eventBlock}>
+          <h4 id="nigerian-sign-language">Nigerian Sign Language</h4>
+
+          <p>
+            A comprehensive course in Nigerian Sign Language (NSL), designed for
+            interpreters and Deaf professionals who are fluent in ASL and want
+            to expand their skills in cross-linguistic communication and engage
+            with Deaf communities in Nigeria.
+          </p>
+
+          <p>
+            <strong>Instructor:</strong> Jaafaru Sadiq Adamu
+            <br />
+            <strong>Length:</strong> 10 weeks
+            <br />
+            <strong>Schedule:</strong> Saturdays
+            <br />
+            <strong>Time:</strong> 10:00 AM – 12:00 PM CST
+            <br />
+            <strong>CEUs:</strong> 2.0
+            <br />
+            <strong>Cost:</strong> $150
+          </p>
+
+          <div className={classes.imageContainer}>
+            <div className={classes.embedWrapper}>
+              <ZeffyEmbed
+                title="Nigerian Sign Language Registration"
+                src="https://www.zeffy.com/en-US/ticketing/10-week-nsl-classes-with-jaafaru"
               />
             </div>
           </div>
