@@ -294,6 +294,74 @@ export default function StorePage() {
             </div>
           </div>
         </div>
+
+        <div className={classes.eventBlock}>
+          <h4 id="algebra-interpreters">Algebra 1 & 2 for Interpreters</h4>
+
+          <p>
+            An 8-week workshop designed to build a strong foundation in algebra
+            using a visual, conceptual approach. Designed for interpreters and
+            Deaf professionals working in educational settings.
+          </p>
+
+          <p>
+            <strong>Instructor:</strong> Celena Ponce
+            <br />
+            <strong>Schedule:</strong> Tuesdays & Thursdays
+            <br />
+            <strong>Length:</strong> 8 weeks
+            <br />
+            <strong>Start Date:</strong> June 16
+            <br />
+            <strong>CEUs:</strong> 3.2
+            <br />
+            <strong>Cost:</strong> $225
+          </p>
+
+          <div className={classes.imageContainer}>
+            <div className={classes.embedWrapper}>
+              <ZeffyEmbed
+                title="Algebra 1 & 2 for Interpreters Registration"
+                src="https://www.zeffy.com/en-US/ticketing/algebra-1-and-2-for-interpreters-math-u-see-based"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className={classes.eventBlock}>
+          <h4 id="precalc-calculus-interpreters">
+            Precalculus & Calculus for Interpreters
+          </h4>
+
+          <p>
+            An 8-week workshop focused on understanding advanced math concepts
+            including functions, limits, and rates of change using a visual and
+            conceptual approach for interpreters.
+          </p>
+
+          <p>
+            <strong>Instructor:</strong> Celena Ponce
+            <br />
+            <strong>Schedule:</strong> Mondays & Wednesdays
+            <br />
+            <strong>Length:</strong> 8 weeks
+            <br />
+            <strong>Start Date:</strong> June 15
+            <br />
+            <strong>CEUs:</strong> 3.2
+            <br />
+            <strong>Cost:</strong> $225
+          </p>
+
+          <div className={classes.imageContainer}>
+            <div className={classes.embedWrapper}>
+              <ZeffyEmbed
+                title="Precalculus & Calculus for Interpreters Registration"
+                src="https://www.zeffy.com/en-US/ticketing/pre-calculus-and-calculus-for-interpreters-math-u-see-based"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className={classes.section} id="driver-education">
