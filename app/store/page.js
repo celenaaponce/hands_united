@@ -196,6 +196,37 @@ export default function StorePage() {
             </div>
           </div>
         </div>
+
+        <div className={classes.eventBlock}>
+          <h4 id="understand-your-case">
+            Understand Your Case: Know Your Next Step
+          </h4>
+
+          <p>
+            A 3-part virtual workshop series designed for Deaf immigrants to
+            better understand their immigration case, learn what happens next,
+            and build confidence in checking their case status independently.
+          </p>
+
+          <p>
+            <strong>Language:</strong> ASL, LSM, and Latin American gestures
+            <br />
+            <strong>Location:</strong> Zoom
+            <br />
+            <strong>Dates:</strong> May 8, 15, and 22
+            <br />
+            <strong>Cost:</strong> $5 (all 3 sessions)
+          </p>
+
+          <div className={classes.imageContainer}>
+            <div className={classes.embedWrapper}>
+              <ZeffyEmbed
+                title="Understand Your Case Workshop Registration"
+                src="https://www.zeffy.com/en-US/ticketing/understand-your-case-know-your-next-step"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className={classes.section} id="professionals">
