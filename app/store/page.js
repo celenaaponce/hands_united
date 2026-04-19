@@ -301,6 +301,44 @@ export default function StorePage() {
             </div>
           </div>
         </div>
+        <div className={classes.eventBlock}>
+          <h4 id="international-sign-language-level-2">
+            International Sign Language Level 2
+          </h4>
+
+          <p>
+            Build on your foundational skills in International Sign Language
+            (IS) in this Level 2 course designed for interpreters and Deaf
+            professionals who are already fluent in ASL. This course focuses on
+            expanding vocabulary, improving cross-linguistic communication
+            strategies, and developing confidence in international settings.
+          </p>
+
+          <p>
+            <strong>Instructor:</strong> Razaq Fakir
+            <br />
+            <strong>Length:</strong> 5 weeks
+            <br />
+            <strong>Schedule:</strong> Saturdays
+            <br />
+            <strong>Time:</strong> 8–10am PST
+            <br />
+            <strong>Start Date:</strong> May 9
+            <br />
+            <strong>CEUs:</strong> 1.0
+            <br />
+            <strong>Cost:</strong> $75
+          </p>
+
+          <div className={classes.imageContainer}>
+            <div className={classes.embedWrapper}>
+              <ZeffyEmbed
+                title="International Sign Language Level 2 Registration"
+                src="https://www.zeffy.com/en-US/ticketing/5-week-is-with-razaq-level-2-may"
+              />
+            </div>
+          </div>
+        </div>
 
         <div className={classes.eventBlock}>
           <h4 id="nigerian-sign-language">Nigerian Sign Language</h4>
