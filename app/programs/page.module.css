@@ -67,3 +67,11 @@
     color: #ddd6cb;
     font-size: 1.75rem;
 }
+
+.header a {
+  color: #80b919;
+}
+
+.header a:visited {
+  color: #80b919;
+}

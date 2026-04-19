@@ -41,6 +41,11 @@ export default function StorePage() {
           multilingual ASL resources, family programs, and accessibility
           initiatives.
         </p>
+        <p>
+          Not sure where to start or have questions?{" "}
+          <Link href="/contact">Contact us</Link> and we’ll help you find the
+          right program or service.
+        </p>
       </section>
       <section className={classes.section}>
         <h3>Browse Events by Program Area</h3>
@@ -68,6 +73,11 @@ export default function StorePage() {
 
           <a href="#async">
             <span className={classes.navIcon}>💻</span> Async Workshops
+          </a>
+          <span>|</span>
+
+          <a href="#services">
+            <span className={classes.navIcon}>🎥</span> Services
           </a>
           <span>|</span>
 
@@ -497,6 +507,48 @@ export default function StorePage() {
               <p>Access recorded workshops and resources without CEU credit.</p>
             </div>
             <span className={classes.asyncButton}>View Workshops →</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* ===================== */}
+      {/* SERVICES */}
+      {/* ===================== */}
+      <section className={classes.section}>
+        <div className={classes.sectionHeader}>
+          <span className={classes.sectionIcon}>🎥</span>
+          <h2 id="services">Services</h2>
+          <a href="#top" className={classes.backToTop}>
+            ↑ Back to top
+          </a>
+        </div>
+
+        <div className={classes.cardGrid}>
+          <Link href="/contact" className={classes.asyncCard}>
+            <div>
+              <h3>🎥 GallerySplit</h3>
+
+              <p>
+                Turn one Zoom gallery recording into individual video files for
+                each participant.
+              </p>
+
+              <p>
+                Ideal for ASL classes, interpreter training, workshops, and
+                feedback review.
+              </p>
+
+              <p className={classes.cardSubtext}>
+                ✅ Clean, organized, labeled files
+                <br />
+                ✅ Ready for training, feedback, or documentation
+                <br />✅ You send the recording — we send the files
+              </p>
+            </div>
+
+            <span className={classes.asyncButton}>
+              Ask About GallerySplit →
+            </span>
           </Link>
         </div>
       </section>

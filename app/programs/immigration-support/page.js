@@ -55,6 +55,10 @@ export default function ImmigrationPage() {
         Accessible immigration resources designed for Deaf and hard of hearing
         individuals and families.
       </p>
+      <p className={styles.helpText}>
+        Need help understanding your situation or finding the right resources?{" "}
+        <Link href="/contact">Contact us →</Link>
+      </p>
 
       <div className={styles.grid}>
         {sections.map((section, index) => (

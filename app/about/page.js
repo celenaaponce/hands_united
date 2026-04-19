@@ -26,7 +26,7 @@ const aboutPages = [
       "Explore the organizations and community partners we collaborate with across the U.S. and internationally.",
     href: "/about/partners",
   },
-    {
+  {
     title: "Volunteer",
     description:
       "Explore the volunteer opportunities available at Hands United and discover how you can help reduce language barriers and support Deaf immigrant families.",
@@ -43,6 +43,10 @@ export default function AboutPage() {
         <p className={classes.subtitle}>
           Learn more about who we are, what we do, and how our work supports
           Deaf and hard-of-hearing individuals and immigrant families.
+        </p>
+        <p className={classes.helpText}>
+          Interested in working with us, partnering, or learning more?{" "}
+          <Link href="/contact">We’d love to connect</Link>
         </p>
       </section>
 

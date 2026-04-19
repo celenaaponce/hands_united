@@ -21,6 +21,10 @@ export default function Membership() {
         <p className={classes.description}>
           <strong>Get code for 10% off workshops</strong>
         </p>
+        <p className={classes.helpText}>
+          Have questions about membership or benefits?{" "}
+          <a href="/contact">Contact us →</a>
+        </p>
 
         <div className={classes.embedWrapper}>
           <ZeffyEmbed

@@ -24,7 +24,7 @@ export default function Home() {
     <>
       <header className={classes.header}>
         <div className={classes.slideshow}>
-          <Image src={logo} width={300} height={300} alt="manos unidas logo" />
+          <Image className={classes.hideOnMobile} src={logo} width={300} height={300} alt="manos unidas logo" />
         </div>
         <div>
           <div className={classes.hero}>
@@ -37,6 +37,7 @@ export default function Home() {
           <div className={classes.cta}>
             <a href="https://manosunidasor.org/">Ver en español</a>
             <Link href="/programs">Our Programs</Link>
+            <Link href="/membership">🤝 Join Membership</Link>
           </div>
         </div>
       </header>

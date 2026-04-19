@@ -9,7 +9,7 @@ class Footer extends Component {
     return (
       <div className={classes.footer}>
         <div className={classes.footerdiv}>
-          <Link href="mailto:Celena<celena.a.ponce@gmail.com>" className={classes.contact}>
+          <Link href="/contact" className={classes.contact}>
           ✉️ Contact
           </Link>
           <p className={classes.copyright}>Copyright ©️ {current_year}, Hands United is a 501(c)3 organization</p>

@@ -8,8 +8,14 @@ export default function ProgramsPage() {
         <h1>Our Programs</h1>
         <p>
           Hands United offers community-centered programs designed to support
-          Deaf and hard-of-hearing individuals and families navigating education,
-          immigration, communication access, and professional systems.
+          Deaf and hard-of-hearing individuals and families navigating
+          education, immigration, communication access, and professional
+          systems.
+        </p>
+        <p>
+          Not sure which program is right for you?{" "}
+          <Link href="/contact">Contact us</Link> and we’ll help you get
+          started.
         </p>
       </header>
 
@@ -24,22 +30,17 @@ export default function ProgramsPage() {
         </Link>
 
         {/* Immigration Support */}
-        <Link
-          href="/programs/immigration-support"
-          className={classes.card}
-        >
+        <Link href="/programs/immigration-support" className={classes.card}>
           <h2>Immigration Support</h2>
           <p>
             Accessible immigration education and resources for Deaf and
-            hard-of-hearing immigrants, including Know Your Rights and workshops.
+            hard-of-hearing immigrants, including Know Your Rights and
+            workshops.
           </p>
         </Link>
 
         {/* Driver Education */}
-        <Link
-          href="/programs/driver-education"
-          className={classes.card}
-        >
+        <Link href="/programs/driver-education" className={classes.card}>
           <h2>Driver Education</h2>
           <p>
             Deaf-accessible permit and driver education taught visually and in
@@ -48,14 +49,11 @@ export default function ProgramsPage() {
         </Link>
 
         {/* Professional Services */}
-        <Link
-          href="/programs/professional-services"
-          className={classes.card}
-        >
+        <Link href="/programs/professional-services" className={classes.card}>
           <h2>Professional Services</h2>
           <p>
-            Interpreter education, professional development, translation,
-            and media services that strengthen access across systems.
+            Interpreter education, professional development, translation, and
+            media services that strengthen access across systems.
           </p>
         </Link>
       </section>

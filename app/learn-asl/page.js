@@ -54,6 +54,10 @@ export default function LearnASLPage() {
           Select your primary language to access American Sign Language classes,
           resources, and family-centered materials.
         </p>
+        <p className={classes.helpText}>
+          Not sure which language or class is right for you?{" "}
+          <Link href="/contact">We can help →</Link>
+        </p>
       </section>
 
       {/* FEATURED DICTIONARY CARD */}
@@ -77,11 +81,7 @@ export default function LearnASLPage() {
             <>
               <h2 className={classes.cardTitle}>
                 {lang.name}{" "}
-                {lang.langCode === "es" ? (
-                  <RandomFlag lang="es" />
-                ) : (
-                  lang.flag
-                )}
+                {lang.langCode === "es" ? <RandomFlag lang="es" /> : lang.flag}
               </h2>
 
               <p className={classes.native}>{lang.native}</p>

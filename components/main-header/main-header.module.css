@@ -5,8 +5,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 2rem 1rem;
+  align-items: flex-start;
+  padding: 1rem 1rem;
 }
 
 .logo {
@@ -143,6 +143,9 @@
     width: 0.625rem;
     height: 0.625rem;
   }
+  .hideOnMobile {
+    display: none !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -179,4 +182,50 @@
     display: flex;
     justify-content: center;
   }
+  .hideOnMobile {
+    display: none !important;
+  }
+}
+@media (max-width: 1024px) {
+
+  /* 🔥 FIX 1: Allow wrapping instead of cutting off */
+  .navContent {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-left: 0;
+  }
+
+  /* 🔥 FIX 2: Shrink nav text */
+  .navContent :global(a),
+  .navContent button {
+    font-size: 1.1rem;
+  }
+
+  /* 🔥 FIX 3: Reduce logo size (or hide if needed) */
+  .logo img {
+    width: 180px;
+  }
+
+  /* OPTIONAL: if still crowded, use this instead */
+  /*
+  .logo {
+    display: none;
+  }
+  */
+
+  /* 🔥 FIX 4: remove negative margins (these are hurting you) */
+  .logo {
+    margin-top: 0;
+  }
+
+  .nav {
+    margin-top: 0;
+  }
+
+  .logo img {
+  width: 180px;
+  height: auto;      /* 🔥 FIX */
+  object-fit: contain;
+}
 }

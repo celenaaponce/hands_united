@@ -1,5 +1,5 @@
 /* ===== Centered section layout (matches homepage) ===== */
-.section {
+.section, .description, .helperText {
   display: flex;
   flex-direction: column;
   color: #ddd6cb;

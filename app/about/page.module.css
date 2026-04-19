@@ -65,9 +65,16 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.subtitle {
+.subtitle, .helpText {
     color: #ddd6cb;
     line-height: 1.6;
     font-size: 1.75rem;
      max-width: 100%;
+}
+.helpText a {
+  color: #80b919;
+}
+
+.helpText a:visited {
+  color: #80b919;
 }
