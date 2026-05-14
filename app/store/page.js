@@ -96,25 +96,6 @@ export default function StorePage() {
         </div>
 
         <div className={classes.eventBlock}>
-          <h4>Spanish Family ASL Classes — Starting April</h4>
-
-          <p>
-            An 8-week ASL course designed for immigrant families with Deaf and
-            hard-of-hearing children. Focuses on strengthening communication at
-            home and reducing language deprivation.
-          </p>
-
-          <p>
-            <strong>Language:</strong> ASL with spoken Spanish support
-            <br />
-            <strong>Format:</strong> Live on Zoom
-          </p>
-
-          <Link href="https://manosunidasor.org/aprender-asl/clases-gratuitas/registrarse">
-            Register for Spanish ASL Classes
-          </Link>
-        </div>
-        <div className={classes.eventBlock}>
           <h4 id="citizenship-classes">
             Deaf Citizenship Classes — Starting in April
           </h4>
@@ -173,70 +154,6 @@ export default function StorePage() {
             ↑ Back to top
           </a>
         </div>
-
-        <div className={classes.eventBlock}>
-          <h4 id="representing-deaf-workshop">
-            Representing Deaf Immigrant Clients: Language Access and Legal Best
-            Practices - April 28
-          </h4>
-
-          <p>
-            A 90-minute virtual workshop for attorneys on effectively
-            representing Deaf immigrant clients, covering language access,
-            interpreter use, and practical strategies to support clear
-            communication and due process.
-          </p>
-
-          <p>
-            <strong>Language:</strong> spoken English
-            <br />
-            <strong>Location:</strong> Zoom
-            <br />
-            <strong>Date:</strong> April 28
-            <br />
-            <strong>Time:</strong> 4-5:30pm PST
-          </p>
-
-          <div className={classes.imageContainer}>
-            <div className={classes.embedWrapper}>
-              <ZeffyEmbed
-                title="Representing Deaf Immigrant Clients Registration"
-                src="https://www.zeffy.com/en-US/ticketing/representing-deaf-immigrant-clients-language-access-and-legal-best-practices"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className={classes.eventBlock}>
-          <h4 id="understand-your-case">
-            Understand Your Case: Know Your Next Step
-          </h4>
-
-          <p>
-            A 3-part virtual workshop series designed for Deaf immigrants to
-            better understand their immigration case, learn what happens next,
-            and build confidence in checking their case status independently.
-          </p>
-
-          <p>
-            <strong>Language:</strong> ASL, LSM, and Latin American gestures
-            <br />
-            <strong>Location:</strong> Zoom
-            <br />
-            <strong>Dates:</strong> May 8, 15, and 22
-            <br />
-            <strong>Cost:</strong> $5 (all 3 sessions)
-          </p>
-
-          <div className={classes.imageContainer}>
-            <div className={classes.embedWrapper}>
-              <ZeffyEmbed
-                title="Understand Your Case Workshop Registration"
-                src="https://www.zeffy.com/en-US/ticketing/understand-your-case-know-your-next-step"
-              />
-            </div>
-          </div>
-        </div>
       </section>
 
       <section className={classes.section} id="professionals">
@@ -258,49 +175,6 @@ export default function StorePage() {
         {/* SPANISH WORKSHOP */}
         {/* ===================== */}
 
-        <div className={classes.eventBlock}>
-          <h4 id="international-sign-language">
-            International Sign Language Level 1
-          </h4>
-
-          <p>
-            An introductory course to International Sign Language (IS) Level 1,
-            designed for interpreters and Deaf professionals who are fluent in
-            ASL and want to develop foundational skills for cross-linguistic and
-            international communication.
-          </p>
-
-          <p>
-            <strong>Instructor:</strong> Razaq Fakir
-            <br />
-            <strong>Length:</strong> 5 weeks
-            <br />
-            <strong>Schedule:</strong> Saturdays
-            <br />
-            <strong>Time:</strong> 9-11am PST
-            <br />
-            <strong>CEUs:</strong> 1.0
-            <br />
-            <strong>Cost:</strong> $75
-          </p>
-
-          {/* <div className={classes.flyerGrid}>
-            <div className={classes.flyerItem}>
-              <Image
-                src={LSCLevel2}
-                alt="Colombian Sign Language Level 2 course flyer"
-              />
-            </div>
-          </div> */}
-          <div className={classes.imageContainer}>
-            <div className={classes.embedWrapper}>
-              <ZeffyEmbed
-                title="International Sign Language Workshop Registration"
-                src="https://www.zeffy.com/en-US/ticketing/5-week-is-with-razaq-april"
-              />
-            </div>
-          </div>
-        </div>
         <div className={classes.eventBlock}>
           <h4 id="international-sign-language-level-2">
             International Sign Language Level 2
@@ -341,38 +215,46 @@ export default function StorePage() {
         </div>
 
         <div className={classes.eventBlock}>
-          <h4 id="nigerian-sign-language">Nigerian Sign Language</h4>
+        <h4 id="around-the-world">
+          Around the World: Foreign Sign Languages & Deaf Cultures
+        </h4>
 
-          <p>
-            A comprehensive course in Nigerian Sign Language (NSL), designed for
-            interpreters and Deaf professionals who are fluent in ASL and want
-            to expand their skills in cross-linguistic communication and engage
-            with Deaf communities in Nigeria.
-          </p>
+        <p>
+          An 8-week workshop series introducing participants to signed languages and
+          Deaf cultures from around the world. Designed for interpreters, ITP
+          students, Deaf professionals, and community members interested in expanding
+          their global understanding of Deaf communication and cultural practices.
+        </p>
 
-          <p>
-            <strong>Instructor:</strong> Jaafaru Sadiq Adamu
-            <br />
-            <strong>Length:</strong> 10 weeks
-            <br />
-            <strong>Schedule:</strong> Saturdays
-            <br />
-            <strong>Time:</strong> 10:00 AM – 12:00 PM CST
-            <br />
-            <strong>CEUs:</strong> 2.0
-            <br />
-            <strong>Cost:</strong> $150
-          </p>
+        <p>
+          Participants will explore a variety of foreign sign languages, cultural
+          norms, interpreting considerations, and real-world applications for working
+          with increasingly diverse Deaf communities.
+        </p>
 
-          <div className={classes.imageContainer}>
-            <div className={classes.embedWrapper}>
-              <ZeffyEmbed
-                title="Nigerian Sign Language Registration"
-                src="https://www.zeffy.com/en-US/ticketing/10-week-nsl-classes-with-jaafaru"
-              />
-            </div>
+        <p>
+          <strong>Schedule:</strong> Sundays, 9:00–11:00 AM PST
+          <br />
+          <strong>Length:</strong> 8 weeks
+          <br />
+          <strong>Dates:</strong> June 14 – August 2
+          <br />
+          <strong>CEUs:</strong> 1.6 total
+          <br />
+          <strong>Single Class Option:</strong> 0.2 CEUs for $20
+          <br />
+          <strong>Cost:</strong> $120 full series
+        </p>
+
+        <div className={classes.imageContainer}>
+          <div className={classes.embedWrapper}>
+            <ZeffyEmbed
+              title="Around the World Registration"
+              src="https://www.zeffy.com/en-US/ticketing/around-the-world-2"
+            />
           </div>
         </div>
+      </div>
 
         <div className={classes.eventBlock}>
           <h4 id="algebra-interpreters">Algebra 1 & 2 for Interpreters</h4>
@@ -452,68 +334,7 @@ export default function StorePage() {
           </a>
         </div>
 
-        <div className={classes.eventBlock}>
-          <h4>Driver’s Permit Classes — Starting March 25</h4>
 
-          <p>
-            A 10-week driver education program taught fully in ASL to ensure
-            Deaf students have equitable access to driver education and
-            licensing.
-          </p>
-
-          <p>
-            <strong>Format:</strong> Live on Zoom
-            <br />
-            <strong>Length:</strong> 10 weeks
-          </p>
-
-          {/* CARD ACTIONS */}
-          <div className={classes.asyncGrid}>
-            <Link
-              href="/programs/driver-education/register"
-              className={classes.asyncCard}
-            >
-              <div>
-                <h3>🚗 Enroll in Permit Classes</h3>
-                <p>
-                  Register for our 10-week ASL driver education program and
-                  begin your path toward getting your permit.
-                </p>
-              </div>
-              <span className={classes.asyncButton}>Register →</span>
-            </Link>
-
-            <a
-              href="https://www.facebook.com/groups/YOURGROUP"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={classes.asyncCard}
-            >
-              <div>
-                <h3>👥 Join Community</h3>
-                <p>
-                  Connect with other Deaf learners, families, and instructors in
-                  our Driver Education community.
-                </p>
-              </div>
-              <span className={classes.asyncButton}>Join →</span>
-            </a>
-
-            <Link
-              href="/programs/driver-education/support"
-              className={classes.asyncCard}
-            >
-              <div>
-                <h3>✊ Support the Program</h3>
-                <p>
-                  Help expand ASL-accessible driver education and support Deaf
-                  students nationwide.
-                </p>
-              </div>
-              <span className={classes.asyncButton}>Support →</span>
-            </Link>
-          </div>
-        </div>
       </section>
 
       {/* ===================== */}
