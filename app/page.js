@@ -50,38 +50,85 @@ URGENT COMMUNITY SUPPORT
           <h2>🚨 Urgent Community Support</h2>
 
           <p className={classes.urgentIntro}>
-            Two Deaf immigrants connected to our community urgently need
+            Deaf immigrants connected to our community urgently need
             support. Hands United is currently raising funds to help provide
             legal access, advocacy, and humanitarian support.
           </p>
 
           <div className={classes.urgentGrid}>
-            {/* Case 1 */}
+
             <div className={classes.urgentCard}>
-              <h3>👨‍👩‍👧 Deaf Child & Family Deported</h3>
+              <h3>🤟🏽 Help a Deaf Bahamian Woman Fight for Safety</h3>
 
               <p>
-                A family with a Deaf child connected to our community was
-                recently deported. The family now needs support for legal
-                consultation, transition assistance, and continued advocacy to
-                explore possible legal options for the future.
+                A Deaf woman from the Bahamas is currently in removal proceedings and is
+                seeking protection in the United States. For years, she navigated the
+                immigration system alone because she did not have access to qualified sign
+                language interpreters.
               </p>
 
               <p>
-                Deaf children face extreme barriers after deportation, including
-                lack of access to education, language, and Deaf community
-                support.
+                Without accessible communication, she prepared her own immigration
+                paperwork, attended important appointments without legal representation,
+                and never learned that she was eligible to apply for a work permit. As a
+                result, she has been unable to work and support herself while her case has
+                been pending.
+              </p>
+
+              <p>
+                Hands United is now providing all interpreting services for her case
+                completely pro bono. We are raising funds to help cover the cost of legal
+                representation so she can have a fair opportunity to present her case and
+                remain safe in the United States.
               </p>
 
               <a
-                href="https://www.zeffy.com/en-US/donation-form/support-a-deaf-child-and-family-facing-deportation"
+                href="https://www.zeffy.com/en-US/donation-form/help-a-deaf-bahamian-woman-fight-for-safety"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={classes.donateButton}
               >
-                Support This Family
+                Support Her Case
               </a>
             </div>
+
+         
+          <div className={classes.urgentCard}>
+            <h3>💙 A Future Worth Fighting For</h3>
+
+            <p>
+              A 16-year-old Deaf young man is facing an uncertain future. After
+              experiencing years of language deprivation, he is finally thriving in an
+              environment where he has access to language, education, and a community
+              that believes in his potential.
+            </p>
+
+            <p>
+              His family must leave the United States, but we are pursuing every avenue
+              to allow him to remain and continue his education. He hopes to attend a
+              residential school for Deaf students, where he can continue building the
+              skills and confidence needed to pursue his dream of becoming a nurse or
+              ultrasound technician.
+            </p>
+
+            <p>
+              Funds will help cover insurance, living expenses, transportation, school
+              needs, and future legal costs as we work to secure a safe and stable future
+              for this remarkable young man.
+            </p>
+
+            <a
+              href="https://gofund.me/755ccb007"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes.donateButton}
+            >
+              Support His Future
+            </a>
+          </div>
+
+
+
 
             {/* Case 2 */}
             <div className={classes.urgentCard}>
@@ -109,27 +156,7 @@ URGENT COMMUNITY SUPPORT
                 Support His Case
               </a>
             </div>
-            <div className={classes.urgentCard}>
-              <h3>🩺 Neuropsychological Evaluation for a Deaf Detainee</h3>
 
-              <p>
-                We are raising funds to support a neuropsychological evaluation
-                conducted by a Deaf clinician for a Deaf individual currently in
-                immigration detention. This evaluation will help ensure they
-                receive an accurate diagnosis before being deported to a country
-                where they do not know the written language or local sign
-                language.
-              </p>
-
-              <a
-                href="https://www.zeffy.com/en-US/donation-form/help-fund-a-deaf-clinician-evaluation-before-deportation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes.donateButton}
-              >
-                Support His Case
-              </a>
-            </div>
             <div className={classes.urgentCard}>
               <h3>👨‍👩‍👧 Russian Family Rebuilding After Detention</h3>
 
