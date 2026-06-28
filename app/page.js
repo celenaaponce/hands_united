@@ -24,7 +24,13 @@ export default function Home() {
     <>
       <header className={classes.header}>
         <div className={classes.slideshow}>
-          <Image className={classes.hideOnMobile} src={logo} width={300} height={300} alt="manos unidas logo" />
+          <Image
+            className={classes.hideOnMobile}
+            src={logo}
+            width={300}
+            height={300}
+            alt="manos unidas logo"
+          />
         </div>
         <div>
           <div className={classes.hero}>
@@ -50,36 +56,35 @@ URGENT COMMUNITY SUPPORT
           <h2>🚨 Urgent Community Support</h2>
 
           <p className={classes.urgentIntro}>
-            Deaf immigrants connected to our community urgently need
-            support. Hands United is currently raising funds to help provide
-            legal access, advocacy, and humanitarian support.
+            Deaf immigrants connected to our community urgently need support.
+            Hands United is currently raising funds to help provide legal
+            access, advocacy, and humanitarian support.
           </p>
 
           <div className={classes.urgentGrid}>
-
             <div className={classes.urgentCard}>
               <h3>🤟🏽 Help a Deaf Bahamian Woman Fight for Safety</h3>
 
               <p>
-                A Deaf woman from the Bahamas is currently in removal proceedings and is
-                seeking protection in the United States. For years, she navigated the
-                immigration system alone because she did not have access to qualified sign
-                language interpreters.
+                A Deaf woman from the Bahamas is currently in removal
+                proceedings and is seeking protection in the United States. For
+                years, she navigated the immigration system alone because she
+                did not have access to qualified sign language interpreters.
               </p>
 
               <p>
-                Without accessible communication, she prepared her own immigration
-                paperwork, attended important appointments without legal representation,
-                and never learned that she was eligible to apply for a work permit. As a
-                result, she has been unable to work and support herself while her case has
-                been pending.
+                Without accessible communication, she prepared her own
+                immigration paperwork, attended important appointments without
+                legal representation, and never learned that she was eligible to
+                apply for a work permit. As a result, she has been unable to
+                work and support herself while her case has been pending.
               </p>
 
               <p>
-                Hands United is now providing all interpreting services for her case
-                completely pro bono. We are raising funds to help cover the cost of legal
-                representation so she can have a fair opportunity to present her case and
-                remain safe in the United States.
+                Hands United is now providing all interpreting services for her
+                case completely pro bono. We are raising funds to help cover the
+                cost of legal representation so she can have a fair opportunity
+                to present her case and remain safe in the United States.
               </p>
 
               <a
@@ -92,43 +97,76 @@ URGENT COMMUNITY SUPPORT
               </a>
             </div>
 
-         
-          <div className={classes.urgentCard}>
-            <h3>💙 A Future Worth Fighting For</h3>
+            <div className={classes.urgentCard}>
+              <h3>💙 A Future Worth Fighting For</h3>
 
-            <p>
-              A 16-year-old Deaf young man is facing an uncertain future. After
-              experiencing years of language deprivation, he is finally thriving in an
-              environment where he has access to language, education, and a community
-              that believes in his potential.
-            </p>
+              <p>
+                A 16-year-old Deaf young man is facing an uncertain future.
+                After experiencing years of language deprivation, he is finally
+                thriving in an environment where he has access to language,
+                education, and a community that believes in his potential.
+              </p>
 
-            <p>
-              His family must leave the United States, but we are pursuing every avenue
-              to allow him to remain and continue his education. He hopes to attend a
-              residential school for Deaf students, where he can continue building the
-              skills and confidence needed to pursue his dream of becoming a nurse or
-              ultrasound technician.
-            </p>
+              <p>
+                His family must leave the United States, but we are pursuing
+                every avenue to allow him to remain and continue his education.
+                He hopes to attend a residential school for Deaf students, where
+                he can continue building the skills and confidence needed to
+                pursue his dream of becoming a nurse or ultrasound technician.
+              </p>
 
-            <p>
-              Funds will help cover insurance, living expenses, transportation, school
-              needs, and future legal costs as we work to secure a safe and stable future
-              for this remarkable young man.
-            </p>
+              <p>
+                Funds will help cover insurance, living expenses,
+                transportation, school needs, and future legal costs as we work
+                to secure a safe and stable future for this remarkable young
+                man.
+              </p>
 
-            <a
-              href="https://gofund.me/755ccb007"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={classes.donateButton}
-            >
-              Support His Future
-            </a>
-          </div>
+              <a
+                href="https://gofund.me/755ccb007"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.donateButton}
+              >
+                Support His Future
+              </a>
+            </div>
 
-
-
+            <div className={classes.urgentCard}>
+              {" "}
+              <h3>🤟🏽 Help a Deaf Mexican Man Access Justice</h3>{" "}
+              <p>
+                {" "}
+                A Deaf man from Mexico has been detained by ICE for over a month
+                without access to a qualified sign language interpreter or a
+                videophone. Without effective communication, he has been unable
+                to fully understand the legal process or communicate with his
+                family.{" "}
+              </p>{" "}
+              <p>
+                {" "}
+                Every day he remains in detention without meaningful
+                communication places him at a greater disadvantage. Access to
+                legal representation is critical to ensuring he can participate
+                in his own immigration case and protect his rights.{" "}
+              </p>{" "}
+              <p>
+                {" "}
+                Hands United is advocating for communication access while
+                raising funds to cover the cost of his legal representation.
+                Your support will help ensure he has a fair opportunity to be
+                heard.{" "}
+              </p>{" "}
+              <a
+                href="https://www.zeffy.com/en-US/donation-form/help-a-deaf-man-access-justice"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.donateButton}
+              >
+                {" "}
+                Support His Case{" "}
+              </a>{" "}
+            </div>
 
             {/* Case 2 */}
             <div className={classes.urgentCard}>
