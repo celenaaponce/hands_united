@@ -427,6 +427,31 @@ URGENT COMMUNITY SUPPORT
               </Link>
             </div>
           </section>
+          <section className={classes.newsletterSection}>
+            <div className={classes.newsletterContent}>
+              {/* <div className={classes.newsletterIcon} aria-hidden="true">
+                📬
+              </div> */}
+
+              <div>
+                <h2>Stay Connected</h2>
+
+                <p>
+                  Get notified about new classes, workshops, community programs,
+                  resources, and other Hands United updates.
+                </p>
+
+                <a
+                  href="https://www.zeffy.com/en-US/newsletter-form/subscribe-to-get-notified-about-new-events-20792"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={classes.newsletterButton}
+                >
+                  Subscribe to Our Newsletter
+                </a>
+              </div>
+            </div>
+          </section>
           {/* =======================
    NATIONAL PARTNERSHIPS
 ======================= */}
@@ -467,25 +492,6 @@ URGENT COMMUNITY SUPPORT
                 here
               </Link>
             </p>
-          </div>
-          <div className={classes.responsiveImageWrapper}>
-            <h2>Upcoming Workshops</h2>
-            <div style={{ marginTop: "1.5rem" }}>
-              <Link
-                href="/store"
-                style={{
-                  display: "inline-block",
-                  padding: "0.5rem 1.25rem",
-                  borderRadius: "0.5rem",
-                  background: "linear-gradient(90deg, #72b200, #b4e956)",
-                  color: "#ffffff",
-                  fontWeight: "bold",
-                  textDecoration: "none",
-                }}
-              >
-                See all upcoming events & registrations
-              </Link>
-            </div>
           </div>
         </section>
 
@@ -554,7 +560,7 @@ URGENT COMMUNITY SUPPORT
               />
             </div>
           </Link>
-          <AidaFormEmbed />
+          {/* <AidaFormEmbed /> */}
         </section>
       </main>
     </>

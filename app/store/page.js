@@ -96,53 +96,119 @@ export default function StorePage() {
         </div>
 
         <div className={classes.eventBlock}>
-          <h4 id="citizenship-classes">
-            Deaf Citizenship Classes — Starting in April
-          </h4>
+          <h3 id="citizenship-classes">Deaf Citizenship Classes — TBD</h3>
 
           <p>
             A 10-week online citizenship preparation course taught in American
             Sign Language. Participants will study U.S. civics, practice the
-            naturalization interview, and prepare for the citizenship exam.
+            naturalization interview, and prepare for the citizenship exam.{" "}
+            <Link href="/contact">Contact us</Link> to express interest.
+          </p>
+        </div>
+
+        <div className={classes.eventBlock}>
+          <h3 id="free-technology-workshops">
+            Free Technology Workshops | Talleres Tecnológicos Gratuitos
+          </h3>
+
+          <p>
+            Hands United is planning a series of free virtual technology
+            workshops designed to help community members feel more confident
+            using everyday technology. Workshops will be offered in ASL,
+            English, and Spanish.
           </p>
 
           <p>
-            <strong>Length:</strong> 10 weeks
-            <br />
-            <strong>Schedule:</strong> Tuesdays or Thursdays
-            <br />
-            <strong>Format:</strong> Online (Zoom)
-            <br />
-            <strong>Cost:</strong> $50
+            We are currently asking community members which topics they are most
+            interested in so we can plan future workshops based on community
+            needs.
           </p>
 
-          {/* Registration Button */}
-          <div className={classes.registrationButtonWrapper}>
+          <p>
+            <strong>Possible Workshop Topics:</strong>
+          </p>
+
+          <ul>
+            <ul>Mac &amp; Windows computer basics</ul>
+            <ul>Internet basics</ul>
+            <ul>Email basics</ul>
+            <ul>Cybersecurity</ul>
+            <ul>Android &amp; Apple mobile devices</ul>
+            <ul>QR codes</ul>
+            <ul>Video conferencing</ul>
+            <ul>Digital citizenship for teens &amp; tweens</ul>
+          </ul>
+
+          <p>
+            <strong>Format:</strong> Virtual
+            <br />
+            <strong>Cost:</strong> Free
+            <br />
+            <strong>Languages:</strong> ASL, English, and Spanish
+            <br />
+            <strong>Dates:</strong> To be announced based on community interest
+          </p>
+
+          <p>
+            <strong>Which workshops should we offer?</strong> Complete the
+            interest survey to vote for the technology topics you would most
+            like to see.
+          </p>
+
+          <p>
             <a
-              href="https://handsunited.aidaform.com/citizenship-registration-april-2026"
+              href="https://handsunitedor.s.gy/surveytechnology"
               target="_blank"
               rel="noopener noreferrer"
-              className={classes.registrationButton}
             >
-              Register for Citizenship Classes
+              Complete the English Survey →
             </a>
-          </div>
+          </p>
 
-          <div className={classes.flyerGrid}>
-            <div className={classes.flyerItem}>
-              <Image
-                src={CitizenshipEN}
-                alt="Deaf citizenship class flyer English"
-              />
-            </div>
+          <hr />
 
-            <div className={classes.flyerItem}>
-              <Image
-                src={CitizenshipES}
-                alt="Deaf citizenship class flyer Spanish"
-              />
-            </div>
-          </div>
+          <h5>Talleres Tecnológicos Gratuitos</h5>
+
+          <p>
+            Manos Unidas está planeando una serie de talleres virtuales de
+            tecnología gratuitos para ayudar a miembros de la comunidad a
+            sentirse más seguros usando la tecnología de todos los días. Los
+            talleres estarán disponibles en ASL, inglés y español.
+          </p>
+
+          <p>
+            Actualmente estamos preguntando a la comunidad cuáles temas les
+            interesan más para poder planificar los próximos talleres según sus
+            necesidades.
+          </p>
+
+          <p>
+            Los posibles temas incluyen computadoras Mac y Windows, Internet,
+            correo electrónico, ciberseguridad, dispositivos Android y Apple,
+            códigos QR, videoconferencias y ciudadanía digital para adolescentes
+            y preadolescentes.
+          </p>
+
+          <p>
+            <strong>Formato:</strong> Virtual
+            <br />
+            <strong>Costo:</strong> Gratis
+            <br />
+            <strong>Idiomas:</strong> ASL, inglés y español
+            <br />
+            <strong>Fechas:</strong> Se anunciarán según el interés de la
+            comunidad
+          </p>
+
+          <p>
+            <a
+              href="https://manosunidasor.s.gy/encuestatecnología"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Completar la encuesta en español →
+            </a>
+          </p>
         </div>
       </section>
 
@@ -154,6 +220,103 @@ export default function StorePage() {
             ↑ Back to top
           </a>
         </div>
+        <p>
+          Workshops and trainings to help the Deaf community better understand
+          immigration and help the legal community better understand Deaf.
+        </p>
+        <div className={classes.eventBlock}>
+          <h3 id="immigration-diagnostic-evaluations-dhh">
+            Immigration Diagnostic Evaluations for DHH Mental Health Providers
+          </h3>
+
+          <p>
+            Hands United is collaborating on a virtual training specifically
+            accessible to Deaf and hard of hearing mental health professionals
+            who want to learn how to conduct diagnostic evaluations for
+            immigration cases.
+          </p>
+
+          <p>
+            Participants will learn how to conduct immigration diagnostic
+            evaluations for USCIS and Immigration Court, prepare professional
+            evaluation reports, understand common immigration case types, work
+            with attorneys, maintain appropriate ethical boundaries, and develop
+            the skills needed to testify as an expert witness.
+          </p>
+
+          <p>
+            Topics include evaluations related to asylum, VAWA, U Visas, T
+            Visas, Extreme Hardship Waivers, and Cancellation of Removal, as
+            well as the use of clinical interviews, collateral information,
+            behavioral observations, assessment tools, and DSM-5-TR diagnostic
+            criteria.
+          </p>
+
+          <p>
+            <strong>Dates:</strong> September 19–20, 2026
+            <br />
+            <strong>Location:</strong> Virtual
+            <br />
+            <strong>Language Access:</strong> ASL interpretation provided
+            <br />
+            <strong>CE Hours:</strong> 7.5 CAMFT-approved CE hours
+            <br />
+            <strong>Cost:</strong> $1,000
+            <br />
+            <strong>Payment Option:</strong> Two payments of $500
+          </p>
+
+          <p>
+            Training fees are paid directly to the trainers. Hands United does
+            not receive any proceeds from this training.
+          </p>
+
+          <p>
+            Immigration evaluations are typically private-pay services, with
+            clinicians commonly charging approximately $800–$2,500 per
+            evaluation depending on experience, location, and the type of
+            evaluation.
+          </p>
+
+          <h5>Free Information Session</h5>
+
+          <p>
+            Interested but want to learn more before committing? Join a free
+            virtual information session to learn more about the training and ask
+            questions.
+          </p>
+
+          <p>
+            <strong>Date:</strong> Saturday, August 22
+            <br />
+            <strong>Time:</strong> 4 PM Pacific | 7 PM Eastern
+            <br />
+            <strong>Location:</strong> Zoom
+            <br />
+            <strong>Language Access:</strong> ASL interpretation provided
+            <br />
+            <strong>Meeting ID:</strong> 852 7011 9917
+            <br />
+            <strong>Passcode:</strong> DHH
+          </p>
+
+          <p>
+            <a
+              href="https://us06web.zoom.us/j/85270119917?pwd=lmPRgs1dh9wnIOVcp3hDp2OeHXkwbC.1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join the Free Information Session →
+            </a>
+          </p>
+
+          <p>
+            There is a growing need for mental health professionals who
+            understand the linguistic, cultural, and accessibility needs of DHH
+            immigrants. This training is designed to help expand the number of
+            DHH professionals prepared to provide these important evaluations.
+          </p>
+        </div>{" "}
       </section>
 
       <section className={classes.section} id="professionals">
@@ -176,152 +339,116 @@ export default function StorePage() {
         {/* ===================== */}
 
         <div className={classes.eventBlock}>
-          <h4 id="international-sign-language-level-2">
-            International Sign Language Level 2
-          </h4>
+          <h3 id="hotline-foundations-training">
+            Hotline Foundations: Accessible Communication &amp; Navigation with
+            Deaf Immigrant Communities
+          </h3>
 
           <p>
-            Build on your foundational skills in International Sign Language
-            (IS) in this Level 2 course designed for interpreters and Deaf
-            professionals who are already fluent in ASL. This course focuses on
-            expanding vocabulary, improving cross-linguistic communication
-            strategies, and developing confidence in international settings.
+            Join Hands United for a three-part training focused on accessible
+            communication and navigation when supporting Deaf immigrant
+            communities.
           </p>
 
           <p>
-            <strong>Instructor:</strong> Razaq Fakir
-            <br />
-            <strong>Length:</strong> 5 weeks
-            <br />
-            <strong>Schedule:</strong> Saturdays
-            <br />
-            <strong>Time:</strong> 8–10am PST
-            <br />
-            <strong>Start Date:</strong> May 9
-            <br />
-            <strong>CEUs:</strong> 1.0
-            <br />
-            <strong>Cost:</strong> $75
+            This training is designed for current and prospective Hands United
+            volunteers, other community volunteers, and professionals who want
+            to strengthen their skills when working with Deaf immigrants.
           </p>
 
-          <div className={classes.imageContainer}>
-            <div className={classes.embedWrapper}>
-              <ZeffyEmbed
-                title="International Sign Language Level 2 Registration"
-                src="https://www.zeffy.com/en-US/ticketing/5-week-is-with-razaq-level-2-may"
-              />
-            </div>
-          </div>
+          <p>
+            Participants will build foundational skills for providing accessible
+            communication, helping individuals navigate resources and systems,
+            and supporting Deaf immigrants through community-based hotline
+            services.
+          </p>
+
+          <p>
+            <strong>Dates:</strong> August 24, 27 &amp; 28
+            <br />
+            <strong>Time:</strong> 4–6 PM Pacific | 7–9 PM Eastern
+            <br />
+            <strong>Location:</strong> Virtual on Zoom
+            <br />
+            <strong>Language:</strong> Presented in ASL; interpretation
+            available upon request
+            <br />
+            <strong>Length:</strong> 3 sessions / 6 hours
+            <br />
+            <strong>CEUs:</strong> 0.6 CEUs available
+          </p>
+
+          <p>
+            <strong>Cost:</strong>
+            <br />
+            Hands United volunteers — <strong>FREE</strong>
+            <br />
+            Other volunteers — <strong>$15</strong>
+            <br />
+            Non-volunteers — <strong>$60</strong>
+          </p>
+
+          <p>
+            Interested in volunteering with Hands United? This training is a
+            great opportunity to develop the foundational skills needed to
+            provide accessible support to Deaf immigrant communities.
+          </p>
+
+          <p>
+            <a
+              href="https://handsunitedor.s.gy/hotline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Register for Hotline Foundations Training →
+            </a>
+          </p>
         </div>
 
         <div className={classes.eventBlock}>
-        <h4 id="around-the-world">
-          Around the World: Foreign Sign Languages & Deaf Cultures
-        </h4>
-
-        <p>
-          An 8-week workshop series introducing participants to signed languages and
-          Deaf cultures from around the world. Designed for interpreters, ITP
-          students, Deaf professionals, and community members interested in expanding
-          their global understanding of Deaf communication and cultural practices.
-        </p>
-
-        <p>
-          Participants will explore a variety of foreign sign languages, cultural
-          norms, interpreting considerations, and real-world applications for working
-          with increasingly diverse Deaf communities.
-        </p>
-
-        <p>
-          <strong>Schedule:</strong> Sundays, 9:00–11:00 AM PST
-          <br />
-          <strong>Length:</strong> 8 weeks
-          <br />
-          <strong>Dates:</strong> June 14 – August 2
-          <br />
-          <strong>CEUs:</strong> 1.6 total
-          <br />
-          <strong>Single Class Option:</strong> 0.2 CEUs for $20
-          <br />
-          <strong>Cost:</strong> $120 full series
-        </p>
-
-        <div className={classes.imageContainer}>
-          <div className={classes.embedWrapper}>
-            <ZeffyEmbed
-              title="Around the World Registration"
-              src="https://www.zeffy.com/en-US/ticketing/around-the-world-2"
-            />
-          </div>
-        </div>
-      </div>
-
-        <div className={classes.eventBlock}>
-          <h4 id="algebra-interpreters">Algebra 1 & 2 for Interpreters</h4>
+          <h3 id="around-the-world-latin-america">
+            Around the World: Central &amp; South America
+          </h3>
 
           <p>
-            An 8-week workshop designed to build a strong foundation in algebra
-            using a visual, conceptual approach. Designed for interpreters and
-            Deaf professionals working in educational settings.
+            Our first 8-week Around the World series has wrapped up, and we are
+            now planning the next round! This upcoming series will focus on
+            signed languages and Deaf cultures throughout Central and South
+            America.
           </p>
 
           <p>
-            <strong>Instructor:</strong> Celena Ponce
-            <br />
-            <strong>Schedule:</strong> Tuesdays & Thursdays
-            <br />
-            <strong>Length:</strong> 8 weeks
-            <br />
-            <strong>Start Date:</strong> June 16
-            <br />
-            <strong>CEUs:</strong> 3.2
-            <br />
-            <strong>Cost:</strong> $225
-          </p>
-
-          <div className={classes.imageContainer}>
-            <div className={classes.embedWrapper}>
-              <ZeffyEmbed
-                title="Algebra 1 & 2 for Interpreters Registration"
-                src="https://www.zeffy.com/en-US/ticketing/algebra-1-and-2-for-interpreters-math-u-see-based"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className={classes.eventBlock}>
-          <h4 id="precalc-calculus-interpreters">
-            Precalculus & Calculus for Interpreters
-          </h4>
-
-          <p>
-            An 8-week workshop focused on understanding advanced math concepts
-            including functions, limits, and rates of change using a visual and
-            conceptual approach for interpreters.
+            The series will provide opportunities to learn directly from Deaf
+            presenters about their countries, signed languages, Deaf
+            communities, cultural norms, and communication practices.
           </p>
 
           <p>
-            <strong>Instructor:</strong> Celena Ponce
-            <br />
-            <strong>Schedule:</strong> Mondays & Wednesdays
-            <br />
-            <strong>Length:</strong> 8 weeks
-            <br />
-            <strong>Start Date:</strong> June 15
-            <br />
-            <strong>CEUs:</strong> 3.2
-            <br />
-            <strong>Cost:</strong> $225
+            Before we finalize the schedule, we want to hear from you! Complete
+            our interest survey to tell us which countries and signed languages
+            you are most interested in learning about and help us plan the next
+            Around the World series.
           </p>
 
-          <div className={classes.imageContainer}>
-            <div className={classes.embedWrapper}>
-              <ZeffyEmbed
-                title="Precalculus & Calculus for Interpreters Registration"
-                src="https://www.zeffy.com/en-US/ticketing/pre-calculus-and-calculus-for-interpreters-math-u-see-based"
-              />
-            </div>
-          </div>
+          <p>
+            <strong>Focus:</strong> Central &amp; South America
+            <br />
+            <strong>Format:</strong> Virtual
+            <br />
+            <strong>Dates:</strong> Coming soon
+            <br />
+            <strong>Registration:</strong> Coming soon
+          </p>
+
+          <p>
+            <a
+              href="https://handsunitedor.s.gy/latinamerica"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Complete the Around the World Interest Survey →
+            </a>
+          </p>
         </div>
       </section>
 
@@ -333,8 +460,54 @@ export default function StorePage() {
             ↑ Back to top
           </a>
         </div>
+        <div className={classes.eventBlock}>
+          <h3 id="permit-classes-october">
+            Deaf-Accessible Permit Classes — October
+          </h3>
 
+          <p>
+            Hands United is planning our next round of Deaf-accessible permit
+            classes for October! Classes provide accessible, visual instruction
+            to help Deaf and hard of hearing students prepare for the written
+            permit test and better understand driving laws, road signs, and safe
+            driving practices.
+          </p>
 
+          <p>
+            We are currently gathering interest for two class options. Each
+            class will be offered if we have at least{" "}
+            <strong>10 students registered</strong> for that class period.
+          </p>
+
+          <p>
+            <strong>Month:</strong> October 2026
+            <br />
+            <strong>Class Options:</strong> Wednesdays or Fridays
+            <br />
+            <strong>Format:</strong> Virtual
+            <br />
+            <strong>Minimum Enrollment:</strong> 10 students per class period
+            <br />
+            <strong>Registration:</strong> Coming soon
+          </p>
+
+          <p>
+            Interested in joining the next class? Complete the interest form and
+            let us know which class period works best for you. We will use the
+            responses to determine which October classes have enough students to
+            move forward.
+          </p>
+
+          <p>
+            <a
+              href="https://handsunitedor.s.gy/permit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Complete the Permit Class Interest Form →
+            </a>
+          </p>
+        </div>
       </section>
 
       {/* ===================== */}
