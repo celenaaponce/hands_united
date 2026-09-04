@@ -67,6 +67,29 @@
   border: 0;
 }
 
+.permitMap {
+  width: 100%;
+  max-width: 32rem;
+  height: auto;
+  margin: 0.75rem auto;
+  display: block;
+}
+
+.serviceImage {
+  width: 100%;
+  max-width: 18rem;
+  height: auto;
+  margin: 0 auto 1rem;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.servicesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 /* ===== TABLET ===== */
 @media (max-width: 1024px) {
   .section {

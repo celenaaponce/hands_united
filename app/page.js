@@ -229,11 +229,42 @@ URGENT COMMUNITY SUPPORT
             </div>
           </div>
         </section>
+        <section className={classes.section} id="now-enrolling">
+          <h2>Now Enrolling</h2>
+
+          <div className={classes.featureGrid}>
+            <Link
+              href="https://www.manosunidasor.org/aprender-asl/clases/registrarse"
+              className={classes.featureCard}
+            >
+              <div className={classes.enrollmentImage}>
+                <Image src={SpanishASL} alt="ASL Classes in Spanish" />
+              </div>
+
+              <h3>ASL Classes in Spanish</h3>
+
+              <p>8-week online classes beginning October 19.</p>
+            </Link>
+
+            <Link
+              href="/programs/driver-education/register"
+              className={classes.featureCard}
+            >
+              <div className={classes.enrollmentImage}>
+                <Image src={PermitASL} alt="ASL Permit Classes" />
+              </div>
+
+              <h3>ASL Permit Classes</h3>
+
+              <p>8-week online permit classes taught directly in ASL.</p>
+            </Link>
+          </div>
+        </section>
         <section className={classes.section}>
           {/* =======================
     DOWNLOAD OUR APP
 ======================= */}
-          <section className={classes.section}>
+          <section className={classes.section} id="app">
             <h2>Download Our App</h2>
 
             <div className={classes.featureGrid}>
@@ -279,7 +310,7 @@ URGENT COMMUNITY SUPPORT
           {/* =======================
    NEW: LEARN & SAVE MORE
 ======================= */}
-          <section className={classes.section}>
+          <section className={classes.section} id="pd">
             <h2>Learn Anytime & Stay Connected</h2>
 
             <div className={classes.featureGrid}>
@@ -319,13 +350,65 @@ URGENT COMMUNITY SUPPORT
               </Link>
             </div>
           </section>
+          <section className={classes.section} id="services">
+            <h2>Professional & Accessibility Services</h2>
+
+            <p>
+              Hands United provides specialized language access, educational
+              support, and virtual event services for schools, agencies,
+              interpreters, and organizations serving Deaf and multilingual
+              communities.
+            </p>
+
+            <div className={classes.featureGrid}>
+              <Link href="/store#services" className={classes.featureCard}>
+                <div className={classes.featureEmoji}>🌎</div>
+                <h3>Global Sign Language Interpreting</h3>
+                <p>
+                  Interpreting support across global sign languages, including
+                  work alongside skilled Deaf interpreters.
+                </p>
+              </Link>
+
+              <Link href="/store#services" className={classes.featureCard}>
+                <div className={classes.featureEmoji}>📄</div>
+                <h3>IEP Translation Verification</h3>
+                <p>
+                  Review Spanish IEP translations for accuracy, terminology, and
+                  clarity.
+                </p>
+              </Link>
+
+              <Link href="/store#services" className={classes.featureCard}>
+                <div className={classes.featureEmoji}>📚</div>
+                <h3>Custom Multilingual Dictionaries</h3>
+                <p>
+                  Customized dictionaries connecting a spoken or written
+                  language with a signed language using the vocabulary your
+                  organization needs.
+                </p>
+              </Link>
+
+              <Link href="/store#services" className={classes.featureCard}>
+                <div className={classes.featureEmoji}>💻</div>
+                <h3>Virtual Event Support</h3>
+                <p>
+                  Professional Zoom hosting, accessible virtual school tours,
+                  and other technical support for Deaf-centered events.
+                </p>
+              </Link>
+            </div>
+
+            <div className={classes.servicesCta}>
+              <Link href="/store#services" className={classes.programButton}>
+                View All Services →
+              </Link>
+            </div>
+          </section>
           {/* =======================
     NEW FEATURED RESOURCES
 ======================= */}
-          {/* =======================
-    NEW FEATURED RESOURCES
-======================= */}
-          <section className={classes.section}>
+          <section className={classes.section} id="resources">
             <h2>New & Featured Resources</h2>
 
             <div className={classes.featureGrid}>
@@ -380,7 +463,7 @@ URGENT COMMUNITY SUPPORT
             </div>
           </section>
 
-          <section className={classes.section}>
+          <section className={classes.section} id="upcoming">
             <h2>Upcoming Programs</h2>
             <p>
               Hands United offers classes, workshops, and community programs

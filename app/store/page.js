@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import classes from "./page.module.css";
+import PermitMap from "public/driveredmap.png";
+import ZoomHosting from "public/classflyers/zoomhandle.png";
 import ZeffyEmbed from "components/zeffyembed/zeffy-embed";
 import immigration101Flyer from "public/classflyers/immigration101.jpeg";
 import immigration101FlyerHearing from "public/classflyers/imm101hearing.jpg";
@@ -14,6 +16,10 @@ import CitizenshipEN from "public/classflyers/citizenship-en.png";
 import CitizenshipES from "public/classflyers/citizenship-es.png";
 
 import LSCLevel2 from "public/classflyers/lsc2.png";
+
+import VirtualTours from "public/classflyers/virtualtours.png";
+import IEPVerification from "public/classflyers/iep.png";
+import MathConsult from "public/classflyers/mathconsult.png";
 export const metadata = {
   title: "Hands United Events & Store",
   description:
@@ -96,6 +102,29 @@ export default function StorePage() {
         </div>
 
         <div className={classes.eventBlock}>
+          <h3 id="asl-classes-october">Spanish ASL Classes — October</h3>
+
+          <p>
+            Our next round of ASL classes begins in{" "}
+            <strong>October 2026</strong>. Hands United offers accessible ASL
+            instruction designed for immigrant families, with classes taught
+            using families' spoken languages.
+          </p>
+
+          <p>
+            <strong>Next Session:</strong> October 2026
+            <br />
+            <strong>Format:</strong> Virtual
+            <br />
+            <strong>Language:</strong> Spanish
+          </p>
+
+          <p>
+            <Link href="/learn-asl">Learn More About ASL Classes →</Link>
+          </p>
+        </div>
+
+        <div className={classes.eventBlock}>
           <h3 id="citizenship-classes">Deaf Citizenship Classes — TBD</h3>
 
           <p>
@@ -106,7 +135,7 @@ export default function StorePage() {
           </p>
         </div>
 
-        <div className={classes.eventBlock}>
+        {/* <div className={classes.eventBlock}>
           <h3 id="free-technology-workshops">
             Free Technology Workshops | Talleres Tecnológicos Gratuitos
           </h3>
@@ -209,7 +238,7 @@ export default function StorePage() {
               Completar la encuesta en español →
             </a>
           </p>
-        </div>
+        </div> */}
       </section>
 
       <section className={classes.section} id="immigration">
@@ -253,7 +282,7 @@ export default function StorePage() {
           </p>
 
           <p>
-            <strong>Dates:</strong> September 19–20, 2026
+            <strong>Dates:</strong> October, 2026
             <br />
             <strong>Location:</strong> Virtual
             <br />
@@ -278,7 +307,7 @@ export default function StorePage() {
             evaluation.
           </p>
 
-          <h5>Free Information Session</h5>
+          {/* <h5>Free Information Session</h5>
 
           <p>
             Interested but want to learn more before committing? Join a free
@@ -308,7 +337,7 @@ export default function StorePage() {
             >
               Join the Free Information Session →
             </a>
-          </p>
+          </p> */}
 
           <p>
             There is a growing need for mental health professionals who
@@ -364,7 +393,7 @@ export default function StorePage() {
           </p>
 
           <p>
-            <strong>Dates:</strong> August 24, 27 &amp; 28
+            <strong>Dates:</strong> September 14, 17 &amp; 18
             <br />
             <strong>Time:</strong> 4–6 PM Pacific | 7–9 PM Eastern
             <br />
@@ -381,9 +410,9 @@ export default function StorePage() {
           <p>
             <strong>Cost:</strong>
             <br />
-            Hands United volunteers — <strong>FREE</strong>
+            Hands United volunteers (no CEUS) — <strong>FREE</strong>
             <br />
-            Other volunteers — <strong>$15</strong>
+            Hands United volunteers (with CEUs) — <strong>$15</strong>
             <br />
             Non-volunteers — <strong>$60</strong>
           </p>
@@ -462,7 +491,7 @@ export default function StorePage() {
         </div>
         <div className={classes.eventBlock}>
           <h3 id="permit-classes-october">
-            Deaf-Accessible Permit Classes — October
+            Deaf-Accessible Permit Classes — Starting October 2026
           </h3>
 
           <p>
@@ -480,31 +509,29 @@ export default function StorePage() {
           </p>
 
           <p>
-            <strong>Month:</strong> October 2026
+            <strong>Next Session:</strong> October 2026
             <br />
             <strong>Class Options:</strong> Wednesdays or Fridays
             <br />
+            <strong>Time:</strong>
+            <Image
+              src={PermitMap}
+              alt="ASL Permit Class times by U.S. region"
+              className={classes.permitMap}
+            />
             <strong>Format:</strong> Virtual
             <br />
             <strong>Minimum Enrollment:</strong> 10 students per class period
             <br />
-            <strong>Registration:</strong> Coming soon
-          </p>
-
-          <p>
-            Interested in joining the next class? Complete the interest form and
-            let us know which class period works best for you. We will use the
-            responses to determine which October classes have enough students to
-            move forward.
           </p>
 
           <p>
             <a
-              href="https://handsunitedor.s.gy/permit"
+              href="/programs/driver-education/register"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Complete the Permit Class Interest Form →
+              Register here →
             </a>
           </p>
         </div>
@@ -555,7 +582,218 @@ export default function StorePage() {
           </a>
         </div>
 
-        <div className={classes.cardGrid}>
+        <div className={`${classes.cardGrid} ${classes.servicesGrid}`}>
+          {/* Global Sign Language Interpreting */}
+          <Link href="/contact" className={classes.asyncCard}>
+            <div>
+              <h3>🌎 Global Sign Language Interpreting</h3>
+
+              <p>
+                Accessible interpreting for Deaf individuals who use sign
+                languages from around the world or who communicate across
+                multiple signed languages and gestural systems.
+              </p>
+
+              <p>
+                We team with{" "}
+                <strong>
+                  Deaf interpreters with extensive experience in global sign
+                  languages
+                </strong>{" "}
+                to support accurate, culturally responsive communication.
+              </p>
+
+              <p className={classes.cardSubtext}>
+                🤟 Mexican Sign Language (LSM)
+                <br />
+                🤟 Venezuelan Sign Language (LSV)
+                <br />
+                🤟 Ecuadorian Sign Language (LSEC)
+                <br />
+                🤟 Russian Sign Language (RSL)
+                <br />
+                🌎 International Sign
+                <br />
+                🌎 Latin American gestural communication
+              </p>
+
+              <p>
+                Additional sign languages and communication needs may be
+                available depending on the assignment.
+              </p>
+            </div>
+
+            <span className={classes.asyncButton}>
+              Ask About Interpreting →
+            </span>
+          </Link>
+          {/* IEP Translation Verification */}
+          <Link href="/contact" className={classes.asyncCard}>
+            <div>
+              <Image
+                src={IEPVerification}
+                alt="IEP Translation Verification"
+                className={classes.serviceImage}
+              />
+
+              <h3>📄 IEP Translation Verification</h3>
+
+              <p>
+                Have Spanish translations of IEPs and other educational
+                documents reviewed for accuracy, terminology, and clarity.
+              </p>
+
+              <p className={classes.cardSubtext}>
+                ✅ Spanish translation verification
+                <br />
+                ✅ Review for fidelity to the original document
+                <br />
+                ✅ Terminology and consistency review
+                <br />✅ Conducted by experienced trilingual interpreters
+              </p>
+            </div>
+
+            <span className={classes.asyncButton}>
+              Ask About Translation Verification →
+            </span>
+          </Link>
+
+          {/* School for the Deaf Virtual Tours */}
+          <Link href="/contact" className={classes.asyncCard}>
+            <div>
+              <Image
+                src={VirtualTours}
+                alt="Schools for the Deaf Virtual Tours"
+                className={classes.serviceImage}
+              />
+
+              <h3>🏫 School for the Deaf Virtual Tours</h3>
+
+              <p>
+                Partner with Hands United to offer accessible virtual school
+                tours for immigrant families considering Schools for the Deaf.
+              </p>
+
+              <p className={classes.cardSubtext}>
+                ✅ Full virtual-tour technology support
+                <br />
+                ✅ ASL, English &amp; Spanish interpretation
+                <br />
+                ✅ Additional languages available upon request
+                <br />✅ Accessible opportunities for families to ask questions
+              </p>
+            </div>
+
+            <span className={classes.asyncButton}>Partner With Us →</span>
+          </Link>
+
+          {/* Math Interpreter Consultations */}
+          <Link href="/contact" className={classes.asyncCard}>
+            <div>
+              <Image
+                src={MathConsult}
+                alt="Math Interpreter Consultations"
+                className={classes.serviceImage}
+              />
+
+              <h3>➗ Math Interpreter Consultations</h3>
+
+              <p>
+                Specialized, case-based math language consultation for
+                educational interpreters focused on accuracy, conceptual
+                integrity, and student access.
+              </p>
+
+              <p className={classes.cardSubtext}>
+                ✅ Specialized math consultation
+                <br />
+                ✅ Interactive, discussion-based sessions
+                <br />
+                ✅ Recordings for internal use
+                <br />✅ Individual and district/agency options
+              </p>
+            </div>
+
+            <span className={classes.asyncButton}>
+              Ask About Math Consultations →
+            </span>
+          </Link>
+
+          {/* Custom Dictionaries */}
+          <Link href="/contact" className={classes.asyncCard}>
+            <div>
+              <h3>📚 Custom Multilingual Dictionaries</h3>
+
+              <p>
+                Hands United creates customized visual dictionaries connecting a
+                spoken or written language with a signed language.
+              </p>
+
+              <p>
+                Organizations choose the languages and vocabulary they need, and
+                we develop a resource tailored to their community, program,
+                classroom, or service setting.
+              </p>
+
+              <p className={classes.cardSubtext}>
+                🌎 One spoken/written language + one signed language
+                <br />
+                📝 Vocabulary selected by you
+                <br />
+                🤟 Sign language-specific content
+                <br />
+                🎯 Customized for your population and setting
+                <br />
+                📚 Designed as a reusable visual resource
+              </p>
+            </div>
+
+            <span className={classes.asyncButton}>
+              Ask About a Custom Dictionary →
+            </span>
+          </Link>
+
+          <Link href="/contact" className={classes.asyncCard}>
+            <div>
+              <Image
+                src={ZoomHosting}
+                alt="Professional Zoom Hosting for Deaf and Hard of Hearing Events"
+                className={classes.serviceImage}
+              />
+
+              <h3>💻 Professional Zoom Hosting</h3>
+
+              <p>
+                Let us handle the technology so you can focus on your event.
+                Hands United provides professional Zoom hosting designed with
+                Deaf and hard of hearing audiences in mind.
+              </p>
+
+              <p className={classes.cardSubtext}>
+                ✅ Spotlight interpreters and presenters
+                <br />
+                ✅ Share slides and media
+                <br />
+                ✅ Manage breakout rooms
+                <br />
+                ✅ Set up and share Zoom meeting links
+                <br />
+                ✅ Record meetings and provide video files
+                <br />✅ Experienced with Deaf and hard of hearing audiences
+              </p>
+
+              <p>
+                Available for workshops, conferences, classes, and community
+                events.
+              </p>
+            </div>
+
+            <span className={classes.asyncButton}>
+              Ask About Zoom Hosting →
+            </span>
+          </Link>
+
+          {/* GallerySplit */}
           <Link href="/contact" className={classes.asyncCard}>
             <div>
               <h3>🎥 GallerySplit</h3>
