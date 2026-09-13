@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import classes from "./page.module.css";
 
-import LawyerPSA from "@/public/psa.png";
+import LawyerPSA from "public/images/psa.png";
 
 export default function LegalProfessionalSupport() {
   useEffect(() => {
