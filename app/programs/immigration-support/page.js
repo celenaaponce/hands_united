@@ -45,6 +45,13 @@ const sections = [
     href: "/programs/immigration-support/workshops",
     icon: "🎥",
   },
+    {
+    title: "Resources for Legal Professionals",
+    description:
+      "Resources and case support for attorneys and legal professionals working with Deaf and hard of hearing immigrants.",
+    href: "/programs/immigration-support/legal-professionals",
+    icon: "⚖️",
+  },
 ];
 
 export default function ImmigrationPage() {

@@ -1,0 +1,211 @@
+/* =========================
+   PAGE LAYOUT
+========================= */
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+h2.section {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #72b200, #b4e956);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+  margin-bottom: 3rem;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+
+/* =========================
+   CONTENT SECTIONS
+========================= */
+
+.resourceSection,
+.supportSection,
+.formSection {
+  margin-bottom: 3rem;
+}
+
+.resourceSection h2,
+.supportSection h2,
+.formSection h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #80b919;
+  margin-bottom: 1rem;
+}
+
+.resourceSection p,
+.supportSection p,
+.formSection p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+
+/* =========================
+   LAWYER PSA
+========================= */
+
+.psaWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.psaImage {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+/* =========================
+   SUPPORT OPTIONS
+========================= */
+
+.supportSection {
+  background: #111;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.supportSection ul {
+  margin-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.supportSection li {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.supportSection li strong {
+  color: white;
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.formSection {
+  margin-top: 3rem;
+}
+
+.formNote {
+  padding: 1rem;
+  background: #111;
+  border-radius: 10px;
+  color: #aaa !important;
+  font-size: 14px !important;
+}
+
+.formContainer {
+  width: 100%;
+  margin-top: 2rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.formContainer iframe {
+  width: 100%;
+  min-height: 900px;
+  border: none;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.page a {
+  color: #80b919;
+}
+
+.page a:visited {
+  color: #80b919;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .page {
+    padding: 20px;
+  }
+
+  h2.section {
+    font-size: 1.5rem;
+  }
+
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+
+  .resourceSection h2,
+  .supportSection h2,
+  .formSection h2 {
+    font-size: 1.3rem;
+  }
+
+  .intro p,
+  .resourceSection p,
+  .supportSection p,
+  .formSection p,
+  .supportSection li {
+    font-size: 0.9rem;
+  }
+
+  .supportSection {
+    padding: 1.25rem;
+  }
+
+  .psaImage {
+    max-width: 100%;
+  }
+
+  .formContainer iframe {
+    min-height: 900px;
+  }
+}

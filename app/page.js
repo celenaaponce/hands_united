@@ -340,9 +340,10 @@ URGENT COMMUNITY SUPPORT
                 <div className={classes.featureEmoji}>🤝</div>
                 <h3>Join Our Membership</h3>
                 <p>
-                  Support our mission and get exclusive benefits including
-                  discounts on workshops, early access, and member-only
-                  resources.
+                  Hands United provides specialized language access, legal and
+                  educational support, resource development, and virtual event
+                  services for schools, agencies, interpreters, attorneys, and
+                  organizations serving Deaf and multilingual communities.
                 </p>
                 <p>
                   <strong>Get 10% off workshops</strong>
@@ -361,27 +362,60 @@ URGENT COMMUNITY SUPPORT
             </p>
 
             <div className={classes.featureGrid}>
+              {/* Legal Professional Resources & Case Support */}
+              <Link
+                href="/programs/immigration-support/legal-professionals"
+                className={classes.featureCard}
+              >
+                <div className={classes.featureEmoji}>⚖️</div>
+
+                <h3>Legal Professional Resources &amp; Case Support</h3>
+
+                <p>
+                  Resources and specialized support for attorneys, legal service
+                  providers, and advocates working with Deaf and hard of hearing
+                  immigrants.
+                </p>
+
+                <p>
+                  <strong>
+                    Global sign language interpreters • DHH-specific evaluators
+                    • Country conditions experts • Communication evaluations •
+                    Consultation
+                  </strong>
+                </p>
+              </Link>
+
+              {/* Global Sign Language Interpreting */}
               <Link href="/store#services" className={classes.featureCard}>
                 <div className={classes.featureEmoji}>🌎</div>
+
                 <h3>Global Sign Language Interpreting</h3>
+
                 <p>
                   Interpreting support across global sign languages, including
                   work alongside skilled Deaf interpreters.
                 </p>
               </Link>
 
+              {/* IEP Translation Verification */}
               <Link href="/store#services" className={classes.featureCard}>
                 <div className={classes.featureEmoji}>📄</div>
+
                 <h3>IEP Translation Verification</h3>
+
                 <p>
                   Review Spanish IEP translations for accuracy, terminology, and
                   clarity.
                 </p>
               </Link>
 
+              {/* Custom Dictionaries */}
               <Link href="/store#services" className={classes.featureCard}>
                 <div className={classes.featureEmoji}>📚</div>
+
                 <h3>Custom Multilingual Dictionaries</h3>
+
                 <p>
                   Customized dictionaries connecting a spoken or written
                   language with a signed language using the vocabulary your
@@ -389,9 +423,12 @@ URGENT COMMUNITY SUPPORT
                 </p>
               </Link>
 
+              {/* Virtual Event Support */}
               <Link href="/store#services" className={classes.featureCard}>
                 <div className={classes.featureEmoji}>💻</div>
+
                 <h3>Virtual Event Support</h3>
+
                 <p>
                   Professional Zoom hosting, accessible virtual school tours,
                   and other technical support for Deaf-centered events.

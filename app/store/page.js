@@ -3,6 +3,9 @@ import Link from "next/link";
 import classes from "./page.module.css";
 import PermitMap from "public/driveredmap.png";
 import ZoomHosting from "public/classflyers/zoomhandle.png";
+import TechWorkshopsEN from "public/images/technology-workshops-en.png";
+import TechWorkshopsES from "public/images/technology-workshops-es.png";
+import HotlineWorkshop from "public/images/hotlineworkshop.png";
 import ZeffyEmbed from "components/zeffyembed/zeffy-embed";
 import immigration101Flyer from "public/classflyers/immigration101.jpeg";
 import immigration101FlyerHearing from "public/classflyers/imm101hearing.jpg";
@@ -135,110 +138,138 @@ export default function StorePage() {
           </p>
         </div>
 
-        {/* <div className={classes.eventBlock}>
+        <div className={classes.eventBlock}>
           <h3 id="free-technology-workshops">
             Free Technology Workshops | Talleres Tecnológicos Gratuitos
           </h3>
 
           <p>
-            Hands United is planning a series of free virtual technology
-            workshops designed to help community members feel more confident
-            using everyday technology. Workshops will be offered in ASL,
-            English, and Spanish.
+            Hands United / Manos Unidas is offering a series of{" "}
+            <strong>free virtual technology workshops</strong> designed to build
+            confidence using everyday technology.
           </p>
 
           <p>
-            We are currently asking community members which topics they are most
-            interested in so we can plan future workshops based on community
-            needs.
+            Workshops are trilingual and accessible in{" "}
+            <strong>ASL, English, and Spanish</strong>. Each workshop is 1.5
+            hours and will be held virtually on Zoom.
           </p>
 
-          <p>
-            <strong>Possible Workshop Topics:</strong>
-          </p>
+          <div className={classes.imageContainer}>
+            <Image
+              src={TechWorkshopsEN}
+              alt="Free Technology Workshops schedule in English"
+              className={classes.eventFlyer}
+            />
+          </div>
 
-          <ul>
-            <ul>Mac &amp; Windows computer basics</ul>
-            <ul>Internet basics</ul>
-            <ul>Email basics</ul>
-            <ul>Cybersecurity</ul>
-            <ul>Android &amp; Apple mobile devices</ul>
-            <ul>QR codes</ul>
-            <ul>Video conferencing</ul>
-            <ul>Digital citizenship for teens &amp; tweens</ul>
-          </ul>
+          <h4>Workshop Schedule</h4>
 
           <p>
-            <strong>Format:</strong> Virtual
+            <strong>September 30:</strong> Video Conference Basics
             <br />
-            <strong>Cost:</strong> Free
+            <strong>October 1:</strong> Internet Basics
             <br />
-            <strong>Languages:</strong> ASL, English, and Spanish
+            <strong>October 2:</strong> Cybersecurity Basics
             <br />
-            <strong>Dates:</strong> To be announced based on community interest
+            <strong>October 5:</strong> Mobile Device — iOS Basics
+            <br />
+            <strong>October 6:</strong> QR Code Basics
+            <br />
+            <strong>October 7:</strong> Computer Basics — macOS
+            <br />
+            <strong>October 8:</strong> Computer Basics — Windows
+            <br />
+            <strong>October 10:</strong> Digital Citizenship
           </p>
 
           <p>
-            <strong>Which workshops should we offer?</strong> Complete the
-            interest survey to vote for the technology topics you would most
-            like to see.
+            <strong>Format:</strong> Virtual on Zoom
+            <br />
+            <strong>Length:</strong> 1.5 hours each
+            <br />
+            <strong>Cost:</strong> FREE
+            <br />
+            <strong>Languages:</strong> ASL, English &amp; Spanish
+            <br />
+            <strong>Zoom Meeting ID:</strong> 843 6105 4543
+            <br />
+            <strong>Password:</strong> TECH
+          </p>
+
+          <p>
+            Workshop times vary by U.S. region. Please see the map on the flyer
+            for your local time.
           </p>
 
           <p>
             <a
-              href="https://handsunitedor.s.gy/surveytechnology"
+              href="https://handsunitedor.s.gy/reminders"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Complete the English Survey →
+              Sign Up for Text Reminders →
             </a>
           </p>
 
           <hr />
 
-          <h5>Talleres Tecnológicos Gratuitos</h5>
+          <h4>Talleres Tecnológicos Gratuitos</h4>
 
           <p>
-            Manos Unidas está planeando una serie de talleres virtuales de
-            tecnología gratuitos para ayudar a miembros de la comunidad a
-            sentirse más seguros usando la tecnología de todos los días. Los
-            talleres estarán disponibles en ASL, inglés y español.
+            Manos Unidas ofrecerá una serie de{" "}
+            <strong>talleres virtuales de tecnología gratuitos</strong> para
+            ayudar a miembros de la comunidad a desarrollar habilidades y
+            sentirse más seguros usando la tecnología cotidiana.
           </p>
 
           <p>
-            Actualmente estamos preguntando a la comunidad cuáles temas les
-            interesan más para poder planificar los próximos talleres según sus
-            necesidades.
+            Los talleres serán trilingües en{" "}
+            <strong>ASL, inglés y español</strong>, tendrán una duración de 1.5
+            horas cada uno y se ofrecerán por Zoom.
           </p>
 
-          <p>
-            Los posibles temas incluyen computadoras Mac y Windows, Internet,
-            correo electrónico, ciberseguridad, dispositivos Android y Apple,
-            códigos QR, videoconferencias y ciudadanía digital para adolescentes
-            y preadolescentes.
-          </p>
+          <div className={classes.imageContainer}>
+            <Image
+              src={TechWorkshopsES}
+              alt="Calendario de talleres tecnológicos gratuitos en español"
+              className={classes.eventFlyer}
+            />
+          </div>
 
           <p>
-            <strong>Formato:</strong> Virtual
+            <strong>30 de septiembre:</strong> Conceptos básicos sobre
+            videoconferencias
             <br />
-            <strong>Costo:</strong> Gratis
+            <strong>1 de octubre:</strong> Conceptos básicos de Internet
             <br />
-            <strong>Idiomas:</strong> ASL, inglés y español
+            <strong>2 de octubre:</strong> Conceptos básicos de ciberseguridad
             <br />
-            <strong>Fechas:</strong> Se anunciarán según el interés de la
-            comunidad
+            <strong>5 de octubre:</strong> Conceptos básicos sobre dispositivos
+            móviles con iOS
+            <br />
+            <strong>6 de octubre:</strong> Conceptos básicos sobre los códigos
+            QR
+            <br />
+            <strong>7 de octubre:</strong> Conceptos básicos de computación en
+            macOS
+            <br />
+            <strong>8 de octubre:</strong> Conceptos básicos de computación:
+            Windows
+            <br />
+            <strong>10 de octubre:</strong> Ciudadanía digital
           </p>
 
           <p>
             <a
-              href="https://manosunidasor.s.gy/encuestatecnología"
+              href="https://manosunidasor.s.gy/recordatorios"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Completar la encuesta en español →
+              Regístrese para recibir recordatorios →
             </a>
           </p>
-        </div> */}
+        </div>
       </section>
 
       <section className={classes.section} id="immigration">
@@ -385,6 +416,14 @@ export default function StorePage() {
             to strengthen their skills when working with Deaf immigrants.
           </p>
 
+          <div className={classes.imageContainer}>
+            <Image
+              src={HotlineWorkshop}
+              alt="Hotline Foundations training October 19, 21 and 23"
+              className={classes.eventFlyer}
+            />
+          </div>
+
           <p>
             Participants will build foundational skills for providing accessible
             communication, helping individuals navigate resources and systems,
@@ -393,9 +432,9 @@ export default function StorePage() {
           </p>
 
           <p>
-            <strong>Dates:</strong> September 14, 17 &amp; 18
+            <strong>Dates:</strong> October 19, 21 &amp; 23, 2026
             <br />
-            <strong>Time:</strong> 4–6 PM Pacific | 7–9 PM Eastern
+            <strong>Time:</strong> 4–6 PM Pacific
             <br />
             <strong>Location:</strong> Virtual on Zoom
             <br />
@@ -410,17 +449,18 @@ export default function StorePage() {
           <p>
             <strong>Cost:</strong>
             <br />
-            Hands United volunteers (no CEUS) — <strong>FREE</strong>
+            Hands United volunteers without CEUs — <strong>FREE</strong>
             <br />
-            Hands United volunteers (with CEUs) — <strong>$15</strong>
+            Hands United volunteers requesting CEUs — <strong>$15</strong>
             <br />
             Non-volunteers — <strong>$60</strong>
           </p>
 
           <p>
-            Interested in volunteering with Hands United? This training is a
-            great opportunity to develop the foundational skills needed to
-            provide accessible support to Deaf immigrant communities.
+            Interested in volunteering with Hands United? This training provides
+            the foundational skills needed to support Deaf immigrant communities
+            through accessible communication, navigation, referrals, and hotline
+            services.
           </p>
 
           <p>
@@ -429,7 +469,7 @@ export default function StorePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Register for Hotline Foundations Training →
+              Register for Hotline Foundations →
             </a>
           </p>
         </div>

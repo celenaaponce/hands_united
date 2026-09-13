@@ -45,6 +45,15 @@
   border: 0;
 }
 
+.eventFlyer {
+  width: 100%;
+  max-width: 32rem;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 0.5rem;
+}
+
 /* ===== Embed container (responsive + centered) ===== */
 .imageContainer {
   width: 90%;
