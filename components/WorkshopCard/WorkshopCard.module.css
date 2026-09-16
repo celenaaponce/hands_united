@@ -100,3 +100,17 @@
 .closeButton:hover {
   background: rgba(0, 0, 0, 0.8);
 }
+
+.imageWrapper {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.workshopImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

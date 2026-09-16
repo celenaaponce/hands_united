@@ -11,6 +11,15 @@ export default function WorkshopCard({ workshop }) {
   return (
     <>
       <div className={styles.card}>
+        {workshop.image && (
+          <div className={styles.imageWrapper}>
+            <img
+              src={workshop.image}
+              alt={`${workshop.title} workshop`}
+              className={styles.workshopImage}
+            />
+          </div>
+        )}
         <div className={styles.content}>
           <h3 className={styles.title}>{workshop.title}</h3>
 

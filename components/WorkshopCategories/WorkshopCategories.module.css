@@ -11,6 +11,9 @@
   font-weight: 500;
   cursor: pointer;
   margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .item:hover {
@@ -24,4 +27,23 @@
 
 .divider {
   color: #aaa;
+}
+
+.item .categoryIcon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.intersign .item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.intersign .categoryIcon {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
 }
