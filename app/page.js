@@ -12,6 +12,8 @@ import StoreFlyer from "public/classflyers/multilingdict.jpg";
 import NHLAD from "public/classflyers/NHLAD.jpg";
 
 import PermitASL from "public/classflyers/permit-asl.png";
+import Asylum101 from "public/images/asylum101.png";
+
 import KYRWeekly from "public/classflyers/kyr-weekly.png";
 import SpanishASL from "public/classflyers/ASLSpanishclass.jpeg";
 import EngKYRMultilingual from "public/classflyers/aslarabic.png";
@@ -258,6 +260,30 @@ URGENT COMMUNITY SUPPORT
 
               <p>8-week online permit classes taught directly in ASL.</p>
             </Link>
+            <a
+              href="/store#asylum-101"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes.featureCard}
+            >
+                           <div className={classes.enrollmentImage}>
+                <Image src={Asylum101} alt="Asylum 101" />
+              </div>
+
+              <h3>Asylum 101</h3>
+
+              <p>
+                Learn the basics of the U.S. asylum process, including
+                affirmative and defensive asylum, USCIS, Immigration Court, and
+                what to expect throughout the process.
+              </p>
+
+              <p>
+                <strong>
+                  Accessible immigration education for the Deaf community.
+                </strong>
+              </p>
+            </a>
           </div>
         </section>
         <section className={classes.section}>

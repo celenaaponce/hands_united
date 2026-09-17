@@ -285,6 +285,52 @@ export default function StorePage() {
           immigration and help the legal community better understand Deaf.
         </p>
         <div className={classes.eventBlock}>
+          <h3 id="asylum-101">Asylum 101</h3>
+
+          <p>
+            An introductory workshop explaining the U.S. asylum process in
+            accessible, easy-to-understand language.
+          </p>
+
+          <p>
+            This workshop provides a foundational overview of asylum, including
+            the difference between affirmative and defensive asylum, where
+            different parts of the process take place, and what individuals may
+            encounter as their case moves through the immigration system.
+          </p>
+
+          <p>
+            <strong>Topics include:</strong>
+            <br />
+            • What asylum is
+            <br />
+            • Affirmative asylum through USCIS
+            <br />
+            • Defensive asylum in Immigration Court
+            <br />
+            • Basic steps in the asylum process
+            <br />
+            • Understanding interviews and court proceedings
+            <br />• Communication and language access considerations for Deaf
+            immigrants
+          </p>
+
+          <p>
+            This workshop provides general educational information and does not
+            provide legal advice or individual legal representation.
+          </p>
+
+          <p>
+            <a
+              href="https://www.zeffy.com/en-US/ticketing/asylum--101"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Register for Asylum 101 →
+            </a>
+          </p>
+        </div>
+        <div className={classes.eventBlock}>
           <h3 id="immigration-diagnostic-evaluations-dhh">
             Immigration Diagnostic Evaluations for DHH Mental Health Providers
           </h3>
