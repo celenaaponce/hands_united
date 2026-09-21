@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import AroundTheWorld from "public/images/aroundtheworld.png";
 import logo from "./icon.png";
 import classes from "./page.module.css";
 import AidaFormEmbed from "components/aidaform";
@@ -266,7 +267,7 @@ URGENT COMMUNITY SUPPORT
               rel="noopener noreferrer"
               className={classes.featureCard}
             >
-                           <div className={classes.enrollmentImage}>
+              <div className={classes.enrollmentImage}>
                 <Image src={Asylum101} alt="Asylum 101" />
               </div>
 
@@ -284,6 +285,25 @@ URGENT COMMUNITY SUPPORT
                 </strong>
               </p>
             </a>
+            <Link href="/store/async/ceu" className={classes.featureCard}>
+              <div className={classes.enrollmentImage}>
+                <Image
+                  src={AroundTheWorld}
+                  alt="Around the World Sign Languages asynchronous course"
+                />
+              </div>
+
+              <h3>Around the World: Sign Languages</h3>
+
+              <p>
+                Learn 7 different sign languages through 14 hours of recorded,
+                Deaf-led instruction.
+              </p>
+
+              <p>
+                <strong>1.4 CEUs • Asynchronous • Taught in ASL • $100</strong>
+              </p>
+            </Link>
           </div>
         </section>
         <section className={classes.section}>

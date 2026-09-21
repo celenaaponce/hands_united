@@ -10,7 +10,7 @@ import WorkshopCategories from "../../../../components/WorkshopCategories/Worksh
 const workshops = [
   {
     title: "Sign Languages Around the World: A Global Learning Series",
-    ceu: "1.2",
+    ceu: "1.4",
     price: 100,
     languages: ["ASL"],
     category: "language",
