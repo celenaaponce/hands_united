@@ -100,6 +100,40 @@ export default function Ayudar() {
 
         </div>
 
+                {/* Games section */}
+        <div className={classes.hero}>
+
+          <h1>
+            Jwèt
+            <br />
+            <span className={classes.subheading}>Games</span>
+          </h1>
+
+          <p>
+            Ou ka pratike siy ASL yo ak jwèt nou yo{" "}
+            <Link href="/learn-asl/haitian-creole/dictionary/games">
+              isit la
+            </Link>.
+            <br />
+            <span className={classes.subheading}>
+              You can practice ASL signs with our games{" "}
+              <Link href="/learn-asl/haitian-creole/dictionary/games">
+                here
+              </Link>.
+            </span>
+          </p>
+
+        </div>
+
+        <div className={classes.imageContainer}>
+          <Image
+            src="/images/games.png"
+            alt="Games"
+            width={200}
+            height={200}
+          />
+        </div>
+
       </header>
 
     </div>

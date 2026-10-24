@@ -1,0 +1,164 @@
+/* Flashcards: inherits your site's font. Colors pick up the orange of the logo. */
+.fc {
+  --fc-ink: #2b1d14;
+  --fc-text: #ddd6cb;
+  --fc-accent: #f2a94c;
+  --fc-accent-deep: #d98a2b;
+  --fc-surface: #ffffff;
+  --fc-back: #000000;
+  --fc-muted: #ddd6cb;
+
+  font-family: inherit;
+  color: var(--fc-text);
+  width: 100%;
+  max-width: min(1000px, calc((100vh - 12rem) * 16 / 9));
+  margin: 0 auto;
+  padding: 1rem;
+  outline: none;
+}
+
+.fc-card {
+  perspective: 1600px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.fc-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.fc-card.is-flipped .fc-inner {
+  transform: rotateY(180deg);
+}
+
+.fc-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  box-shadow: 0 2px 0 var(--fc-accent), 0 14px 32px -18px rgba(58, 36, 24, 0.55);
+}
+
+.fc-front {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 2px solid var(--fc-accent);
+  background: var(--fc-surface);
+  cursor: pointer;
+}
+
+.fc-front img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+}
+
+.fc-back {
+  background: var(--fc-back);
+  border: 2px solid var(--fc-accent);
+  transform: rotateY(180deg);
+}
+
+.fc-back iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.fc-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.fc-btn {
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: 600;
+  min-width: 3rem;
+  min-height: 3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 2px solid var(--fc-ink);
+  background: var(--fc-surface);
+  color: var(--fc-ink);
+  cursor: pointer;
+}
+
+.fc-btn:hover {
+  background: #fff4e3;
+}
+
+.fc-btn-main {
+  min-width: 11rem;
+  background: var(--fc-accent);
+  border-color: var(--fc-accent);
+  color: var(--fc-ink);
+}
+
+.fc-btn-main:hover {
+  background: var(--fc-accent-deep);
+  border-color: var(--fc-accent-deep);
+  color: #fff;
+}
+
+.fc-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--fc-muted);
+}
+
+.fc-english {
+  margin-left: 0.75rem;
+  font-style: italic;
+}
+
+.fc-meta-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.fc-link {
+  font: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--fc-ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.fc-btn:focus-visible,
+.fc-link:focus-visible,
+.fc-front:focus-visible {
+  outline: 3px solid var(--fc-accent-deep);
+  outline-offset: 3px;
+}
+
+@media (max-width: 520px) {
+  .fc { padding: 0.5rem; }
+  .fc-face { border-radius: 12px; }
+  .fc-btn-main { min-width: 9rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fc-inner { transition: none; }
+}

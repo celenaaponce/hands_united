@@ -9,20 +9,27 @@ export default function Ayudar() {
   return (
     <div className="theme-ht">
       <div className={classes.container}>
-      <Link href="/learn-asl/haitian-creole" className={classes.backLink}>
-        ← Back to ASL Classes
-      </Link>
-      {/* NEW SECTION */}
-      <section className={classes.section}>
-        <h1>Haitian Creole ASL Dictionary</h1>
-        <h1>Diksyonè Kreyòl Ayisyen ASL</h1>
+        <Link href="/learn-asl/haitian-creole" className={classes.backLink}>
+          ← Back to ASL Classes
+        </Link>
 
-        <DictionaryFlashcards
-          dictionary={dictionary}
-          languageFilter="ht"
-          uiLanguage="ht"
-        />
-      </section>
+        <section className={classes.section}>
+          <h1>Haitian Creole ASL Dictionary</h1>
+          <h1>Diksyonè Kreyòl Ayisyen ASL</h1>
+
+          <Link
+            href="/learn-asl/haitian-creole/dictionary/games"
+            className={classes.backLink}
+          >
+            Pratike ak jwèt / Practice with games →
+          </Link>
+
+          <DictionaryFlashcards
+            dictionary={dictionary}
+            languageFilter="ht"
+            uiLanguage="ht"
+          />
+        </section>
       </div>
     </div>
   );

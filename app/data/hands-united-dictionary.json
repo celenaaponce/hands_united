@@ -485,5 +485,383 @@
         "thumbnail": "https://i.ytimg.com/vi/mOFKzmlhQhQ/maxresdefault.jpg"
       }
     ]
+  },
+  {
+    "id": "avocado",
+    "english": "avocado",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "zaboka",
+        "youtubeId": "zXAiRdmgBbQ",
+        "thumbnail": "https://i.ytimg.com/vi/zXAiRdmgBbQ/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "banana",
+    "english": "banana",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "fig",
+        "youtubeId": "3CQHbS4viyA",
+        "thumbnail": "https://i.ytimg.com/vi/3CQHbS4viyA/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "beans",
+    "english": "beans",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "pwa",
+        "youtubeId": "OmJfewFDqN4",
+        "thumbnail": "https://i.ytimg.com/vi/OmJfewFDqN4/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "beef",
+    "english": "beef",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "bèf",
+        "youtubeId": "huxbrXHACI8",
+        "thumbnail": "https://i.ytimg.com/vi/huxbrXHACI8/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "breakfast",
+    "english": "breakfast",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "manje maten",
+        "youtubeId": "GgKGyoLnGnQ",
+        "thumbnail": "https://i.ytimg.com/vi/GgKGyoLnGnQ/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "carrot",
+    "english": "carrot",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "kawòt",
+        "youtubeId": "zQrVnv3IPNU",
+        "thumbnail": "https://i.ytimg.com/vi/zQrVnv3IPNU/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "cassava",
+    "english": "cassava",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "manyòk",
+        "youtubeId": "osG8JEUthJs",
+        "thumbnail": "https://i.ytimg.com/vi/osG8JEUthJs/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "chicken",
+    "english": "chicken",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "poul",
+        "youtubeId": "VUHu-p4lFNw",
+        "thumbnail": "https://i.ytimg.com/vi/VUHu-p4lFNw/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "coconut",
+    "english": "coconut",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "kokoye",
+        "youtubeId": "NwZ2S56v4ac",
+        "thumbnail": "https://i.ytimg.com/vi/NwZ2S56v4ac/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "corn",
+    "english": "corn",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "mayi",
+        "youtubeId": "SiRQzOT26wc",
+        "thumbnail": "https://i.ytimg.com/vi/SiRQzOT26wc/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "dinner",
+    "english": "dinner",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "soupe",
+        "youtubeId": "ffDCUbFGGLA",
+        "thumbnail": "https://i.ytimg.com/vi/ffDCUbFGGLA/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "to-eat",
+    "english": "to eat",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "manje",
+        "youtubeId": "hjKw0Ug0wn4",
+        "thumbnail": "https://i.ytimg.com/vi/hjKw0Ug0wn4/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "fish",
+    "english": "fish",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "pwason",
+        "youtubeId": "QzRSmiaSspg",
+        "thumbnail": "https://i.ytimg.com/vi/QzRSmiaSspg/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "food",
+    "english": "food",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "manje",
+        "youtubeId": "3QyVnY88yzU",
+        "thumbnail": "https://i.ytimg.com/vi/3QyVnY88yzU/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "fruit",
+    "english": "fruit",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "fwi",
+        "youtubeId": "QbV_ApQliqs",
+        "thumbnail": "https://i.ytimg.com/vi/QbV_ApQliqs/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "goat",
+    "english": "goat",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "kabrit",
+        "youtubeId": "y3RAC5REqo0",
+        "thumbnail": "https://i.ytimg.com/vi/y3RAC5REqo0/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "guava",
+    "english": "guava",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "gwayav",
+        "youtubeId": "tjYqUlYaWBQ",
+        "thumbnail": "https://i.ytimg.com/vi/tjYqUlYaWBQ/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "lunch",
+    "english": "lunch",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "manje midi",
+        "youtubeId": "0MQ0c2sd95M",
+        "thumbnail": "https://i.ytimg.com/vi/0MQ0c2sd95M/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "mango",
+    "english": "mango",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "mango",
+        "youtubeId": "k2gFdWmcrPU",
+        "thumbnail": "https://i.ytimg.com/vi/k2gFdWmcrPU/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "meat",
+    "english": "meat",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "vyann",
+        "youtubeId": "s0h_SX6DXyk",
+        "thumbnail": "https://i.ytimg.com/vi/s0h_SX6DXyk/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "papaya",
+    "english": "papaya",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "papay",
+        "youtubeId": "5YVM0RxLGBw",
+        "thumbnail": "https://i.ytimg.com/vi/5YVM0RxLGBw/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pineapple",
+    "english": "pineapple",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "anana",
+        "youtubeId": "sowcdN7S89w",
+        "thumbnail": "https://i.ytimg.com/vi/sowcdN7S89w/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "plantain",
+    "english": "plantain",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "bannann",
+        "youtubeId": "UvnQQ36ahqs",
+        "thumbnail": "https://i.ytimg.com/vi/UvnQQ36ahqs/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pork",
+    "english": "pork",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "kachon",
+        "youtubeId": "OVmqlc7mvxg",
+        "thumbnail": "https://i.ytimg.com/vi/OVmqlc7mvxg/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "rice",
+    "english": "rice",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "diri",
+        "youtubeId": "2G_nY8Ni7x8",
+        "thumbnail": "https://i.ytimg.com/vi/2G_nY8Ni7x8/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "sweet-potato",
+    "english": "sweet potato",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "patat",
+        "youtubeId": "yUDMISmEAtg",
+        "thumbnail": "https://i.ytimg.com/vi/yUDMISmEAtg/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "taro",
+    "english": "taro",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "malanga",
+        "youtubeId": "-tk6HXWCrzc",
+        "thumbnail": "https://i.ytimg.com/vi/-tk6HXWCrzc/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "vegetable",
+    "english": "vegetable",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "legim",
+        "youtubeId": "OOVEPyo9-Ws",
+        "thumbnail": "https://i.ytimg.com/vi/OOVEPyo9-Ws/maxresdefault.jpg"
+      }
+    ]
+  },
+  {
+    "id": "watermelon",
+    "english": "watermelon",
+    "entries": [
+      {
+        "language": "Haitian Creole",
+        "languageCode": "ht",
+        "word": "melon",
+        "youtubeId": "KwGVEAbiUCU",
+        "thumbnail": "https://i.ytimg.com/vi/KwGVEAbiUCU/maxresdefault.jpg"
+      }
+    ]
   }
+
 ]

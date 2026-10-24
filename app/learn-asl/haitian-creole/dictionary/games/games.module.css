@@ -1,0 +1,59 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  height: 100%;
+  padding: 1.5rem;
+  border: 2px solid #f2a94c;
+  border-radius: 14px;
+  color: #ddd6cb;
+  text-decoration: none;
+  text-align: center;
+}
+
+.card:hover,
+.card:focus-visible {
+  background: rgba(242, 169, 76, 0.12);
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #f2a94c;
+}
+
+.description {
+  margin-top: 0.75rem;
+  color: #ddd6cb;
+}
+
+.fc {
+  --fc-ink: #2b1d14;
+  --fc-text: #ddd6cb;
+  --fc-accent: #f2a94c;
+  --fc-accent-deep: #d98a2b;
+  --fc-surface: #ffffff;
+  --fc-back: #000000;
+  --fc-muted: #ddd6cb;
+
+  font-family: inherit;
+  color: var(--fc-text);
+  width: 100%;
+  max-width: min(1000px, calc((100vh - 12rem) * 16 / 9));
+  margin: 0 auto;
+  padding: 1rem;
+  outline: none;
+}
