@@ -19,6 +19,9 @@ import CitizenshipEN from "public/classflyers/citizenship-en.png";
 import CitizenshipES from "public/classflyers/citizenship-es.png";
 
 import LSCLevel2 from "public/classflyers/lsc2.png";
+import LSCLevel1 from "public/images/LSC1.png";
+import AroundTheWorldLatinAmerica from "public/images/AroundtheWordLatinAmerica.png";
+import MultilingualFamilyClasses from "public/images/multilingual language classes.png";
 
 import VirtualTours from "public/classflyers/virtualtours.png";
 import IEPVerification from "public/classflyers/iep.png";
@@ -105,17 +108,21 @@ export default function StorePage() {
         </div>
 
         <div className={classes.eventBlock}>
-          <h3 id="asl-classes-october">Spanish ASL Classes — October</h3>
+          <h3 id="spanish-asl-classes">
+            Spanish ASL Classes — Starting November 16
+          </h3>
 
           <p>
-            Our next round of ASL classes begins in{" "}
-            <strong>October 2026</strong>. Hands United offers accessible ASL
-            instruction designed for immigrant families, with classes taught
+            Our next round of ASL classes begins on{" "}
+            <strong>November 16, 2026</strong>. Hands United offers accessible
+            ASL instruction designed for immigrant families, with classes taught
             using families' spoken languages.
           </p>
 
           <p>
-            <strong>Next Session:</strong> October 2026
+            <strong>Start Date:</strong> November 16, 2026
+            <br />
+            <strong>Length:</strong> 8 weeks
             <br />
             <strong>Format:</strong> Virtual
             <br />
@@ -123,7 +130,56 @@ export default function StorePage() {
           </p>
 
           <p>
+            <a
+              href="https://www.manosunidasor.org/aprender-asl/clases/registrarse"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Register for Spanish ASL Classes →
+            </a>
+            <br />
             <Link href="/learn-asl">Learn More About ASL Classes →</Link>
+          </p>
+        </div>
+
+        <div className={classes.eventBlock}>
+          <h3 id="multilingual-asl-family-classes">
+            Multilingual ASL Classes for Families — Starting January
+          </h3>
+
+          <p>
+            Free, virtual, monthly ASL classes for families of Deaf and hard of
+            hearing children. Classes are led by Deaf, culturally matched
+            language models and taught in families' spoken languages.
+          </p>
+
+          <div className={classes.imageContainer}>
+            <Image
+              src={MultilingualFamilyClasses}
+              alt="Multilingual ASL classes for families of DHH children: Tigrinya/Amharic, Somali/Arabic, and Haitian Creole, starting in January"
+              className={classes.eventFlyer}
+            />
+          </div>
+
+          <p>
+            <strong>Languages:</strong> Tigrinya/Amharic • Somali/Arabic •
+            Haitian Creole
+            <br />
+            <strong>Start:</strong> January 2027
+            <br />
+            <strong>Frequency:</strong> Monthly
+            <br />
+            <strong>Format:</strong> Virtual
+            <br />
+            <strong>Cost:</strong> FREE
+            <br />
+            <strong><Link href = "https://www.zeffy.com/en-US/donation-form/hands-united-education-and-community-services-fund">Donations accepted</Link> to help pay Deaf instructor and interpreters.</strong>
+          </p>
+
+          <p>
+            Questions? Call or text{" "}
+            <a href="tel:+13605212732">+1-360-521-2732</a> or{" "}
+            <Link href="/contact">contact us</Link> to sign up.
           </p>
         </div>
 
@@ -138,138 +194,6 @@ export default function StorePage() {
           </p>
         </div>
 
-        <div className={classes.eventBlock}>
-          <h3 id="free-technology-workshops">
-            Free Technology Workshops | Talleres Tecnológicos Gratuitos
-          </h3>
-
-          <p>
-            Hands United / Manos Unidas is offering a series of{" "}
-            <strong>free virtual technology workshops</strong> designed to build
-            confidence using everyday technology.
-          </p>
-
-          <p>
-            Workshops are trilingual and accessible in{" "}
-            <strong>ASL, English, and Spanish</strong>. Each workshop is 1.5
-            hours and will be held virtually on Zoom.
-          </p>
-
-          <div className={classes.imageContainer}>
-            <Image
-              src={TechWorkshopsEN}
-              alt="Free Technology Workshops schedule in English"
-              className={classes.eventFlyer}
-            />
-          </div>
-
-          <h4>Workshop Schedule</h4>
-
-          <p>
-            <strong>September 30:</strong> Video Conference Basics
-            <br />
-            <strong>October 1:</strong> Internet Basics
-            <br />
-            <strong>October 2:</strong> Cybersecurity Basics
-            <br />
-            <strong>October 5:</strong> Mobile Device — iOS Basics
-            <br />
-            <strong>October 6:</strong> QR Code Basics
-            <br />
-            <strong>October 7:</strong> Computer Basics — macOS
-            <br />
-            <strong>October 8:</strong> Computer Basics — Windows
-            <br />
-            <strong>October 10:</strong> Digital Citizenship
-          </p>
-
-          <p>
-            <strong>Format:</strong> Virtual on Zoom
-            <br />
-            <strong>Length:</strong> 1.5 hours each
-            <br />
-            <strong>Cost:</strong> FREE
-            <br />
-            <strong>Languages:</strong> ASL, English &amp; Spanish
-            <br />
-            <strong>Zoom Meeting ID:</strong> 843 6105 4543
-            <br />
-            <strong>Password:</strong> TECH
-          </p>
-
-          <p>
-            Workshop times vary by U.S. region. Please see the map on the flyer
-            for your local time.
-          </p>
-
-          <p>
-            <a
-              href="https://handsunitedor.s.gy/reminders"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Sign Up for Text Reminders →
-            </a>
-          </p>
-
-          <hr />
-
-          <h4>Talleres Tecnológicos Gratuitos</h4>
-
-          <p>
-            Manos Unidas ofrecerá una serie de{" "}
-            <strong>talleres virtuales de tecnología gratuitos</strong> para
-            ayudar a miembros de la comunidad a desarrollar habilidades y
-            sentirse más seguros usando la tecnología cotidiana.
-          </p>
-
-          <p>
-            Los talleres serán trilingües en{" "}
-            <strong>ASL, inglés y español</strong>, tendrán una duración de 1.5
-            horas cada uno y se ofrecerán por Zoom.
-          </p>
-
-          <div className={classes.imageContainer}>
-            <Image
-              src={TechWorkshopsES}
-              alt="Calendario de talleres tecnológicos gratuitos en español"
-              className={classes.eventFlyer}
-            />
-          </div>
-
-          <p>
-            <strong>30 de septiembre:</strong> Conceptos básicos sobre
-            videoconferencias
-            <br />
-            <strong>1 de octubre:</strong> Conceptos básicos de Internet
-            <br />
-            <strong>2 de octubre:</strong> Conceptos básicos de ciberseguridad
-            <br />
-            <strong>5 de octubre:</strong> Conceptos básicos sobre dispositivos
-            móviles con iOS
-            <br />
-            <strong>6 de octubre:</strong> Conceptos básicos sobre los códigos
-            QR
-            <br />
-            <strong>7 de octubre:</strong> Conceptos básicos de computación en
-            macOS
-            <br />
-            <strong>8 de octubre:</strong> Conceptos básicos de computación:
-            Windows
-            <br />
-            <strong>10 de octubre:</strong> Ciudadanía digital
-          </p>
-
-          <p>
-            <a
-              href="https://manosunidasor.s.gy/recordatorios"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Regístrese para recibir recordatorios →
-            </a>
-          </p>
-        </div>
       </section>
 
       <section className={classes.section} id="immigration">
@@ -284,145 +208,68 @@ export default function StorePage() {
           Workshops and trainings to help the Deaf community better understand
           immigration and help the legal community better understand Deaf.
         </p>
-        <div className={classes.eventBlock}>
-          <h3 id="asylum-101">Asylum 101</h3>
+
+                <div className={classes.eventBlock}>
+          <h3 id="deaf-refugees-webinar">
+            Webinar for Deaf Refugees — October 31
+          </h3>
 
           <p>
-            An introductory workshop explaining the U.S. asylum process in
-            accessible, easy-to-understand language.
-          </p>
-
-          <p>
-            This workshop provides a foundational overview of asylum, including
-            the difference between affirmative and defensive asylum, where
-            different parts of the process take place, and what individuals may
-            encounter as their case moves through the immigration system.
+            Hands United is partnering with{" "}
+            <a
+              href="https://www.linkedin.com/company/refugee-congress/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Refugee Congress
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://www.linkedin.com/company/ciraconnectli/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CIRA – Center for Immigrant and Refugee Advancement
+            </a>{" "}
+            to host a webinar designed specifically for Deaf refugees.
           </p>
 
           <p>
             <strong>Topics include:</strong>
             <br />
-            • What asylum is
+            • <strong>Disability Rights:</strong> Understanding your rights and
+            accommodations
             <br />
-            • Affirmative asylum through USCIS
-            <br />
-            • Defensive asylum in Immigration Court
-            <br />
-            • Basic steps in the asylum process
-            <br />
-            • Understanding interviews and court proceedings
-            <br />• Communication and language access considerations for Deaf
-            immigrants
+            • <strong>Naturalization:</strong> Navigating the U.S. citizenship
+            process and disability exceptions
+            <br />• <strong>Civic Engagement:</strong> Learning how to
+            participate and make your voice heard
           </p>
 
           <p>
-            This workshop provides general educational information and does not
-            provide legal advice or individual legal representation.
+            <strong>Date:</strong> Saturday, October 31, 2026
+            <br />
+            <strong>Format:</strong> Virtual webinar
+            <br />
+            <strong>Audience:</strong> Deaf refugees and Deaf community members
+          </p>
+
+          <p>
+            Please share this opportunity with Deaf refugees and your Deaf
+            community networks!
           </p>
 
           <p>
             <a
-              href="https://www.zeffy.com/en-US/ticketing/asylum--101"
+              href="https://lnkd.in/guD88PYW"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Register for Asylum 101 →
+              Register for the Webinar →
             </a>
           </p>
         </div>
-        <div className={classes.eventBlock}>
-          <h3 id="immigration-diagnostic-evaluations-dhh">
-            Immigration Diagnostic Evaluations for DHH Mental Health Providers
-          </h3>
 
-          <p>
-            Hands United is collaborating on a virtual training specifically
-            accessible to Deaf and hard of hearing mental health professionals
-            who want to learn how to conduct diagnostic evaluations for
-            immigration cases.
-          </p>
-
-          <p>
-            Participants will learn how to conduct immigration diagnostic
-            evaluations for USCIS and Immigration Court, prepare professional
-            evaluation reports, understand common immigration case types, work
-            with attorneys, maintain appropriate ethical boundaries, and develop
-            the skills needed to testify as an expert witness.
-          </p>
-
-          <p>
-            Topics include evaluations related to asylum, VAWA, U Visas, T
-            Visas, Extreme Hardship Waivers, and Cancellation of Removal, as
-            well as the use of clinical interviews, collateral information,
-            behavioral observations, assessment tools, and DSM-5-TR diagnostic
-            criteria.
-          </p>
-
-          <p>
-            <strong>Dates:</strong> October, 2026
-            <br />
-            <strong>Location:</strong> Virtual
-            <br />
-            <strong>Language Access:</strong> ASL interpretation provided
-            <br />
-            <strong>CE Hours:</strong> 7.5 CAMFT-approved CE hours
-            <br />
-            <strong>Cost:</strong> $1,000
-            <br />
-            <strong>Payment Option:</strong> Two payments of $500
-          </p>
-
-          <p>
-            Training fees are paid directly to the trainers. Hands United does
-            not receive any proceeds from this training.
-          </p>
-
-          <p>
-            Immigration evaluations are typically private-pay services, with
-            clinicians commonly charging approximately $800–$2,500 per
-            evaluation depending on experience, location, and the type of
-            evaluation.
-          </p>
-
-          {/* <h5>Free Information Session</h5>
-
-          <p>
-            Interested but want to learn more before committing? Join a free
-            virtual information session to learn more about the training and ask
-            questions.
-          </p>
-
-          <p>
-            <strong>Date:</strong> Saturday, August 22
-            <br />
-            <strong>Time:</strong> 4 PM Pacific | 7 PM Eastern
-            <br />
-            <strong>Location:</strong> Zoom
-            <br />
-            <strong>Language Access:</strong> ASL interpretation provided
-            <br />
-            <strong>Meeting ID:</strong> 852 7011 9917
-            <br />
-            <strong>Passcode:</strong> DHH
-          </p>
-
-          <p>
-            <a
-              href="https://us06web.zoom.us/j/85270119917?pwd=lmPRgs1dh9wnIOVcp3hDp2OeHXkwbC.1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Join the Free Information Session →
-            </a>
-          </p> */}
-
-          <p>
-            There is a growing need for mental health professionals who
-            understand the linguistic, cultural, and accessibility needs of DHH
-            immigrants. This training is designed to help expand the number of
-            DHH professionals prepared to provide these important evaluations.
-          </p>
-        </div>{" "}
       </section>
 
       <section className={classes.section} id="professionals">
@@ -440,11 +287,7 @@ export default function StorePage() {
           CEUs.
         </p>
 
-        {/* ===================== */}
-        {/* SPANISH WORKSHOP */}
-        {/* ===================== */}
-
-        <div className={classes.eventBlock}>
+        {/* <div className={classes.eventBlock}>
           <h3 id="hotline-foundations-training">
             Hotline Foundations: Accessible Communication &amp; Navigation with
             Deaf Immigrant Communities
@@ -518,51 +361,101 @@ export default function StorePage() {
               Register for Hotline Foundations →
             </a>
           </p>
-        </div>
+        </div> */}
 
         <div className={classes.eventBlock}>
           <h3 id="around-the-world-latin-america">
-            Around the World: Central &amp; South America
+            Around the World: Latin American Sign Languages — Starting January 9
           </h3>
 
           <p>
-            Our first 8-week Around the World series has wrapped up, and we are
-            now planning the next round! This upcoming series will focus on
-            signed languages and Deaf cultures throughout Central and South
-            America.
+            Learn 8 different sign languages over 8 weeks in this live,
+            Deaf-led class taught in ASL. Each 2-hour session introduces a
+            different signed language, along with the Deaf community and
+            culture of the country where it is used.
           </p>
 
-          <p>
-            The series will provide opportunities to learn directly from Deaf
-            presenters about their countries, signed languages, Deaf
-            communities, cultural norms, and communication practices.
-          </p>
+          <div className={classes.imageContainer}>
+            <Image
+              src={AroundTheWorldLatinAmerica}
+              alt="Around the World: Latin American Sign Languages, starting January 9 at 10 AM Pacific, 1.6 CEUs"
+              className={classes.eventFlyer}
+            />
+          </div>
 
           <p>
-            Before we finalize the schedule, we want to hear from you! Complete
-            our interest survey to tell us which countries and signed languages
-            you are most interested in learning about and help us plan the next
-            Around the World series.
-          </p>
-
-          <p>
-            <strong>Focus:</strong> Central &amp; South America
+            <strong>Start Date:</strong> Saturday, January 9, 2027
+            <br />
+            <strong>Time:</strong> 10 AM Pacific
+            <br />
+            <strong>Length:</strong> 8 weeks / 2-hour classes
             <br />
             <strong>Format:</strong> Virtual
             <br />
-            <strong>Dates:</strong> Coming soon
+            <strong>Language:</strong> Deaf-led, taught in ASL
             <br />
-            <strong>Registration:</strong> Coming soon
+            <strong>CEUs:</strong> 1.6 CEUs
           </p>
 
           <p>
-            <a
-              href="https://handsunitedor.s.gy/latinamerica"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Complete the Around the World Interest Survey →
-            </a>
+            <strong>Cost:</strong>
+            <br />
+            Early bird (through November 30) — <strong>$100</strong> |
+            Members — <strong>$90</strong>
+            <br />
+            After November 30 — <strong>$120</strong> | Members —{" "}
+            <strong>$108</strong>
+          </p>
+
+          <p>
+            {/* TODO: replace with the Around the World registration link */}
+            <Link href="https://www.zeffy.com/en-US/ticketing/around-the-world-latin-america
+">Register here →</Link>
+          </p>
+        </div>
+
+        <div className={classes.eventBlock}>
+          <h3 id="colombian-sign-language">
+            Colombian Sign Language (LSC) Classes — Starting January 19
+          </h3>
+
+          <p>
+            A 10-week Colombian Sign Language class for interpreters and Deaf
+            professionals who are fluent in ASL. Spanish fluency is{" "}
+            <strong>not</strong> required.
+          </p>
+
+          <div className={classes.imageContainer}>
+            <Image
+              src={LSCLevel1}
+              alt="Colombian Sign Language classes starting January 19, taught by Andrés Ricardo Sánchez Morales, $150, 2.0 CEUs"
+              className={classes.eventFlyer}
+            />
+          </div>
+
+          <p>
+            Taught by <strong>Andrés Ricardo Sánchez Morales</strong>, who holds
+            a Master's Degree in Disability and Social and Labor Integration.
+          </p>
+
+          <p>
+            <strong>Start Date:</strong> Tuesday, January 19, 2027
+            <br />
+            <strong>Schedule:</strong> Tuesdays &amp; Thursdays, 6–7 PM Central
+            (4–5 PM Pacific)
+            <br />
+            <strong>Length:</strong> 10 weeks
+            <br />
+            <strong>Format:</strong> Virtual on Zoom
+            <br />
+            <strong>CEUs:</strong> 2.0 CEUs
+            <br />
+            <strong>Cost:</strong> $150
+          </p>
+
+          <p>
+            {/* TODO: replace with the LSC registration link */}
+            <Link href="https://www.zeffy.com/en-US/ticketing/10-week-colombian-sign-language-with-andres--2027">Register here →</Link>
           </p>
         </div>
       </section>

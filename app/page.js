@@ -1,26 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import AroundTheWorld from "public/images/aroundtheworld.png";
+import AroundTheWorldLA from "public/images/AroundtheWordLatinAmerica.png";
 import logo from "./icon.png";
 import classes from "./page.module.css";
-import AidaFormEmbed from "components/aidaform";
 import TPT from "public/images/tpt.png";
 import ICE from "public/images/ICEcomm.png";
 import iphone from "public/images/iphone.png";
 import android from "public/images/android.png";
-import math from "public/classflyers/marchmath.png";
-import StoreFlyer from "public/classflyers/multilingdict.jpg";
-import NHLAD from "public/classflyers/NHLAD.jpg";
 
 import PermitASL from "public/classflyers/permit-asl.png";
-import Asylum101 from "public/images/asylum101.png";
-
-import KYRWeekly from "public/classflyers/kyr-weekly.png";
 import SpanishASL from "public/classflyers/ASLSpanishclass.jpeg";
-import EngKYRMultilingual from "public/classflyers/aslarabic.png";
-import ArabicKYRMultilingual from "public/classflyers/arabicarabic.png";
-
-import Spanish from "public/classflyers/Spanish.png";
 
 export default function Home() {
   return (
@@ -246,7 +236,7 @@ URGENT COMMUNITY SUPPORT
 
               <h3>ASL Classes in Spanish</h3>
 
-              <p>8-week online classes beginning October 19.</p>
+              <p>8-week online classes beginning November 16.</p>
             </Link>
 
             <Link
@@ -261,30 +251,30 @@ URGENT COMMUNITY SUPPORT
 
               <p>8-week online permit classes taught directly in ASL.</p>
             </Link>
-            <a
-              href="/store#asylum-101"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/store#professionals"
               className={classes.featureCard}
             >
               <div className={classes.enrollmentImage}>
-                <Image src={Asylum101} alt="Asylum 101" />
+                <Image
+                  src={AroundTheWorldLA}
+                  alt="Around the World: Latin American Sign Languages live class"
+                />
               </div>
 
-              <h3>Asylum 101</h3>
+              <h3>Around the World: Latin America</h3>
 
               <p>
-                Learn the basics of the U.S. asylum process, including
-                affirmative and defensive asylum, USCIS, Immigration Court, and
-                what to expect throughout the process.
+                Explore the sign languages of Latin America in this live, Deaf-led
+                class for professionals, beginning January 9 with Mexican Sign
+                Language (LSM), followed by Colombian Sign Language (LSC).
               </p>
 
               <p>
-                <strong>
-                  Accessible immigration education for the Deaf community.
-                </strong>
+                <strong>Live • Online • Professional Development</strong>
               </p>
-            </a>
+            </Link>
+
             <Link href="/store/async/ceu" className={classes.featureCard}>
               <div className={classes.enrollmentImage}>
                 <Image
