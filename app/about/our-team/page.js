@@ -86,7 +86,7 @@ export default function Board() {
       </p>
       <p className={classes.section}>
         Bachelors of Science in Electrical Engineering with a focus in Digital
-        Sign Processing and a minor in math
+        Signal Processing and a minor in math
       </p>
       <p className={classes.section}>Certificate in Immigrant Accompaniment</p>
       <p className={classes.section}>
