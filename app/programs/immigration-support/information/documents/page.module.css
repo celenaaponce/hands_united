@@ -1,0 +1,1005 @@
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0 5rem;
+  color: #ddd6cb;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* =========================
+   BREADCRUMBS
+========================= */
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.breadcrumb a {
+  color: #b4e956;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb a:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+
+/* =========================
+   PAGE INTRODUCTION
+========================= */
+
+.intro {
+  max-width: 850px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase;
+
+  background: linear-gradient(90deg, #72b200, #b4e956);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.5;
+  color: #b4e956;
+}
+
+.description {
+  max-width: 750px;
+  margin: 0.75rem auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ddd6cb;
+}
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.selectionSection,
+.documentsSection {
+  margin: 3.5rem auto;
+}
+
+.sectionTitle {
+  margin: 0 0 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  line-height: 1.4;
+  color: #b4e956;
+  text-transform: uppercase;
+}
+
+.sectionDescription {
+  max-width: 850px;
+  margin: 0 0 2rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ddd6cb;
+}
+
+/* =========================
+   AGENCY SELECTION GRID
+========================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+/* =========================
+   AGENCY SELECTION CARDS
+========================= */
+
+.situationCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 275px;
+  padding: 1.75rem 1.25rem;
+
+  background: #111111;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+
+  color: #ddd6cb;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.situationCard:hover {
+  transform: translateY(-4px);
+  border-color: #72b200;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.situationCard:focus-visible,
+.documentCard:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 4px;
+}
+
+.selectedCard {
+  border-color: #b4e956;
+  background: #1e291b;
+  box-shadow: 0 0 0 1px rgba(180, 233, 86, 0.25);
+}
+
+.iconBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+
+  background: rgba(114, 178, 0, 0.13);
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+.cardTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.cardDescription {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.cardAction {
+  display: block;
+  margin-top: auto;
+  color: #b4e956;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* =========================
+   DOCUMENT SELECTION GRID
+========================= */
+
+.documentGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* =========================
+   DOCUMENT CARDS
+========================= */
+
+.documentCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 275px;
+  padding: 1.75rem 1.5rem;
+
+  background: #111111;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+
+  color: #ddd6cb;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.documentCard:hover {
+  transform: translateY(-4px);
+  border-color: #72b200;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.selectedDocument {
+  border-color: #b4e956;
+  background: #1e291b;
+  box-shadow: 0 0 0 1px rgba(180, 233, 86, 0.25);
+}
+
+.documentIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+
+  background: rgba(114, 178, 0, 0.13);
+  font-size: 2.8rem;
+}
+
+.documentTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.documentForm {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  border-radius: 20px;
+
+  background: rgba(180, 233, 86, 0.12);
+  color: #b4e956;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.documentSummary {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+/* =========================
+   DOCUMENT DETAILS PANEL
+========================= */
+
+.detailsSection {
+  margin: 3rem auto 4rem;
+  padding: 2.5rem;
+
+  background: #111111;
+  border: 2px solid #72b200;
+  border-radius: 16px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.2s ease;
+}
+
+.detailsTitle {
+  margin: 0 0 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 700;
+  line-height: 1.4;
+  color: #b4e956;
+}
+
+.detailsTitle:focus {
+  outline: none;
+}
+
+.formLabel {
+  display: inline-block;
+  margin: 0 0 1.5rem;
+  padding: 0.4rem 0.9rem;
+
+  background: rgba(180, 233, 86, 0.12);
+  border: 1px solid rgba(180, 233, 86, 0.25);
+  border-radius: 20px;
+
+  color: #b4e956;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.detailsIntroduction {
+  margin: 0 0 2rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ddd6cb;
+}
+
+.subheading {
+  margin: 2rem 0 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #b4e956;
+}
+
+/* =========================
+   IDENTIFICATION CARDS
+========================= */
+
+.identificationGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.identificationCard {
+  padding: 1.5rem;
+  background: #282c34;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+}
+
+.identificationCard h3 {
+  margin: 0 0 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: #b4e956;
+}
+
+.identificationCard p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #ddd6cb;
+}
+
+/* =========================
+   LISTS
+========================= */
+
+.stepsList,
+.checkList {
+  margin: 0 0 2rem;
+  padding-left: 1.75rem;
+}
+
+.stepsList li,
+.checkList li {
+  margin-bottom: 0.85rem;
+  padding-left: 0.4rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #ddd6cb;
+}
+
+.stepsList li::marker,
+.checkList li::marker {
+  color: #b4e956;
+  font-weight: 700;
+}
+
+/* =========================
+   IMPORTANT WARNINGS
+========================= */
+
+.warning {
+  margin: 2rem 0;
+  padding: 1.5rem;
+
+  background: rgba(255, 193, 7, 0.07);
+  border-left: 4px solid #ffc107;
+  border-radius: 6px;
+}
+
+.warning strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ffd65c;
+  font-size: 1.1rem;
+}
+
+.warning p {
+  margin: 0;
+  color: #e8e0cc;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* =========================
+   RESOURCE LINKS
+========================= */
+
+.linksList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.resourceLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  min-height: 55px;
+  padding: 1rem 1.25rem;
+
+  background: #282c34;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+
+  color: #b4e956;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.resourceLink:hover {
+  background: #293322;
+  border-color: #72b200;
+  text-decoration: underline;
+}
+
+.resourceLink:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 3px;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1.5rem;
+  padding: 0.85rem 1.5rem;
+
+  background: transparent;
+  border: 1px solid #72b200;
+  border-radius: 8px;
+
+  color: #b4e956;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  background: rgba(114, 178, 0, 0.12);
+}
+
+.backButton:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 3px;
+}
+
+/* =========================
+   SAMPLE DOCUMENT SECTION
+========================= */
+
+.sampleSection {
+  margin: 4rem auto;
+  padding: 2.5rem;
+
+  background: linear-gradient(
+    135deg,
+    #111111 0%,
+    #202b1c 100%
+  );
+
+  border: 2px solid #72b200;
+  border-radius: 16px;
+}
+
+.sampleSection h2 {
+  margin: 0 0 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.4;
+  color: #b4e956;
+}
+
+.sampleSection p {
+  max-width: 850px;
+  margin: 0 0 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ddd6cb;
+}
+
+/* =========================
+   COMMUNICATION ACCESS
+========================= */
+
+.accessSection {
+  margin: 3rem auto;
+  padding: 2.5rem;
+
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+}
+
+.accessSection h2 {
+  margin: 0 0 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  line-height: 1.4;
+  color: #b4e956;
+}
+
+.accessSection p {
+  margin: 0.75rem 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #ddd6cb;
+}
+
+.accessLink {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #b4e956;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.accessLink:hover {
+  text-decoration: underline;
+}
+
+.accessLink:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 4px;
+}
+
+/* =========================
+   LEGAL HELP SECTION
+========================= */
+
+.helpSection {
+  margin: 4rem auto 3rem;
+  padding: 3rem 2rem;
+
+  background: #111111;
+  border: 1px solid #72b200;
+  border-radius: 16px;
+
+  text-align: center;
+}
+
+.helpSection h2 {
+  margin: 0 0 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #b4e956;
+}
+
+.helpSection p {
+  max-width: 750px;
+  margin: 0.75rem auto 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #ddd6cb;
+}
+
+.helpActions {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.helpActions .resourceLink {
+  flex: 1 1 260px;
+  max-width: 380px;
+}
+
+.helpButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1 1 260px;
+  max-width: 380px;
+  min-height: 55px;
+  padding: 0.9rem 1.5rem;
+
+  background: linear-gradient(90deg, #72b200, #b4e956);
+  border-radius: 8px;
+
+  color: #1b1b1b;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.helpButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(114, 178, 0, 0.3);
+}
+
+.helpButton:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 4px;
+}
+
+/* =========================
+   RETURN TO START
+========================= */
+
+.returnLink {
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.returnLink a {
+  color: #b4e956;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.returnLink a:hover {
+  text-decoration: underline;
+}
+
+.returnLink a:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 4px;
+}
+
+/* =========================
+   DISCLAIMER
+========================= */
+
+.disclaimer {
+  max-width: 950px;
+  margin: 3rem auto 0;
+  padding: 1.5rem 2rem;
+
+  background: rgba(255, 255, 255, 0.035);
+  border-left: 4px solid #72b200;
+  border-radius: 6px;
+}
+
+.disclaimer p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #c9c9c9;
+}
+
+.disclaimer strong {
+  color: #b4e956;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+  .container {
+    width: 92%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .documentGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .container {
+    width: 92%;
+    padding: 1rem 0 3rem;
+  }
+
+  .breadcrumb {
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .intro {
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .description,
+  .sectionDescription {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .selectionSection,
+  .documentsSection {
+    margin: 2.5rem auto;
+  }
+
+  .sectionTitle {
+    font-size: 1.4rem;
+  }
+
+  .grid,
+  .documentGrid,
+  .identificationGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .situationCard,
+  .documentCard {
+    min-height: auto;
+    padding: 1.5rem;
+  }
+
+  .iconBlock {
+    width: 75px;
+    height: 75px;
+    font-size: 2.7rem;
+  }
+
+  .documentIcon {
+    width: 65px;
+    height: 65px;
+    font-size: 2.4rem;
+  }
+
+  .cardTitle,
+  .documentTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardDescription,
+  .documentSummary {
+    font-size: 0.9rem;
+  }
+
+  .detailsSection {
+    padding: 1.5rem;
+    margin: 2.5rem auto 3rem;
+  }
+
+  .detailsTitle {
+    font-size: 1.4rem;
+  }
+
+  .detailsIntroduction {
+    font-size: 0.95rem;
+  }
+
+  .subheading {
+    font-size: 1.15rem;
+  }
+
+  .stepsList li,
+  .checkList li {
+    font-size: 0.95rem;
+  }
+
+  .identificationCard {
+    padding: 1.25rem;
+  }
+
+  .warning {
+    padding: 1.25rem;
+  }
+
+  .warning p {
+    font-size: 0.95rem;
+  }
+
+  .resourceLink {
+    font-size: 0.9rem;
+  }
+
+  .sampleSection {
+    padding: 1.5rem;
+    margin: 3rem auto;
+  }
+
+  .sampleSection h2 {
+    font-size: 1.4rem;
+  }
+
+  .sampleSection p {
+    font-size: 0.95rem;
+  }
+
+  .accessSection {
+    padding: 1.5rem;
+  }
+
+  .accessSection p {
+    font-size: 0.95rem;
+  }
+
+  .helpSection {
+    padding: 2rem 1.25rem;
+  }
+
+  .helpSection p {
+    font-size: 0.95rem;
+  }
+
+  .helpActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .helpActions .resourceLink,
+  .helpButton {
+    flex: initial;
+    max-width: none;
+    width: 100%;
+  }
+
+  .disclaimer {
+    padding: 1.25rem;
+  }
+
+  .disclaimer p {
+    font-size: 0.85rem;
+  }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .situationCard,
+  .documentCard,
+  .resourceLink,
+  .helpButton {
+    transition: none;
+  }
+
+  .situationCard:hover,
+  .documentCard:hover,
+  .helpButton:hover {
+    transform: none;
+  }
+
+  .detailsSection {
+    animation: none;
+  }
+}
+
+/* Agency logos and identification illustrations */
+
+.agencyImageBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 160px;
+  height: 160px;
+  max-width: 100%;
+
+  margin: 0 auto 0.75rem;
+  padding: 12px;
+
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.agencyImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.situationCard {
+  min-height: 340px;
+}
+
+@media (max-width: 768px) {
+  .agencyImageBlock {
+    width: 140px;
+    height: 140px;
+  }
+
+  .situationCard {
+    min-height: auto;
+  }
+}
+
+
+.documentImageWrapper {
+  width: 100%;
+  max-width: 650px;
+  margin: 2rem auto;
+}
+
+.documentImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #555;
+}

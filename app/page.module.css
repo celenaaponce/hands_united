@@ -267,3 +267,60 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================
+   FEATURE ICONS
+========================= */
+
+.featureIcon {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 1.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(128, 185, 25, 0.12);
+  border-radius: 18px;
+  color: #a4d94c;
+}
+
+.featureIcon svg {
+  width: 52px;
+  height: 52px;
+  stroke-width: 1.8;
+  flex-shrink: 0;
+}
+
+/* =========================
+   PROGRAM BUTTON ICONS
+========================= */
+
+.programIcon {
+  width: 30px;
+  height: 30px;
+  stroke-width: 2;
+  flex-shrink: 0;
+}
+
+/* =========================
+   MOBILE ICONS
+========================= */
+
+@media (max-width: 768px) {
+  .featureIcon {
+    width: 68px;
+    height: 68px;
+  }
+
+  .featureIcon svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .programIcon {
+    width: 28px;
+    height: 28px;
+  }
+}

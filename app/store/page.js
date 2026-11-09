@@ -3,9 +3,21 @@ import Link from "next/link";
 import classes from "./page.module.css";
 import PermitMap from "public/driveredmap.png";
 import ZoomHosting from "public/classflyers/zoomhandle.png";
+import {
+  CalendarDays,
+  Headset,
+  Scale,
+  Languages,
+  UsersRound,
+  GraduationCap,
+  ArrowRight,
+} from "lucide-react";
 import TechWorkshopsEN from "public/images/technology-workshops-en.png";
 import TechWorkshopsES from "public/images/technology-workshops-es.png";
-import HotlineWorkshop from "public/images/hotlineworkshop.png";
+import HotlineWorkshop from "public/classflyers/hotline.jpg";
+import Asylum101 from "public/classflyers/asylum101.png";
+import SpanishClasses from "public/classflyers/clases.jpg";
+
 import ZeffyEmbed from "components/zeffyembed/zeffy-embed";
 import immigration101Flyer from "public/classflyers/immigration101.jpeg";
 import immigration101FlyerHearing from "public/classflyers/imm101hearing.jpg";
@@ -21,7 +33,7 @@ import CitizenshipES from "public/classflyers/citizenship-es.png";
 import LSCLevel2 from "public/classflyers/lsc2.png";
 import LSCLevel1 from "public/images/LSC1.png";
 import AroundTheWorldLatinAmerica from "public/images/AroundtheWordLatinAmerica.png";
-import MultilingualFamilyClasses from "public/images/multilingual language classes.png";
+import MultilingualFamilyClasses from "public/classflyers/multilingual.jpg";
 
 import VirtualTours from "public/classflyers/virtualtours.png";
 import IEPVerification from "public/classflyers/iep.png";
@@ -111,7 +123,13 @@ export default function StorePage() {
           <h3 id="spanish-asl-classes">
             Spanish ASL Classes — Starting November 16
           </h3>
-
+         <div className={classes.imageContainer}>
+            <Image
+              src={SpanishClasses}
+              alt="Flyer for Spanish classes"
+              className={classes.eventFlyer}
+            />
+          </div>
           <p>
             Our next round of ASL classes begins on{" "}
             <strong>November 16, 2026</strong>. Hands United offers accessible
@@ -173,7 +191,12 @@ export default function StorePage() {
             <br />
             <strong>Cost:</strong> FREE
             <br />
-            <strong><Link href = "https://www.zeffy.com/en-US/donation-form/hands-united-education-and-community-services-fund">Donations accepted</Link> to help pay Deaf instructor and interpreters.</strong>
+            <strong>
+              <Link href="https://www.zeffy.com/en-US/donation-form/hands-united-education-and-community-services-fund">
+                Donations accepted
+              </Link>{" "}
+              to help pay Deaf instructor and interpreters.
+            </strong>
           </p>
 
           <p>
@@ -184,16 +207,60 @@ export default function StorePage() {
         </div>
 
         <div className={classes.eventBlock}>
-          <h3 id="citizenship-classes">Deaf Citizenship Classes — TBD</h3>
+          <h3 id="citizenship-classes">
+            Deaf Citizenship Classes — Starting January 13
+          </h3>
 
           <p>
-            A 10-week online citizenship preparation course taught in American
-            Sign Language. Participants will study U.S. civics, practice the
-            naturalization interview, and prepare for the citizenship exam.{" "}
-            <Link href="/contact">Contact us</Link> to express interest.
+            Prepare for the U.S. citizenship test with our accessible, 10-week
+            online course taught directly in American Sign Language (ASL).
+            Students will learn U.S. civics, practice citizenship interview
+            questions, and build confidence preparing for the naturalization
+            process.
+          </p>
+
+          <div className={classes.imageContainer}>
+            <Image
+              src={CitizenshipEN}
+              alt="Deaf Citizenship Classes starting January 13, 2027"
+              className={classes.eventFlyer}
+            />
+          </div>
+
+          <p>
+            <strong>Start Date:</strong> Wednesday, January 13, 2027
+            <br />
+            <strong>Schedule:</strong> Wednesdays, 1 hour per week
+            <br />
+            <strong>Length:</strong> 10 weeks
+            <br />
+            <strong>Format:</strong> Online via Zoom
+            <br />
+            <strong>Language:</strong> ASL
+            <br />
+            <strong>Cost:</strong> $50
+          </p>
+
+          {/* <p>
+            <strong>Class Times:</strong>
+            <br />
+            6 PM Pacific
+            <br />
+            7 PM Mountain
+            <br />
+            8 PM Central
+            <br />
+            9 PM Eastern
+            <br />
+            10 PM Puerto Rico
+          </p> */}
+
+          <p>
+            <Link href="https://handsunited.aidaform.com/citizenship-registration-asl-2026">
+              Register here →
+            </Link>
           </p>
         </div>
-
       </section>
 
       <section className={classes.section} id="immigration">
@@ -209,67 +276,40 @@ export default function StorePage() {
           immigration and help the legal community better understand Deaf.
         </p>
 
-                <div className={classes.eventBlock}>
-          <h3 id="deaf-refugees-webinar">
-            Webinar for Deaf Refugees — October 31
-          </h3>
-
+        <div className={classes.eventBlock}>
+          <h3 id="asylum-101">Asylum 101 — December 19</h3>
+          <div className={classes.imageContainer}>
+            <Image
+              src={Asylum101}
+              alt="Asylum101 flyer"
+              className={classes.eventFlyer}
+            />
+          </div>
           <p>
-            Hands United is partnering with{" "}
-            <a
-              href="https://www.linkedin.com/company/refugee-congress/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Refugee Congress
-            </a>{" "}
-            and{" "}
-            <a
-              href="https://www.linkedin.com/company/ciraconnectli/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              CIRA – Center for Immigrant and Refugee Advancement
-            </a>{" "}
-            to host a webinar designed specifically for Deaf refugees.
+            Understand the fundamentals of asylum in the United States,
+            including who may qualify, how the process works, and the challenges
+            Deaf immigrants may face when seeking protection.
           </p>
 
           <p>
-            <strong>Topics include:</strong>
-            <br />
-            • <strong>Disability Rights:</strong> Understanding your rights and
-            accommodations
-            <br />
-            • <strong>Naturalization:</strong> Navigating the U.S. citizenship
-            process and disability exceptions
-            <br />• <strong>Civic Engagement:</strong> Learning how to
-            participate and make your voice heard
+            This introductory workshop explores important asylum terminology,
+            the application and immigration court processes, and the role of
+            effective communication access in immigration proceedings.
           </p>
 
           <p>
-            <strong>Date:</strong> Saturday, October 31, 2026
+            <strong>Date:</strong> Saturday, December 19, 2026
             <br />
-            <strong>Format:</strong> Virtual webinar
+            <strong>Format:</strong> Virtual
             <br />
-            <strong>Audience:</strong> Deaf refugees and Deaf community members
+            <strong>Focus:</strong> U.S. asylum system and accessibility for
+            Deaf immigrants
           </p>
 
           <p>
-            Please share this opportunity with Deaf refugees and your Deaf
-            community networks!
-          </p>
-
-          <p>
-            <a
-              href="https://lnkd.in/guD88PYW"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Register for the Webinar →
-            </a>
+            <Link href="https://www.zeffy.com/en-US/ticketing/asylum--101">Register here →</Link>
           </p>
         </div>
-
       </section>
 
       <section className={classes.section} id="professionals">
@@ -287,7 +327,7 @@ export default function StorePage() {
           CEUs.
         </p>
 
-        {/* <div className={classes.eventBlock}>
+        <div className={classes.eventBlock}>
           <h3 id="hotline-foundations-training">
             Hotline Foundations: Accessible Communication &amp; Navigation with
             Deaf Immigrant Communities
@@ -308,7 +348,7 @@ export default function StorePage() {
           <div className={classes.imageContainer}>
             <Image
               src={HotlineWorkshop}
-              alt="Hotline Foundations training October 19, 21 and 23"
+              alt="Hotline Foundations training November 30, December 1, and December 4"
               className={classes.eventFlyer}
             />
           </div>
@@ -321,7 +361,7 @@ export default function StorePage() {
           </p>
 
           <p>
-            <strong>Dates:</strong> October 19, 21 &amp; 23, 2026
+            <strong>Dates:</strong> November 30, December 1 &amp; 4, 2026
             <br />
             <strong>Time:</strong> 4–6 PM Pacific
             <br />
@@ -361,7 +401,7 @@ export default function StorePage() {
               Register for Hotline Foundations →
             </a>
           </p>
-        </div> */}
+        </div>
 
         <div className={classes.eventBlock}>
           <h3 id="around-the-world-latin-america">
@@ -369,10 +409,10 @@ export default function StorePage() {
           </h3>
 
           <p>
-            Learn 8 different sign languages over 8 weeks in this live,
-            Deaf-led class taught in ASL. Each 2-hour session introduces a
-            different signed language, along with the Deaf community and
-            culture of the country where it is used.
+            Learn 8 different sign languages over 8 weeks in this live, Deaf-led
+            class taught in ASL. Each 2-hour session introduces a different
+            signed language, along with the Deaf community and culture of the
+            country where it is used.
           </p>
 
           <div className={classes.imageContainer}>
@@ -400,8 +440,8 @@ export default function StorePage() {
           <p>
             <strong>Cost:</strong>
             <br />
-            Early bird (through November 30) — <strong>$100</strong> |
-            Members — <strong>$90</strong>
+            Early bird (through November 30) — <strong>$100</strong> | Members —{" "}
+            <strong>$90</strong>
             <br />
             After November 30 — <strong>$120</strong> | Members —{" "}
             <strong>$108</strong>
@@ -409,8 +449,12 @@ export default function StorePage() {
 
           <p>
             {/* TODO: replace with the Around the World registration link */}
-            <Link href="https://www.zeffy.com/en-US/ticketing/around-the-world-latin-america
-">Register here →</Link>
+            <Link
+              href="https://www.zeffy.com/en-US/ticketing/around-the-world-latin-america
+"
+            >
+              Register here →
+            </Link>
           </p>
         </div>
 
@@ -455,7 +499,9 @@ export default function StorePage() {
 
           <p>
             {/* TODO: replace with the LSC registration link */}
-            <Link href="https://www.zeffy.com/en-US/ticketing/10-week-colombian-sign-language-with-andres--2027">Register here →</Link>
+            <Link href="https://www.zeffy.com/en-US/ticketing/10-week-colombian-sign-language-with-andres--2027">
+              Register here →
+            </Link>
           </p>
         </div>
       </section>

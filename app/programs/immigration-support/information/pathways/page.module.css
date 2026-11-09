@@ -1,0 +1,746 @@
+
+/* =========================================
+   IMMIGRATION PATHWAYS
+   Hands United / Manos Unidas
+========================================= */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+  color: #f5f5f5;
+  font-family: "Quicksand", sans-serif;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+.container a {
+  color: #b4e956;
+}
+
+/* Prevent global SVG rules from enlarging icons */
+.container svg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+/* =========================================
+   BREADCRUMBS
+========================================= */
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2.5rem;
+  color: #ccc;
+  font-size: 0.92rem;
+}
+
+.breadcrumb a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.header {
+  max-width: 850px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0 0 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #72b200, #b4e956);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.header p {
+  margin: 0.65rem 0;
+  color: #e0e0e0;
+  line-height: 1.75;
+}
+
+.header .lead {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+/* =========================================
+   ASL VIDEO PLACEHOLDER
+========================================= */
+
+.videoPlaceholder {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 850px;
+  margin: 0 auto 2.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px dashed #688547;
+  border-radius: 12px;
+  background: #171f16;
+}
+
+.videoPlaceholder svg {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  max-width: 28px;
+  max-height: 28px;
+  color: #b4e956;
+}
+
+.videoPlaceholder strong {
+  color: #b4e956;
+}
+
+.videoPlaceholder p {
+  margin: 0.3rem 0 0;
+  color: #ddd;
+  font-size: 0.92rem;
+}
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.introSection {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 960px;
+  margin: 0 auto 3.5rem;
+  padding: 1.5rem;
+  border: 1px solid #55733d;
+  border-radius: 14px;
+  background: #171f16;
+}
+
+.introIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 65px;
+  width: 65px;
+  height: 65px;
+  border-radius: 14px;
+  background: #26371c;
+}
+
+.introIcon svg {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  min-height: 34px;
+  max-width: 34px;
+  max-height: 34px;
+  color: #b4e956;
+}
+
+.introSection h2 {
+  margin: 0 0 0.5rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+}
+
+.introSection p {
+  margin: 0;
+  color: #e7e7e7;
+  line-height: 1.75;
+}
+
+/* =========================================
+   PATHWAY SECTION
+========================================= */
+
+.pathwaysSection {
+  margin: 3rem 0;
+}
+
+.sectionHeading {
+  margin: 0 0 1.75rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.pathwayGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* =========================================
+   LARGE PATHWAY CARDS
+========================================= */
+
+.pathwayCard {
+  display: grid;
+  grid-template-columns: minmax(250px, 34%) minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid #454b52;
+  border-radius: 18px;
+  background: #111;
+}
+
+.pathwayImage {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  min-width: 0;
+  background: #fff;
+}
+
+.picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 290px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.pictureImage {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  max-height: 340px;
+  object-fit: contain;
+}
+
+.pathwayContent {
+  min-width: 0;
+  padding: 2rem;
+}
+
+.pathwayHeading {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.numberBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 46px;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: #8cc63f;
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.pathwayHeading h2 {
+  margin: 0;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+  line-height: 1.3;
+}
+
+.pathwayQuestion {
+  margin: 0 0 0.75rem;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.pathwayShort {
+  margin: 0 0 1rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+}
+
+/* =========================================
+   EXPANDABLE INFORMATION
+========================================= */
+
+.expandable {
+  margin-top: 1rem;
+  border-top: 1px solid #454b52;
+}
+
+.expandButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  min-height: 50px;
+  padding: 0.9rem 0;
+  border: none;
+  background: transparent;
+  color: #b4e956;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  text-align: left;
+  cursor: pointer;
+}
+
+.expandButton:hover {
+  color: #d2ff92;
+}
+
+.expandContent {
+  padding: 0.5rem 0 1.25rem;
+  color: #e7e7e7;
+  line-height: 1.8;
+}
+
+.expandContent p {
+  margin: 0.6rem 0;
+}
+
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.detailItem {
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid #353535;
+}
+
+.detailItem:last-child {
+  border-bottom: none;
+}
+
+.detailItem h3 {
+  margin: 0 0 0.5rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.05rem;
+}
+
+.detailItem p {
+  margin: 0;
+  color: #dedede;
+  line-height: 1.8;
+}
+
+/* =========================================
+   OFFICIAL RESOURCE LINKS
+========================================= */
+
+.officialResources {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid #55733d;
+  border-radius: 12px;
+  background: #171f16;
+}
+
+.officialResources h3,
+.dictionaryLinks h3 {
+  margin: 0 0 0.85rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.resourceLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  color: #b4e956;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.resourceLink + .resourceLink {
+  border-top: 1px solid #394a32;
+}
+
+.resourceLink:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   DICTIONARY LINKS
+========================================= */
+
+.dictionaryLinks {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid #454b52;
+  border-radius: 12px;
+  background: #171717;
+}
+
+.dictionaryLinks a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.dictionaryLinks a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   LEGAL REMINDER
+========================================= */
+
+.legalReminder {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border-left: 4px solid #8cc63f;
+  border-radius: 0 10px 10px 0;
+  background: #26371c;
+}
+
+.legalReminder svg {
+  color: #b4e956;
+  margin-top: 0.15rem;
+}
+
+.legalReminder p {
+  margin: 0;
+  line-height: 1.75;
+}
+
+/* =========================================
+   IMPORTANT INFORMATION
+========================================= */
+
+.importantSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin: 3rem 0;
+  padding: 2rem;
+  border: 1px solid #a66a35;
+  border-radius: 16px;
+  background: #251c14;
+}
+
+.importantSection > svg {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  min-height: 34px;
+  max-width: 34px;
+  max-height: 34px;
+  color: #ffd38a;
+}
+
+.importantSection h2 {
+  margin: 0 0 0.75rem;
+  color: #ffd38a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+}
+
+.importantSection p {
+  margin: 0.65rem 0;
+  line-height: 1.8;
+}
+
+/* =========================================
+   FIND LEGAL HELP
+========================================= */
+
+.helpSection {
+  margin: 3rem 0;
+  padding: 2rem;
+  border: 1px solid #55733d;
+  border-radius: 16px;
+  background: #171f16;
+}
+
+.helpHeading {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.helpHeading > svg {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  min-height: 34px;
+  max-width: 34px;
+  max-height: 34px;
+  color: #b4e956;
+}
+
+.helpHeading h2 {
+  margin: 0 0 0.75rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.45rem;
+}
+
+.helpHeading p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+.helpActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  min-height: 50px;
+  padding: 0.85rem 1.4rem;
+  border-radius: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 800;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.primaryButton {
+  background: #8cc63f;
+  color: #111 !important;
+}
+
+.primaryButton:hover {
+  background: #b4e956;
+}
+
+.secondaryButton {
+  border: 1px solid #8cc63f;
+  background: #26371c;
+  color: #b4e956 !important;
+}
+
+.secondaryButton:hover {
+  background: #354c27;
+}
+
+/* =========================================
+   CONTINUE LEARNING
+========================================= */
+
+.nextSteps {
+  margin-top: 3.5rem;
+}
+
+.nextSteps h2 {
+  margin-bottom: 1.25rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+
+.nextLinks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.nextLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  min-height: 85px;
+  padding: 1rem;
+  border: 1px solid #454b52;
+  border-radius: 12px;
+  background: #111;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nextLinks a:hover {
+  border-color: #8cc63f;
+  background: #1b2718;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #555;
+  color: #d0d0d0;
+  font-size: 0.93rem;
+  line-height: 1.8;
+}
+
+.footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+.container a:focus-visible,
+.container button:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 3px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .pathwayCard {
+    grid-template-columns: minmax(200px, 38%) minmax(0, 1fr);
+  }
+
+  .nextLinks {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+  .container {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .pathwayCard {
+    grid-template-columns: 1fr;
+  }
+
+  .pathwayImage .picture {
+    min-height: 230px;
+  }
+
+  .pictureImage {
+    max-height: 250px;
+  }
+
+  .pathwayContent {
+    padding: 1.5rem;
+  }
+
+  .introSection,
+  .importantSection,
+  .helpHeading {
+    align-items: flex-start;
+  }
+
+  .importantSection,
+  .helpSection {
+    padding: 1.4rem;
+  }
+
+  .helpActions {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 480px) {
+  .introSection,
+  .importantSection,
+  .helpHeading {
+    flex-direction: column;
+  }
+
+  .pathwayHeading {
+    align-items: flex-start;
+  }
+
+  .numberBadge {
+    flex-basis: 42px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .pathwayContent {
+    padding: 1.2rem;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryButton,
+  .secondaryButton {
+    transition: none;
+  }
+}

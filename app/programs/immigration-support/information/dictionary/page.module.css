@@ -1,0 +1,362 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+  color: #f5f5f5;
+  font-family: "Quicksand", sans-serif;
+}
+.container * {
+  box-sizing: border-box;
+}
+.container a {
+  color: #b4e956;
+}
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  color: #ccc;
+  font-size: 0.92rem;
+}
+.breadcrumb a {
+  text-decoration: none;
+  font-weight: 700;
+}
+.breadcrumb a:hover,
+.footer a:hover,
+.help a:hover {
+  text-decoration: underline;
+}
+.header {
+  text-align: center;
+  max-width: 880px;
+  margin: 0 auto 2.5rem;
+}
+.header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #72b200, #b4e956);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0 0 1.25rem;
+}
+.header p {
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+.header .lead {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+.tools {
+  padding: 1.5rem;
+  border: 1px solid #485447;
+  border-radius: 16px;
+  background: #171f16;
+  margin-bottom: 2rem;
+}
+.tools label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.search {
+  display: block;
+  width: 100%;
+  min-height: 52px;
+  padding: 0.9rem 1rem;
+  border: 2px solid #697366;
+  border-radius: 10px;
+  background: #fff;
+  color: #111;
+  font: inherit;
+  font-size: 1rem;
+}
+.search:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 3px;
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.25rem 0;
+}
+.filter {
+  min-height: 44px;
+  padding: 0.55rem 1rem;
+  border: 1px solid #8cc63f;
+  border-radius: 100px;
+  background: #111;
+  color: #e9f8db;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.filter:hover {
+  background: #26371c;
+}
+.activeFilter {
+  background: #8cc63f;
+  color: #111;
+}
+.activeFilter:hover {
+  background: #b4e956;
+}
+.count {
+  margin: 0.5rem 0 0;
+  color: #d6d6d6;
+}
+.results {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 1rem;
+}
+.card {
+  background: #111;
+  border: 1px solid #454b52;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.card:has(.cardButton:hover) {
+  border-color: #8cc63f;
+}
+.cardButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  padding: 1.4rem;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+.cardHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  min-width: 0;
+}
+.cardHeading strong {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.12rem;
+  line-height: 1.4;
+}
+.spanish {
+  color: #e1e1e1;
+  line-height: 1.5;
+}
+.category {
+  align-self: flex-start;
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  background: #26371c;
+  color: #b4e956;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.expand {
+  color: #b4e956;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.details {
+  padding: 0 1.4rem 1.4rem;
+  border-top: 1px solid #454b52;
+}
+.details h3 {
+  margin: 1.2rem 0 0.4rem;
+  color: #b4e956;
+  font-size: 1rem;
+}
+.details p {
+  margin: 0.25rem 0;
+  line-height: 1.75;
+  color: #e7e7e7;
+}
+.illustration {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.25rem auto;
+  border-radius: 10px;
+}
+.videoLink {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+.empty {
+  grid-column: 1/-1;
+  padding: 2rem;
+  text-align: center;
+  background: #111;
+  border-radius: 14px;
+}
+.empty button {
+  padding: 0.8rem 1rem;
+  background: #8cc63f;
+  color: #111;
+  border: 0;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.help {
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid #485447;
+  background: #171f16;
+}
+.help h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #b4e956;
+}
+.help p {
+  line-height: 1.8;
+}
+.legalLink {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  margin-top: 0.7rem;
+  border-radius: 10px;
+  background: #8cc63f;
+  color: #111 !important;
+  font-weight: 700;
+  text-decoration: none;
+}
+.legalLink:hover {
+  background: #b4e956;
+}
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #555;
+  color: #d0d0d0;
+  line-height: 1.8;
+  font-size: 0.93rem;
+}
+.footer a {
+  font-weight: 700;
+}
+.container button:focus-visible,
+.container a:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 3px;
+}
+@media (max-width: 750px) {
+  .results {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    padding: 1.5rem 1rem 3rem;
+  }
+  .tools,
+  .help {
+    padding: 1.25rem;
+  }
+  .cardButton {
+    padding: 1.2rem;
+  }
+  .details {
+    padding: 0 1.2rem 1.2rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .container * {
+    scroll-behavior: auto;
+  }
+}
+
+
+/* =========================================
+   DICTIONARY AAC ILLUSTRATIONS
+========================================= */
+
+/* Align thumbnail, vocabulary, and expand icon */
+.cardButton {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Small illustration on each vocabulary card */
+.cardThumbnail {
+  display: block;
+  flex: 0 0 112px;
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 10px;
+}
+
+/* Allow vocabulary text to fill remaining space */
+.cardHeading {
+  flex: 1 1 auto;
+}
+
+/* Keep expand icon on the right */
+.expand {
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+/* Larger illustration inside expanded definition */
+.illustration {
+  width: min(100%, 360px);
+  max-height: 360px;
+  object-fit: contain;
+  background: #fff;
+  padding: 0.35rem;
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 480px) {
+  .cardButton {
+    gap: 0.75rem;
+  }
+
+  .cardThumbnail {
+    flex-basis: 82px;
+    width: 82px;
+    height: 82px;
+  }
+
+  .cardHeading strong {
+    font-size: 1rem;
+  }
+
+  .spanish {
+    font-size: 0.9rem;
+  }
+}
+
+.filter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.filter svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}

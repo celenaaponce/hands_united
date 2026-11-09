@@ -1,217 +1,355 @@
-import Image from "next/image";
-import classes from "./page.module.css";
 import Link from "next/link";
+import Image from "next/image";
+import styles from "./page.module.css";
 
-export default function ImmigrationSupport() {
-  return (
+const base = "/programs/immigration-support";
+
+const resources = [
+  {
+    title: "Understanding Immigration Letters",
+    description:
+      "See examples of immigration notices and learn what different letters mean.",
+    icon: "📩",
+    href: `${base}/information/documents`,
+    available: true,
+  },
+  {
+    title: "Immigration Vocabulary",
+    description:
+      "Learn common immigration words and their meanings in plain language.",
+    icon: "📖",
+    href: `${base}/information/dictionary`,
+    available: true,
+  },
+  {
+    title: "Check Your Immigration Case",
+    description:
+      "Learn how to check your USCIS or immigration court case and understand case numbers.",
+    icon: "🔎",
+    href: `${base}/information/case-status`,
+    available: true,
+  },
+  {
+    title: "Find Immigration Legal Help",
+    description:
+      "Find immigration lawyers, nonprofit legal services, and accredited representatives.",
+    icon: "⚖️",
+    href: `${base}/information/legal-help`,
+    available: true,
+  },
+  {
+    title: "Immigration Pathways",
+    description: "Explore immigration processes and options.",
+    icon: "🛤️",
+    href: `${base}/information/pathways`,
+    available: true,
+  },
+  {
+    title: "Immigration Court & Detention",
+    description:
+      "Learn about immigration hearings, court notices, detention, and finding someone in custody.",
+    icon: "🏛️",
+    href: `${base}/information/court-detention`,
+    available: true,
+  },
+];
+
+const rightsResources = [
+  {
+    title: "Know Your Rights",
+    description:
+      "Learn your rights during encounters with immigration officers and law enforcement.",
+    icon: "🛡️",
+    href: `${base}/know-your-rights`,
+    available: true,
+  },
+  {
+    title: "Digital Rights Card",
+    description: "Watch Know Your Rights videos in different sign languages.",
+    icon: "📱",
+    href: `${base}/digital-kyr`,
+    available: true,
+  },
+  {
+    title: "Communication Board",
+    description:
+      "Use visual communication tools to request interpreters and communicate your needs.",
+    icon: "/icons/commboard.svg",
+    available: true,
+    href: `${base}/communication-board`,
+  },
+
+  {
+    title: "Accessibility & Communication Rights",
+    description:
+      "Need an interpreter? Did not understand your interpreter? Learn how to request communication access and file a complaint.",
+    icon: "🤟",
+    href: `${base}/information/accessibility`,
+    available: true,
+  },
+];
+
+const learningResources = [
+  {
+    title: "Immigration Workshops",
+    description:
+      "Watch immigration education workshops in ASL and other sign languages.",
+    icon: "🎥",
+    href: `${base}/workshops`,
+    available: true,
+  },
+  {
+    title: "Social Stories",
+    description:
+      "Visual stories to help individuals and families understand and prepare for immigration encounters.",
+    icon: "📚",
+    href: `${base}/social-stories`,
+    available: true,
+  },
+  {
+    title: "Resources for Legal Professionals",
+    description:
+      "Information and accessibility resources for attorneys working with Deaf immigrants.",
+    icon: "⚖️",
+    href: `${base}/legal-professionals`,
+    available: true,
+  },
+];
+
+function ResourceCard({ resource }) {
+  const content = (
     <>
-      {/* Page Title */}
-      <h2 className={classes.section}>Immigration Support</h2>
-
-      <header className={classes.header}>
-        {/* Intro */}
-        <div className={classes.hero}>
-          <p>
-            Hands United provides accessible immigration education and support
-            for Deaf immigrants and immigrant families who face significant
-            language and communication barriers when navigating U.S. immigration
-            systems.
-          </p>
-          <p>
-            Our work focuses on language access, education, and informed
-            decision-making so individuals and families can better understand
-            their rights and options.
-          </p>
-        </div>
-
-        <div className={classes.imageContainer}>
+      <div className={styles.emojiBlock}>
+        {resource.icon.endsWith(".svg") ? (
           <Image
-            src="/images/impact-immigration.png"
-            alt="Accessible immigration education and support"
-            width={300}
-            height={300}
+            src={resource.icon}
+            alt=""
+            width={65}
+            height={65}
+            className={styles.svgIcon}
           />
-        </div>
-        <div className={classes.imageContainer}>
-          <Image
-            src="/images/impact-who.png"
-            alt="People practicing reading"
-            width={300}
-            height={300}
-          />
-        </div>
+        ) : (
+          <span className={styles.emoji} aria-hidden="true">
+            {resource.icon}
+          </span>
+        )}
+      </div>
 
-        {/* Who This Is For */}
-        <div className={classes.hero}>
-          <h3>Who This Program Is For</h3>
-          <ul>
-            <li>Deaf immigrants navigating U.S. immigration systems</li>
-            <li>Immigrant families with Deaf or hard of hearing members</li>
-            <li>Individuals with limited English or written-language access</li>
-            <li>Families seeking prevention-focused education and resources</li>
-          </ul>
-        </div>
+      <div className={styles.cardContent}>
+        <h3 className={styles.cardTitle}>{resource.title}</h3>
 
-        {/* Know Your Rights */}
-        <div className={classes.hero}>
-          <h3>Know Your Rights (KYR)</h3>
-          <p>
-            We provide Know Your Rights education in ASL and other languages to
-            help Deaf immigrants and families understand their rights during
-            interactions with law enforcement, ICE, and immigration authorities.
-          </p>
-          <ul>
-            <li>ASL-based Know Your Rights workshops</li>
-            <li>Multilingual and low-literacy visual resources</li>
-            <li>Clear explanations of common immigration encounters</li>
-            <li>Focus on prevention and preparedness</li>
-          </ul>
-          <p>
-            <Link href="/programs/immigration-support/kyr">
-              View Know Your Rights resources →
-            </Link>
-          </p>
-        </div>
-        <div className={classes.imageContainer}>
-          <Image
-            src="/images/impact-kyr.png"
-            alt="Know Your Rights presentaton"
-            width={300}
-            height={300}
-          />
-        </div>
+        <p className={styles.cardDescription}>{resource.description}</p>
 
-        <div className={classes.imageContainer}>
-          <Image
-            src="/images/impact-navigation.png"
-            alt="Immigration education and navigation support"
-            width={300}
-            height={300}
-          />
-        </div>
-
-        {/* Immigration Education & Navigation */}
-        <div className={classes.hero}>
-          <h3>Immigration Education & Navigation</h3>
-          <p>
-            Immigration systems are complex and often inaccessible to Deaf
-            individuals, especially those with language deprivation or limited
-            literacy. We focus on education and navigation rather than legal
-            representation.
-          </p>
-          <ul>
-            <li>Accessible explanations of immigration processes</li>
-            <li>Support understanding forms, notices, and appointments</li>
-            <li>Connections to trusted legal and community resources</li>
-            <li>Assistance preparing questions for attorneys or advocates</li>
-          </ul>
-        </div>
-
-        {/* Advocacy & Documentation Support */}
-        <div className={classes.hero}>
-          <h3>Advocacy & Documentation Support</h3>
-          <p>
-            In some cases, families need support documenting language access
-            needs or explaining barriers faced by Deaf individuals in
-            immigration contexts.
-          </p>
-          <ul>
-            <li>Immigration support letters focused on communication access</li>
-            <li>Documentation of language and accessibility barriers</li>
-            <li>Advocacy related to interpretation and accommodations</li>
-          </ul>
-        </div>
-        <div className={classes.imageContainer}>
-          <Image
-            src="/images/impact-support.png"
-            alt="Advocacy and Documentation Support"
-            width={300}
-            height={300}
-          />
-        </div>
-        <div className={classes.columnSpacer}>
-
-        </div>
-        <div className={classes.hero}>
-          <h3>Additional Immigration Resources</h3>
-          <ul>
-            <li>
-              <Link href="/programs/immigration-support/workshops">
-                Workshops in a variety of sign languages
-              </Link>
-            </li>
-            <li>
-              <Link href="https://drive.google.com/drive/folders/1OTmVwvIq9h2ntIJuCkol6lKGhCsHSPv9?usp=drive_link">
-                Communication boards for ICE or law enforcement encounters
-              </Link>
-            </li>
-                        <li>
-              <Link href="/programs/immigration-support/social-stories">
-                Social stories explaining what to expect
-              </Link>
-            </li>
-            <li>
-              <Link href="https://drive.google.com/file/d/16daxkMvOyyFnlocwfj4B471exwoMYYn1/view?usp=drive_link">
-                Printable Know Your Rights cards
-              </Link>
-            </li>
-
-          </ul>
-        </div>
-
-        {/* Important Clarification */}
-        <div className={classes.hero}>
-          <h3>Important Clarification</h3>
-          <p>
-            Hands United does not provide legal representation. Our role is to
-            ensure language access, education, and informed decision-making, and
-            to connect individuals with appropriate legal and community
-            resources when needed.
-          </p>
-        </div>
-
-        <div className={classes.columnSpacer}>
-
-        </div>
-        <div className={classes.columnSpacer}>
-
-        </div>
-
-        {/* Impact Snapshot */}
-        <div className={classes.hero}>
-          <h3>Program Impact</h3>
-          <p>
-            Through accessible immigration education and advocacy, Hands United
-            has supported Deaf immigrants and families across the U.S. by
-            increasing understanding, preparedness, and access to critical
-            information in languages they can understand.
-          </p>
-        </div>
-        <div className={classes.columnSpacer}>
-
-        </div>
-        <div className={classes.columnSpacer}>
-
-        </div>
-
-
-        {/* Support CTA */}
-        <div className={classes.hero}>
-          <h3>Support Immigration Support Programs</h3>
-          <p>
-            Donations help us create accessible Know Your Rights materials,
-            deliver multilingual education, and provide critical navigation
-            support for Deaf immigrants and families.
-          </p>
-          <p>
-            <Link href="https://www.zeffy.com/en-US/donation-form/hands-united-immigration-fund">
-              Support Immigration Support →
-            </Link>
-          </p>
-        </div>
-
-        <div className={classes.imageContainer} />
-      </header>
+        {!resource.available && (
+          <span className={styles.comingSoon}>Coming Soon</span>
+        )}
+      </div>
     </>
+  );
+
+  if (!resource.available) {
+    return (
+      <div className={`${styles.card} ${styles.disabledCard}`}>{content}</div>
+    );
+  }
+
+  return (
+    <Link href={resource.href} className={styles.card}>
+      {content}
+    </Link>
+  );
+}
+
+function ResourceSection({ title, description, resources }) {
+  return (
+    <section className={styles.resourceSection}>
+      <h2 className={styles.sectionTitle}>{title}</h2>
+
+      {description && (
+        <p className={styles.sectionDescription}>{description}</p>
+      )}
+
+      <div className={styles.grid}>
+        {resources.map((resource) => (
+          <ResourceCard key={resource.href} resource={resource} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export default function ImmigrationInformationPage() {
+  return (
+    <main className={styles.container}>
+      {/* PAGE INTRODUCTION */}
+
+      <header className={styles.intro}>
+        <h1 className={styles.title}>Immigration Resource Library</h1>
+
+        <p className={styles.subtitle}>
+          Free, accessible immigration information for Deaf immigrants and their
+          families.
+        </p>
+
+        <p className={styles.description}>
+          Understanding immigration can be difficult. Here you can find
+          information about your rights, immigration documents, legal services,
+          and immigration processes.
+        </p>
+
+        <p className={styles.description}>
+          You do not need to understand immigration laws or know which
+          government agency is involved to get started.
+        </p>
+      </header>
+
+      {/* FEATURED START PAGE */}
+
+      <section className={styles.featuredSection}>
+        <div className={styles.featuredContent}>
+          <div className={styles.featuredIcon} aria-hidden="true">
+            🧭
+          </div>
+
+          <div>
+            <h2>Where Do I Start?</h2>
+
+            <p>
+              Not sure what you need? Start here to find information about
+              immigration letters, court dates, legal help, applications, and
+              more.
+            </p>
+
+            <p>Answer simple questions to find resources that may help you.</p>
+
+            <Link
+              href="/programs/immigration-support/information/start"
+              className={styles.helpButton}
+            >
+              Get Started →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* IMMIGRATION INFORMATION */}
+
+      <ResourceSection
+        title="Find Immigration Information"
+        description="Understand immigration documents, processes, and available resources."
+        resources={resources}
+      />
+
+      {/* RIGHTS AND COMMUNICATION */}
+
+      <ResourceSection
+        title="Know Your Rights & Communication"
+        description="Learn about your rights and find accessible communication tools."
+        resources={rightsResources}
+      />
+
+      {/* LEARNING RESOURCES */}
+
+      <ResourceSection
+        title="Learn More"
+        description="Explore educational workshops, visual stories, and professional resources."
+        resources={learningResources}
+      />
+
+      {/* EXTERNAL RESOURCES */}
+
+      <section className={styles.resourceSection}>
+        <h2 className={styles.sectionTitle}>Trusted Immigration Resources</h2>
+
+        <p className={styles.sectionDescription}>
+          These organizations provide immigration information, official case
+          tools, and legal assistance resources.
+        </p>
+
+        <div className={styles.externalResources}>
+          <a
+            href="https://asaptogether.org/en/sample-documents/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ASAP — Sample Immigration Documents ↗
+          </a>
+
+          <a
+            href="https://egov.uscis.gov/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            USCIS — Check Case Status ↗
+          </a>
+
+          <a
+            href="https://acis.eoir.justice.gov/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Immigration Court — Check Case Information ↗
+          </a>
+
+          <a
+            href="https://locator.ice.gov/odls/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ICE — Detainee Locator ↗
+          </a>
+
+          <a
+            href="https://www.ailalawyer.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            AILA — Find an Immigration Lawyer ↗
+          </a>
+
+          <a
+            href="https://www.immigrationadvocates.org/legaldirectory/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Immigrationn Advocates Network — Find Legal Representation ↗
+          </a>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+
+      <section className={styles.helpSection}>
+        <h2>Need More Help?</h2>
+
+        <p>
+          Hands United supports Deaf immigrants and immigrant families through
+          accessible immigration education, communication access, and
+          navigation.
+        </p>
+
+        <p>
+          If you need help understanding information or finding resources,
+          contact us.
+        </p>
+
+        <Link href="/contact" className={styles.helpButton}>
+          Contact Hands United
+        </Link>
+      </section>
+
+      {/* DISCLAIMER */}
+
+      <footer className={styles.disclaimer}>
+        <p>
+          <strong>Important:</strong> These resources provide general
+          immigration information and are not a substitute for individualized
+          legal advice. Immigration laws, policies, procedures, and deadlines
+          may change. For advice about your specific situation, consult a
+          licensed immigration attorney or an authorized DOJ-accredited
+          representative.
+        </p>
+      </footer>
+    </main>
   );
 }

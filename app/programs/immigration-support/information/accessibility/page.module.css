@@ -1,0 +1,1019 @@
+
+/* =========================================
+   ACCESSIBILITY & COMMUNICATION RIGHTS
+   Hands United / Manos Unidas
+========================================= */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+  color: #f5f5f5;
+  font-family: "Quicksand", sans-serif;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+.container a {
+  color: #b4e956;
+}
+
+/* Prevent oversized Lucide icons */
+.container svg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+/* =========================================
+   BREADCRUMBS
+========================================= */
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2.5rem;
+  color: #ccc;
+  font-size: 0.92rem;
+}
+
+.breadcrumb a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+  max-width: 880px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0 0 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #72b200, #b4e956);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.header p {
+  margin: 0.65rem 0;
+  color: #e0e0e0;
+  line-height: 1.75;
+}
+
+.header .lead {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+/* =========================================
+   ASL VIDEO PLACEHOLDER
+========================================= */
+
+.videoPlaceholder {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 850px;
+  margin: 0 auto 2.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px dashed #688547;
+  border-radius: 12px;
+  background: #171f16;
+}
+
+.videoPlaceholder svg {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  max-width: 28px;
+  max-height: 28px;
+  color: #b4e956;
+}
+
+.videoPlaceholder strong {
+  color: #b4e956;
+}
+
+.videoPlaceholder p {
+  margin: 0.3rem 0 0;
+  color: #ddd;
+  font-size: 0.92rem;
+}
+
+/* =========================================
+   FEATURED COMPLAINT ACTION
+========================================= */
+
+.featuredSection {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  margin: 2.5rem 0 3rem;
+  padding: 2rem;
+  border: 2px solid #8cc63f;
+  border-radius: 18px;
+  background: #171f16;
+}
+
+.featuredIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 110px;
+  width: 110px;
+  height: 110px;
+  border-radius: 18px;
+  background: #26371c;
+}
+
+.featuredIcon svg {
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  min-height: 54px;
+  max-width: 54px;
+  max-height: 54px;
+  color: #b4e956;
+}
+
+.featuredSection h2 {
+  margin: 0 0 0.75rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.featuredSection p {
+  margin: 0 0 1.25rem;
+  color: #e7e7e7;
+  line-height: 1.75;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.primaryButton,
+.copyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  min-height: 50px;
+  padding: 0.85rem 1.4rem;
+  border: none;
+  border-radius: 10px;
+  background: #8cc63f;
+  color: #111 !important;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.primaryButton:hover,
+.copyButton:hover {
+  background: #b4e956;
+}
+
+/* =========================================
+   COMMUNICATION RIGHTS
+========================================= */
+
+.rightsSection {
+  margin: 3rem 0;
+}
+
+.rightsSection > h2 {
+  margin: 0 0 1.5rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+}
+
+.rightsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.rightsCard {
+  padding: 1.5rem;
+  border: 1px solid #454b52;
+  border-radius: 14px;
+  background: #111;
+  text-align: center;
+}
+
+.rightsSymbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background: #26371c;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.rightsCard:nth-child(-n + 2) .rightsSymbol {
+  background: #3a211d;
+  color: #ffb1a0;
+}
+
+.rightsCard h3 {
+  margin: 0 0 0.75rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+}
+
+.rightsCard p {
+  margin: 0;
+  color: #e0e0e0;
+  line-height: 1.75;
+}
+
+.rightsNote {
+  margin: 1.5rem 0 0;
+  color: #dedede;
+  line-height: 1.8;
+}
+
+/* =========================================
+   TOPIC CARDS
+========================================= */
+
+.topicsSection {
+  margin: 3.5rem 0;
+}
+
+.sectionHeading {
+  margin: 0 0 1.75rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.topicGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.topicCard {
+  display: grid;
+  grid-template-columns: minmax(250px, 34%) minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid #454b52;
+  border-radius: 18px;
+  background: #111;
+}
+
+.topicImage {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  min-width: 0;
+  background: #fff;
+}
+
+.picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 290px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.pictureImage {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  max-height: 340px;
+  object-fit: contain;
+}
+
+.pictureFallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 250px;
+  color: #557f28;
+}
+
+.pictureFallback svg {
+  width: 76px;
+  height: 76px;
+  min-width: 76px;
+  min-height: 76px;
+  max-width: 76px;
+  max-height: 76px;
+}
+
+.topicContent {
+  min-width: 0;
+  padding: 2rem;
+}
+
+.topicHeading {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.numberBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 46px;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: #8cc63f;
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.topicHeading h2 {
+  margin: 0;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+  line-height: 1.3;
+}
+
+.topicQuestion {
+  margin: 0 0 0.75rem;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.topicShort {
+  margin: 0 0 1rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+}
+
+/* =========================================
+   EXPANDABLE DETAILS
+========================================= */
+
+.expandable {
+  margin-top: 1rem;
+  border-top: 1px solid #454b52;
+}
+
+.expandButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  min-height: 50px;
+  padding: 0.9rem 0;
+  border: 0;
+  background: transparent;
+  color: #b4e956;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  text-align: left;
+  cursor: pointer;
+}
+
+.expandButton:hover {
+  color: #d2ff92;
+}
+
+.expandContent {
+  padding: 0.5rem 0 1.25rem;
+  color: #e7e7e7;
+  line-height: 1.8;
+}
+
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.detailItem {
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid #353535;
+}
+
+.detailItem:last-child {
+  border-bottom: none;
+}
+
+.detailItem h3 {
+  margin: 0 0 0.5rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.05rem;
+}
+
+.detailItem p {
+  margin: 0;
+  color: #dedede;
+  line-height: 1.8;
+}
+
+/* =========================================
+   COMPLAINT GENERATOR
+========================================= */
+
+.generatorSection {
+  margin: 4rem 0;
+  scroll-margin-top: 2rem;
+}
+
+.complaintGenerator {
+  padding: 2rem;
+  border: 1px solid #55733d;
+  border-radius: 18px;
+  background: #171f16;
+}
+
+.generatorHeading {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.generatorHeading > svg {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  min-height: 34px;
+  max-width: 34px;
+  max-height: 34px;
+  color: #b4e956;
+}
+
+.generatorHeading h2 {
+  margin: 0 0 0.5rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.35rem, 3vw, 1.9rem);
+}
+
+.generatorHeading p {
+  margin: 0;
+  color: #dedede;
+  line-height: 1.75;
+}
+
+/* Privacy reminder */
+
+.privacyNote {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid #485447;
+  border-radius: 12px;
+  background: #10170f;
+}
+
+.privacyNote svg {
+  color: #b4e956;
+}
+
+.privacyNote p {
+  margin: 0;
+  color: #dedede;
+  font-size: 0.93rem;
+  line-height: 1.75;
+}
+
+/* Form layout */
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.formField label,
+.problemFieldset legend {
+  margin-bottom: 0.65rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.formInput,
+.formTextarea {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  padding: 0.8rem 1rem;
+  border: 2px solid #65883d;
+  border-radius: 10px;
+  background: #fff;
+  color: #111;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.formTextarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.formInput:focus-visible,
+.formTextarea:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 3px;
+}
+
+.fullWidth,
+.problemFieldset {
+  grid-column: 1 / -1;
+}
+
+/* Checkbox options */
+
+.problemFieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 1.25rem;
+  border: 1px solid #485447;
+  border-radius: 12px;
+}
+
+.problemFieldset legend {
+  padding: 0 0.5rem;
+}
+
+.problemOptions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.problemOption {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.85rem;
+  border: 1px solid #454b52;
+  border-radius: 10px;
+  background: #111;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.problemOption:hover {
+  border-color: #8cc63f;
+}
+
+.problemOption input {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  margin: 0.1rem 0 0;
+  accent-color: #8cc63f;
+  cursor: pointer;
+}
+
+.problemOption span {
+  color: #f5f5f5;
+}
+
+/* =========================================
+   GENERATED MESSAGE
+========================================= */
+
+.messageCard {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #485447;
+  border-radius: 14px;
+  background: #10170f;
+}
+
+.messageCard h3 {
+  margin: 0 0 0.65rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+}
+
+.messageInstructions {
+  margin: 0 0 1rem;
+  color: #dedede;
+  line-height: 1.75;
+}
+
+.messagePreview {
+  max-height: 440px;
+  overflow: auto;
+  margin: 0 0 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid #454b52;
+  border-radius: 10px;
+  background: #111;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.copyButton {
+  min-height: 48px;
+}
+
+/* =========================================
+   COMPLAINT DESTINATION
+========================================= */
+
+.destinationCard {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid #65883d;
+  border-radius: 14px;
+  background: #26371c;
+}
+
+.destinationCard h3 {
+  margin: 0 0 0.75rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+}
+
+.destinationCard p {
+  color: #e7e7e7;
+  line-height: 1.8;
+}
+
+.emailDestination {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  overflow-wrap: anywhere;
+}
+
+.emailDestination strong {
+  color: #fff;
+}
+
+.emailDestination a {
+  font-weight: 700;
+}
+
+.smallNote {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+}
+
+/* =========================================
+   IMPORTANT DEADLINE WARNING
+========================================= */
+
+.deadlineWarning {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid #a66a35;
+  border-radius: 12px;
+  background: #251c14;
+}
+
+.deadlineWarning svg {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  max-width: 24px;
+  max-height: 24px;
+  color: #ffd38a;
+}
+
+.deadlineWarning p {
+  margin: 0;
+  color: #fff;
+  line-height: 1.8;
+}
+
+/* =========================================
+   RESOURCES
+========================================= */
+
+.resourceLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: #b4e956;
+  font-weight: 800;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.resourceLink:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   HANDS UNITED HELP
+========================================= */
+
+.helpSection {
+  margin: 3rem 0;
+  padding: 2rem;
+  border: 1px solid #55733d;
+  border-radius: 16px;
+  background: #171f16;
+}
+
+.helpHeading {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.helpHeading > svg {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  max-width: 36px;
+  max-height: 36px;
+  color: #b4e956;
+}
+
+.helpHeading h2 {
+  margin: 0 0 0.75rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.45rem;
+}
+
+.helpHeading p {
+  margin: 0;
+  color: #e7e7e7;
+  line-height: 1.8;
+}
+
+/* =========================================
+   CONTINUE LEARNING
+========================================= */
+
+.nextSteps {
+  margin-top: 3.5rem;
+}
+
+.nextSteps h2 {
+  margin-bottom: 1.25rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+
+.nextLinks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.nextLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  min-height: 85px;
+  padding: 1rem;
+  border: 1px solid #454b52;
+  border-radius: 12px;
+  background: #111;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nextLinks a:hover {
+  border-color: #8cc63f;
+  background: #1b2718;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #555;
+  color: #d0d0d0;
+  font-size: 0.93rem;
+  line-height: 1.8;
+}
+
+.footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   KEYBOARD ACCESSIBILITY
+========================================= */
+
+.container a:focus-visible,
+.container button:focus-visible,
+.container input:focus-visible,
+.container select:focus-visible,
+.container textarea:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 3px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+  .topicCard {
+    grid-template-columns: minmax(200px, 38%) minmax(0, 1fr);
+  }
+
+  .rightsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nextLinks {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+  .container {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .topicCard {
+    grid-template-columns: 1fr;
+  }
+
+  .topicImage .picture {
+    min-height: 230px;
+  }
+
+  .pictureImage {
+    max-height: 250px;
+  }
+
+  .topicContent,
+  .complaintGenerator,
+  .helpSection {
+    padding: 1.4rem;
+  }
+
+  .featuredSection {
+    padding: 1.4rem;
+  }
+
+  .formGrid,
+  .problemOptions,
+  .rightsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .primaryButton {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 480px) {
+  .featuredSection,
+  .generatorHeading,
+  .helpHeading,
+  .deadlineWarning {
+    flex-direction: column;
+  }
+
+  .featuredIcon {
+    flex-basis: auto;
+    width: 85px;
+    height: 85px;
+  }
+
+  .featuredIcon svg {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    max-width: 44px;
+    max-height: 44px;
+  }
+
+  .topicHeading {
+    align-items: flex-start;
+  }
+
+  .numberBadge {
+    flex-basis: 42px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .topicContent {
+    padding: 1.2rem;
+  }
+
+  .messageCard,
+  .destinationCard {
+    padding: 1.1rem;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryButton,
+  .copyButton {
+    transition: none;
+  }
+}

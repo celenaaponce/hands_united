@@ -1,150 +1,554 @@
-h2.section  {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #72b200, #b4e956);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
-p.section {
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0 5rem;
   color: #ddd6cb;
-  font-size: 1.75rem;
-  margin: 3rem;
+  font-family: "Quicksand", sans-serif;
 }
 
-p.section a{
-  color: #80b919
-}
-p.section a:visited {
-  color: #80b919
-}
-.hero a{
-  color: #80b919
+/* =========================
+   PAGE INTRODUCTION
+========================= */
+
+.intro {
+  max-width: 850px;
+  margin: 1rem auto 4rem;
+  text-align: center;
 }
 
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    max-width: 75rem;
-    margin: 3rem auto;
+.title {
+  margin: 0 0 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+
+  background: linear-gradient(90deg, #72b200, #b4e956);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  margin: 0 auto 1.5rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: 700;
+  color: #b4e956;
+  line-height: 1.5;
+}
+
+.description {
+  max-width: 750px;
+  margin: 0.75rem auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ddd6cb;
+}
+
+/* =========================
+   FEATURED START SECTION
+========================= */
+
+.featuredSection {
+  margin: 0 auto 4.5rem;
+  padding: 2.5rem;
+  border: 2px solid #72b200;
+  border-radius: 16px;
+
+  background: linear-gradient(
+    135deg,
+    #111111 0%,
+    #202b1c 100%
+  );
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.featuredContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.featuredIcon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #72b200, #b4e956);
+  font-size: 3.5rem;
+}
+
+.featuredContent h2 {
+  margin: 0 0 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  font-weight: 700;
+  color: #b4e956;
+}
+
+.featuredContent p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ddd6cb;
+}
+
+/* =========================
+   RESOURCE SECTIONS
+========================= */
+
+.resourceSection {
+  margin: 0 auto 4.5rem;
+}
+
+.sectionTitle {
+  margin: 0 0 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+  color: #b4e956;
+}
+
+.sectionDescription {
+  max-width: 800px;
+  margin: 0 0 2rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ddd6cb;
+}
+
+/* =========================
+   RESOURCE CARD GRID
+========================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* =========================
+   RESOURCE CARDS
+========================= */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  min-width: 0;
+  height: 100%;
+  padding: 2rem 1.5rem;
+
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+a.card:hover {
+  transform: translateY(-4px);
+  border-color: #72b200;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+a.card:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 4px;
+}
+
+.disabledCard {
+  opacity: 0.65;
+  cursor: default;
+}
+
+/* =========================
+   CARD ICONS
+========================= */
+
+.emojiBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 90px;
+  height: 90px;
+  margin-bottom: 0.25rem;
+
+  background: rgba(114, 178, 0, 0.12);
+  border-radius: 50%;
+}
+
+.emoji {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.svgIcon {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  gap: 0.75rem;
+}
+
+.cardTitle {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.cardDescription {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.comingSoon {
+  display: inline-block;
+  align-self: center;
+  margin-top: auto;
+  padding: 0.4rem 0.9rem;
+
+  background: rgba(180, 233, 86, 0.12);
+  border: 1px solid rgba(180, 233, 86, 0.3);
+  border-radius: 20px;
+
+  color: #b4e956;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02rem;
+}
+
+/* =========================
+   EXTERNAL RESOURCE LINKS
+========================= */
+
+.externalResources {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.externalResources a {
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+  padding: 1rem 1.5rem;
+
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+
+  color: #b4e956;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.externalResources a:hover {
+  background: #1e281b;
+  border-color: #72b200;
+  text-decoration: underline;
+}
+
+.externalResources a:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 3px;
+}
+
+/* =========================
+   HELP / CONTACT SECTION
+========================= */
+
+.helpSection {
+  margin: 4rem auto;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  background: #111111;
+  border: 1px solid #72b200;
+  text-align: center;
+}
+
+.helpSection h2 {
+  margin: 0 0 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  color: #b4e956;
+}
+
+.helpSection p {
+  max-width: 750px;
+  margin: 0.75rem auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ddd6cb;
+}
+
+.helpButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1.5rem;
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+
+  background: linear-gradient(90deg, #72b200, #b4e956);
+  color: #1b1b1b;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.helpButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(114, 178, 0, 0.3);
+}
+
+.helpButton:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 4px;
+}
+
+/* =========================
+   DISCLAIMER
+========================= */
+
+.disclaimer {
+  max-width: 950px;
+  margin: 3rem auto 0;
+  padding: 1.5rem 2rem;
+
+  background: rgba(255, 255, 255, 0.035);
+  border-left: 4px solid #72b200;
+  border-radius: 6px;
+}
+
+.disclaimer p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #c9c9c9;
+}
+
+.disclaimer strong {
+  color: #b4e956;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  
-  .hero,
-  .heroRight,
-  .imageContainer {
-    width: 50%;
+
+  .container {
+    width: 92%;
+  }
+
+  .featuredSection {
+    padding: 2rem;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .container {
+    width: 92%;
+    padding: 1rem 0 3rem;
+  }
+
+  .intro {
+    margin-bottom: 2.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .featuredSection {
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .featuredContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .featuredIcon {
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+  }
+
+  .featuredContent h2 {
     font-size: 1.5rem;
   }
-  
-  .hero h1,
-  .heroRight h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.15rem;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #72b200, #b4e956);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .hero p,
-  .heroRight p {
-    margin-bottom: 5rem;
-    color: #ddd6cb;
+
+  .featuredContent p {
+    font-size: 0.95rem;
   }
 
-    .hero li,
-  .heroRight li {
-
-    color: #ddd6cb;
+  .resourceSection {
+    margin-bottom: 3rem;
   }
 
-  .hero h3,
-  .heroRight h3 {
-    color: #80b919
-  }
-  
-  /* General image container styling */
-  .imageContainer {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    margin-top: -3rem;
+  .sectionTitle {
+    font-size: 1.4rem;
   }
 
- .imageContainer img{
-    width: 60%;
-    height: auto;
-  }
-  
-
-  /* Align images to the left for odd rows (1st, 3rd, etc.) */
-  .header .imageContainer:nth-of-type(odd) {
-    justify-content: flex-end;
-
-  }
-  
-  /* Align images to the right for even rows (2nd, 4th, etc.) */
-  .header .imageContainer:nth-of-type(even) {
-    justify-content: flex-start;
+  .sectionDescription {
+    font-size: 0.95rem;
   }
 
-  .hero link {
-  color: #80b919;
-  text-decoration: none;
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .emojiBlock {
+    width: 75px;
+    height: 75px;
+  }
+
+  .emoji {
+    font-size: 2.8rem;
+  }
+
+  .svgIcon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardDescription {
+    font-size: 0.9rem;
+  }
+
+  .externalResources {
+    grid-template-columns: 1fr;
+  }
+
+  .externalResources a {
+    font-size: 0.95rem;
+  }
+
+  .helpSection {
+    padding: 2rem 1.25rem;
+    margin: 3rem auto;
+  }
+
+  .helpSection h2 {
+    font-size: 1.5rem;
+  }
+
+  .helpSection p {
+    font-size: 0.95rem;
+  }
+
+  .helpButton {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .disclaimer {
+    padding: 1.25rem;
+  }
+
+  .disclaimer p {
+    font-size: 0.85rem;
+  }
 }
-.columnSpacer {
-  width: 50%;
-  pointer-events: none;
-}
-  
-  @media (max-width: 1024px) {
-    .hero,
-    .heroRight,
-    .imageContainer {
-      width: 50%; /* Full width on small screens */
-      /* Optionally adjust font-size and padding for better fit */
-    }
-    .header {
-      max-width: 80%;
-    }
-    .hero h1,
-    .heroRight h1 {
-      font-size: 1.1rem; /* Adjust font size for better readability */
-    }
-  
-    .hero p,
-    .heroRight p {
-      font-size: 0.875rem; /* Reduce font size */
-      margin-bottom: 2rem; /* Adjust margin to fit better */
-    }
 
-        .hero li,
-    .heroRight li {
-      font-size: 0.875rem; /* Reduce font size */
-      margin-bottom: 2rem; /* Adjust margin to fit better */
-    }
-  
-    h2.section {
-      font-size: 1.75rem; /* Slightly smaller for smaller screens */
-    }
+/* =========================
+   REDUCED MOTION
+========================= */
 
-    p.section {
-      font-size: 1rem;
-    }
-
-
-    .imageContainer img{
-      width: 100%;
-      height: auto;
-      margin-right: 1rem !important;
-    }
-  
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .externalResources a,
+  .helpButton {
+    transition: none;
   }
+
+  a.card:hover,
+  .helpButton:hover {
+    transform: none;
+  }
+}

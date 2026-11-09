@@ -1,0 +1,888 @@
+
+/* =========================================
+   IMMIGRATION COURT & DETENTION
+   Hands United / Manos Unidas
+========================================= */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+  color: #f5f5f5;
+  font-family: "Quicksand", sans-serif;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+.container a {
+  color: #b4e956;
+}
+
+/* Prevent oversized Lucide icons */
+.container svg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+/* =========================================
+   BREADCRUMBS
+========================================= */
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2.5rem;
+  color: #ccc;
+  font-size: 0.92rem;
+}
+
+.breadcrumb a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+  max-width: 880px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0 0 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #72b200, #b4e956);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.header p {
+  margin: 0.65rem 0;
+  color: #e0e0e0;
+  line-height: 1.75;
+}
+
+.header .lead {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+/* =========================================
+   ASL VIDEO PLACEHOLDER
+========================================= */
+
+.videoPlaceholder {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 850px;
+  margin: 0 auto 2.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px dashed #688547;
+  border-radius: 12px;
+  background: #171f16;
+}
+
+.videoPlaceholder svg {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  max-width: 28px;
+  max-height: 28px;
+  color: #b4e956;
+}
+
+.videoPlaceholder strong {
+  color: #b4e956;
+}
+
+.videoPlaceholder p {
+  margin: 0.3rem 0 0;
+  color: #ddd;
+  font-size: 0.92rem;
+}
+
+/* =========================================
+   QUICK ACTIONS
+========================================= */
+
+.quickActions {
+  margin: 2.5rem 0 3rem;
+}
+
+.quickActions h2 {
+  margin: 0 0 1.25rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.35rem, 3vw, 1.9rem);
+}
+
+.quickActionGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.quickAction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  min-height: 175px;
+  padding: 1.5rem;
+  border: 1px solid #55733d;
+  border-radius: 16px;
+  background: #171f16;
+  color: #fff !important;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.quickAction:hover {
+  border-color: #b4e956;
+  background: #26371c;
+}
+
+.quickAction svg:first-child {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  max-width: 36px;
+  max-height: 36px;
+  color: #b4e956;
+}
+
+.quickAction svg:last-child {
+  width: 17px;
+  height: 17px;
+  min-width: 17px;
+  min-height: 17px;
+  max-width: 17px;
+  max-height: 17px;
+  color: #b4e956;
+}
+
+.quickAction span {
+  font-size: 1.05rem;
+}
+
+/* =========================================
+   IMPORTANT NOTICE
+========================================= */
+
+.noticeSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin: 2.5rem 0 3rem;
+  padding: 1.5rem 2rem;
+  border: 1px solid #a66a35;
+  border-radius: 16px;
+  background: #251c14;
+}
+
+.noticeSection > svg {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  color: #ffd38a;
+}
+
+.noticeSection h2 {
+  margin: 0 0 0.6rem;
+  color: #ffd38a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+}
+
+.noticeSection p {
+  margin: 0;
+  line-height: 1.75;
+}
+
+/* =========================================
+   TOPIC SECTION
+========================================= */
+
+.topicsSection {
+  margin: 3rem 0;
+}
+
+.sectionHeading {
+  margin: 0 0 1.75rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.topicGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* =========================================
+   TOPIC CARDS
+========================================= */
+
+.topicCard {
+  display: grid;
+  grid-template-columns: minmax(250px, 34%) minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid #454b52;
+  border-radius: 18px;
+  background: #111;
+}
+
+.topicImage {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  min-width: 0;
+  background: #fff;
+}
+
+.picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 290px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.pictureImage {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  max-height: 340px;
+  object-fit: contain;
+}
+
+.topicContent {
+  min-width: 0;
+  padding: 2rem;
+}
+
+.topicHeading {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.numberBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 46px;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: #8cc63f;
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.topicHeading h2 {
+  margin: 0;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+  line-height: 1.3;
+}
+
+.topicQuestion {
+  margin: 0 0 0.75rem;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.topicShort {
+  margin: 0 0 1rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+}
+
+.topicActions {
+  margin: 1.25rem 0;
+}
+
+/* Urgent label inside cards */
+
+.urgentLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 1rem 0;
+  color: #ffd38a;
+  font-weight: 800;
+}
+
+.urgentLabel svg {
+  color: #ffd38a;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.primaryButton,
+.copyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  min-height: 50px;
+  padding: 0.85rem 1.4rem;
+  border: none;
+  border-radius: 10px;
+  background: #8cc63f;
+  color: #111 !important;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.primaryButton:hover,
+.copyButton:hover {
+  background: #b4e956;
+}
+
+/* =========================================
+   EXPANDABLE DETAILS
+========================================= */
+
+.expandable {
+  margin-top: 1rem;
+  border-top: 1px solid #454b52;
+}
+
+.expandButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  min-height: 50px;
+  padding: 0.9rem 0;
+  border: 0;
+  background: transparent;
+  color: #b4e956;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  text-align: left;
+  cursor: pointer;
+}
+
+.expandButton:hover {
+  color: #d2ff92;
+}
+
+.expandContent {
+  padding: 0.5rem 0 1.25rem;
+  color: #e7e7e7;
+  line-height: 1.8;
+}
+
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.detailItem {
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid #353535;
+}
+
+.detailItem:last-child {
+  border-bottom: none;
+}
+
+.detailItem h3 {
+  margin: 0 0 0.5rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.05rem;
+}
+
+.detailItem p {
+  margin: 0;
+  color: #dedede;
+  line-height: 1.8;
+}
+
+/* =========================================
+   RESOURCE LINKS
+========================================= */
+
+.resourceLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  color: #b4e956;
+  font-weight: 800;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.resourceLink:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   LEGAL REMINDER
+========================================= */
+
+.legalReminder {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border-left: 4px solid #8cc63f;
+  border-radius: 0 10px 10px 0;
+  background: #26371c;
+}
+
+.legalReminder svg {
+  color: #b4e956;
+  margin-top: 0.15rem;
+}
+
+.legalReminder p {
+  margin: 0;
+  line-height: 1.75;
+}
+
+/* =========================================
+   INTERPRETER REQUEST
+========================================= */
+
+.interpreterSection {
+  margin: 3.5rem 0;
+}
+
+.interpreterRequest {
+  padding: 2rem;
+  border: 1px solid #55733d;
+  border-radius: 18px;
+  background: #171f16;
+}
+
+.requestHeading {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.requestHeading > svg {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  color: #b4e956;
+}
+
+.requestHeading h3 {
+  margin: 0 0 0.5rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+}
+
+.requestHeading p {
+  margin: 0;
+  line-height: 1.75;
+}
+
+.formLabel {
+  display: block;
+  margin: 0 0 0.6rem;
+  color: #b4e956;
+  font-weight: 800;
+}
+
+.languageSelect {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid #8cc63f;
+  border-radius: 10px;
+  background: #fff;
+  color: #111;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.languageSelect:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 3px;
+}
+
+.messageCard {
+  margin: 1.25rem 0;
+  padding: 1.5rem;
+  border-left: 4px solid #b4e956;
+  border-radius: 0 12px 12px 0;
+  background: #10170f;
+}
+
+.messageCard strong {
+  color: #b4e956;
+}
+
+.messageCard p {
+  margin: 1rem 0;
+  color: #fff;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+.requestNote {
+  margin-top: 1rem;
+  color: #dedede;
+  line-height: 1.75;
+}
+
+/* =========================================
+   COURT PREPARATION CHECKLIST
+========================================= */
+
+.checklistSection {
+  margin: 3.5rem 0;
+}
+
+.checklistSection > h2 {
+  margin: 0 0 0.6rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+}
+
+.checklistSection > p {
+  margin: 0 0 1.5rem;
+  color: #e0e0e0;
+  line-height: 1.75;
+}
+
+.checklistGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.checklistCard {
+  overflow: hidden;
+  border: 1px solid #454b52;
+  border-radius: 14px;
+  background: #111;
+}
+
+.checklistCard .picture {
+  min-height: 175px;
+  padding: 0.75rem;
+}
+
+.checklistCard .pictureImage {
+  max-height: 165px;
+}
+
+.checklistText {
+  padding: 1.1rem;
+}
+
+.checklistText h3 {
+  margin: 0 0 0.6rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.checklistText p {
+  margin: 0;
+  color: #e0e0e0;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* =========================================
+   LEGAL HELP SECTION
+========================================= */
+
+.helpSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin: 3rem 0;
+  padding: 2rem;
+  border: 1px solid #55733d;
+  border-radius: 16px;
+  background: #171f16;
+}
+
+.helpSection > svg {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  min-height: 34px;
+  max-width: 34px;
+  max-height: 34px;
+  color: #b4e956;
+}
+
+.helpSection h2 {
+  margin: 0 0 0.75rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.45rem;
+}
+
+.helpSection p {
+  margin: 0 0 1.25rem;
+  line-height: 1.8;
+}
+
+/* =========================================
+   CONTINUE LEARNING
+========================================= */
+
+.nextSteps {
+  margin-top: 3.5rem;
+}
+
+.nextSteps h2 {
+  margin-bottom: 1.25rem;
+  color: #b4e956;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+
+.nextLinks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.nextLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  min-height: 85px;
+  padding: 1rem;
+  border: 1px solid #454b52;
+  border-radius: 12px;
+  background: #111;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nextLinks a:hover {
+  border-color: #8cc63f;
+  background: #1b2718;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #555;
+  color: #d0d0d0;
+  font-size: 0.93rem;
+  line-height: 1.8;
+}
+
+.footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   KEYBOARD ACCESSIBILITY
+========================================= */
+
+.container a:focus-visible,
+.container button:focus-visible {
+  outline: 3px solid #b4e956;
+  outline-offset: 3px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+  .topicCard {
+    grid-template-columns: minmax(200px, 38%) minmax(0, 1fr);
+  }
+
+  .checklistGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quickActionGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nextLinks {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+  .container {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .topicCard {
+    grid-template-columns: 1fr;
+  }
+
+  .topicImage .picture {
+    min-height: 230px;
+  }
+
+  .pictureImage {
+    max-height: 250px;
+  }
+
+  .topicContent,
+  .interpreterRequest,
+  .helpSection {
+    padding: 1.4rem;
+  }
+
+  .quickActionGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .quickAction {
+    min-height: 130px;
+  }
+
+  .noticeSection {
+    padding: 1.4rem;
+  }
+
+  .primaryButton {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 480px) {
+  .noticeSection,
+  .helpSection,
+  .requestHeading {
+    flex-direction: column;
+  }
+
+  .topicHeading {
+    align-items: flex-start;
+  }
+
+  .numberBadge {
+    flex-basis: 42px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .checklistGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .topicContent {
+    padding: 1.2rem;
+  }
+
+  .messageCard {
+    padding: 1.1rem;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryButton,
+  .copyButton,
+  .quickAction {
+    transition: none;
+  }
+}

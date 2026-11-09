@@ -6,9 +6,25 @@ import logo from "./icon.png";
 import classes from "./page.module.css";
 import TPT from "public/images/tpt.png";
 import ICE from "public/images/ICEcomm.png";
+import {
+  Clock,
+  Handshake,
+  Scale,
+  Globe2,
+  FileCheck2,
+  BookOpen,
+  MonitorPlay,
+  Search,
+  Smartphone,
+  IdCard,
+  UsersRound,
+  GraduationCap,
+  CarFront,
+  Mail,
+} from "lucide-react";
 import iphone from "public/images/iphone.png";
 import android from "public/images/android.png";
-
+import Hotline from "public/classflyers/hotline.jpg"
 import PermitASL from "public/classflyers/permit-asl.png";
 import SpanishASL from "public/classflyers/ASLSpanishclass.jpeg";
 
@@ -45,7 +61,7 @@ export default function Home() {
 URGENT COMMUNITY SUPPORT
 ======================= */}
 
-        <section className={classes.urgentSection}>
+        {/* <section className={classes.urgentSection}>
           <h2>🚨 Urgent Community Support</h2>
 
           <p className={classes.urgentIntro}>
@@ -162,7 +178,7 @@ URGENT COMMUNITY SUPPORT
             </div>
 
             {/* Case 2 */}
-            <div className={classes.urgentCard}>
+        {/* <div className={classes.urgentCard}>
               <h3>⚖️ Deaf Man Unlawfully Deported</h3>
 
               <p>
@@ -186,9 +202,9 @@ URGENT COMMUNITY SUPPORT
               >
                 Support His Case
               </a>
-            </div>
+            </div> */}
 
-            <div className={classes.urgentCard}>
+        {/* <div className={classes.urgentCard}>
               <h3>👨‍👩‍👧 Russian Family Rebuilding After Detention</h3>
 
               <p>
@@ -219,9 +235,9 @@ URGENT COMMUNITY SUPPORT
               >
                 Support This Family
               </a>
-            </div>
-          </div>
-        </section>
+            </div> */}
+        {/* </div>
+        </section>  */}
         <section className={classes.section} id="now-enrolling">
           <h2>Now Enrolling</h2>
 
@@ -239,7 +255,22 @@ URGENT COMMUNITY SUPPORT
               <p>8-week online classes beginning November 16.</p>
             </Link>
 
-            <Link
+                        <Link
+              href="/store#professionals"
+              className={classes.featureCard}
+            >
+              <div className={classes.enrollmentImage}>
+                <Image src={Hotline} alt="ASL Classes in Spanish" />
+              </div>
+
+              <h3>Hotline Workshop</h3>
+
+              <p>Join Hands United for a three-part training focused on accessible
+            communication and navigation when supporting Deaf immigrant
+            communities. </p>
+            </Link>
+
+            {/* <Link
               href="/programs/driver-education/register"
               className={classes.featureCard}
             >
@@ -250,11 +281,8 @@ URGENT COMMUNITY SUPPORT
               <h3>ASL Permit Classes</h3>
 
               <p>8-week online permit classes taught directly in ASL.</p>
-            </Link>
-            <Link
-              href="/store#professionals"
-              className={classes.featureCard}
-            >
+            </Link> */}
+            <Link href="/store#around-the-world-latin-america" className={classes.featureCard}>
               <div className={classes.enrollmentImage}>
                 <Image
                   src={AroundTheWorldLA}
@@ -265,9 +293,10 @@ URGENT COMMUNITY SUPPORT
               <h3>Around the World: Latin America</h3>
 
               <p>
-                Explore the sign languages of Latin America in this live, Deaf-led
-                class for professionals, beginning January 9 with Mexican Sign
-                Language (LSM), followed by Colombian Sign Language (LSC).
+                Explore the sign languages of Latin America in this live,
+                Deaf-led class for professionals, beginning January 9 with
+                Mexican Sign Language (LSM), followed by Colombian Sign Language
+                (LSC).
               </p>
 
               <p>
@@ -300,12 +329,12 @@ URGENT COMMUNITY SUPPORT
           {/* =======================
     DOWNLOAD OUR APP
 ======================= */}
-          <section className={classes.section} id="app">
+          {/* <section className={classes.section} id="app">
             <h2>Download Our App</h2>
 
-            <div className={classes.featureGrid}>
-              {/* iPhone */}
-              <a
+            <div className={classes.featureGrid}> */}
+          {/* iPhone */}
+          {/* <a
                 href="https://apps.apple.com/us/app/hands-united-oregon/id6747975975"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -321,10 +350,10 @@ URGENT COMMUNITY SUPPORT
                 </div>
                 <h3>Download for iPhone</h3>
                 <p>Available on the Apple App Store.</p>
-              </a>
+              </a> */}
 
-              {/* Android */}
-              <a
+          {/* Android */}
+          {/* <a
                 href="https://play.google.com/store/apps/details?id=com.createcommunity.handsunitedoregon&pcampaignid=web_share"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -342,7 +371,7 @@ URGENT COMMUNITY SUPPORT
                 <p>Available on Google Play.</p>
               </a>
             </div>
-          </section>
+          </section> */}
           {/* =======================
    NEW: LEARN & SAVE MORE
 ======================= */}
@@ -355,7 +384,9 @@ URGENT COMMUNITY SUPPORT
                 href="https://www.handsunitedor.org/store#async"
                 className={classes.featureCard}
               >
-                <div className={classes.featureEmoji}>⏱️</div>
+                <div className={classes.featureIcon}>
+                  <Clock aria-hidden="true" />
+                </div>
                 <h3>Async CEU Courses</h3>
                 <p>
                   Earn CEUs on your own schedule. Access recorded workshops
@@ -373,7 +404,9 @@ URGENT COMMUNITY SUPPORT
                 href="https://www.handsunitedor.org/membership"
                 className={classes.featureCard}
               >
-                <div className={classes.featureEmoji}>🤝</div>
+                <div className={classes.featureIcon}>
+                  <Handshake aria-hidden="true" />
+                </div>
                 <h3>Join Our Membership</h3>
                 <p>
                   Hands United provides specialized language access, legal and
@@ -403,7 +436,9 @@ URGENT COMMUNITY SUPPORT
                 href="/programs/immigration-support/legal-professionals"
                 className={classes.featureCard}
               >
-                <div className={classes.featureEmoji}>⚖️</div>
+                <div className={classes.featureIcon}>
+                  <Scale aria-hidden="true" />
+                </div>
 
                 <h3>Legal Professional Resources &amp; Case Support</h3>
 
@@ -424,7 +459,9 @@ URGENT COMMUNITY SUPPORT
 
               {/* Global Sign Language Interpreting */}
               <Link href="/store#services" className={classes.featureCard}>
-                <div className={classes.featureEmoji}>🌎</div>
+                <div className={classes.featureIcon}>
+                  <Globe2 aria-hidden="true" />
+                </div>
 
                 <h3>Global Sign Language Interpreting</h3>
 
@@ -436,7 +473,9 @@ URGENT COMMUNITY SUPPORT
 
               {/* IEP Translation Verification */}
               <Link href="/store#services" className={classes.featureCard}>
-                <div className={classes.featureEmoji}>📄</div>
+                <div className={classes.featureIcon}>
+                  <FileCheck2 aria-hidden="true" />
+                </div>
 
                 <h3>IEP Translation Verification</h3>
 
@@ -448,7 +487,9 @@ URGENT COMMUNITY SUPPORT
 
               {/* Custom Dictionaries */}
               <Link href="/store#services" className={classes.featureCard}>
-                <div className={classes.featureEmoji}>📚</div>
+                <div className={classes.featureIcon}>
+                  <BookOpen aria-hidden="true" />
+                </div>
 
                 <h3>Custom Multilingual Dictionaries</h3>
 
@@ -461,7 +502,9 @@ URGENT COMMUNITY SUPPORT
 
               {/* Virtual Event Support */}
               <Link href="/store#services" className={classes.featureCard}>
-                <div className={classes.featureEmoji}>💻</div>
+                <div className={classes.featureIcon}>
+                  <MonitorPlay aria-hidden="true" />
+                </div>
 
                 <h3>Virtual Event Support</h3>
 
@@ -490,7 +533,9 @@ URGENT COMMUNITY SUPPORT
                 href="/learn-asl/dictionary"
                 className={classes.featureCard}
               >
-                <div className={classes.featureEmoji}>🔎</div>
+                <div className={classes.featureIcon}>
+                  <Search aria-hidden="true" />
+                </div>
                 <h3>Search All Dictionaries</h3>
                 <p>
                   Explore our new multilingual ASL dictionary. Search across all
@@ -500,7 +545,9 @@ URGENT COMMUNITY SUPPORT
 
               {/* Store Dictionaries */}
               <Link href="/store#products" className={classes.featureCard}>
-                <div className={classes.featureEmoji}>📚</div>
+                <div className={classes.featureIcon}>
+                  <BookOpen aria-hidden="true" />
+                </div>
                 <h3>Buy Our Printed Dictionaries</h3>
                 <p>
                   Support our work and access full-color multilingual ASL
@@ -513,7 +560,9 @@ URGENT COMMUNITY SUPPORT
                 href="/programs/immigration-support/digital-kyr"
                 className={classes.featureCard}
               >
-                <div className={classes.featureEmoji}>📱</div>
+                <div className={classes.featureIcon}>
+                  <Smartphone aria-hidden="true" />
+                </div>
                 <h3>Digital Know Your Rights Card</h3>
                 <p>
                   Interactive digital rights card. Choose your sign language and
@@ -526,7 +575,9 @@ URGENT COMMUNITY SUPPORT
                 href="/programs/immigration-support/know-your-rights"
                 className={classes.featureCard}
               >
-                <div className={classes.featureEmoji}>🪪</div>
+                <div className={classes.featureIcon}>
+                  <IdCard aria-hidden="true" />
+                </div>
                 <h3>Download Know Your Rights Card</h3>
                 <p>
                   Printable and downloadable Know Your Rights cards for ICE
@@ -549,16 +600,15 @@ URGENT COMMUNITY SUPPORT
                 href="/store#family-community"
                 className={classes.programButton}
               >
-                <span aria-hidden="true" className={classes.programEmoji}>
-                  👨‍👩‍👧
-                </span>
+                <UsersRound
+                  aria-hidden="true"
+                  className={classes.programIcon}
+                />
                 <span>See Family &amp; Community Workshops</span>
               </Link>
 
               <Link href="/store#immigration" className={classes.programButton}>
-                <span aria-hidden="true" className={classes.programEmoji}>
-                  ⚖️
-                </span>
+                <Scale aria-hidden="true" className={classes.programIcon} />
                 <span>See Immigration Workshops</span>
               </Link>
 
@@ -566,9 +616,10 @@ URGENT COMMUNITY SUPPORT
                 href="/store#professionals"
                 className={classes.programButton}
               >
-                <span aria-hidden="true" className={classes.programEmoji}>
-                  🎓
-                </span>
+                <GraduationCap
+                  aria-hidden="true"
+                  className={classes.programIcon}
+                />
                 <span>See Professional Development</span>
               </Link>
 
@@ -576,9 +627,7 @@ URGENT COMMUNITY SUPPORT
                 href="/store#driver-education"
                 className={classes.programButton}
               >
-                <span aria-hidden="true" className={classes.programEmoji}>
-                  🚗
-                </span>
+                <CarFront aria-hidden="true" className={classes.programIcon} />
                 <span>See Driver Education Classes</span>
               </Link>
             </div>

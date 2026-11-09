@@ -291,3 +291,81 @@
   font-weight: 600;
   color: #2e7d32; /* your green */
 }
+
+
+/* FEATURED UPCOMING EVENTS */
+
+.upcomingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.upcomingCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1.75rem;
+  border-radius: 14px;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  text-decoration: none;
+  text-align: left;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.upcomingCard:hover {
+  transform: translateY(-4px);
+  border-color: #80b919;
+}
+
+.upcomingIcon {
+  width: 48px;
+  height: 48px;
+  color: #a4d94c;
+  stroke-width: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+.upcomingDate {
+  color: #a4d94c;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.upcomingCard h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.upcomingCard p {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.upcomingLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #a4d94c;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .upcomingGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .upcomingIcon {
+    width: 42px;
+    height: 42px;
+  }
+}
