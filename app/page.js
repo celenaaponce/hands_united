@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 import iphone from "public/images/iphone.png";
 import android from "public/images/android.png";
-import Hotline from "public/classflyers/hotline.jpg"
+import Hotline from "public/classflyers/hotline.jpg";
 import PermitASL from "public/classflyers/permit-asl.png";
 import SpanishASL from "public/classflyers/ASLSpanishclass.jpeg";
 
@@ -57,6 +57,57 @@ export default function Home() {
         </div>
       </header>
       <main className={classes.main}>
+        {/* =======================
+    FEATURED NEW DICTIONARIES
+======================= */}
+        <section className={classes.dictionaryPromo} id="featured-dictionaries">
+          <div className={classes.dictionaryPromoContent}>
+            <div className={classes.dictionaryPromoText}>
+              <span className={classes.dictionaryPromoBadge}>NEW RESOURCE</span>
+
+              <h2>New Haitian Creole–ASL–English Dictionaries!</h2>
+
+              <p className={classes.dictionaryPromoLead}>
+                Give Haitian families the signs they need at home.
+              </p>
+
+              <p>
+                Explore our new Family and Food dictionaries, featuring
+                culturally matched Deaf language models, Haitian Creole
+                voiceovers, and more than 45 signs!
+              </p>
+
+              <p>
+                Each dictionary includes full-color illustrations and
+                black-and-white coloring pages.
+              </p>
+
+              <div className={classes.dictionaryPromoPricing}>
+                <strong>$18 each</strong>
+                <span>or</span>
+                <strong>$28 for both!</strong>
+              </div>
+
+              <Link
+                href="/store/products"
+                className={classes.dictionaryPromoButton}
+              >
+                Explore the New Dictionaries →
+              </Link>
+            </div>
+
+            <div className={classes.dictionaryPromoImage}>
+              <Image
+                src="/images/HCdictionaries.png"
+                alt="Hands United Haitian Creole ASL English Family and Food dictionaries"
+                width={1080}
+                height={1350}
+                sizes="(max-width: 900px) 100vw, 45vw"
+                priority
+              />
+            </div>
+          </div>
+        </section>
         {/* =======================
 URGENT COMMUNITY SUPPORT
 ======================= */}
@@ -255,19 +306,18 @@ URGENT COMMUNITY SUPPORT
               <p>8-week online classes beginning November 16.</p>
             </Link>
 
-                        <Link
-              href="/store#professionals"
-              className={classes.featureCard}
-            >
+            <Link href="/store#professionals" className={classes.featureCard}>
               <div className={classes.enrollmentImage}>
                 <Image src={Hotline} alt="ASL Classes in Spanish" />
               </div>
 
               <h3>Hotline Workshop</h3>
 
-              <p>Join Hands United for a three-part training focused on accessible
-            communication and navigation when supporting Deaf immigrant
-            communities. </p>
+              <p>
+                Join Hands United for a three-part training focused on
+                accessible communication and navigation when supporting Deaf
+                immigrant communities.{" "}
+              </p>
             </Link>
 
             {/* <Link
@@ -282,7 +332,10 @@ URGENT COMMUNITY SUPPORT
 
               <p>8-week online permit classes taught directly in ASL.</p>
             </Link> */}
-            <Link href="/store#around-the-world-latin-america" className={classes.featureCard}>
+            <Link
+              href="/store#around-the-world-latin-america"
+              className={classes.featureCard}
+            >
               <div className={classes.enrollmentImage}>
                 <Image
                   src={AroundTheWorldLA}

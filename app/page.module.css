@@ -324,3 +324,129 @@
     height: 28px;
   }
 }
+
+/* =========================
+   FEATURED DICTIONARY PROMO
+========================= */
+
+.dictionaryPromo {
+  background: #1d2b32;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 3rem;
+  margin: 2rem auto 3rem;
+  width: 95%;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.dictionaryPromoContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.dictionaryPromoText h2 {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  line-height: 1.2;
+  margin: 1rem 0;
+  color: #ffb457;
+}
+
+.dictionaryPromoText p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.dictionaryPromoLead {
+  font-size: 1.4rem !important;
+  font-weight: 700;
+}
+
+.dictionaryPromoBadge {
+  display: inline-block;
+  background: #ffb457;
+  color: #17252c;
+  padding: 0.45rem 1rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.dictionaryPromoPricing {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+  font-size: 1.4rem;
+}
+
+.dictionaryPromoPricing strong {
+  color: #ffb457;
+}
+
+.dictionaryPromoButton {
+  display: inline-block;
+  background: #ffb457;
+  color: #17252c;
+  padding: 1rem 1.8rem;
+  border-radius: 40px;
+  font-weight: 800;
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.dictionaryPromoButton:hover {
+  background: #ffc77f;
+  transform: translateY(-2px);
+}
+
+.dictionaryPromoImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dictionaryPromoImage img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .dictionaryPromo {
+    padding: 1.5rem;
+    width: 95%;
+  }
+
+  .dictionaryPromoContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .dictionaryPromoText {
+    text-align: center;
+  }
+
+  .dictionaryPromoPricing {
+    justify-content: center;
+  }
+
+  .dictionaryPromoButton {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .dictionaryPromoImage {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
